@@ -9,11 +9,11 @@ Some settings are required and must be present:
  * **description**: A short description of the software
  * **toolkit**: See below
 
-Possible configuration options can also be retrieved by running [wiki:Tools easybuild.sh] with the -o or --options switch. Options for a specific application class can be found by adding a -m option.
+Possible configuration options can also be retrieved by running `eb` with the -o or --options switch. Options for a specific application class can be found by adding a -m option.
 
-Another very important option is **mod**. This defines the Python-class (subclassing Application) that controls the build-process and overrides standard behavior for specific cases.
+Another very important option is **easyblock**. This defines the EasyBlock (Python-class subclassing Application) that controls the build-process and overrides standard behavior for specific cases.
 
-If you want to make use of features only recently introduced in !EasyBuild, it is highly recommended that you set the **easybuildVersion** setting. Older versions of EasyBuild will then refuse to build this easyconfig.
+If you want to make use of features only recently introduced in EasyBuild, it is highly recommended that you set the **easybuildVersion** setting. Older versions of EasyBuild will then refuse to build this easyconfig.
 
 ## Toolkit
 
@@ -32,7 +32,7 @@ The following toolkits are currently defined:
 A toolkit is selected by configuring it as follows in the easyconfig:
 `toolkit = {'name':'ictce', 'version':'4.0.4'}`
 
-If you do not require a toolkit (e.g. for a binary or interpreted package), use a dummy toolkit. 
+If you do not require a toolkit (e.g. for a binary or interpreted package), use a dummy toolkit.
 ` toolkit = {'name': 'dummy', 'version':_} `
 
 If you do **not** want to load the dependencies of the module when using a dummy toolkit, also specify the toolkit version as dummy:
@@ -74,15 +74,15 @@ Example:
 > name="GCC"
 
 > homepage='http://gcc.gnu.org/'
-> description="The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, 
+> description="The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java,
 > and Ada, as well as libraries for these languages (libstdc++, libgcj,...)."
 
 > [variant-a]
-> 
+>
 >\# Extra settings here
 
 > [variant-b]
-> 
+>
 >\# An extension of variant-a
 >
 > block = "variant-a"
@@ -97,7 +97,7 @@ The standard build process consists out of the following steps. Configuration op
      * **sourceURLs**: List of URLS where to find the packages source code, so it can automatically be downloaded.
      * **unpackOptions**: Extra options for unpacking source (default: None)
  1. Apply patches
-     * **patches**: List of patches to apply. 
+     * **patches**: List of patches to apply.
 
      There are three ways to specify a patch: a patch file with name indicated by a string (e.g. "`fix.patch`"), a patch file with a specified patch level with a list of two elements (name and patch level, e.g. `["fix.patch",2]`), or a file to copy with a file name and path suffix indicated by a list of two elements (e.g. `["myfile.txt","path/to/where/file/should/be"]`).
  1. Configure
@@ -114,6 +114,10 @@ The standard build process consists out of the following steps. Configuration op
  1. Packages: see Package options
  1. Perform a sanity check, check whether some directories and files are present after installation
     * **sanityCheckPaths**: List of files and directories to check (format: ` {'files':<list>, 'dirs':<list>} `, default: ` { } `)
+    * **sanityCheckCommand**: Command to run, should exit with code 0 (format: `(name, options) `, default: ` None `).
+      If you just specify `True`, easybuild will run `name -h`. You can specify
+      a command using a tuple. If you leave a value to `None` easybuild will use
+      the default (the module name and -h as option)
  1. Generate modulefiles
     * **modextravars**: Extra environment variables to be added to module file (default: `{ }`)
  1. Test installation
@@ -145,10 +149,10 @@ Optionally you can also specify a list of builddependencies, which will be loade
 
 Dependencies and builddependencies should be in the following format: ` (name, version [, versionsuffix [, True to use a dummy-toolkit ]]) `
 
-Example: 
+Example:
 
   CP2K-20110124-gimkl-0.5.1.eb contains the following toolkit and dependencies
-  
+
 >   toolkit = {'name': 'gimkl', 'version': '0.5.1'}
 
 >   dependencies = [['Libint', '1.1.4']]
@@ -169,7 +173,9 @@ Software like Perl, Python, Ruby, R, Octave and Tcl can optionally install addon
  * **pkglist**: List with packages added to the baseinstallation (Default: []). Each package should be a list or tuple consisting out of a name and version.
  * **pkgcfgs**: Dictionary with config parameters for packages (default: {})
  * **pkgdefaultclass**: List of module for and name of the default package class (Default: None)
- * **pkgfilter**: Package filter details. List with template for cmd and input to cmd (templates for name, version and src). (Default: None)
+ * **pkgfilter**: Package filter details. Tuple with template for cmd and input to cmd (templates for name, version and src). (Default: None)
+                  Will be run after installation. Can be compared to the
+                  sanityCheckCommand.
  * **pkgfindsource**: Find sources for packages (Default: True)
  * **pkginstalldeps**: Install dependencies for specified packages if necessary (Default: True)
  * **pkgloadmodule**: Load the to-be installed software using temporary module (Default: True)
@@ -201,7 +207,7 @@ You should do this by extending the `self.cfg` dictionary defined in `Applicatio
 
 >     def __init__(self):
 >         Application.__init__(self)
->         
+>
 >         self.cfg.update({
 >                          'licensefile': [None, 'COMSOL license file'],
 >                          'comsolupdates':[[], 'List of update files for COMSOL']

@@ -10,12 +10,12 @@ EasyBuild expects the configuration file to contain valid Python code, because i
 
 ## Inner workings of the configuration
 
-The configuration file must define the following six variables: `buildPath`, `installPath`, `sourcePath`, `repositoryType`, `repositoryPath` and `logFormat`.
+The configuration file must define the following six variables: `buildPath`, `installPath`, `sourcePath`, `repository`, `repositoryPath` and `logFormat`.
 If one of them is not defined, EasyBuild will complain and bail.
 
 ### Build path
 
-The `buildPath` variable specifies the directory in which EasyBuild builds its software packages. 
+The `buildPath` variable specifies the directory in which EasyBuild builds its software packages.
 
 Each software package is built in a subdirectory of the `buildPath` under `<name>/<version>/<toolkit><versionsuffix>`.
 
@@ -57,13 +57,23 @@ Overriding the configuration file is commonly done when testing new easyblocks.
 
 ### Easyconfigs repository
 
-EasyBuild has support for keeping track of (tested) .eb easyconfigs. These files serve configuration files for software package installation. After successfully installing a software package using EasyBuild, the corresponding .eb file is uploaded to a repository defined by the `repositoryType` and `repositoryPath` configuration variables.
+EasyBuild has support for keeping track of (tested) .eb easyconfigs. These files serve configuration files for software package installation. After successfully installing a software package using EasyBuild, the corresponding .eb file is uploaded to a repository defined by the `repository` configuration variable.
 
 Currently, EasyBuild supports the following repository types:
 
-* `fs`: a plain flat file repository. In this case, the `repositoryPath` contains the directory where the files are stored,
-* `git`: a _non-empty_ **bare** git repository (created with `git init --bare` or `git clone --bare`). Here, the `repositoryPath` contains the git repository location, which can be a directory or an URL.
-* `svn`: an SVN repository. In this case, the `repositoryPath` contains the subversion repository location, again, this can be a directory or an URL.
+* `FileRepository`: a plain flat file repository. In this case, the `repositoryPath` contains the directory where the files are stored,
+* `GitRepository`: a _non-empty_ **bare** git repository (created with `git init --bare` or `git clone --bare`).
+   Here, the `repositoryPath` contains the git repository location, which can be a directory or an URL.
+* `SvnRepository`: an SVN repository. In this case, the `repositoryPath` contains the subversion repository location, again, this can be a directory or an URL.
+
+you have to set the `repository` variable inside the config like so:
+`repository = FileRepository(repositoryPath)`
+
+optionally a subdir argument can be specified:
+`repository = FileRepository(repositoryPath, subdir)`
+
+You don't have to worry about these classes, easybuild will make them available
+inside the config file.
 
 Using `git` requires the `GitPython` Python modules, using `svn` requires the `pysvn` Python module (see [[Dependencies]]).
 
@@ -78,9 +88,9 @@ The `logFormat` variable contains a tuple specifying a log directory name and a 
 * `date`: the date on which the installation was performed (in `YYYYMMDD` format, e.g. `20120324`)
 * `time`: the time at which the installation was started (in `HHMMSS` format, e.g. `214359`)
 
-Example : 
+Example :
 
-```python 
+```python
 logFormat=("easylog","easybuild-%(name)s.log")
 ```
 
@@ -96,9 +106,9 @@ home = os.getenv('HOME')
 buildPath = "/tmp/easybuild"
 installPath = home
 sourcePath = os.path.join(home, "sources")
- 
-repositoryType = 'fs'
+
 repositoryPath = os.path.join(home, "ebfiles")
+repository = FileRepository(repositoryPath)
 
 logFormat = ("easybuildlogs", "%(name)s-%(version)s.log")`
 ```
@@ -106,15 +116,41 @@ logFormat = ("easybuildlogs", "%(name)s-%(version)s.log")`
 ## Default configuration
 
 The default configuration file that comes with EasyBuild (`easybuild/easybuild_config.py`) can be used as a starting point if you create your own configuration files.
- 
-The default uses the following settings:
 
+Below you see the default config file
+```python
+import os
+
+# buildPath possibly overridden by EASYBUILDBUILDPATH
+# installPath possibly overridden by EASYBUILDINSTALLPATH
+
+buildDir = 'build'
+installDir = ''
+sourceDir = 'sources'
+
+if os.getenv('EASYBUILDPREFIX'):
+    prefix = os.getenv('EASYBUILDPREFIX')
+else:
+    prefix = os.path.join(os.getenv('HOME'), ".local", "easybuild")
+
+if not prefix:
+    prefix = "/tmp/easybuild"
+
+buildPath = os.path.join(prefix, buildDir)
+installPath = os.path.join(prefix, installDir)
+sourcePath = os.path.join(prefix, sourceDir)
+
+repositoryPath = os.path.join(prefix, 'ebfiles_repo')
+repository = FileRepository(repositoryPath)
+
+logFormat = ("easybuildlog", "easybuild-%(name)s-%(version)s-%(date)s.%(time)s.log")
+```
 
 ### Paths
 
-The prefix for the build, install and source directories is obtained from the `EASYBUILDPREFIX` environment variable. 
+The prefix for the build, install and source directories is obtained from the `EASYBUILDPREFIX` environment variable.
 
-If this variable was not defined, the prefix is set to the home directory, which is determined using the environment variable `HOME`.
+If this variable was not defined, the prefix is set to $HOME/.local/easybuild/
 
 If for some reason `HOME` is not defined, the configuration file falls back to using `/tmp` as the prefix for the various paths.
 
@@ -126,7 +162,8 @@ These paths are then defined as follows:
 
 ### Easyconfigs repository
 
-The `repositoryType` is set to `fs`, and the `repositoryPath` is specified as `<prefix>/easybuild_ebfiles_repo`.
+The `repositoryPath` is specified as `<prefix>/ebfiles_repo`, and
+`repository` is set to `FileRepository`
 
 ### Log format
 

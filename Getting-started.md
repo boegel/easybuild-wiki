@@ -46,6 +46,8 @@ sourceURLs = ['http://ftpmirror.gnu.org/gzip']
 
 # make sure the gzip and gunzip binaries are available after installation
 sanityCheckPaths = {'files': ["bin/gunzip", "bin/gzip"], 'dirs': []}
+# run gzip -h after installation
+sanityCheckCommand = True
 ```
 
 If the `gzip` source tarball that is specified in the .eb file is not yet available in the source path -- defined in the EasyBuild configuration -- EasyBuild will try to download the `gzip` source tarball and store it in the `g/gzip` subdirectory under the source path.
@@ -56,7 +58,7 @@ Note that the easyconfig is basically just (valid) Python code.
 
 Run EasyBuild, and specify the location of the `gzip.eb` file you created in step 2.1:
 
-    <path>/easybuild/easybuild.sh gzip.eb
+    <path>/easybuild/eb gzip.eb
 
 <a name="wiki-step3"/>
 ## Step 3: Set up a compiler toolkit
@@ -95,7 +97,7 @@ Finally, you can load the module created by EasyBuild to start using the `gzip` 
 
 ## Congratulations!
 
-Congratulations, you've just mastered the basics of EasyBuild! 
+Congratulations, you've just mastered the basics of EasyBuild!
 
 At this point, you are ready to start using EasyBuild for building your favorite set of software packages.
 

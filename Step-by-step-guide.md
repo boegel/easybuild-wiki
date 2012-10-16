@@ -23,7 +23,7 @@ In this guide, we will put together the `goalf` toolkit, which consists of:
 * the [[OpenMPI|http://www.open-mpi.org/]] library, which provides support for building MPI (Message Passing Interface) applications,
 * the [[ATLAS|http://math-atlas.sourceforge.net/]] and [[LAPACK|http://www.netlib.org/lapack/]] libraries, which provide highly tuned linear algebra routines,
 * the [[FFTW|http://www.fftw.org/]] library, which provides fast discrete Fourier transform routines,
-* the [[ScaLAPACK|http://www.netlib.org/scalapack/]] library, which provides MPI-enabled LAPACK routines. 
+* the [[ScaLAPACK|http://www.netlib.org/scalapack/]] library, which provides MPI-enabled LAPACK routines.
 
 Note that the name we give to the toolkit is arbitrary; you might as well name it `myToolkit`.
 
@@ -38,7 +38,7 @@ The first step is to build the set of compilers that will be used in our toolkit
 
 We aim to make this entire process as self-contained as possible, by reducing the dependencies on existing (external) system libraries. This is important for compilers that already are part of a toolchain, as they most often rely on the presence of certain tools in the system.
 
-GCC supports a so-called _bootstrap build_, in which the compiler is built in 3 stages: 
+GCC supports a so-called _bootstrap build_, in which the compiler is built in 3 stages:
 once using the system compiler, once with the compiler obtained from stage 1, and finally using the compiler from stage 2.
 
 This bootstrap build procedure is implemented by the GCC easyblock that comes with EasyBuild, so you do not need to worry about it.
@@ -54,7 +54,7 @@ name="GCC"
 version='4.6.3'
 
 homepage='http://gcc.gnu.org/'
-description="The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, and Ada, 
+description="The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, and Ada,
              as well as libraries for these languages (libstdc++, libgcj,...)."
 
 toolkit={'name':'dummy', 'version': 'dummy'}
@@ -64,7 +64,7 @@ sources=['%s-%s.tar.gz' % (name.lower(), version),
          'mpfr-3.0.1.tar.gz',
          'mpc-0.9.tar.gz',
         ]
-sourceURLs=['http://ftpmirror.gnu.org/%(name)s/%(name)s-%(version)s' % 
+sourceURLs=['http://ftpmirror.gnu.org/%(name)s/%(name)s-%(version)s' %
                 {'name': name.lower(), 'version': version}, # GCC auto-resolving HTTP mirror
             'http://ftpmirror.gnu.org/gmp', # idem for GMP
             'http://ftpmirror.gnu.org/mpfr', # idem for MPFR
@@ -93,9 +93,9 @@ Some remarks:
 
 ### Step 1.2 Build and install GCC
 
-Instruct EasyBuild to build GCC by providing it the easyconfig: 
+Instruct EasyBuild to build GCC by providing it the easyconfig:
 
-    <path>/easybuild/easybuild.sh GCC-4.6.3.eb
+    <path>/easybuild/eb GCC-4.6.3.eb
 
 Building GCC v4.6.3 with a bootstrap build as performed by the GCC easyblock takes about 35 minutes (on the aforementioned system).
 
@@ -110,6 +110,12 @@ To verify that EasyBuild has produced a working GCC build, load the `GCC/4.6.3` 
     gcc --version | grep ^gcc
 
 This should yield something like `gcc (GCC) 4.6.3` as output.
+
+You could also automate this step by specifying:
+```python
+sanityCheckCommand = (None, '--version')
+```
+in the easyconfig file.
 
 
 <a name="wiki-step2"/>
@@ -143,8 +149,8 @@ moduleclass='lib'
 
 sanityCheckPaths = {
                    'files':["bin/%s" % binfile for binfile in ["ompi_info", "opal_wrapper", "orterun"]] +
-                           ["lib/lib%s.so" % libfile for libfile in 
-                                    ["mca_common_sm", "mpi_cxx", "mpi_f77" ,"mpi_f90",  
+                           ["lib/lib%s.so" % libfile for libfile in
+                                    ["mca_common_sm", "mpi_cxx", "mpi_f77" ,"mpi_f90",
                                      "mpi", "openmpi_malloc", "open-pal", "open-rte"]],
                     'dirs':["include/openmpi/ompi/mpi/cxx"]
                     }
@@ -163,10 +169,10 @@ Some specific remarks with regard to this easyconfig:
 
 ### Step 1.2 Build and install OpenMPI
 
-Instruct EasyBuild to build OpenMPI by providing it with the easyconfig: 
+Instruct EasyBuild to build OpenMPI by providing it with the easyconfig:
 
 ```bash
-<path>/easybuild/easybuild.sh OpenMPI-1.4.5-no-OFED.eb
+<path>/easybuild/eb OpenMPI-1.4.5-no-OFED.eb
 ```
 
 Building and installing OpenMPI should only take about 7 minutes.
@@ -186,8 +192,8 @@ version='3.8.4'
 
 homepage='http://math-atlas.sourceforge.net'
 description="""ATLAS (Automatically Tuned Linear Algebra Software) is the application of
-the AEOS (Automated Empirical Optimization of Software) paradigm, with the present emphasis 
-on the Basic Linear Algebra Subprograms (BLAS), a widely used, performance-critical, linear 
+the AEOS (Automated Empirical Optimization of Software) paradigm, with the present emphasis
+on the Basic Linear Algebra Subprograms (BLAS), a widely used, performance-critical, linear
 algebra kernel library."""
 
 toolkit={'name':'GCC','version':'4.6.3'}
@@ -229,7 +235,7 @@ name='LAPACK'
 version='3.4.0'
 
 homepage='http://www.netlib.org/lapack/'
-description="""LAPACK is written in Fortran90 and provides routines for solving systems of simultaneous linear equations, 
+description="""LAPACK is written in Fortran90 and provides routines for solving systems of simultaneous linear equations,
 least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems."""
 
 toolkit={'name':'GCC','version':'4.6.3'}
@@ -271,7 +277,7 @@ versionsuffix='-%s-%s%s' % (mpilib, mpiver, mpisuff)
 
 configopts="--enable-sse2 "
 
-## the MPI opts from FFTW2 are valid options but unused until FFTW3.3 
+## the MPI opts from FFTW2 are valid options but unused until FFTW3.3
 configopts+="--with-openmp --with-pic --enable-mpi "
 
 moduleclass='lib'
