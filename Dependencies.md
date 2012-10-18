@@ -1,6 +1,7 @@
 EasyBuild has a couple of dependencies, some of them optional:
 
-## Required
+Required
+--------
 
  * [[Python 2.4|http://python.org/]], or a more recent 2.x version
  * [[environment-modules|http://modules.sourceforge.net/]], version >= 3.2.6
