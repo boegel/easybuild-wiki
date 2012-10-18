@@ -210,15 +210,15 @@ to go to the easyblock for this package.
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/g/gmvapich2)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[ gmvapich2]((none))
+gmvapich2
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/g/goalf)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[ goalf]((none))
+goalf
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/g/gompi)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[ gompi]((none))
+gompi
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/g/GPAW)
 &nbsp;&nbsp;&nbsp;&nbsp;
