@@ -7,7 +7,7 @@ to go to the easyblock for this package.
 [A](#A) - [B](#B) - [C](#C) - [D](#D) - [E](#E) - [F](#F) - [G](#G) - [H](#H) - [I](#I) - [J](#J) - [L](#L) - [M](#M) - [N](#N) - [O](#O) - [P](#P) - [R](#R) - [S](#S) - [T](#T) - [U](#U) - [V](#V) - [W](#W) - [X](#X) - [Z](#Z)
 </center>
 
-### A (5) <a name='A'/>
+#### A (5) <a name='A'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/AMOS)
