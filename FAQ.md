@@ -35,13 +35,6 @@ easyconfig file, and then build it.
 
 We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
 
-## I cannot create a easyblock for 'r' ##
-
-Because Easybuild follows the [CapWords](http://en.wikipedia.org/wiki/CamelCase)
-convention, this is indeed impossible.
-A work-around would be to create a 'R_' easyblock and specify this inside the
-easyconfig file with `easyblock="R_"`.
-
 ## Can I add a dependency on an os specific package (rpm, deb) ##
 
 Yes, but better if you not, they are not really portable:
