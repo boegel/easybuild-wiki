@@ -26,15 +26,6 @@ In our repo we extend the search path in the `easybuild.easyblocks` namespace (i
 
 If you setup your own repo without these subdirectories, keep in mind to put the original repo first in the pythonpaht, this way we can still extend the search path first.
 
-## Easybuild complains about an OS dependency, yet I am certain it is installed
-
-Currently easybuild's support for OS dependencies is lacking. It will try to
-find it using rpm and dpgk, but this is not perfect.
-If you know what you are doing, you can remove the OS dependency from the
-easyconfig file, and then build it.
-
-We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
-
 ## Can I add a dependency on an os specific package (rpm, deb) ##
 
 Yes, but better if you not, they are not really portable:
@@ -52,4 +43,14 @@ need
 * actually report problems when there are exact version dependencies
 (otherwise a default yum/repo update can break a working HPC
 application).
+
+## Easybuild complains about an OS dependency, yet I am certain it is installed
+
+Currently easybuild's support for OS dependencies is lacking. It will try to
+find it using rpm and dpgk, but this is not perfect.
+If you know what you are doing, you can remove the OS dependency from the
+easyconfig file, and then build it.
+
+We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
+
 
