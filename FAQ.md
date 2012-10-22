@@ -33,6 +33,8 @@ find it using rpm and dpgk, but this is not perfect.
 If you know what you are doing, you can remove the OS dependency from the
 easyconfig file, and then build it.
 
+We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
+
 ## I cannot create a easyblock for 'r' ##
 
 Because Easybuild follows the [CapWords](http://en.wikipedia.org/wiki/CamelCase)
