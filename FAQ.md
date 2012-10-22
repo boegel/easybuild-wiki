@@ -1,7 +1,7 @@
 ## How do I contribute my own easyconfig files? ##
 
 If you want your own easyconfig files to be included with easybuild, you must
-fork the [easybuild repo](http://github.com/hpcugent/easybuild/) and send a pull
+fork the [easyconfigs repo](http://github.com/hpcugent/easybuild-easyconfigs/) and send a pull
 request.  Note: pull requests should be send to the `develop` branch instead of
 the `master` branch.
 
