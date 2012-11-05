@@ -166,8 +166,30 @@ Example:
  * **licenseServer**: License server for software
  * **licenseServerPort**: Port for license server
 
-## Package options
+## Extension options
 
+For software like Perl, Python, Ruby, R, Octave and Tcl extension packages can be installed (optionally).
+
+The following easyconfig parameter provide the necessary support for specifying which extensions should be installed.
+
+ * **exts_list**: List with extensions added to the base installation (default: []). See below for details.
+ * **exts_defaultclass**: List of module for and name of the default extension class (default: None)
+ * **exts_filter**: Extension filter details. List with template for cmd and input to cmd (templates for name, version and src). (default: None)
+
+Extensions should be specified via the **exts_list** parameter in one of the following three ways:
+ * just the name, as a string, e.g.: ```exts_list = ['numpy']```; this will works for extensions for which the latest available version can be automatically determined (e.g. for R)
+ * name and version, as a tuple or list of strings, e.g.: ```exts_list = [('numpy', '1.6.1'), ['scipy', '0.10.1']]```
+ * name, version and options, with options specified as a dictionary: ```exts_list = [('numpy', '1.6.1', {'source_tmpl': '%(name)-%(version).tar.bz2', 'patches': ['one.patch', 'two.patch]})]
+
+The following options can be set per extension via the 3rd item of an element of **exts_list**:
+ * **modulename**: module name for extension, useful when it derives from extension name (e.g., ```setuptools``` for ```distribute``` Python package)
+ * **nosource**: boolean to indicate that no source file should be search for
+ * **patches**: list of patch files for this extension
+ * **source_urls**: download URLs for source file
+ * **source_tmpl**: template for name of source file (default used is ```%(name)s-%(version)s.tar.gz```
+
+## Package options
+**OBSOLOTE, SHOULD BE REMOVED (see Extension options above)**
 Software like Perl, Python, Ruby, R, Octave and Tcl can optionally install addon packages.
 
  * **pkglist**: List with packages added to the baseinstallation (Default: []). Each package should be a list or tuple consisting out of a name and version.
@@ -212,6 +234,5 @@ You should do this by extending the `self.cfg` dictionary defined in `Applicatio
 >                          'licensefile': [None, 'COMSOL license file'],
 >                          'comsolupdates':[[], 'List of update files for COMSOL']
 >                          })
-
 
 
