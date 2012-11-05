@@ -179,7 +179,7 @@ The following easyconfig parameter provide the necessary support for specifying 
 Extensions should be specified via the **exts_list** parameter in one of the following three ways:
  * just the name, as a string, e.g.: ```exts_list = ['numpy']```; this will works for extensions for which the latest available version can be automatically determined (e.g. for R)
  * name and version, as a tuple or list of strings, e.g.: ```exts_list = [('numpy', '1.6.1'), ['scipy', '0.10.1']]```
- * name, version and options, with options specified as a dictionary: ```exts_list = [('numpy', '1.6.1', {'source_tmpl': '%(name)-%(version).tar.bz2', 'patches': ['one.patch', 'two.patch]})]
+ * name, version and options, with options specified as a dictionary: ```exts_list = [('numpy', '1.6.1', {'source_tmpl': '%(name)-%(version).tar.bz2', 'patches': ['one.patch', 'two.patch]})]```
 
 The following options can be set per extension via the 3rd item of an element of **exts_list**:
  * **modulename**: module name for extension, useful when it derives from extension name (e.g., ```setuptools``` for ```distribute``` Python package)
