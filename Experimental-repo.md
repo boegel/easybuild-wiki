@@ -5,7 +5,7 @@ The [easybuild.experimental repo](https://github.com/fgeorgatos/easybuild.experi
 
 Play nice: do leave some reference of yours (email or IM handle), so that your job is traceable.
 
-The repo is made by [Fotis Georgatos](@fgeorgatos); you may thank for the hospitality but, expect no support!
+The repo is made by Fotis Georgatos; you may thank for the hospitality but, expect no support!
 
 Be very conscious that this repo may have questionable code pushed by unknown 3rd parties.
 
