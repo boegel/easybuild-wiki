@@ -24,6 +24,7 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Packaging and versioning]]
 * [[Contributing back]]
  * [[Code style]]
+ * [[Experimental repo]]
 * [[Other tools]]
 * [[List of supported software packages]]
 * [[FAQ]]
