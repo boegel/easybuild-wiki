@@ -22,6 +22,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Development guide]]
  * [[Encode class names]]
  * [[Packaging and versioning]]
+ * [[Release process]
 * [[Contributing back]]
  * [[Code style]]
  * [[Experimental repo]]
