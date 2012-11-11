@@ -12,9 +12,6 @@ In that case, ```easy_install``` is trying to find a `setup.py` script in the `e
 
 **Solution:** Run the ```easy_install``` command line in a directory which doesn't have a subdirectory named `easybuild`.
 
-```bash
-easy_install --prefix ~/testing/easybuild easybuild
-```
 
 ***
 
