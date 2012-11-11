@@ -2,9 +2,9 @@ Frequently asked questions:
 
 ***
 
-# Installation problems
+## Installation problems
 
-## error: Couldn't find a setup script in easybuild
+### error: Couldn't find a setup script in easybuild
 
 If you're seeing a problem ```error: Couldn't find a setup script in easybuild``` when installing EasyBuild with ```easy_install```, you are most likely running the command in a directory which has a subdirectory named `easybuild`. 
 
