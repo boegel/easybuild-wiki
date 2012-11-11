@@ -1,3 +1,19 @@
+# Installation problems
+
+## error: Couldn't find a setup script in easybuild
+
+If you're seeing a problem ```error: Couldn't find a setup script in easybuild``` when installing EasyBuild with ```easy_install```, you are most likely running the command in a directory which has a subdirectory named `easybuild`. 
+
+In that case, ```easy_install``` is trying to find a `setup.py` script in the `easybuild` directory, while you probably want it to go look for EasyBuild on PyPi.
+
+**Solution:** Run the ```easy_install``` command line in a directory which doesn't have a subdirectory named `easybuild`.
+
+```bash
+easy_install --prefix ~/testing/easybuild easybuild
+```
+
+
+
 ## How do I contribute my own easyconfig files? ##
 
 If you want your own easyconfig files to be included with easybuild, you must
@@ -52,5 +68,4 @@ If you know what you are doing, you can remove the OS dependency from the
 easyconfig file, and then build it.
 
 We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
-
 
