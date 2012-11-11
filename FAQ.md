@@ -1,3 +1,5 @@
+Frequently asked questions:
+
 # Installation problems
 
 ## error: Couldn't find a setup script in easybuild
@@ -12,14 +14,7 @@ In that case, ```easy_install``` is trying to find a `setup.py` script in the `e
 easy_install --prefix ~/testing/easybuild easybuild
 ```
 
-
-
-## How do I contribute my own easyconfig files? ##
-
-If you want your own easyconfig files to be included with easybuild, you must
-fork the [easyconfigs repo](http://github.com/hpcugent/easybuild-easyconfigs/) and send a pull
-request.  Note: pull requests should be send to the `develop` branch instead of
-the `master` branch.
+# Using EasyBuild
 
 ## Can I build different numpy and scipy versions? ##
 
@@ -30,17 +25,6 @@ Python.
 
 Yes, if you create an easyconfig file with no sources and only dependencies.
 You could ofcourse also just create the module file yourself.
-
-## I don't like the a-z/ directory structure, can I change it? ##
-
-Easybuild tries to be smart about this and will look inside the $PYTHONPATH to
-find the required files. The a-z/ directory structure is entirely optional, but
-suggested as it keeps things organized.
-
-Every block inside the `easybuild.easyblocks` namespace can be used. 
-In our repo we extend the search path in the `easybuild.easyblocks` namespace (in the `__init__.py`) to also search in the a-z subdirectories.
-
-If you setup your own repo without these subdirectories, keep in mind to put the original repo first in the pythonpaht, this way we can still extend the search path first.
 
 ## Can I add a dependency on an os specific package (rpm, deb) ##
 
@@ -68,4 +52,26 @@ If you know what you are doing, you can remove the OS dependency from the
 easyconfig file, and then build it.
 
 We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
+
+
+# Developing and contributing
+
+## How do I contribute my own easyconfig files? ##
+
+If you want your own easyconfig files to be included with easybuild, you must
+fork the [easyconfigs repo](http://github.com/hpcugent/easybuild-easyconfigs/) and send a pull
+request.  Note: pull requests should be send to the `develop` branch instead of
+the `master` branch.
+
+## I don't like the a-z/ directory structure, can I change it? ##
+
+Easybuild tries to be smart about this and will look inside the $PYTHONPATH to
+find the required files. The a-z/ directory structure is entirely optional, but
+suggested as it keeps things organized.
+
+Every block inside the `easybuild.easyblocks` namespace can be used. 
+In our repo we extend the search path in the `easybuild.easyblocks` namespace (in the `__init__.py`) to also search in the a-z subdirectories.
+
+If you setup your own repo without these subdirectories, keep in mind to put the original repo first in the Python search path, this way we can still extend the search path first.
+
 
