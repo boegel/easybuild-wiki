@@ -12,6 +12,18 @@ In that case, ```easy_install``` is trying to find a `setup.py` script in the `e
 
 **Solution:** Run the ```easy_install``` command line in a directory which doesn't have a subdirectory named `easybuild`.
 
+### error: option --user not recognized
+
+The `--user` option for `easy_install` is only supported in recent version of the `setuptools` Python package.
+
+You will need to resort to the `--prefix` option to install EasyBuild in a custom path, and make sure that the expected directory structure is there, and that the `PYTHONPATH` environment variable is set correctly:
+
+```bash
+PYLIB=`python -c "import distutils.sysconfig; print distutils.sysconfig.get_python_lib(prefix='/tmp'); "`
+mkdir -p $PYLIB
+export PYTHONPATH=$PYLIB:$PYTHONPATH
+easy_install --prefix=/tmp easybuild
+```
 
 ***
 
