@@ -1,5 +1,7 @@
 Frequently asked questions:
 
+***
+
 # Installation problems
 
 ## error: Couldn't find a setup script in easybuild
@@ -13,6 +15,8 @@ In that case, ```easy_install``` is trying to find a `setup.py` script in the `e
 ```bash
 easy_install --prefix ~/testing/easybuild easybuild
 ```
+
+***
 
 # Using EasyBuild
 
@@ -53,6 +57,7 @@ easyconfig file, and then build it.
 
 We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
 
+***
 
 # Developing and contributing
 
@@ -73,5 +78,4 @@ Every block inside the `easybuild.easyblocks` namespace can be used.
 In our repo we extend the search path in the `easybuild.easyblocks` namespace (in the `__init__.py`) to also search in the a-z subdirectories.
 
 If you setup your own repo without these subdirectories, keep in mind to put the original repo first in the Python search path, this way we can still extend the search path first.
-
 
