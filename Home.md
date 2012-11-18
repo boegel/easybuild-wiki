@@ -4,12 +4,12 @@
 
 These wiki pages contain as the EasyBuild documentation.
 
-**NOTE (Oct. 2012): The wiki pages are in need of a serious update, we're working on it.**
+**NOTE (Oct-Nov 2012): The wiki pages are in need of a serious update, we're working on it.**
 
 * [[What is EasyBuild?|EasyBuild]]
 * [[License]]
 * [[Dependencies]]
-* [[Installing EasyBuild]]
+* [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]]
 * [[Getting started]]
  * [[Configuration]]
@@ -17,7 +17,7 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Automatic dependency resolution]]
 * [[Step-by-step guide]]
 * [[Compiler toolkits]]
-* [[Easyconfig files]]
+* [[Easyconfig files]] (updated, may need work)
  * [[Examples]]
 * [[Development guide]]
  * [[Encode class names]]
@@ -27,8 +27,8 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Code style]]
  * [[Experimental repo]]
 * [[Other tools]]
-* [[List of supported software packages]]
-* [[FAQ]]
+* [[List of supported software packages]] (updated)
+* [[FAQ]] (updated, may need additional entries)
 * [[Contact]]
 
 ## Presentations
