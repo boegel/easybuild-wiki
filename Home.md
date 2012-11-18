@@ -8,7 +8,7 @@ These wiki pages contain as the EasyBuild documentation.
 
 * [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]] (subject to change, see issue #335)
-* [[Dependencies]]
+* [[Dependencies]] (updated)
 * [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]]
 * [[Getting started]]
