@@ -6,7 +6,7 @@ These wiki pages contain as the EasyBuild documentation.
 
 **NOTE (Oct-Nov 2012): The wiki pages are in need of a serious update, we're working on it.**
 
-* [[What is EasyBuild?|EasyBuild]]
+* [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]]
 * [[Dependencies]]
 * [[Installing EasyBuild]] (updated)
