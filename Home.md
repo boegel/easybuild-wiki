@@ -7,7 +7,7 @@ These wiki pages contain as the EasyBuild documentation.
 **NOTE (Oct-Nov 2012): The wiki pages are in need of a serious update, we're working on it.**
 
 * [[What is EasyBuild?|EasyBuild]] (updated)
-* [[License]]
+* [[License]] (subject to change, see issue #335)
 * [[Dependencies]]
 * [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]]
@@ -34,7 +34,7 @@ These wiki pages contain as the EasyBuild documentation.
 ## Presentations
 
 * April 2012 @ [HEPIX spring workshop 2012](https://indico.cern.ch/contributionDisplay.py?sessionId=3&contribId=39&confId=160737): _EasyBuild: building software with ease_, by Jens Timmerman ([slides here](http://hpc.ugent.be/easybuild/easybuild_hepix_spring_2012.pdf))
-* November 2012 @ [PyHPC-2012 workshop at Supercomputer 2012 conference](http://sc12.supercomputing.org/schedule/event_detail.php?evid=wksp118): _EasyBuild: Building Software With Ease_, by Kenneth Hoste, Jens Timmerman, Andy Georges and Stijn Deweirdt (slides coming up)
+* November 2012 @ [PyHPC-2012 workshop at Supercomputer 2012 conference](http://sc12.supercomputing.org/schedule/event_detail.php?evid=wksp118): _EasyBuild: Building Software With Ease_, by Kenneth Hoste, Jens Timmerman, Andy Georges and Stijn Deweirdt ([paper (PDF)](http://hpcugent.github.com/easybuild/files/easybuild-PyHPC-SC12_paper.pdf), [slides full talk (PDF)](http://hpcugent.github.com/easybuild/files/easybuild-PyHPC-SC12_slides.pdf))
 
 ## Meetings
 
