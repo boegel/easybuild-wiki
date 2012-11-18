@@ -11,7 +11,8 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Dependencies]] (updated)
 * [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]] (updated)
-* [[Getting started]]
+* [[Getting started]] (updated, but needs more work, needs testing)
+ * '''note''': building gzip with dummy toolchain will not work, should be remove from step-by-step guide
  * [[Configuration]]
 * [[Using EasyBuild]]
  * [[Automatic dependency resolution]]
