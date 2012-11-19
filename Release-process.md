@@ -49,6 +49,6 @@ Finally, announce the newly released version through the various channels, i.e.:
 
 * website http://hpcugent.github.com/easybuild
 * mailing list easybuild@lists.ugent.be
-* Twitter account easy_build
+* Twitter account [@easy_build](http://twitter.com/easy_build)
 * Google+ page
 * IRC channel #easybuild
