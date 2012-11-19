@@ -12,12 +12,43 @@ To make sure that EasyBuild is ready to release, use the ```easybuild/scripts/pr
 
 If the output of this script doesn't report any serious issues, EasyBuild should be ready to release.
 
-### Step 1: Register new version on PyPi
+### Step 1: Publish new release on PyPi
 
-First, make sure the new version gets registered on the Python Package Index (PyPi):
+The following two steps should be repeated for each of the three EasyBuild subpackages (_easybuild-framework_, _easybuild-easyblocks_, _easybuild-easyconfigs_), as well as for the meta-package _easybuild_.
+
+#### Step 1.1: Register new version on PyPi
+
+First, make sure the new version of an EasyBuild package gets registered on the Python Package Index (PyPi):
 
 ```bash
 python setup.py register
 ```
 
 The first time, you'll need to enter your PyPi login information, which will then be cached to ```$HOME/.pypirc```.
+
+#### Step 1.2: Upload new version to PyPi
+
+To upload the new version of an EasyBuild package to PyPi, use:
+
+```bash
+python setup.py sdist upload
+```
+
+### Step 2: Tag released version in git
+
+You should also tag the version in git for each of the EasyBuild repositories, and push the tag to GitHub (replace ```1.0``` with the actual version number in the commands below):
+
+```bash
+git tag -a v1.0
+git push origin v1.0
+```
+
+### Step 3: Announce release
+
+Finally, announce the newly released version through the various channels, i.e.:
+
+* website http://hpcugent.github.com/easybuild
+* mailing list easybuild@lists.ugent.be
+* Twitter account easy_build
+* Google+ page
+* IRC channel #easybuild
