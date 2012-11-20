@@ -10,7 +10,9 @@ To make sure that EasyBuild is ready to release, use the ```easybuild/scripts/pr
 * _easybuild-easyblocks_: ```python ../easybuild-framework/easybuild/scripts/prep_for_release.py easybuild/easyblocks/__init__.py```
 * _easybuild-easyconfigs_: ```python ../easybuild-framework/easybuild/scripts/prep_for_release.py setup.py ```
 
-If the output of this script doesn't report any serious issues, EasyBuild should be ready to release.
+Next to running the `prep_for_release.py` script, the installed EasyBuild packages should be able to pass a full regression test.
+
+If the output of this script doesn't report any serious issues, and a full regression test has passed, EasyBuild should be ready to release.
 
 ### Step 1: Publish new release on PyPi
 
