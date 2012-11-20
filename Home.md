@@ -45,4 +45,4 @@ These wiki pages contain as the EasyBuild documentation.
 
 ### SC'12 / PyHPC
 
-EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workhsop and the exhibit. Notes are available [[here|SC12 notes]].
+EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workshop and the exhibit. Notes are available [[here|SC12 notes]].
