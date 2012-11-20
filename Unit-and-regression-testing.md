@@ -98,7 +98,7 @@ if [ $ec -ne 0 ]; then echo "Failed to move regtest result for Jenkins!"; exit $
 echo "Aggregate test results made available for Jenkins in $outfn"
 
 # trigger Jenkins test to pull in aggregated regtest result
-wget https://jenkins1.ugent.be/view/EasyBuild/job/easybuild-full-regtest_develop/build?token=3asybu1ld_t0k3n &> /dev/null
+wget https://jenkins1.ugent.be/view/EasyBuild/job/easybuild-full-regtest_develop/build?token=TOKEN &> /dev/null
 echo "Triggered Jenkins to pull in regtest results."
 
 EOF
