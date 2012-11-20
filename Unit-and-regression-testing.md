@@ -36,7 +36,11 @@ eb --regtest --robot -ld
 
 The results for both the unit tests and regression test are available through the Jenkins continuous integration server at UGent, see http://jenkins1.ugent.be/view/EasyBuild.
 
-Jenkins also takes care of automatically running the unit tests on every push to either the `master` or `develop` branch of the `easybuild-framework` repository.
+#### Unit testing
+
+Jenkins also takes care automatically running the unit tests on every push to either the `master` or `develop` branch of the `easybuild-framework` repository.
+
+#### Regression testing
 
 The regression tests are triggered manually, and Jenkins is triggered to pull in the test results after the regression test has completed.
 
