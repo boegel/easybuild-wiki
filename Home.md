@@ -42,3 +42,7 @@ These wiki pages contain as the EasyBuild documentation.
 ### EasyBuild hackathons
 
 * [[1st EasyBuild hackathon]]: Aug 16-17 2012, Ghent (Belgium)
+
+### SC'12 / PyHPC
+
+EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workhsop and the exhibit. Notes are available [[here|SC12 notes]].
