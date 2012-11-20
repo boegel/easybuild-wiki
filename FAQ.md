@@ -29,15 +29,17 @@ easy_install --prefix=/tmp easybuild
 
 ## Using EasyBuild
 
-### Can I build different numpy and scipy versions? ##
+### EasyBuild crashed, and I can't seem to find a log file to figure out what went wrong?
 
-Yes, use the PythonPackageModule to build different version without rebuilding
-Python.
+EasyBuild stores a temporary log file in the location determined by `python -c "import tempfile; print tempfile.gettempdir()"`.
 
-### Can I create module files which just load a set of modules? ##
+On Linux systems, this is usually simply `/tmp`.
 
-Yes, if you create an easyconfig file with no sources and only dependencies.
-You could ofcourse also just create the module file yourself.
+On Mac OS X, it's more obscure, e.g., `/var/folders/6y/x4gmwgjn5qz63b7ftg4j_40m0000gn/T`. To help you locate the EasyBuild you are looking for on OS X, you could use something like
+
+```bash
+find /var/folders/ -name 'easybuild-*' 2> /dev/null
+```
 
 ### Can I add a dependency on an os specific package (rpm, deb) ##
 
@@ -47,6 +49,16 @@ without a sources field.
 
 You can add a sanitycheckcommand to check if the package is available
 (it would be nice if this is distribution independend)
+
+### Can I build different numpy and scipy versions? ##
+
+Yes, use the PythonPackageModule to build different version without rebuilding
+Python.
+
+### Can I create module files which just load a set of modules? ##
+
+Yes, if you create an easyconfig file with no sources and only dependencies.
+You could ofcourse also just create the module file yourself.
 
 This way
 * a build will fail without the os dependency available.
