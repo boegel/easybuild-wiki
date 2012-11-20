@@ -31,7 +31,11 @@ easy_install --prefix=/tmp easybuild
 
 ### EasyBuild crashed, and I can't seem to find a log file to figure out what went wrong?
 
-EasyBuild stores a temporary log file in the location determined by `python -c "import tempfile; print tempfile.gettempdir()"`.
+EasyBuild stores a temporary log file in the location determined by:
+
+```bash
+python -c "import tempfile; print tempfile.gettempdir()"
+```
 
 On Linux systems, this is usually simply `/tmp`.
 
