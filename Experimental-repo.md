@@ -12,3 +12,5 @@ Be very conscious that this repo may have questionable code pushed by unknown 3r
 It is wise to review the contributed examples and see if they fit your purpose and objectives.
 
 You have been warned! And now, enjoy :)
+
+See the `easbuild.experimental` wiki for more information: https://github.com/fgeorgatos/easybuild.experimental/wiki/ .
