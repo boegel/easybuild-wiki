@@ -23,7 +23,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Development guide]]
  * [[Encode class names]]
  * [[Packaging and versioning]]
- * [[Unit and regression testing]]
+ * [[Unit and regression testing]] (ok, up-to-date)
  * [[Release process]] (ok, up-to-date)
 * [[Contributing back]]
  * [[Code style]]
