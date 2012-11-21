@@ -20,12 +20,7 @@ If you're building Tcl and environment modules on Mac, you should run `configure
 ```
 make -j 4
 ```
-6. If you want to make sure the build is correct, you can run the test suite that comes with Tcl, using:
-```bash
-make test
-```
-It's probably OK to skip this step if you're in a hurry.
-7. The final step consists of installing Tcl to the directory specified in step 4. To do this, simply run:
+6. The final step consists of installing Tcl to the directory specified in step 4. To do this, simply run:
 ```bash
 make install
 ```
