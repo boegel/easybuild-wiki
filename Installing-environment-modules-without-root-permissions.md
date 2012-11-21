@@ -1,4 +1,4 @@
-This short guide will explain how to install the environment modules software package without root permissions, together with Tcl on which it depends.
+This short guide will explain how to install the environment modules software package without root permissions on a Linux or Mac OS X system, together with Tcl on which it depends.
 
 ### Tcl
 
@@ -46,3 +46,19 @@ make -j 4
 ```bash
 make install
 ```
+
+Alright, now just one more thing...
+
+### Set up your environment
+
+Because you've installed environment modules and Tcl in a non-default location, you need to make sure your environment is setup up correctly to use them.
+
+To make a long story short, these are the commands you need to execute:
+
+```bash
+export PATH=$HOME/.local/environment-modules/Modules/3.2.9/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/.local/Tcl/lib:$LD_LIBRARY_PATH
+source $HOME/.local/environment-modules/Modules/3.2.9/init/bash  # adjust this if you're using a different shell
+```
+
+Pro tip: add these three lines in your `.bashrc` file, that way they'll be executed every time you log in.
