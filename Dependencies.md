@@ -8,6 +8,7 @@ Required
  * [[environment-modules|http://modules.sourceforge.net/]], version >= 3.2.6
   * An rpm for this is available in the RHEL and SL repositories. An deb file has recently been accepted and [[available in debian-testing for now|http://packages.debian.org/testing/main/environment-modules]] and will be available in Ubuntu 12.10.
   * environment-modules requires [[Tcl|http://www.tcl.tk/]] to be installed (with header files and development libraries)
+  * a guide on installing Tcl and environment without having root permissions is available [Installing environment modules without root permissions|here]
  * a C/C++ compiler
 
 EasyBuild is written in Python, so a Python installation is indispensable.
