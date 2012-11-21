@@ -24,6 +24,28 @@ cd tcl8.5.13/unix
 
 If you're building Tcl and environment modules on Mac, you should run `configure` in the `tcl8.5.13/macosx` directory instead.
 
-5.
+5. Next, build Tcl using the `make` command. If the system you are building on has multiple cores, running make in parallel will speed up the build. Just use the `-j` option, and pass it a degree of parallelism (just use the number of cores your system has available), e.g.:
+
+```
+make -j 4
+```
+
+6. If you want to make sure the build is correct, you can run the test suite that comes with Tcl, using:
+
+```bash
+make test
+```
+
+7. The final step consists of installing Tcl to the directory specified in step 4. To do this, simply run:
+
+```bash
+make install
+```
+
+All done! Now you are ready to build the environment modules package, which requires Tcl.
 
 ### environment modules
+
+1. Download the latest source tarball for the environment modules tools from [[http://modules.sourceforge.net/]].
+
+At the time of writing, the latest available version is 3.2.9c which can be downloaded [[here|http://prdownloads.sourceforge.net/modules/modules-3.2.9c.tar.gz]].
