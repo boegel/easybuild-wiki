@@ -38,4 +38,11 @@ tar xfvz modules-3.2.9c.tar.gz
 cd modules-3.2.9
 ./configure --prefix=$HOME/.local/environment-modules --with-tcl=$HOME/.local/Tcl/lib 
 ```
-4.
+4. Build with `make`, consider parallel build if your system is recent enough:
+```bash
+make -j 4
+```
+5. Install:
+```bash
+make install
+```
