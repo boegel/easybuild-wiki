@@ -9,6 +9,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]] (subject to change, see issue #335)
 * [[Dependencies]] (updated)
+  * [[Installing environment modules without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]] (updated)
 * [[Getting started]] (updated, but needs more work, needs testing)
