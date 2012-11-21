@@ -58,7 +58,8 @@ To make a long story short, these are the commands you need to execute:
 ```bash
 export PATH=$HOME/.local/environment-modules/Modules/3.2.9/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/.local/Tcl/lib:$LD_LIBRARY_PATH
-source $HOME/.local/environment-modules/Modules/3.2.9/init/bash  # adjust this if you're using a different shell
+# adjust line beow if you're using a different shell, check with 'echo $SHELL'
+source $HOME/.local/environment-modules/Modules/3.2.9/init/bash
 ```
 
 Pro tip: add these three lines in your `.bashrc` file, that way they'll be executed every time you log in.
