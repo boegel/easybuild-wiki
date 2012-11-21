@@ -62,6 +62,8 @@ If you do have admin rights on the system where you want to install EasyBuild, y
 to have EasyBuild installed system-wide. In that case, you do not need to touch the ```PATH``` environment variable since
 the ```eb``` command will be installed in one of the default paths.
 
+
+<a name="wiki-user_alternatives">
 ### Alternatives to ```--user```
 
 One problem is that the ```--user``` option is relatively new, and thus only available in recent Python installations.
@@ -116,7 +118,17 @@ Thus, to have full control over the EasyBuild installation, you need to respect 
 easybuild-framework, easybuild-easyblocks, easybuild-easyconfigs. The easyblocks package depends on the framework package;
 the easyconfigs package depends on both the framework and easyblocks packages.
 
+If you do not have `pip` or `easy_install` available, you can also fall back to using the `setup.py` script directly:
 
+```bash
+python setup.py --user install
+```
+
+or, using `--prefix` (see also [here](#user_alternatives))
+
+```bash
+python setup.py --prefix $HOME/.local install
+```
 
 <a name="wiki-github_install">
 ## Installation of the latest release from GitHub
@@ -144,4 +156,3 @@ pip install --user http://github.com/hpcugent/easybuild-framework/archive/develo
 
 '''Note''': you should only use this if you are interested in developing for EasyBuild. Although it is well tested,
 the development version of EasyBuild may be unstable at a given point in time.
-
