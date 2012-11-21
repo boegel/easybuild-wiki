@@ -36,6 +36,6 @@ tar xfvz modules-3.2.9c.tar.gz
 3. Configure the build, again use `--prefix` to specify where to install the environment modules tool in the end. If you needed to install Tcl by hand as outlined in the previous section, you'll also need to specify where it was installed using the `--with-tcl` option:
 ```bash
 cd modules-3.2.9
-./configure --prefix=$HOME/.local/environment-modules --with-tcl==$HOME/~/.local/Tcl/lib 
+./configure --prefix=$HOME/.local/environment-modules --with-tcl=$HOME/~/.local/Tcl/lib 
 ```
 4.
