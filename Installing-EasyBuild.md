@@ -35,6 +35,7 @@ pip install --user easybuild
 The ```--user``` part in these commands allows you to install EasyBuild without admin rights.
 It will just install EasyBuild in your home directory (the exact location depends on the OS).
 
+If you don't have `pip` or `easy_install` available, see [[here|#source_install]].
 
 ### Adjusting ```PATH``` environment variable
 
@@ -143,5 +144,4 @@ pip install --user http://github.com/hpcugent/easybuild-framework/archive/develo
 
 '''Note''': you should only use this if you are interested in developing for EasyBuild. Although it is well tested,
 the development version of EasyBuild may be unstable at a given point in time.
-
 
