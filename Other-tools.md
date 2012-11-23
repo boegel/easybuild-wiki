@@ -7,7 +7,9 @@ A list of other software tools that kind of look like EasyBuild
  * [TWW](http://www.thewrittenword.com): Company that builds applications from source and ships them as rpm.
  * [oscar](http://svn.oscar.openclustergroup.org/trac/oscar) OSCAR allows users, regardless of their experience level with a *nix environment, to install a  Beowulf type high performance computing cluster. It also contains everything needed to administer and program this type of HPC cluster. OSCAR's flexible package management system has a rich set of pre-packaged applications and utilities which means you can get up and running without laboriously installing and configuring complex cluster administration and communication packages. It also lets administrators create customized packages for any kind of distributed application or utility, and to distribute those packages from an online package repository, either on or off site.
  * [HomeBrew](http://mxcl.github.com/homebrew/): Package system for OSX, that installs (unix) packages in their own containers, tracking dependencies. Written in Ruby, currently hard-dependent on OSX.
- * [other](http://en.wikipedia.org/wiki/List_of_build_automation_software)
+ * [Nix](http://nixos.org/nixpkgs/): A purely functional package manager, it install (unix) packages in a dedicated prefixed with a hash in the path, such that different builds/versions with different dependencies can be installed without affecting each other. NixOS is a Linux distribution based on Nix.
+ * [Guix](http://www.gnu.org/software/guix/): GNU Guix is a purely functional package manager, and is based on the Nix package manager. It provides Guile Scheme APIs, including high-level embedded domain-specific languages (EDSLs), to describe how packages are to be built and composed.
+ * [others (Wikipedia)](http://en.wikipedia.org/wiki/List_of_build_automation_software)
 
 ## Papers
 
