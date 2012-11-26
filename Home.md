@@ -47,8 +47,8 @@ These wiki pages contain as the EasyBuild documentation.
 
 ### Conferences
 
- * [Supercomputing'2012 / PyHPC|Notes on EasyBuild promotion at Supercomputing'2012]: EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workshop and the exhibit
+ * [[Supercomputing'2012 / PyHPC|Notes on EasyBuild promotion at Supercomputing'2012]]: EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workshop and the exhibit
 
 ### Conference calls
 
- * [20121126 HashDist|Notes on HashDist conf call (20121126)]: Google hangout conf call with Dag Sverre Seljebotn on HashDist and EasyBuild
+ * [[20121126 HashDist|Notes on HashDist conf call (20121126)]]: Google hangout conf call with Dag Sverre Seljebotn on HashDist and EasyBuild
