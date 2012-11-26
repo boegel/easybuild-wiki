@@ -1,5 +1,7 @@
 We'd love you to contribute back to EasyBuild, and here's how you can do it: the branch - hack - pull request cycle.
 
+**Note**: Needs to fix text below w.r.t. different EasyBuild repos and `develop` vs `version` branches.
+
 ## Preperation
 
 ### Fork EasyBuild
