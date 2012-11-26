@@ -52,3 +52,4 @@ HashDist is basically a list of 4 tools:
  * WAF: build tool that does configure/building of software
   * support for building numpy/scipy support is in development, as an alternative to distutils
   * but distutils probably won't disappear, too much legacy 
+  * http://code.google.com/p/waf/
