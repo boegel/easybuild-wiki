@@ -51,4 +51,4 @@ These wiki pages contain as the EasyBuild documentation.
 
 ### Conference calls
 
- * [[20121126 HashDist|Notes-on-EasyBuild-HashDist-conf-call-%2820121126%29]]: Google hangout conf call with Dag Sverre Seljebotn on HashDist and EasyBuild
+ * [[20121126 HashDist|Notes-on-EasyBuild-HashDist-conf-call-(20121126)]]: Google hangout conf call with Dag Sverre Seljebotn on HashDist and EasyBuild
