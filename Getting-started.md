@@ -52,6 +52,9 @@ description = "gzip (GNU zip) is a popular data compression program as a replace
 # dummy toolchain, rely on system C compiler
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
+# specify that GCC compiler should be used to build gzip
+preconfigopts = "CC='gcc'"
+
 # source tarball filename
 sources = ['%s-%s.tar.gz'%(name,version)]
 
@@ -63,8 +66,9 @@ sanity_check_paths = {
                       'files': ["bin/gunzip", "bin/gzip"],
                       'dirs': []
                      }
-# run gzip -h after installation
-sanity_check_commands = True
+
+# run 'gzip -h' and 'gzip --version' after installation
+sanity_check_commands = [True, ('gzip', '--version')]
 ```
 
 If the `gzip` source tarball that is specified in the .eb file is not yet available in the source path -- which is defined in
@@ -73,6 +77,7 @@ subdirectory under the source path.
 
 Note that the easyconfig is basically just (valid) Python code.
 
+In this first example, we are using a dummy compiler toolchain, and explicitely specify to build gzip with the GCC compiler by setting preconfigure options. Although this works, it is not a typical way of installing software with EasyBuild; see step 3.
 
 ### Step 2.2: Install with EasyBuild
 
