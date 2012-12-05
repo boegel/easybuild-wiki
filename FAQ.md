@@ -92,14 +92,3 @@ If you want your own easyconfig files to be included with easybuild, you must
 fork the [easyconfigs repo](http://github.com/hpcugent/easybuild-easyconfigs/) and send a pull
 request.  Note: pull requests should be send to the `develop` branch instead of
 the `master` branch.
-
-### I don't like the a-z/ directory structure, can I change it? ##
-
-Easybuild tries to be smart about this and will look inside the $PYTHONPATH to
-find the required files. The a-z/ directory structure is entirely optional, but
-suggested as it keeps things organized.
-
-Every block inside the `easybuild.easyblocks` namespace can be used. 
-In our repo we extend the search path in the `easybuild.easyblocks` namespace (in the `__init__.py`) to also search in the a-z subdirectories.
-
-If you setup your own repo without these subdirectories, keep in mind to put the original repo first in the Python search path, this way we can still extend the search path first.
