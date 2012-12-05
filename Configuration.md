@@ -4,6 +4,7 @@ EasyBuild will use the file that is provided by the path/filename in the followi
 
 * path/filename specified on the EasyBuild command line (using --config or -C),
 * path/filename obtained from the environment variable `EASYBUILDCONFIG` (if it is defined)
+* $HOME/.easybuild/config.py (as of EasyBuild v1.1)
 * the (default) configuration file at `<path where EasyBuild was installed>/easybuild/easybuild_config.py`
 
 EasyBuild expects the configuration file to contain valid Python code, because it executes its contents (using `exec`).
