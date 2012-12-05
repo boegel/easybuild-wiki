@@ -1,7 +1,7 @@
 EasyBuild allows you to host your own set of easyblocks, next to the ones that ship with the
 EasyBuild version you have installed.
 
-You can provide these easyblocks to EasyBuild by simply making sure your Python search path is set correctly.
+You can provide these easyblocks to EasyBuild by simply making sure your Python path is set correctly.
 
 EasyBuild will then use these easyblocks when needed, i.e., when requested to build/install software that require them.
 
@@ -49,13 +49,13 @@ touch $MYEBDIR/easybuild/easyblocks/__init__.py
 ```
 
 
-### Step 3: Setting Python search path
+### Step 3: Setting Python path
 
 After creating your easyblocks repository, all you need to do is make sure that EasyBuild is able
-to find your easyblocks, by adding the path to the Python search path.
+to find your easyblocks, by adding the path to the Python path.
 
 ```bash
-# extend search path for easyblocks for EasyBuild (pro tip: add this to your .bashrc)
+# extend path for easyblocks for EasyBuild (pro tip: add this to your .bashrc)
 export PYTHONPATH=$PYTHONPATH:$MYEBDIR
 ```
 
@@ -67,7 +67,7 @@ export PYTHONPATH=$PYTHONPATH:$MYEBDIR
 ### Note: The way in Python modules in Python packages are searched and found
 
 The reason why some notes were made in the steps above is the weay in which searching for Python modules
-in the Python search path, and some custom hacking in `__init__.py` of the `easyblocks` package that comes
+in the Python path, and some custom hacking in `__init__.py` of the `easyblocks` package that comes
 with an EasyBuild installation.
 
 
@@ -94,7 +94,7 @@ from easybuild.easyblocks.atlas import EB_ATLAS
 
 #### Package initialisation by Python
 
-When Python wanders through the Python search path, it will initialise any Python package it comes across by
+When Python wanders through the Python path, it will initialise any Python package it comes across by
 executing its `__init__.py` file. And here's the catch: Python will only actually execute the **first** `__init__.py`
 file it comes across for each package.
 
