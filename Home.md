@@ -22,6 +22,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Easyconfig files]] (updated, may need work)
  * [[Examples]]
 * [[Development guide]]
+ * [[Setting up your own easyblocks directory]] (ok, up-to-date)
  * [[Encode class names]]
  * [[Packaging and versioning]]
  * [[Unit and regression testing]] (ok, up-to-date)
