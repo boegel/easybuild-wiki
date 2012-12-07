@@ -61,8 +61,10 @@ Each step in the build-process consists out of one or more methods which you can
     * `make_module_step`
 
 ## Adding specification-options
+Some specification options can be added in an 
+Sometimes you want to add extra options that should be configurable in the EasyConfig file.
 
-Specification files are read by the `importCfg`-method. Instead of overriding this method, it's highly recommended to extend the datastructure that method uses to process your specification options.
+EasyConfig files are read by the `EasyConfig`-class. Instead of overriding this class, we extend the `extra_options` function in EasyBlock to return list of your specification options.
 To do so, create the following extra_options method:
 ```python
 from easybuild.framework.easyconfig import CUSTOM
@@ -76,14 +78,13 @@ class EB_MySoftware(ConfigureMake)
     @staticmethod
     def extra_options():
         extra_vars = [
-
                       ('importdeps', [None, 'A list of modules to import when configuring', CUSTOM]),
                       ('config-key', [<default>, <description>, CUSTOM ]),
                       (..., [..., ..., CUSTOM]),
                      ]
         return ConfigureMake.extra_options(extra_vars)
 ```
-Afterwards you can read the requested configuration using `self.cfg['X']`. If a key was not set, the default value will be returned.
+Afterwards you can read the requested configuration using `self.cfg['X']` in your easyblock. If a key was not set in the EasyConfig file, the default value will be returned.
 
 ## Testing
 
