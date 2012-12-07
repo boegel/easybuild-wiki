@@ -83,11 +83,11 @@ class EB_MySoftware(ConfigureMake)
                      ]
         return ConfigureMake.extra_options(extra_vars)
 ```
-Afterwards you can read the requested configuration using `getCfg`. If a key was not set, the default value will be returned.
+Afterwards you can read the requested configuration using `self.cfg['X']`. If a key was not set, the default value will be returned.
 
 ## Testing
 
-Unittests should be added (if possible) for each added feature. You can run the unittests with `python -m easybuild.test.suite` 
+Unittests should be added (if possible) for each added feature. You can run the unittests with `python -m unittest  easybuild.test.suite` 
 
 Adding more unittests should be done by creating a new test module, adding a suite() method which returns a TestSuite object with all the testcases in it.
 
