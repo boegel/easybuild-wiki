@@ -60,8 +60,93 @@ Each step in the build-process consists out of one or more methods which you can
  1. Create module
     * `make_module_step`
 
+## Specification-options
+Some specification options are added in an EasyConfig, to see the available options, run `eb --avail-easyconfig-params`
+On EasyBlock this returns:
+```
+MANDATORY
+---------
+name:			Name of software
+version:		Version of software
+toolchain:		Name and version of toolchain
+description:		A short description of the software
+homepage:		The homepage of the software
+
+EASYBLOCK-SPECIFIC
+------------------
+tar_config_opts:	Override tar settings as determined by configure.
+
+TOOLCHAIN
+---------
+toolchainopts:		Extra options for compilers
+onlytcmod:		Boolean/string to indicate if the toolchain should only load the environment with module (True) or also set all other variables (False) like compiler CC etc (if string: comma separated list of variables that will be ignored). (default: False)
+
+BUILD
+-----
+easybuild_version:	EasyBuild-version this spec-file was written for
+versionsuffix:		Additional suffix for software version (placed after toolchain name)
+versionprefix:		Additional prefix for software version (placed before version and toolchain name)
+runtest:		Indicates if a test should be run after make; should specify argument after make (for e.g.,"test" for make test) (default: None)
+preconfigopts:		Extra options pre-passed to configure.
+configopts:		Extra options passed to configure (default already has --prefix)
+premakeopts:		Extra options pre-passed to build command.
+makeopts:		Extra options passed to make (default already has -j X)
+preinstallopts:		Extra prefix options for installation (default: nothing)
+installopts:		Extra options for installation (default: nothing)
+unpack_options:		Extra options for unpacking source (default: None)
+stop:			Keyword to halt the buildprocess at certain points. Valid are ['cfg', 'source', 'patch', 'prepare', 'configure', 'make', 'install', 'test', 'postproc', 'cleanup', 'extensions']
+skip:			Skip existing software (default: False)
+parallel:		Degree of parallelism for e.g. make (default: based on the number of cores and restrictions in ulimit)
+maxparallel:		Max degree of parallelism (default: None)
+sources:		List of source files
+source_urls:		List of URLs for source files
+patches:		List of patches to apply
+tests:			List of test-scripts to run after install. A test script should return a non-zero exit status to fail
+sanity_check_paths:	List of files and directories to check (format: {'files':<list>, 'dirs':<list>}, default: {})
+sanity_check_commands:	format: [(name, options)] e.g. [('gzip','-h')]. Using a non-tuple is equivalent to (name, '-h')
+
+FILE-MANAGEMENT
+---------------
+start_dir:		Path to start the make in. If the path is absolute, use that path. If not, this is added to the guessed path.
+keeppreviousinstall:	Boolean to keep the previous installation with identical name. (default: False) Experts only!
+cleanupoldbuild:	Boolean to remove (True) or backup (False) the previous build directory with identical name or not. (default: True)
+cleanupoldinstall:	Boolean to remove (True) or backup (False) the previous install directory with identical name or not. (default: True)
+dontcreateinstalldir:	Boolean to create (False) or not create (True) the install directory (default: False)
+keepsymlinks:		Boolean to determine whether symlinks are to be kept during copying or if the content of the files pointed to should be copied
+
+DEPENDENCIES
+------------
+dependencies:		List of dependencies (default: [])
+builddependencies:	List of build dependencies (default: [])
+osdependencies:		OS dependencies that should be present on the system
+
+LICENSE
+-------
+license_server:		License server for software
+license_serverPort:	Port for license server
+key:			Key for installing software
+group:			Name of the user group for which the software should be available
+
+EXTENSIONS
+----------
+exts_list:		List with extensions added to the base installation (default: [])
+exts_defaultclass:	List of module for and name of the default extension class (default: None)
+exts_filter:		Extension filter details: template for cmd and input to cmd (templates for name, version and src). (default: None)
+
+MODULES
+-------
+modextravars:		Extra environment variables to be added to module file (default: {})
+moduleclass:		Module class to be used for this software (default: base) (valid: ['base', 'compiler', 'lib'])
+moduleforceunload:	Force unload of all modules when loading the extension (default: False)
+moduleloadnoconflict:	Don't check for conflicts, unload other versions instead (default: False)
+
+OTHER
+-----
+buildstats:		A list of dicts with build statistics
+
+```
+
 ## Adding specification-options
-Some specification options can be added in an 
 Sometimes you want to add extra options that should be configurable in the EasyConfig file.
 
 EasyConfig files are read by the `EasyConfig`-class. Instead of overriding this class, we extend the `extra_options` function in EasyBlock to return list of your specification options.
