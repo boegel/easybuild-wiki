@@ -26,32 +26,39 @@ If not, go ahead and create a new class inheriting from EasyBlock or a Generic s
 
 Each step in the build-process consists out of one or more methods which you can override. If you want to skip a step, just implement it with pass. See [[Easyconfig files|Easyconfig-files]] for options for each step in the default implementation.
 
+ 1. Get the sources:
+     * `fetch_step`: fetches files, either from local filesystem, or from a remote url. (We only support http and ftp for now, git/svn support [is on the wishlist](https://github.com/hpcugent/easybuild-framework/issues/112), contact us if you feel like adding it)
  1. Generate installation path and create build directory
-     * `genInstallDir`
-     * `makeBuilDir`
+     * `check_readinesstep`
+     * `gen_installdir`
+     * `make_builddir`
+     * `reset_changes`: resets changes in the environment
  1. Unpack source in the build directory
-     * `unpackSrc`
+     * `checksum_step` : currently empty, see https://github.com/hpcugent/easybuild-framework/issues/214
+     * `extract_step`
  1. Apply patches
-     * `applyPatch`
+     * `patch_step`
  1. Configure
-     * prepare toolkit (using self.tk.prepare)
-     * `startFrom`: Change the build directory
-     * `configure`
- 1. Make
-     * `make`
+     * `prepare_step`: prepare toolkit (using self.tk.prepare)
+     * `configure_step`
+ 1. Build
+     * `build_step`
  1. Test (run make test or variants)
-     * `test`
+     * `test_step`
  1. Install
-    * `makeInstallDir`
-    * `makeInstall`
- 1. Packages
-    * `packages`
- 1. Generate modulefiles
-    * `postproc`
+    * `stage_install_step`
+    * `make_installdir`
+    * `install_step`
+ 1. Extensions: build extensions (if any)
+    * `extensions_step`
+ 1. Upload eb files to repository
+    * `post_instal_step`
+ 1. Check installed files
+    * `sanity_check_step`
  1. Cleanup
-    * `cleanup`
- 1. Test installation
-    * `runTests`
+    * `cleanup_step`
+ 1. Create module
+    * `make_module_step`
 
 ## Adding specification-options
 
