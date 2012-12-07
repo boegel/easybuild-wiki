@@ -1,22 +1,28 @@
 So you want to extend EasyBuild? Great idea!
 
 There are three major parts to *EasyBuild*:
- * build.py: the main script which sets up the rest of the application and determines the build-order, this is called through easybuild.sh which sets a correct Python environment before starting
- * apps: the general Application class and a collection of more specific subclasses
- * buildsoft: utilities for building
-   * asyncprocess
-   * buildLog: wrapper around Python's logger
-   * config: proxy for the [[Configuration|Configuration]]
-   * fileTools: file management and running commands
-   * moduleGenerator: generates module-files
-   * modules: interface to the module command
-   * repository: interface to the configured source control system such as [[pySVN|http://pysvn.tigris.org/]] subversion or the filesystem.
-   * toolkit: toolkit setup and configuration
+ * [Framework](https://github.com/hpcugent/easybuild-framework) with:
+   * main.py: the main script which sets up the rest of the application and determines the build-order, this is called through the `eb` command which sets a correct Python environment before starting.
+   * framework: the general EasyBlock, EasyConfig and Extension classes.
+   * tools: General utilities used trought the framework code.
+     * asyncprocess: Written by  Josiah Carlson (http://code.activestate.com/recipes/440554/ )
+     * build_log: wrapper around Python's logger (will be replaced by fancylooger soon
+     * config: proxy for the [[Configuration|Configuration]]
+     * filetools: file management and running commands
+     * module_generator: generates module-files
+     * modules: interface to the module command
+     * repository: interface to the configured source control system such as [[pySVN|http://pysvn.tigris.org/]] subversion or the filesystem.
+     * toolchains: Contains implementations of toolchain components with their switches and flags. This inculdes the compiler, math libs, mpi implementations...
+     * others...
 
-## How to build a custom Application-class
+ * [EasyBlocks](https://github.com/hpcugent/easybuild-easyblocks): Custom EasyBlock classes are grouped here.
 
-First check if the available functionality is already available in EasyBuild. Some application-classes are very flexible and might be sufficient for your needs.
-If not, go ahead and create a new class inheriting from Application or a subclass of that (you can get a quick overview of all available classes using `--dump-classes`).
+ * [EasyConfig](https://github.com/hpcugent/easybuild-easyconfigs): A (huge) list of example EasyConfigs
+
+## How to build a custom EasyBlock-class
+
+First check if the available functionality is already available in EasyBuild. Some [Generic EasyBlock classes](https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/generic) are very flexible and might be sufficient for your needs.
+If not, go ahead and create a new class inheriting from EasyBlock or a Generic subclass or even an specific software package class (you can get a quick overview of all available classes using `--dump-classes`).
 
 Each step in the build-process consists out of one or more methods which you can override. If you want to skip a step, just implement it with pass. See [[Easyconfig files|Easyconfig-files]] for options for each step in the default implementation.
 
@@ -53,7 +59,8 @@ Specification files are read by the `importCfg`-method. Instead of overriding th
 To do so, create the following extra_options method:
 ```python
 from easybuild.framework.easyconfig import CUSTOM
-from easybuild.easyblocks.application import Application
+from easybuild.easyblocks.generic import ConfigureMakeInstall
+
 
     def __init__(self, *args, **kwargs):
         Application.__init__(self, *args, **kwargs)
