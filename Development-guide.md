@@ -66,11 +66,12 @@ Specification files are read by the `importCfg`-method. Instead of overriding th
 To do so, create the following extra_options method:
 ```python
 from easybuild.framework.easyconfig import CUSTOM
-from easybuild.easyblocks.generic import ConfigureMakeInstall
+from easybuild.easyblocks.generic import ConfigureMake
 
+class EB_MySoftware(ConfigureMake)
 
     def __init__(self, *args, **kwargs):
-        Application.__init__(self, *args, **kwargs)
+        ConfigureMake.__init__(self, *args, **kwargs)
 
     @staticmethod
     def extra_options():
@@ -80,7 +81,7 @@ from easybuild.easyblocks.generic import ConfigureMakeInstall
                       ('config-key', [<default>, <description>, CUSTOM ]),
                       (..., [..., ..., CUSTOM]),
                      ]
-        return Application.extra_options(extra_vars)
+        return ConfigureMake.extra_options(extra_vars)
 ```
 Afterwards you can read the requested configuration using `getCfg`. If a key was not set, the default value will be returned.
 
