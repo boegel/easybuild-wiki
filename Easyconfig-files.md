@@ -93,8 +93,8 @@ The standard build process consists out of the following steps. Configuration op
 
  1. Generate installation path and create build directory
  1. Unpack source in the build directory
-     * **sources**: List of source-items
-     * **sourceURLs**: List of URLS where to find the packages source code, so it can automatically be downloaded.
+     * **sources**: List of source-items, a source item can be either a string with the name of the source package, or a tuple of (name of source package, command to unpack this source package)
+     * **source_urls**: List of URLS where to find the packages source code, so it can automatically be downloaded.
      * **unpackOptions**: Extra options for unpacking source (default: None)
  1. Apply patches
      * **patches**: List of patches to apply.
