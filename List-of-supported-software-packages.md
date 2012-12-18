@@ -2,7 +2,7 @@ Click on ![easyconfig logo](http://hpc.ugent.be/easybuild/images/easyblocks_conf
 to see to the list of easyconfig files.
 And on ![easyblock logo](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png) 
 to go to the easyblock for this package.
-## Supported Packages (148 in develop as of 2012-11-10) 
+## Supported Packages (148 in v1.0) 
 <center>
 [A](#A) - [B](#B) - [C](#C) - [D](#D) - [E](#E) - [F](#F) - [G](#G) - [H](#H) - [I](#I) - [J](#J) - [L](#L) - [M](#M) - [N](#N) - [O](#O) - [P](#P) - [R](#R) - [S](#S) - [T](#T) - [U](#U) - [V](#V) - [W](#W) - [X](#X) - [Z](#Z)
 </center>
