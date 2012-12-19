@@ -2,6 +2,11 @@ EasyBuild is tested rigorously to try and ensure high-quality code.
 
 ## Unit testing
 
+Unittests should be added (if possible) for each added feature.
+Adding more unittests should be done by creating a new test module, adding a suite() method which returns a TestSuite object with all the testcases in it.
+
+In easybuild/test/suite.py you should add it to the list of modules then, so it will be included when somebody runs the suite.
+
 For every push to the `master` and `develop` of `easybuild-framework`, a set of unit tests is run.
 
 To run the unit tests yourself, simply execute `python -m easybuild.test.suite` on an installed version of EasyBuild. This should give you output like below:
@@ -21,8 +26,16 @@ Log available at /tmp/easybuild_tests.log , XML output of tests available in tes
 ```
 
 ## Regression testing
-
 A more thorough test that also requires significantly more resources is a regression test, which consists of building all easyconfig files distributed with EasyBuild, in a pristine install directory.
+
+To run a full regression test: first append the easybuild directory to the PYTHONPATH. Also, set your MODULEPATH to something which doesn't have dependencies installed.
+
+Output will be placed in the current directory in easybuild-test-TIMESTAMP. You can aggregate the results into a single xml file. by using the -a option.
+
+Make sure to populate the easybuild_config.py with settings that make sense for the regression tester.
+
+The final xml will contain JUnit-compatible xml. Per build there is either a failure (with reason).
+the buildstats for each application and also a summary in a top comment. 
 
 A regtest is submitted using the following command:
 
