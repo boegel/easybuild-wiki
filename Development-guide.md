@@ -186,24 +186,3 @@ class EB_MySoftware(ConfigureMake)
                      ]
         return ConfigureMake.extra_options(extra_vars)
 ```
-
-## Testing
-
-Unittests should be added (if possible) for each added feature. You can run the unittests with `python -m unittest  easybuild.test.suite` 
-
-Adding more unittests should be done by creating a new test module, adding a suite() method which returns a TestSuite object with all the testcases in it.
-
-In easybuild/test/suite.py you should add it to the list of modules then, so it will be included when somebody runs the suite.
-
-## Regression test
-
-To run a full regression test: first append the easybuild directory to the PYTHONPATH. Also, set your MODULEPATH to something which doesn't have dependencies installed.
-then run `python easybuild/scripts/regtest.py`. (see -h) for specific options.
-
-output will be placed in the current directory in easybuild-test-TIMESTAMP. You can aggregate the results into a single xml file. by using the -a option.
-
-Make sure to populate the easybuild_config.py with settings that make sense for the regression tester.
-
-The final xml will contain JUnit-compatible xml. Per build there is either a failure (with reason).
-the buildstats for each application and also a summary in a top comment. 
-
