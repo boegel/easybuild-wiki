@@ -150,15 +150,32 @@ buildstats:		A list of dicts with build statistics
 Sometimes you want to add extra options that should be configurable in the EasyConfig file.
 
 EasyConfig files are read by the `EasyConfig`-class. Instead of overriding this class, we extend the `extra_options` function in EasyBlock to return list of your specification options.
-To do so, create the following extra_options method:
+To do so, create the an extra_options which returns a list of new options that can be added.
+
+## Setting environment variables
+Some software can only be configured by setting some environment variables. Use the `easybuild.tools.environment` module for this.
+This will set environment variables, and keep track of them in between steps, so you have more information what happened when whilst debugging.
+
+## Example EasyBlock
 ```python
 from easybuild.framework.easyconfig import CUSTOM
 from easybuild.easyblocks.generic import ConfigureMake
+from easybuild.tools import environment
+
 
 class EB_MySoftware(ConfigureMake)
+    """Install MySoftware"""
 
     def __init__(self, *args, **kwargs):
+        """Constructor"""
         ConfigureMake.__init__(self, *args, **kwargs)
+
+    def configure_step(self):                                                                                            
+        """Configuration step, we set FC to F90,
+        F77 and F90 are already set by EasyBuild to the right compiler, but this tool uses FF for F90 compiler.
+        """ 
+        environment.setvar("FC", self.toolchain.get_variable('F90'))                                                     
+        ConfigureMake.configure_step(self)  
 
     @staticmethod
     def extra_options():
@@ -169,7 +186,6 @@ class EB_MySoftware(ConfigureMake)
                      ]
         return ConfigureMake.extra_options(extra_vars)
 ```
-Afterwards you can read the requested configuration using `self.cfg['X']` in your easyblock. If a key was not set in the EasyConfig file, the default value will be returned.
 
 ## Testing
 
