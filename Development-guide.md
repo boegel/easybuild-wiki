@@ -156,6 +156,11 @@ To do so, create the an extra_options which returns a list of new options that c
 Some software can only be configured by setting some environment variables. Use the `easybuild.tools.environment` module for this.
 This will set environment variables, and keep track of them in between steps, so you have more information what happened when whilst debugging.
 
+For defining what environment variables to set to what path in the produced environment modules file you need to implement the make_module_req_guess method. This method will check if a path exists, and if so create an environment variable pointing to it.
+This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}
+
+If you want to define environment variables not related to a path you will have to implement the make_module_extra method. This method needs to return a string to add to the module file after the automatic dependencies and paths are set.
+
 ## Example EasyBlock
 ```python
 from easybuild.framework.easyconfig import CUSTOM
@@ -169,20 +174,48 @@ class EB_MySoftware(ConfigureMake)
     def __init__(self, *args, **kwargs):
         """Constructor"""
         ConfigureMake.__init__(self, *args, **kwargs)
+        self.subdir = ""
+
 
     def configure_step(self):                                                                                            
         """Configuration step, we set FC to F90,
         F77 and F90 are already set by EasyBuild to the right compiler, but this tool uses FF for F90 compiler.
         """ 
         environment.setvar("FC", self.toolchain.get_variable('F90'))                                                     
-        ConfigureMake.configure_step(self)  
+        ConfigureMake.configure_step(self)
+        # different subdir if doing a source install
+        if self.cfg['sourceinstall']:
+            self.mysubdir = "%s-%s" % (self.name.lower(), self.version)
+
 
     @staticmethod
     def extra_options():
         extra_vars = [
-                      ('importdeps', [None, 'A list of modules to import when configuring', CUSTOM]),
-                      ('config-key', [<default>, <description>, CUSTOM ]),
-                      (..., [..., ..., CUSTOM]),
-                     ]
+            ('sourceinstall', [False, 'Perform an installation in a different subdirectory', CUSTOM]),
+            # ('config-key', [<default>, <description>, CUSTOM ]),
+        ]
         return ConfigureMake.extra_options(extra_vars)
+
+    def make_module_req_guess(self):                                                                                     
+        """Specify correct LD_LIBRARY_PATH and CPATH for this installation."""                                          
+        guesses = ConfigureMake.make_module_req_guess()                                                          
+        guesses.update({                                                                                                 
+            'CPATH': [os.path.join(self.subdir, "include")],                                           
+            'LD_LIBRARY_PATH': [os.path.join(self.subdir, "lib")]                                      
+        })                                                                                               
+        return guesses   
+
+    def make_module_extra(self):                                                                                         
+        """Set specific environment variables (mysubdir)."""                                                      
+        txt = ConfigureMake.make_module_extra()                                                                  
+        txt += self.moduleGenerator.set_environment('MYSOFTWARE_DIR', '$root/%' % self.mysubdir)
+        return txt                                                                                                       
+                                                                                                                         
+    def sanity_check_step(self):                                                                                         
+        """Custom sanity check for SLEPc"""                                                                              
+        custom_paths = {                                                                                                 
+            'files': [],                                                                                     
+            'dirs': [os.path.join(self.mysubdir, x) for x in ["conf", "include", "lib"]]                 
+        }                                                                                           
+        ConfigureMake.sanity_check_step(custom_paths=custom_paths)    
 ```
