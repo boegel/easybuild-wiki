@@ -156,10 +156,10 @@ To do so, create the an extra_options which returns a list of new options that c
 Some software can only be configured by setting some environment variables. Use the `easybuild.tools.environment` module for this.
 This will set environment variables, and keep track of them in between steps, so you have more information what happened when whilst debugging.
 
-For defining what environment variables to set to what path in the produced environment modules file you need to implement the make_module_req_guess method. This method will check if a path exists, and if so create an environment variable pointing to it.
-This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}
+For defining what environment variables to set to what path in the produced environment modules file you need to implement the `make_module_req_guess` method. This method will check if a path exists, and if so create an environment variable pointing to it.
+This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}`
 
-If you want to define environment variables not related to a path you will have to implement the make_module_extra method. This method needs to return a string to add to the module file after the automatic dependencies and paths are set.
+If you want to define environment variables not related to a path you will have to implement the `make_module_extra` method. This method needs to return a string to add to the module file after the automatic dependencies and paths are set.
 
 ## Example EasyBlock
 ```python
@@ -212,7 +212,7 @@ class EB_MySoftware(ConfigureMake)
         return txt                                                                                                       
                                                                                                                          
     def sanity_check_step(self):                                                                                         
-        """Custom sanity check for SLEPc"""                                                                              
+        """Custom sanity check"""                                                                              
         custom_paths = {                                                                                                 
             'files': [],                                                                                     
             'dirs': [os.path.join(self.mysubdir, x) for x in ["conf", "include", "lib"]]                 
