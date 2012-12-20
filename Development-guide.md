@@ -157,7 +157,16 @@ Some software can only be configured by setting some environment variables. Use 
 This will set environment variables, and keep track of them in between steps, so you have more information what happened when whilst debugging.
 
 For defining what environment variables to set to what path in the produced environment modules file you need to implement the `make_module_req_guess` method. This method will check if a path exists, and if so create an environment variable pointing to it.
-This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}`
+This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}` Default: 
+```python 
+{
+    'PATH': ['bin'],                                                                                             
+    'LD_LIBRARY_PATH': ['lib', 'lib64'],                                                                         
+    'CPATH':['include'],                                                                                         
+    'MANPATH': ['man', 'share/man'],                                                                             
+    'PKG_CONFIG_PATH' : ['lib/pkgconfig', 'share/pkgconfig'],                                                    
+}
+```
 
 If you want to define environment variables not related to a path you will have to implement the `make_module_extra` method. This method needs to return a string to add to the module file after the automatic dependencies and paths are set.
 
