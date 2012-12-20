@@ -207,7 +207,7 @@ class EB_MySoftware(ConfigureMake)
 
     def make_module_req_guess(self):                                                                                     
         """Specify correct LD_LIBRARY_PATH and CPATH for this installation."""                                          
-        guesses = ConfigureMake.make_module_req_guess()                                                          
+        guesses = ConfigureMake.make_module_req_guess(self)                                                          
         guesses.update({                                                                                                 
             'CPATH': [os.path.join(self.subdir, "include")],                                           
             'LD_LIBRARY_PATH': [os.path.join(self.subdir, "lib")]                                      
@@ -216,7 +216,7 @@ class EB_MySoftware(ConfigureMake)
 
     def make_module_extra(self):                                                                                         
         """Set specific environment variables (mysubdir)."""                                                      
-        txt = ConfigureMake.make_module_extra()                                                                  
+        txt = ConfigureMake.make_module_extra(self)                                                                  
         txt += self.moduleGenerator.set_environment('MYSOFTWARE_DIR', '$root/%' % self.mysubdir)
         return txt                                                                                                       
                                                                                                                          
@@ -226,5 +226,5 @@ class EB_MySoftware(ConfigureMake)
             'files': [],                                                                                     
             'dirs': [os.path.join(self.mysubdir, x) for x in ["conf", "include", "lib"]]                 
         }                                                                                           
-        ConfigureMake.sanity_check_step(custom_paths=custom_paths)    
+        ConfigureMake.sanity_check_step(self, custom_paths=custom_paths)    
 ```
