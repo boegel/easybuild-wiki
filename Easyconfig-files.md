@@ -62,32 +62,6 @@ The toolchain name and version will automatically be added to the version-string
   * _no-icc_: boolean to indicate whether `-no-icc` should be used during linking (only for Intel compilers) (default: False)
  * **onlytkmod**: boolean/string to indicate if the toolchain should only load the environment with module (True) or also set all other variables (False) like compiler CC etc (If string: comma separated list of variables that will be ignored). (Default: False)
 
-## Blocks
-
-Another feature of easybuild-files are blocks. Using blocks you can easily build multiple varieties of the same software at the same time. Easyconfigs using blocks consist out of a common part and one or more blocks.
-Variants can also depend on each other, by setting the **block**-option inside the block. When using source-control, the different blocks as well as the original block file will be committed.
-
-Example:
-
-> mod="Compiler.Gcc"
-
-> name="GCC"
-
-> homepage='http://gcc.gnu.org/'
-> description="The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java,
-> and Ada, as well as libraries for these languages (libstdc++, libgcj,...)."
-
-> [variant-a]
->
->\# Extra settings here
-
-> [variant-b]
->
->\# An extension of variant-a
->
-> block = "variant-a"
-
-
 ## Build options
 The standard build process consists out of the following steps. Configuration options interacting with each step are shown inline.
 
