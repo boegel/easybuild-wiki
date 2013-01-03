@@ -198,3 +198,13 @@ host: the hostname of the machine this build was made on.
 
 You can define your own additional software specific entires in the easyconfig, which can then be used in the Python class that supports the build process for that package.
 See the 'Adding pecification-options' section in[the easyblock development guide](https://github.com/hpcugent/easybuild/wiki/Development-guide)
+
+## sanity Check
+The `sanity_check_paths` dict defines a list of files and directories that should be present after a successful installation. If EasyBuild can not find them the installation will be considered failed.
+This defaults to a `{'files': [], 'dirs': ['lib', 'bin']}
+```python
+sanity_check_paths = {
+    'files': ['bin/gpaw%s' % x for x in ['', '-basis', '-mpisim', '-python', '-setup', '-test']],
+    'dirs': ['lib/python%s/site-packages/%s' % (pythonshortver, name.lower())]
+}
+```
