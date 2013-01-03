@@ -24,6 +24,13 @@ mkdir -p $PYLIB
 export PYTHONPATH=$PYLIB:$PYTHONPATH
 easy_install --prefix=/tmp easybuild
 ```
+#### ERROR: Failed to locate EasyBuild's main script easybuild/main.py
+
+main.py should be in `<prefix>/lib/python2.7/site-packages/easybuild/`
+So set your pythonpath to point to e.g.,`.local/lib/python2.7/site-packages/`
+
+Sometimes it is not correctly installed. Older versions of pip install in the right place, but then instantly overwrite the `easybuild` folder by installing the `easyblocks` package.
+This might occur when using pip < 1.2.1. Update your pip, and try using the ` --exists-action i` option.
 
 ***
 
