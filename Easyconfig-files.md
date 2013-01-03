@@ -7,7 +7,7 @@ Some settings are required and must be present:
  * **version**: Version of software
  * **homepage**: The homepage of the software
  * **description**: A short description of the software
- * **toolkit**: See below
+ * **toolchain**: See below
 
 Possible configuration options can also be retrieved by running `eb` with the -o or --options switch. Options for a specific application class can be found by adding a -m option.
 
@@ -15,13 +15,13 @@ Another very important option is **easyblock**. This defines the EasyBlock (Pyth
 
 If you want to make use of features only recently introduced in EasyBuild, it is highly recommended that you set the **easybuildVersion** setting. Older versions of EasyBuild will then refuse to build this easyconfig.
 
-## Toolkit
+## Toolchain
 
-EasyBuild uses the concept of a toolkit to define the compiler and a set of libraries that will be used during the build of the application.
+EasyBuild uses the concept of a toolchain to define the compiler and a set of libraries that will be used during the build of the application.
 
-The following toolkits are currently defined:
+The following toolchains are currently defined:
 
- * **dummy**: no compiler toolkit
+ * **dummy**: no compiler toolchain
  * **gcc**: GNU Compiler Collection
  * **gmgfl**: GCC + LAPACK + GotoBLAS + FLAME + MVAPICH2
  * **gimkl**: GCC + IMPI + IMKL
@@ -29,19 +29,19 @@ The following toolkits are currently defined:
  * **ictce**: Intel Cluster Toolkit Compiler Edition
  * **iqacml**: ICC + QLogic MPI + ACML
 
-A toolkit is selected by configuring it as follows in the easyconfig:
-`toolkit = {'name':'ictce', 'version':'4.0.4'}`
+A toolchain is selected by configuring it as follows in the easyconfig:
+`toolchain = {'name':'ictce', 'version':'4.0.4'}`
 
-If you do not require a toolkit (e.g. for a binary or interpreted package), use a dummy toolkit.
-` toolkit = {'name': 'dummy', 'version':_} `
+If you do not require a toolchain (e.g. for a binary or interpreted package), use a dummy toolchain.
+` toolchain = {'name': 'dummy', 'version':_} `
 
-If you do **not** want to load the dependencies of the module when using a dummy toolkit, also specify the toolkit version as dummy:
-` toolkit = {'name': 'dummy', 'version':'dummy'} `
+If you do **not** want to load the dependencies of the module when using a dummy toolchain, also specify the toolchain version as dummy:
+` toolchain = {'name': 'dummy', 'version':'dummy'} `
 
-The toolkit name and version will automatically be added to the version-string identifying the built package. This way it is possible to install the same version of a package using different toolkits.
+The toolchain name and version will automatically be added to the version-string identifying the built package. This way it is possible to install the same version of a package using different toolchains.
 
- * **toolkit**: dictionary with 2 keys, _name_: name of the toolkit and _version_: version of the toolkit
- * **toolkitopts**: dictionary with extra options for the compiler. Supported options include:
+ * **toolchain**: dictionary with 2 keys, _name_: name of the toolchain and _version_: version of the toolchain
+ * **toolchainopts**: dictionary with extra options for the compiler. Supported options include:
   * _usempi_: boolean to indicate if MPI should be used (default: False)
   * _cciscxx_: boolean to indicate whether the environment variable `CXX` should be set to the same as `CC` (default: False)
   * _pic_: boolean to indicate whether -fPIC should be used (default: False)
@@ -60,7 +60,7 @@ The toolkit name and version will automatically be added to the version-string i
   * _loop_: boolean to indicate whether advanced loop optimizations should be enabled (default: False)
   * _f2c_: boolean to indicate whether `-ff2c` should be used (only GCC) (default: False)
   * _no-icc_: boolean to indicate whether `-no-icc` should be used during linking (only for Intel compilers) (default: False)
- * **onlytkmod**: boolean/string to indicate if the toolkit should only load the environment with module (True) or also set all other variables (False) like compiler CC etc (If string: comma separated list of variables that will be ignored). (Default: False)
+ * **onlytkmod**: boolean/string to indicate if the toolchain should only load the environment with module (True) or also set all other variables (False) like compiler CC etc (If string: comma separated list of variables that will be ignored). (Default: False)
 
 ## Blocks
 
@@ -127,7 +127,7 @@ It is possible to customize the version-string used in this process, for example
 
  * **versionprefix**: Additional prefix for software version
  * **versionsuffix**: Additional suffix for software version
-The final version-string consists out of the following components (if given): ` [versionprefix][version]-[toolkit]-[toolkitversion][versionsuffix] `
+The final version-string consists out of the following components (if given): ` [versionprefix][version]-[toolchain]-[toolchainversion][versionsuffix] `
 
 ## File management options
 
@@ -147,13 +147,13 @@ Optionally you can also specify a list of builddependencies, which will be loade
  * **builddependencies**: List of build dependencies, i.e. modules that should only be loaded to build this package (default: [])
  * **osdependencies**: List of OS packages that should be present on the system (verified with RPM) (default: [])
 
-Dependencies and builddependencies should be in the following format: ` (name, version [, versionsuffix [, True to use a dummy-toolkit ]]) `
+Dependencies and builddependencies should be in the following format: ` (name, version [, versionsuffix [, True to use a dummy-toolchain ]]) `
 
 Example:
 
-  CP2K-20110124-gimkl-0.5.1.eb contains the following toolkit and dependencies
+  CP2K-20110124-gimkl-0.5.1.eb contains the following toolchain and dependencies
 
->   toolkit = {'name': 'gimkl', 'version': '0.5.1'}
+>   toolchain = {'name': 'gimkl', 'version': '0.5.1'}
 
 >   dependencies = [['Libint', '1.1.4']]
 
@@ -223,16 +223,4 @@ host: the hostname of the machine this build was made on.
 ## Software package specific options
 
 You can define your own additional software specific entires in the easyconfig, which can then be used in the Python class that supports the build process for that package.
-
-You should do this by extending the `self.cfg` dictionary defined in `Application`, in the init method of your class, e.g.:
-
-
->     def __init__(self):
->         Application.__init__(self)
->
->         self.cfg.update({
->                          'licensefile': [None, 'COMSOL license file'],
->                          'comsolupdates':[[], 'List of update files for COMSOL']
->                          })
-
-
+See the 'Adding pecification-options' section in[the easyblock development guide](https://github.com/hpcugent/easybuild/wiki/Development-guide)
