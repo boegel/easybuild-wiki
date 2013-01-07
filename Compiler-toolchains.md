@@ -4,7 +4,7 @@ Compiler toolchains are basically a (set of) compilers together with a bunch of 
 
 The following sections describe how to either pick an already supported compiler toolchain, or how to construct your own toolchain and provide the necessary things so that EasyBuild can use it.
 
-## List of supported compiler toolchains
+## Select one of the supported compiler toolchains
 
 To get an overview of compiler toolchains that EasyBuild knows about, use the `--list-toolchains` command line option (available since EasyBuild v1.1). This will print something like below:
 
@@ -30,11 +30,15 @@ For each compiler toolchain, the constituent elements (compiler + libraries) are
 
 If none of these toolchains fits your needs, you will need to construct your own compiler toolchain.
 
-## Creating a new compiler toolchain
+## Create a new compiler toolchain
 
 EasyBuild has very modular support for compiler toolchains, making it very easy to construct your own toolchain and make EasyBuild use it.
 
-### Creating a module for the toolchain
+### Create your own EasyBuild toolchains package
+
+### Provide support for the toolchain
+
+### Create a module for the toolchain
 
 The first step is to build a module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding module to make the compiler and libraries available for use.
 
@@ -62,5 +66,3 @@ dependencies = [
 ```
 
 Note that to 'build' a toolchain module, you should use the `dummy` toolchain (since you won't actually be building anything, just creating a module file).
-
-### Making EasyBuild support the module
