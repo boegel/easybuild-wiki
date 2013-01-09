@@ -37,7 +37,7 @@ EasyBuild has very modular support for compiler toolchains, making it very easy 
 
 ### Create your own EasyBuild toolchains package
 
-Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for one toolchains repository).
+Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for one `easybuild.toolchains` package).
 
 To set up your `easybuild.toolchains` package in a directory `$PREFIX`, run the following commands:
 
