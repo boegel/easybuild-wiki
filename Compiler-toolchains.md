@@ -31,13 +31,13 @@ For each compiler toolchain, the constituent elements (compiler + libraries) are
 
 If none of these toolchains fits your needs, you will need to construct your own compiler toolchain.
 
-## Create a new compiler toolchain
+# Create a new compiler toolchain
 
 EasyBuild has very modular support for compiler toolchains, making it very easy to construct your own toolchain and make EasyBuild use it.
 
-### Create your own EasyBuild toolchains package
+## Create your own EasyBuild toolchains package
 
-Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for one `easybuild.toolchains` package).
+Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for every `easybuild.toolchains` package).
 
 To set up your `easybuild.toolchains` package in a directory `$PREFIX`, run the following commands:
 
@@ -50,11 +50,25 @@ done
 touch easybuild/__init__.py
 ```
 
-This will create an empty `easybuild.toolchains` package, and also initialize the `compilers`, `fft`, `linalg` and `mpi` subpackages. 
+This will create an empty `easybuild.toolchains` package, and also initialize the `compiler`, `fft`, `linalg` and `mpi` subpackages. 
 
-### Provide support for the toolchain
+## Provide support for the toolchain
 
-### Create an environment module for the toolchain
+To make EasyBuild support your toolchain, you will need to provide Python modules that implement that support. If all of the constituent toolchain element already have Python modules available in the `easybuild.toolchains` subpackages, you'll only need to provide a Python module that defines your compiler toolchain.
+
+### Python modules for toolchain elements
+
+For each of the toolchain elements, i.e. compiler suite and each one of the libraries, a Python module should be available in the appropriate `easybuild.toolchains` subpackage.
+
+For a compiler suite (e.g. GCC or the Intel compilers), this consists of implementing a Python module in `easybuild.toolchains.compiler` that specifies compiler commands, compiler options (both common and unique options), etc. 
+
+For libraries the support maybe fairly concise, e.g. only consisting of listing library files and/or minor customizations of the general support provided by EasyBuild (see the `easybuild.tools.toolchains` package), or rather involved to yield different settings depending on the version of the compiler used in the toolchain (see e.g. the Intel MKL support in `easybuild.toolchains.linalg.intelmkl.py`).
+
+If you need to implement support for yet unsupported compilers and/or libraries, the best place to start is to look at the already available Python modules in `easybuild.toolchains` and the general support in `easybuild.tools.toolchains`. If you need support from the EasyBuild developers, [open an issue in the easybuild-framework repository](https://github.com/hpcugent/easybuild-framework/issues/new), or [contact us](https://github.com/hpcugent/easybuild/wiki/Contact).
+
+### Python module for toolchain
+
+## Create an environment module for the toolchain
 
 You need to build a environment module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding environemnt module to make the compiler and libraries available for use.
 
