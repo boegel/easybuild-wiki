@@ -64,7 +64,7 @@ For a compiler suite (e.g. GCC or the Intel compilers), this consists of impleme
 
 For libraries the support maybe fairly concise, e.g. only consisting of listing library files and/or minor customizations of the general support provided by EasyBuild (see the `easybuild.tools.toolchains` package), or rather involved to yield different settings depending on the version of the compiler used in the toolchain (see e.g. the Intel MKL support in `easybuild.toolchains.linalg.intelmkl.py`).
 
-If you need to implement support for yet unsupported compilers and/or libraries, the best place to start is to look at the already available Python modules in `easybuild.toolchains` and the general support in `easybuild.tools.toolchains`. If you need support from the EasyBuild developers, [open an issue in the easybuild-framework repository](https://github.com/hpcugent/easybuild-framework/issues/new), or [contact us](https://github.com/hpcugent/easybuild/wiki/Contact).
+If you need to implement support for yet unsupported compilers and/or libraries, the best place to start is to look at the already available Python modules in [easybuild.toolchains](https://github.com/hpcugent/easybuild-framework/blob/master/easybuild/toolchains) and the general support in [easybuild.tools.toolchains](https://github.com/hpcugent/easybuild-framework/blob/master/easybuild/tools/toolchains). If you need support from the EasyBuild developers, [open an issue in the easybuild-framework repository](https://github.com/hpcugent/easybuild-framework/issues/new), or [contact us](https://github.com/hpcugent/easybuild/wiki/Contact).
 
 ### Python module for toolchain
 
