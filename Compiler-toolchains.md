@@ -5,7 +5,7 @@ In the world of High Performance Computing where EasyBuild was born, this usuall
 
 The following sections describe how to either pick an already supported compiler toolchain, or how to construct your own toolchain and provide the necessary things so that EasyBuild can use it.
 
-## Select one of the supported compiler toolchains
+# Select one of the supported compiler toolchains
 
 To get an overview of compiler toolchains that EasyBuild knows about, use the `--list-toolchains` command line option (available since EasyBuild v1.1). This will print something like below:
 
