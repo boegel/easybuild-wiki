@@ -68,6 +68,26 @@ If you need to implement support for yet unsupported compilers and/or libraries,
 
 ### Python module for toolchain
 
+Next to making sure EasyBuild supports the toolchain elements, you also need to define the toolchain itself, by implementing a very simple Python module in `easybuild.toolchains`. As an example, the toolchain definition for `ictce` 
+is shown below (see also [easybuild/toolchains/ictce.py](https://github.com/hpcugent/easybuild-framework/blob/master/easybuild/toolchains/ictce.py)).
+
+```python
+from easybuild.toolchains.compiler.inteliccifort import IntelIccIfort
+from easybuild.toolchains.fft.intelfftw import IntelFFTW
+from easybuild.toolchains.mpi.intelmpi import IntelMPI
+from easybuild.toolchains.linalg.intelmkl import IntelMKL
+
+
+class Ictce(IntelIccIfort, IntelMPI, IntelMKL, IntelFFTW):
+    """
+    Compiler toolchain with Intel compilers (icc/ifort), Intel MPI,
+    Intel Math Kernel Library (MKL) and Intel FFTW wrappers.
+    """
+    NAME = 'ictce'
+```
+
+To add support for a toolchain, it suffices define a class that inherits from all of the the classes implementing support for the toolchain elements, and set a toolchain name as `NAME` (that should match the name of the toolchain environment module, see below). EasyBuild will then take care of the nasty details.
+
 ## Create an environment module for the toolchain
 
 You need to build a environment module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding environemnt module to make the compiler and libraries available for use.
@@ -96,3 +116,5 @@ dependencies = [
 ```
 
 Note that to 'build' a toolchain environment module, you should use the `dummy` toolchain (since you won't actually be building anything, just creating an environment module file).
+
+**Important remark**: the list of dependencies in the toolchain environment module should match the list of classes in the toolchain definition as implemented by the Python module in `easybuild.toolchains`. More specifically, the names of the dependency modules should match the `NAME` of the toolchain elements as specified in the `easybuild.toolchains.*` Python classes for them.
