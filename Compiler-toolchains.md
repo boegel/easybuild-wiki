@@ -27,7 +27,7 @@ List of known toolchains:
 	ismkl: MPICH2, icc, ifort, imkl
 ```
 
-For each compiler toolchain, the constituent elements (compiler + libraries) are printed, which provides the necessary information to select a toolchain. To select a version of a particular toolchain, just check which modules are available for the toolchain you selected (e.g., `module av goalf`), or build a module featuring the versions of the compiler and libraries you need.
+For each compiler toolchain, the constituent elements (compiler + libraries) are printed, which provides the necessary information to select a toolchain. To select a version of a particular toolchain, just check which environment modules are available for the toolchain you selected (e.g., `module av goalf`), or build a toolchain environment module (using EasyBuild) featuring the versions of the compiler and libraries you need.
 
 If none of these toolchains fits your needs, you will need to construct your own compiler toolchain.
 
@@ -37,15 +37,30 @@ EasyBuild has very modular support for compiler toolchains, making it very easy 
 
 ### Create your own EasyBuild toolchains package
 
+Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for one toolchains repository).
+
+To set up your `easybuild.toolchains` package in a directory `$PREFIX`, run the following commands:
+
+```shell
+for subdir in '' compiler fft linalg mpi;
+do
+  mkdir -p $PREFIX/easybuild/toolchains/$subdir
+  touch  $PREFIX/easybuild/toolchains/$subdir/__init__.py
+done
+touch easybuild/__init__.py
+```
+
+This will create an empty `easybuild.toolchains` package, and also initialize the `compilers`, `fft`, `linalg` and `mpi` subpackages. 
+
 ### Provide support for the toolchain
 
-### Create a module for the toolchain
+### Create an environment module for the toolchain
 
-The first step is to build a module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding module to make the compiler and libraries available for use.
+You need to build a environment module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding environemnt module to make the compiler and libraries available for use.
 
-First, you'll need to make sure that all of the constituent elements of the toolchain are supported by EasyBuild, i.e. that you can build and install them, and thus create a module that can be loaded. 
+First, you'll need to make sure that all of the constituent elements of the toolchain are supported by EasyBuild, i.e. that you can build and install them, and generate an environment module that can be loaded. 
 
-Assuming that that is taken care of you create a simple easyconfig file to make EasyBuild create a module for your toolchain, the most important part being the list of dependencies. For example, for the goalf toolchain the easyconfig file looks like this:
+Assuming that that is taken care of, you create a simple easyconfig file to make EasyBuild create an environment module for your toolchain, of which the most important part is the list of dependencies. For example, the easyconfig file for the `ictce` toolchain looks like this:
 
 ```
 easyblock = "Toolchain"
@@ -66,4 +81,4 @@ dependencies = [
                ]
 ```
 
-Note that to 'build' a toolchain module, you should use the `dummy` toolchain (since you won't actually be building anything, just creating a module file).
+Note that to 'build' a toolchain environment module, you should use the `dummy` toolchain (since you won't actually be building anything, just creating an environment module file).
