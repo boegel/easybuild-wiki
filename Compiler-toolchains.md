@@ -52,7 +52,7 @@ touch easybuild/__init__.py
 
 This will create an empty `easybuild.toolchains` package, and also initialize the `compiler`, `fft`, `linalg` and `mpi` subpackages. 
 
-## Provide support for the toolchain
+## Implement support for the toolchain
 
 To make EasyBuild support your toolchain, you will need to provide Python modules that implement that support. If all of the constituent toolchain element already have Python modules available in the `easybuild.toolchains` subpackages, you'll only need to provide a Python module that defines your compiler toolchain.
 
