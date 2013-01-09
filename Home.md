@@ -18,7 +18,7 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Automatic dependency resolution]]
  * [[OS-specific notes]]
 * [[Step-by-step guide]]
-* [[Compiler toolchains]]
+* [[Compiler toolchains]] (up-to-date)
 * [[Easyconfig files]] (updated, may need work)
  * [[Examples]]
 * [[Development guide]]
