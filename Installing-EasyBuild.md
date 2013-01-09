@@ -127,7 +127,7 @@ python setup.py --user install
 or, using `--prefix` (see also [here](#user_alternatives))
 
 ```bash
-python setup.py --prefix $HOME/.local install
+python setup.py install --prefix $HOME/.local
 ```
 
 <a name="wiki-github_install">
