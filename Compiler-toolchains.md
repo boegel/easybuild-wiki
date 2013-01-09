@@ -35,6 +35,8 @@ If none of these toolchains fits your needs, you will need to construct your own
 
 EasyBuild has very modular support for compiler toolchains, making it very easy to construct your own toolchain and make EasyBuild use it.
 
+If you implement support for new compiler toolchains and/or toolchain elements, [please consider contributing them back to the main easybuild-framework repository](https://github.com/hpcugent/easybuild/wiki/Contributing-back).
+
 ## Create your own EasyBuild toolchains package
 
 Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for every `easybuild.toolchains` package).
@@ -120,3 +122,7 @@ dependencies = [
 Note that to 'build' a toolchain environment module, you should use the `dummy` toolchain (since you won't actually be building anything, just creating an environment module file).
 
 **Important remark**: the list of dependencies in the toolchain environment module should match the list of classes in the toolchain definition as implemented by the Python module in `easybuild.toolchains`. More specifically, the names of the dependency modules should match the `NAME` of the toolchain elements as specified in the `easybuild.toolchains.*` Python classes for them.
+
+## Contribute back!
+
+After you've implemented and tested the support for a new compiler toolchain (and its constituent elements), please consider contributing it back so other EasyBuilders can also benefit from it. See [[Contributing back]] for more information.
