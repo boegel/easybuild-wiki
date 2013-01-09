@@ -1,6 +1,7 @@
 To build software with EasyBuild, the first thing you'll need to do is either pick a supported compiler toolchain, or construct your own and make EasyBuild support it.
 
-Compiler toolchains are basically a (set of) compilers together with a bunch of libraries that provide additional support that is commonly required. In the world of High Performance Computing where EasyBuild was born, this usually consists of an library for MPI (inter-process communication over a network), BLAS/LAPACK (linear algebra routines) and FFT (Fast Fourier Transforms).
+Compiler toolchains are basically a (set of) compilers together with a bunch of libraries that provide additional support that is commonly required to build software.
+In the world of High Performance Computing where EasyBuild was born, this usually consists of an library for MPI (inter-process communication over a network), BLAS/LAPACK (linear algebra routines) and FFT (Fast Fourier Transforms).
 
 The following sections describe how to either pick an already supported compiler toolchain, or how to construct your own toolchain and provide the necessary things so that EasyBuild can use it.
 
