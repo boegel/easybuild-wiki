@@ -18,7 +18,7 @@ which is a trimmed down version of the [WRF easyblock provided with EasyBuild](h
 
 We discuss this Python module block by block.
 
-#### Imports
+#### Import statements
 
 ```python
 import fileinput, os, re, sys
@@ -62,6 +62,8 @@ an actual installation step not necessary.
 By defining the static method `extra_options` and passing a list of extra easyconfig options to the `extra_options` method of `EasyBlock`, we can provide 
 additional WRF-specific easyconfig parameters that can steer the build procedure.
 
+#### Configuration, part 1: preparation configuration
+
 ```python
   def configure_step(self):
     # prepare to configure
@@ -84,6 +86,8 @@ additional WRF-specific easyconfig parameters that can steer the build procedure
     if not bt in known_build_types:
       self.log.error("Unknown build type: '%s' (supported: %s)" % (bt, known_build_types))
 ```
+
+#### Configuration, part 2: running configure script and patching resulting config file
 
 ```python
     # run configure script
@@ -111,6 +115,8 @@ additional WRF-specific easyconfig parameters that can steer the build procedure
       sys.stdout.write(line)
 ```
 
+#### Building WRF
+
 ```python
   def build_step(self):
     """Build WRF using the compile script."""
@@ -127,6 +133,8 @@ additional WRF-specific easyconfig parameters that can steer the build procedure
     """No separate installation step for WRF."""
     pass
 ```
+
+#### Sanity check (simplified)
 
 ```python
   def sanity_check_step(self):
