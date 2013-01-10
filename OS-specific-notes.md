@@ -29,7 +29,7 @@ export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
 ```
  * this (maybe) also needs to set when using the built GCC compilers
 
-## Arch Linux ==
+## Arch Linux
 
 * install Tcl, Python 2.x and make: 
 ```
