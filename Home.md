@@ -17,7 +17,6 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Using EasyBuild]]
  * [[Automatic dependency resolution]]
  * [[OS-specific notes]]
- * [[Tutorial: building WRF after adding support for it]]
 * [[Step-by-step guide]]
 * [[Compiler toolchains]] (up-to-date)
 * [[Easyconfig files]] (updated, may need work)
@@ -25,6 +24,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Development guide]]
  * [[Setting up your own easyblocks repository]] (ok, up-to-date)
  * [[Encode class names]]
+ * [[Tutorial: building WRF after adding support for it]] (ok, up-to-date)
  * [[Packaging and versioning]]
  * [[Unit and regression testing]] (ok, up-to-date)
  * [[Release process]] (ok, up-to-date)
