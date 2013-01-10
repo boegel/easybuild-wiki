@@ -28,14 +28,14 @@ make install
 
 ### environment modules
 
-1. Download the latest source tarball for the environment modules tools from [[http://modules.sourceforge.net/]]. At the time of writing, the latest available version is 3.2.9c which can be downloaded [[here|http://prdownloads.sourceforge.net/modules/modules-3.2.9c.tar.gz]].
+1. Download the latest source tarball for the environment modules tools from [[http://modules.sourceforge.net/]]. At the time of writing, the latest available version is 3.2.10 which can be downloaded [[here|http://prdownloads.sourceforge.net/modules/modules-3.2.10.tar.gz]].
 2. Unpack the downloaded source tarball:
 ```bash
-tar xfvz modules-3.2.9c.tar.gz 
+tar xfvz modules-3.2.10.tar.gz 
 ```
 3. Configure the build, again use `--prefix` to specify where to install the environment modules tool in the end. If you needed to install Tcl by hand as outlined in the previous section, you'll also need to specify where it was installed using the `--with-tcl` option:
 ```bash
-cd modules-3.2.9
+cd modules-3.2.10
 ./configure --prefix=$HOME/.local/environment-modules --with-tcl=$HOME/.local/Tcl/lib 
 ```
 4. Build with `make`, consider parallel build if your system is recent enough:
