@@ -17,6 +17,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Using EasyBuild]]
  * [[Automatic dependency resolution]]
  * [[OS-specific notes]]
+ * [[Tutorial: building WRF after adding support for it]]
 * [[Step-by-step guide]]
 * [[Compiler toolchains]] (up-to-date)
 * [[Easyconfig files]] (updated, may need work)
