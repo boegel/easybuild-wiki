@@ -36,6 +36,12 @@ This might occur when using pip < 1.2.1. Update your pip, and try using the ` --
 
 ## Using EasyBuild
 
+### gnu/stubs-32.h: No such file or directory
+You are missing some 32bit/multilib packages, or need to set some extra path to their location.
+More is explained here: http://stackoverflow.com/questions/7412548/gnu-stubs-32-h-no-such-file-or-directory
+
+
+
 ### EasyBuild crashed, and I can't seem to find a log file to figure out what went wrong?
 
 EasyBuild stores a temporary log file in the location determined by:
