@@ -47,7 +47,7 @@ These wiki pages contain as the EasyBuild documentation.
 
 * [[1st EasyBuild hackathon]]: Aug. 16th-17th 2012, Ghent (Belgium)
 * [[2nd EasyBuild hackathon]]: Nov. 28th-29th 2012, Kirchberg (Luxembourg)
-* [[3rd EasyBuild hackathon]]: Feb. 4th 2013, Ghent (Belgium)
+* [[3rd EasyBuild hackathon]]: (being planned)
 
 ### Conferences
 
