@@ -17,6 +17,7 @@ The configuration file must define the following five variables: `build_path`, `
 If one of them is not defined, EasyBuild will complain and exit.
 
 
+<a name="wiki-build_path">
 ### Build path (required)
 
 The `build_path` variable specifies the directory in which EasyBuild builds its software packages.
@@ -26,6 +27,7 @@ Each software package is (by default) built in a subdirectory of the `build_path
 Note that the build directories are emptied by EasyBuild when the installation is completed (by default).
 
 
+<a name="wiki-install_path">
 ### Install path (required)
 
 The `install_path` variable specifies the directory in which EasyBuild installs software packages and the corresponding module files.
@@ -45,6 +47,7 @@ It is probably a good idea to add this to your (favourite) shell .rc file, e.g.,
 so you do not need to adjust the `MODULEPATH` variable every time you start a new session.
 
 
+<a name="wiki-source_path">
 ### Source path (required)
 
 The `source_path` variable specifies the directory in which EasyBuild looks for software source and install files.
@@ -61,6 +64,7 @@ Note that these locations are also used when EasyBuild looks for patch files in 
 directories that are listed in the PYTHONPATH.
 
 
+<a name="wiki-repository">
 ### Easyconfigs repository (required)
 
 EasyBuild has support for keeping track of (tested) .eb easyconfigs. These files are build specification files for software package installation.
@@ -92,6 +96,7 @@ If access to the easyconfigs repository fails for some reason (e.g., no network 
 issue a warning. The software package will still be installed, but the (successful) easyconfig will not be automatically added to the repository.
 
 
+<a name="wiki-log_format">
 ### Log format (required)
 
 The `log_format` variable contains a tuple specifying a log directory name and a template string. In both of these values, using the following fields is supported:
@@ -107,6 +112,7 @@ Example :
 log_format = ("easylog", "easybuild-%(name)s.log")
 ```
 
+<a name="wiki-install_suffixes">
 ### Software and modules install path suffixes
 
 (supported since v1.1.0)
@@ -123,6 +129,7 @@ modules_install_suffix = os.path.join('easybuild', 'modules')
 
 Note: EasyBuild will still use the additional `all` and `base` suffixes for the module install paths, along with a directory for every module class that's being used.
 
+<a name="wiki-example_config">
 ## Example configuration
 
 This is a simple example configuration file, that specifies the user's home directory as the `install_path` and  that uses /tmp/easybuild as the `build_path`.
