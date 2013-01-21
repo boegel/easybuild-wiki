@@ -171,6 +171,7 @@ This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}` Defau
 If you want to define environment variables not related to a path you will have to implement the `make_module_extra` method. This method needs to return a string to add to the module file after the automatic dependencies and paths are set.
 
 ## Example EasyBlock
+
 ```python
 from easybuild.framework.easyconfig import CUSTOM
 from easybuild.easyblocks.generic import ConfigureMake
@@ -185,7 +186,6 @@ class EB_MySoftware(ConfigureMake)
         ConfigureMake.__init__(self, *args, **kwargs)
         self.subdir = ""
 
-
     def configure_step(self):                                                                                            
         """Configuration step, we set FC to F90,
         F77 and F90 are already set by EasyBuild to the right compiler, but this tool uses FF for F90 compiler.
@@ -195,7 +195,6 @@ class EB_MySoftware(ConfigureMake)
         # different subdir if doing a source install
         if self.cfg['sourceinstall']:
             self.mysubdir = "%s-%s" % (self.name.lower(), self.version)
-
 
     @staticmethod
     def extra_options():
@@ -226,5 +225,5 @@ class EB_MySoftware(ConfigureMake)
             'files': [],                                                                                     
             'dirs': [os.path.join(self.mysubdir, x) for x in ["conf", "include", "lib"]]                 
         }                                                                                           
-        ConfigureMake.sanity_check_step(self, custom_paths=custom_paths)    
+        ConfigureMake.sanity_check_step(self, custom_paths=custom_paths)
 ```
