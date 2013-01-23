@@ -54,7 +54,7 @@ version: #1 SMP Tue Nov 20 20:33:31 UTC 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### Scientific Linux 5.8
+#### Scientific Linux (SL) 5.8
 
 ```
 Python version: ['2.4.3 (#1, Feb 21 2012, 15:02:33) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-51)]']
@@ -68,7 +68,7 @@ version: #1 SMP Thu May 10 15:40:46 CEST 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### Scientific Linux 6.2
+#### Scientific Linux (SL) 6.2
 
 ```
 Python version: ['2.6.6 (r266:84292, Jan  4 2012, 16:09:28) ', '[GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]']
@@ -79,5 +79,19 @@ machine: x86_64
 platform: Linux-2.6.32-220.17.1.el6.vSMP.3.x86_64-x86_64-with-redhat-6.2-Carbon
 uname: ('Linux', 'node701.dugtrio.os', '2.6.32-220.17.1.el6.vSMP.3.x86_64', '#1 SMP Wed Jun 6 15:52:18 PDT 2012', 'x86_64', 'x86_64')
 version: #1 SMP Wed Jun 6 15:52:18 PDT 2012
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### SUSE Linux Enterprise Server (SLES) 11
+
+```
+Python version: ['2.6.8 (unknown, May 29 2012, 22:30:44) ', '[GCC 4.3.4 [gcc-4_3-branch revision 152973]]']
+dist: ('SuSE', '11', 'x86_64')
+linux_distrubution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32.59-0.3-default-x86_64-with-SuSE-11-x86_64
+uname: ('Linux', 'service0', '2.6.32.59-0.3-default', '#1 SMP 2012-04-27 11:14:44 +0200', 'x86_64', 'x86_64')
+version: #1 SMP 2012-04-27 11:14:44 +0200
 mac_ver: ('', ('', '', ''), '')
 ```
