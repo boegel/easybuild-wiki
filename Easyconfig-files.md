@@ -33,7 +33,7 @@ A toolchain is selected by configuring it as follows in the easyconfig:
 `toolchain = {'name':'ictce', 'version':'4.0.4'}`
 
 If you do not require a toolchain (e.g. for a binary or interpreted package), use a dummy toolchain.
-` toolchain = {'name': 'dummy', 'version':_} `
+` toolchain = {'name': 'dummy', 'version': ''} `
 
 If you do **not** want to load the dependencies of the module when using a dummy toolchain, also specify the toolchain version as dummy:
 ` toolchain = {'name': 'dummy', 'version':'dummy'} `
