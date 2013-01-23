@@ -148,6 +148,20 @@ mac_ver: ('', ('', '', ''), '')
 
 ### Mac OS X
 
+#### OS X 10.6.8 (Snow Leopard)
+
+```
+Python version: ['2.6.5 (r265:79063, May 28 2010, 10:16:29) ', '[GCC 4.2.1 (Apple Inc. build 5659)]']
+dist: ('', '', '')
+linux_distrubution: ('', '', '')
+system: Darwin
+machine: i386
+platform: Darwin-10.8.0-i386-64bit
+uname: ('Darwin', 'laptop-fred.local', '10.8.0', 'Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386', 'i386', 'i386')
+version: Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386
+mac_ver: ('10.6.8', ('', '', ''), 'i386')
+```
+
 #### OS X 10.8.2 (Mountain Lion)
 
 ```
