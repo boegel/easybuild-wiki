@@ -161,3 +161,8 @@ uname: ('Darwin', 'b245h132.ugent.be', '12.2.1', 'Darwin Kernel Version 12.2.1: 
 version: Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64
 mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
 ```
+
+
+## Alternate approaches
+
+ * in bash, based on `/etc/*release`: https://gist.github.com/4603671
