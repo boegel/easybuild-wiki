@@ -40,6 +40,8 @@ platform.mac_ver(),
 
 ## Outputs
 
+### Fedora
+
 #### Fedora 16
 
 ```
@@ -54,7 +56,23 @@ version: #1 SMP Tue Nov 20 20:33:31 UTC 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### Scientific Linux (SL) 5.8
+### Scientific Linux (SL)
+
+#### SL 5.6
+
+```
+Python version: ['2.7.3 (default, Nov 14 2012, 12:23:28) ', '[GCC 4.6.3]']
+dist: ('redhat', '5.6', 'Boron')
+linux_distrubution: ('Scientific Linux SL', '5.6', 'Boron')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.18-194.11.4.el5-x86_64-with-redhat-5.6-Boron
+uname: ('Linux', 'login01', '2.6.18-194.11.4.el5', '#1 SMP Tue Sep 21 06:46:41 EDT 2010', 'x86_64', 'x86_64')
+version: #1 SMP Tue Sep 21 06:46:41 EDT 2010
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### SL 5.8
 
 ```
 Python version: ['2.4.3 (#1, Feb 21 2012, 15:02:33) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-51)]']
@@ -68,7 +86,7 @@ version: #1 SMP Thu May 10 15:40:46 CEST 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### Scientific Linux (SL) 6.2
+#### SL 6.2
 
 ```
 Python version: ['2.6.6 (r266:84292, Jan  4 2012, 16:09:28) ', '[GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]']
@@ -82,7 +100,9 @@ version: #1 SMP Wed Jun 6 15:52:18 PDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### SUSE Linux Enterprise Server (SLES) 11 SP1
+### SUSE Linux Enterprise Server (SLES)
+
+#### SLES 11 SP1
 
 ```
 Python version: ['2.6.8 (unknown, May 29 2012, 22:30:44) ', '[GCC 4.3.4 [gcc-4_3-branch revision 152973]]']
@@ -96,7 +116,9 @@ version: #1 SMP 2012-04-27 11:14:44 +0200
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### OSX 10.8.2 (Mountain Lion)
+### Mac OS X
+
+#### OS X 10.8.2 (Mountain Lion)
 
 ```
 Python version: ['2.7.2 (default, Jun 20 2012, 16:23:33) ', '[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)]']
