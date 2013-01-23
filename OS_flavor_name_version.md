@@ -190,6 +190,24 @@ version: Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-20
 mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
 ```
 
+### Other
+
+#### Diskstation Manager (DSM) 4.1
+
+```
+
+Python version: ['2.7.3 (default, Nov  9 2012, 16:25:03) ', '[GCC
+4.2.1]']
+dist: ('', '', '')
+linux_distrubution: ('', '', '')
+system: Linux
+machine: x86_64
+platform: Linux-3.2.11-x86_64-with-glibc2.3.2
+uname: ('Linux', 'Tank', '3.2.11', '#2668 SMP Tue Dec 11 13:04:20 CST
+2012', 'x86_64', '')
+version: #2668 SMP Tue Dec 11 13:04:20 CST 2012
+mac_ver: ('', ('', '', ''), '')
+```
 
 ## Alternate approaches
 
