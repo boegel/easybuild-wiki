@@ -54,7 +54,7 @@ version: #1 SMP Tue Nov 20 20:33:31 UTC 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### Scientific Linux 5
+#### Scientific Linux 5.8
 
 ```
 Python version: ['2.4.3 (#1, Feb 21 2012, 15:02:33) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-51)]']
