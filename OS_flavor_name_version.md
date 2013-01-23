@@ -16,7 +16,7 @@ def linux_distribution():
   except:
     return "N/A"
 
-print """Python version: %s
+print("""Python version: %s
 dist: %s
 linux_distrubution: %s
 system: %s
@@ -35,7 +35,7 @@ platform.platform(),
 platform.uname(),
 platform.version(),
 platform.mac_ver(),
-)
+))
 ```
 
 ## Outputs
