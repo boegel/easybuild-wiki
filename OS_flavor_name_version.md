@@ -82,7 +82,7 @@ version: #1 SMP Wed Jun 6 15:52:18 PDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-#### SUSE Linux Enterprise Server (SLES) 11
+#### SUSE Linux Enterprise Server (SLES) 11 SP1
 
 ```
 Python version: ['2.6.8 (unknown, May 29 2012, 22:30:44) ', '[GCC 4.3.4 [gcc-4_3-branch revision 152973]]']
