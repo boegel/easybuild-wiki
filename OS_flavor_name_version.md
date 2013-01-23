@@ -70,7 +70,7 @@ version: #1 SMP Tue Oct 2 22:50:05 EDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-# CentOS 5.9
+#### CentOS 5.9
 
 ```
 Python version: ['2.4.3 (#1, Jan  9 2013, 06:47:03) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]']
