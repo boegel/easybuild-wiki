@@ -240,6 +240,20 @@ mac_ver: ('', ('', '', ''), '')
 
 ### SUSE Linux Enterprise Server (SLES)
 
+#### SLES 11 initial (SP0)
+
+```
+Python version: ['2.6 (r26:66714, Mar 23 2010, 15:24:19) ', '[GCC 4.3.2 [gcc-4_3-branch revision 141291]]']
+dist: ('SuSE', '11', 'x86_64')
+linux_distrubution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.27.19-5-default-x86_64-with-SuSE-11-x86_64
+uname: ('Linux', 'mgmt01', '2.6.27.19-5-default', '#1 SMP 2009-02-28 04:40:21 +0100', 'x86_64', 'x86_64')
+version: #1 SMP 2009-02-28 04:40:21 +0100
+mac_ver: ('', ('', '', ''), '')
+```
+
 #### SLES 11 SP1
 
 ```
