@@ -100,6 +100,34 @@ mac_ver: ('', ('', '', ''), '')
 
 ### Debian
 
+#### Debian 4.0
+
+```
+Python version: ['2.4.4 (#2, Jan 24 2010, 11:50:13) ', '[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)]']
+dist: ('debian', '4.0', '')
+linux_distrubution: N/A
+system: Linux
+machine: x86_64
+platform: Linux-2.6.18-6-amd64-x86_64-with-debian-4.0
+uname: ('Linux', 'master.cluster', '2.6.18-6-amd64', '#1 SMP Sat Feb 20 23:34:55 UTC 2010', 'x86_64', '')
+version: #1 SMP Sat Feb 20 23:34:55 UTC 2010
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### Debian 5.0
+
+```
+Python version: ['2.5.2 (r252:60911, Jan 24 2010, 17:44:40) ', '[GCC 4.3.2]']
+dist: ('debian', '5.0.8', '')
+linux_distrubution: N/A
+system: Linux
+machine: x86_64
+platform: Linux-2.6.26-2-amd64-x86_64-with-debian-5.0.8
+uname: ('Linux', 'master', '2.6.26-2-amd64', '#1 SMP Mon Jun 13 16:29:33 UTC 2011', 'x86_64', '')
+version: #1 SMP Mon Jun 13 16:29:33 UTC 2011
+mac_ver: ('', ('', '', ''), '')
+```
+
 #### Debian 6 Squeeze
 
 ```
@@ -151,7 +179,6 @@ mac_ver: ('', ('', '', ''), '')
 ### RHEL 5.6
 
 ```
-
 Python version: ['2.4.3 (#1, Dec 10 2010, 17:24:35) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
 dist: ('redhat', '5.6', 'Tikanga')
 linux_distrubution: N/A
@@ -160,6 +187,20 @@ machine: x86_64
 platform: Linux-2.6.18-238.el5-x86_64-with-redhat-5.6-Tikanga
 uname: ('Linux', 'xcat1', '2.6.18-238.el5', '#1 SMP Sun Dec 19 14:22:44 EST 2010', 'x86_64', 'x86_64')
 version: #1 SMP Sun Dec 19 14:22:44 EST 2010
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### RHEL 5.8
+
+```
+Python version: ['2.4.3 (#1, May  1 2012, 13:52:57) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-52)]']
+dist: ('redhat', '5.8', 'Tikanga')
+linux_distrubution: N/A
+system: Linux
+machine: i686
+platform: Linux-2.6.18-308.8.2.el5xen-i686-with-redhat-5.8-Tikanga
+uname: ('Linux', 'xxx', '2.6.18-308.8.2.el5xen', '#1 SMP Tue May 29 12:36:24 EDT 2012', 'i686', 'i686')
+version: #1 SMP Tue May 29 12:36:24 EDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
@@ -177,6 +218,50 @@ version: #1 SMP Sat Nov 24 14:35:28 EST 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+
+### Rocks
+
+#### Rocks 5.4 (Maverick)
+
+```
+Python version: ['2.4.3 (#1, Sep  3 2009, 15:37:37) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-46)]']
+dist: ('redhat', '5.5', 'Final')
+linux_distrubution: N/A
+system: Linux
+machine: x86_64
+platform: Linux-2.6.18-194.17.4.el5-x86_64-with-redhat-5.5-Final
+uname: ('Linux', 'xxx', '2.6.18-194.17.4.el5', '#1 SMP Mon Oct 25 15:50:53 EDT 2010', 'x86_64', 'x86_64')
+version: #1 SMP Mon Oct 25 15:50:53 EDT 2010
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### Rocks 5.4.3 (Viper)
+
+```
+Python version: ['2.4.3 (#1, May  5 2011, 16:39:10) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
+dist: ('redhat', '5.6', 'Final')
+linux_distrubution: N/A
+system: Linux
+machine: x86_64
+platform: Linux-2.6.34.7-1-x86_64-with-redhat-5.6-Final
+uname: ('Linux', 'xxx', '2.6.34.7-1', '#1 SMP Thu Nov 24 11:27:26 PST 2011', 'x86_64', 'x86_64')
+version: #1 SMP Thu Nov 24 11:27:26 PST 2011
+mac_ver: ('', ('', '', ''), '')
+```
+ 
+#### Rocks 5.4.3 (Viper) on ScaleMP vSMP
+
+```
+Python version: ['2.4.3 (#1, May  5 2011, 16:39:10) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
+dist: ('redhat', '5.6', 'Final')
+linux_distrubution: N/A
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32-220.7.1.el6.vSMP.4.x86_64-x86_64-with-redhat-5.6-Final
+uname: ('Linux', 'xxx', '2.6.32-220.7.1.el6.vSMP.4.x86_64', '#1 SMP Sun May 6 08:24:08 PDT 2012', 'x86_64', 'x86_64')
+version: #1 SMP Sun May 6 08:24:08 PDT 2012
+mac_ver: ('', ('', '', ''), '')
+```
 
 ### Scientific Linux (SL)
 
@@ -265,7 +350,37 @@ version: #1 SMP Wed Jun 6 15:52:18 PDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+### Solaris
+
+#### Solaris 9 (on SPARC)
+
+```
+Python version: ['2.6.4 (r264:75706, Aug  4 2010, 16:53:32) [C]']
+dist: ('', '', '')
+linux_distrubution: ('', '', '')
+system: SunOS
+machine: sun4u
+platform: SunOS-5.9-sun4u-sparc-32bit-ELF
+uname: ('SunOS', 'xxx', '5.9', 'Generic_122300-60', 'sun4u', 'sparc')
+version: Generic_122300-60
+mac_ver: ('', ('', '', ''), '')
+```
+
 ### SUSE Linux Enterprise Server (SLES)
+
+#### SLES 10 (on Power6)
+
+```
+Python version: ['2.4.2 (#1, Apr 20 2012, 03:25:31) ', '[GCC 4.1.2 20070115 (SUSE Linux)]']
+dist: ('SuSE', '10', 'ppc')
+linux_distrubution: N/A
+system: Linux
+machine: ppc64
+platform: Linux-2.6.16.60-0.93.1-ppc64-ppc64-with-SuSE-10-ppc
+uname: ('Linux', 'xxx', '2.6.16.60-0.93.1-ppc64', '#1 SMP Mon Jan 9 23:55:08 UTC 2012', 'ppc64', 'ppc64')
+version: #1 SMP Mon Jan 9 23:55:08 UTC 2012
+mac_ver: ('', ('', '', ''), '')
+```
 
 #### SLES 11 initial (SP0)
 
@@ -322,6 +437,20 @@ machine: i686
 platform: Linux-2.6.32-34-generic-pae-i686-with-Ubuntu-10.04-lucid
 uname: ('Linux', 'laptop-sp', '2.6.32-34-generic-pae', '#77-Ubuntu SMP Tue Sep 13 21:16:18 UTC 2011', 'i686', '')
 version: #77-Ubuntu SMP Tue Sep 13 21:16:18 UTC 2011
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### Ubuntu 10.04 Server
+
+```
+Python version: ['2.6.5 (r265:79063, Oct  1 2012, 22:04:36) ', '[GCC 4.4.3]']
+dist: ('Ubuntu', '10.04', 'lucid')
+linux_distrubution: ('Ubuntu', '10.04', 'lucid')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32-32-server-x86_64-with-Ubuntu-10.04-lucid
+uname: ('Linux', 'xxx', '2.6.32-32-server', '#62-Ubuntu SMP Wed Apr 20 22:07:43 UTC 2011', 'x86_64', '')
+version: #62-Ubuntu SMP Wed Apr 20 22:07:43 UTC 2011
 mac_ver: ('', ('', '', ''), '')
 ```
 
