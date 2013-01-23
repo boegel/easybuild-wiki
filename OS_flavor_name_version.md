@@ -118,6 +118,20 @@ mac_ver: ('', ('', '', ''), '')
 
 ### Ubuntu/Debian
 
+#### Ubuntu 10.04 (client distro)
+
+```
+Python version: ['2.6.5 (r265:79063, Apr 16 2010, 13:09:56) ', '[GCC 4.4.3]']
+dist: ('Ubuntu', '10.04', 'lucid')
+linux_distrubution: ('Ubuntu', '10.04', 'lucid')
+system: Linux
+machine: i686
+platform: Linux-2.6.32-34-generic-pae-i686-with-Ubuntu-10.04-lucid
+uname: ('Linux', 'laptop-sp', '2.6.32-34-generic-pae', '#77-Ubuntu SMP Tue Sep 13 21:16:18 UTC 2011', 'i686', '')
+version: #77-Ubuntu SMP Tue Sep 13 21:16:18 UTC 2011
+mac_ver: ('', ('', '', ''), '')
+```
+
 #### Ubuntu 12.04 (server distro)
 
 ```
