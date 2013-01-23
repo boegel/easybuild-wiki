@@ -84,6 +84,20 @@ version: #1 SMP Tue Apr 17 17:49:15 EDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### CentOS 6.3
+
+```
+Python version: ['2.6.6 (r266:84292, Sep 11 2012, 08:34:23) ', '[GCC 4.4.6 20120305 (Red Hat 4.4.6-4)]']
+dist: ('centos', '6.3', 'Final')
+linux_distrubution: ('CentOS', '6.3', 'Final')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32-279.9.1.el6.x86_64-x86_64-with-centos-6.3-Final
+uname: ('Linux', 'build-centos-6-3.gmi.oeaw.ac.at', '2.6.32-279.9.1.el6.x86_64', '#1 SMP Tue Sep 25 21:43:11 UTC 2012', 'x86_64', 'x86_64')
+version: #1 SMP Tue Sep 25 21:43:11 UTC 2012
+mac_ver: ('', ('', '', ''), '')
+```
+
 ### Debian
 
 #### Debian 6 Squeeze
@@ -149,6 +163,19 @@ version: #1 SMP Sun Dec 19 14:22:44 EST 2010
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### RHEL 6.3
+
+```
+Python version: ['2.6.6 (r266:84292, Aug 28 2012, 10:55:56) ', '[GCC 4.4.6 20120305 (Red Hat 4.4.6-4)]']
+dist: ('redhat', '6.3', 'Santiago')
+linux_distrubution: ('Red Hat Enterprise Linux Server', '6.3', 'Santiago')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32-279.19.1.el6.x86_64-x86_64-with-redhat-6.3-Santiago
+uname: ('Linux', 'build-rhel-6-3.gmi.oeaw.ac.at', '2.6.32-279.19.1.el6.x86_64', '#1 SMP Sat Nov 24 14:35:28 EST 2012', 'x86_64', 'x86_64')
+version: #1 SMP Sat Nov 24 14:35:28 EST 2012
+mac_ver: ('', ('', '', ''), '')
+```
 
 
 ### Scientific Linux (SL)
@@ -344,6 +371,8 @@ mac_ver: ('10.6.8', ('', '', ''), 'i386')
 
 #### OS X 10.8.2 (Mountain Lion)
 
+(slight differences across systems)
+
 ```
 Python version: ['2.7.2 (default, Jun 20 2012, 16:23:33) ', '[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)]']
 dist: ('', '', '')
@@ -353,6 +382,18 @@ machine: x86_64
 platform: Darwin-12.2.1-x86_64-i386-64bit
 uname: ('Darwin', 'b245h132.ugent.be', '12.2.1', 'Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64', 'x86_64', 'i386')
 version: Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64
+mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
+```
+
+```
+Python version: ['2.7.2 (default, Jun 16 2012, 12:38:40) ', '[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)]']
+dist: ('', '', '')
+linux_distrubution: ('', '', '')
+system: Darwin
+machine: x86_64
+platform: Darwin-12.2.1-x86_64-i386-64bit
+uname: ('Darwin', 'silenus.gmi.oeaw.ac.at', '12.2.1', 'Darwin Kernel Version 12.2.1: Thu Oct 18 12:13:47 PDT 2012; root:xnu-2050.20.9~1/RELEASE_X86_64', 'x86_64', 'i386')
+version: Darwin Kernel Version 12.2.1: Thu Oct 18 12:13:47 PDT 2012; root:xnu-2050.20.9~1/RELEASE_X86_64
 mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
 ```
 
