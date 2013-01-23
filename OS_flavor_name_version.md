@@ -116,6 +116,20 @@ version: #1 SMP 2012-04-27 11:14:44 +0200
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### Ubuntu 12.04 (server distro)
+
+````
+Python version: ['2.7.3 (default, Aug  1 2012, 05:14:39) ', '[GCC 4.6.3]']
+dist: ('Ubuntu', '12.04', 'precise')
+linux_distrubution: ('Ubuntu', '12.04', 'precise')
+system: Linux
+machine: x86_64
+platform: Linux-3.2.0-32-generic-x86_64-with-Ubuntu-12.04-precise
+uname: ('Linux', 'dc02', '3.2.0-32-generic', '#51-Ubuntu SMP Wed Sep 26 21:33:09 UTC 2012', 'x86_64', 'x86_64')
+version: #51-Ubuntu SMP Wed Sep 26 21:33:09 UTC 2012
+mac_ver: ('', ('', '', ''), '')
+````
+
 ### Mac OS X
 
 #### OS X 10.8.2 (Mountain Lion)
