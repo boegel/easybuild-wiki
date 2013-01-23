@@ -146,6 +146,20 @@ version: #51-Ubuntu SMP Wed Sep 26 21:33:09 UTC 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### Ubuntu 12.10
+
+```
+Python version: ['2.7.3 (default, Sep 26 2012, 21:51:14) ', '[GCC 4.7.2]']
+dist: ('Ubuntu', '12.10', 'quantal')
+linux_distrubution: ('Ubuntu', '12.10', 'quantal')
+system: Linux
+machine: x86_64
+platform: Linux-3.5.0-22-generic-x86_64-with-Ubuntu-12.10-quantal
+uname: ('Linux', 'stijn-W150HRM', '3.5.0-22-generic', '#34-Ubuntu SMP Tue Jan 8 21:47:00 UTC 2013', 'x86_64', 'x86_64')
+version: #34-Ubuntu SMP Tue Jan 8 21:47:00 UTC 2013
+mac_ver: ('', ('', '', ''), '')
+```
+
 ### Mac OS X
 
 #### OS X 10.6.8 (Snow Leopard)
