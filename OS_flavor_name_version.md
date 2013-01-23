@@ -67,3 +67,17 @@ uname: ('Linux', 'gengar1.gengar.os', '2.6.18-308.4.1.el5.perfctr.2.6.42.ug.1.ug
 version: #1 SMP Thu May 10 15:40:46 CEST 2012
 mac_ver: ('', ('', '', ''), '')
 ```
+
+#### Scientific Linux 6.2
+
+```
+Python version: ['2.6.6 (r266:84292, Jan  4 2012, 16:09:28) ', '[GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]']
+dist: ('redhat', '6.2', 'Carbon')
+linux_distrubution: ('Scientific Linux', '6.2', 'Carbon')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32-220.17.1.el6.vSMP.3.x86_64-x86_64-with-redhat-6.2-Carbon
+uname: ('Linux', 'node701.dugtrio.os', '2.6.32-220.17.1.el6.vSMP.3.x86_64', '#1 SMP Wed Jun 6 15:52:18 PDT 2012', 'x86_64', 'x86_64')
+version: #1 SMP Wed Jun 6 15:52:18 PDT 2012
+mac_ver: ('', ('', '', ''), '')
+```
