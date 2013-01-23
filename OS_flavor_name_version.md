@@ -248,7 +248,20 @@ uname: ('Linux', 'xxx', '2.6.34.7-1', '#1 SMP Thu Nov 24 11:27:26 PST 2011', 'x8
 version: #1 SMP Thu Nov 24 11:27:26 PST 2011
 mac_ver: ('', ('', '', ''), '')
 ```
- 
+
+with a more recent Python, that provides `platform.linux_distribution`:
+```
+Python version: ['2.7.2 (default, Aug  9 2011, 03:48:50) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
+dist: ('redhat', '5.6', 'Final')
+linux_distrubution: ('CentOS', '5.6', 'Final')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.34.7-1-x86_64-with-redhat-5.6-Final
+uname: ('Linux', 'xxx', '2.6.34.7-1', '#1 SMP Thu Nov 24 11:27:26 PST 2011', 'x86_64', 'x86_64')
+version: #1 SMP Thu Nov 24 11:27:26 PST 2011
+mac_ver: ('', ('', '', ''), '')
+```
+
 #### Rocks 5.4.3 (Viper) on ScaleMP vSMP
 
 ```
