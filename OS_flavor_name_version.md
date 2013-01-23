@@ -95,3 +95,17 @@ uname: ('Linux', 'service0', '2.6.32.59-0.3-default', '#1 SMP 2012-04-27 11:14:4
 version: #1 SMP 2012-04-27 11:14:44 +0200
 mac_ver: ('', ('', '', ''), '')
 ```
+
+#### OSX 10.8.2 (Mountain Lion)
+
+```
+Python version: ['2.7.2 (default, Jun 20 2012, 16:23:33) ', '[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)]']
+dist: ('', '', '')
+linux_distrubution: ('', '', '')
+system: Darwin
+machine: x86_64
+platform: Darwin-12.2.1-x86_64-i386-64bit
+uname: ('Darwin', 'b245h132.ugent.be', '12.2.1', 'Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64', 'x86_64', 'i386')
+version: Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64
+mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
+```
