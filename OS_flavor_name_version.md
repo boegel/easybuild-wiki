@@ -210,7 +210,7 @@ version: #1 SMP Thu May 10 15:40:46 CEST 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
-# SL 5.8 (CERN SLC)
+#### SL 5.8 (CERN SLC)
 
 ```
 Python version: ['2.4.3 (#1, Jun 19 2012, 13:51:22) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-52)]']
