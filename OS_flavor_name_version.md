@@ -254,6 +254,20 @@ version: #1 SMP 2012-04-27 11:14:44 +0200
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### SLES 11 SP2
+
+```
+Python version: ['2.6.8 (unknown, May 29 2012, 22:30:44) ', '[GCC 4.3.4 [gcc-4_3-branch revision 152973]]']
+dist: ('SuSE', '11', 'x86_64')
+linux_distrubution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
+system: Linux
+machine: x86_64
+platform: Linux-3.0.38-0.5-default-x86_64-with-SuSE-11-x86_64
+uname: ('Linux', 'service1', '3.0.38-0.5-default', '#1 SMP Fri Aug 3 09:02:17 UTC 2012 (358029e)', 'x86_64', 'x86_64')
+version: #1 SMP Fri Aug 3 09:02:17 UTC 2012 (358029e)
+mac_ver: ('', ('', '', ''), '')
+```
+
 ### Ubuntu
 
 #### Ubuntu 10.04 (client distro)
