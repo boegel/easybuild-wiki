@@ -395,6 +395,20 @@ version: #1 SMP Mon Jan 9 23:55:08 UTC 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### SLES 10 (on Itanium)
+
+```
+Python version: ['2.4.2 (#1, Jan 10 2008, 17:41:07) ', '[GCC 4.1.2 20070115 (prerelease) (SUSE Linux)]']
+dist: ('SuSE', '10', 'ia64')
+linux_distrubution: N/A
+system: Linux
+machine: ia64
+platform: Linux-2.6.16.60-0.39.3.PTF.506281.1-default-ia64-with-SuSE-10-ia64
+uname: ('Linux', 'altix-450', '2.6.16.60-0.39.3.PTF.506281.1-default', '#1 SMP Mon May 11 11:46:34 UTC 2009', 'ia64', 'ia64')
+version: #1 SMP Mon May 11 11:46:34 UTC 2009
+mac_ver: ('', ('', '', ''), '')
+```
+
 #### SLES 11 initial (SP0)
 
 ```
