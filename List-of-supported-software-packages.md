@@ -2,12 +2,12 @@ Click on ![easyconfig logo](http://hpc.ugent.be/easybuild/images/easyblocks_conf
 to see to the list of easyconfig files.
 And on ![easyblock logo](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png) 
 to go to the easyblock for this package.
-## Supported Packages (195 in v1.1.0) 
+## Supported Packages (197 in v1.1.0) 
 <center>
 [A](#A) - [B](#B) - [C](#C) - [D](#D) - [E](#E) - [F](#F) - [G](#G) - [H](#H) - [I](#I) - [J](#J) - [L](#L) - [M](#M) - [N](#N) - [O](#O) - [P](#P) - [Q](#Q) - [R](#R) - [S](#S) - [T](#T) - [U](#U) - [V](#V) - [W](#W) - [X](#X) - [Z](#Z)
 </center>
 
-### A (8 packages) <a name='A'/>
+### A (9 packages) <a name='A'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/ABINIT)
@@ -26,6 +26,10 @@ to go to the easyblock for this package.
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/AMOS)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ AMOS](http://sourceforge.net/apps/mediawiki/amos/index.php?title=AMOS)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/ant)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ ant](http://ant.apache.org/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/Armadillo)
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
@@ -404,7 +408,7 @@ gompi
  (https://github.com/hpcugent/easybuild-easyblocks/tree/develop/easybuild/easyblocks/i/itac.py)
 [ itac](http://software.intel.com/en-us/intel-trace-analyzer/)
 
-### J (3 packages) <a name='J'/>
+### J (4 packages) <a name='J'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/j/JasPer)
@@ -419,6 +423,10 @@ gompi
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/j/Jinja2)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ Jinja2](http://pypi.python.org/pypi/Jinja2)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/j/JUnit)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ JUnit](http://sourceforge.net/projects/junit)
 
 ### L (19 packages) <a name='L'/>
 
