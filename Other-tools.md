@@ -10,6 +10,7 @@ A list of other software tools that kind of look like EasyBuild
  * [Nix](http://nixos.org/nixpkgs/): A purely functional package manager, it install (unix) packages in a dedicated prefixed with a hash in the path, such that different builds/versions with different dependencies can be installed without affecting each other. NixOS is a Linux distribution based on Nix.
  * [Guix](http://www.gnu.org/software/guix/): GNU Guix is a purely functional package manager, and is based on the Nix package manager. It provides Guile Scheme APIs, including high-level embedded domain-specific languages (EDSLs), to describe how packages are to be built and composed.
  * [Paludis](http://paludis.exherbo.org/): a multi-format package manager used by Gentoo (and others), improved version of Portage
+ * [SWTools](http://users.nccs.gov/~fm9/SWTools-Manual-1.0.pdf): SWTools is python code combined with a directory hierarchy and rules to create an infrastructure for software management; or SoftWare Tools; is used by Oak Ridge National Labs for building/installing scientific software (e.g. on Titan)
  * [others (Wikipedia)](http://en.wikipedia.org/wiki/List_of_build_automation_software)
 
 ## Papers
