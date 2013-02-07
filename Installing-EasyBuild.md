@@ -78,6 +78,10 @@ pip install --prefix=/tmp easybuild
 export PATH=/tmp/bin:$PATH
 export PYTHONPATH=/tmp/lib/python2.7/site-packages:$PYTHONPATH
 ```
+Or alternatively (with an old pip) 
+```bash
+pip install --install-option="--prefix=/tmp" easybuild
+```
 
 To determine the path that should be added to the ```PYTHONPATH``` environment variable for a given installation prefix, you can use the following command:
 
