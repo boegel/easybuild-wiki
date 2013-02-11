@@ -24,10 +24,7 @@ Please let Kenneth Hoste know if you're planning to attend.
  * introduction to purpose of EasyBuild and its design
  * example use cases
  * focus on modularity: easyblocks and compiler toolchains
- * getting started
-  * writing easyconfigs
-  * writing easyblocks
-  * extending compiler toolchain support
+ * getting started: writing easyconfigs; writing easyblocks; extending compiler toolchain support
  * contributing back
 * presentation by local organisation: 
  * where and how does EasyBuild fit in with local needs?
