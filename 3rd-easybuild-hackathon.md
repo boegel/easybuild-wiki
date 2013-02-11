@@ -1,0 +1,38 @@
+### Basic Information
+
+* **time**: Mon-Wed Mar 11-13 2013, 9am-5pm CET
+* **location**: Nicosia, Cyprus (more details later)
+* **notes**: coffee? lunch? diner?
+
+### Attendees
+
+Please let Kenneth Hoste know if you're planning to attend.
+
+ * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
+ * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
+ * ...
+
+## Agenda (planned)
+
+### Monday
+
+* welcome by local organizers
+ * mention practical arrangements for coming days
+* introduction round: who's who (brief, informal)
+* EasyBuild presentation by Kenneth Hoste
+ * introduction to purpose of EasyBuild and its design
+ * example use cases
+ * focus on modularity: easyblocks and compiler toolchains
+ * contributing back
+* presentation by local organisation: 
+ * where and how does EasyBuild fit in with local needs?
+ * current activities with EasyBuild
+ * wishlist
+
+### Tuesday
+
+ * hackathon kick-off, focus on GPGPU support and local interests
+
+### Wednesday
+
+ * hackathon (continued)
