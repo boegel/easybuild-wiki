@@ -2,7 +2,7 @@
 
 * **time**: Thu-Fri Nov 29-30 2012, 10am-6pm CET
 * **location**: University of Luxembourg (Luxembourg), campus Kirchberg, building E, meeting room E.012
-* **notes**: coffee & refreshments provided by Uni.Lu, lunch at own expense
+* **notes**: coffee & refreshments provided by Uni.Lu
 
 #### Location details
 
@@ -35,12 +35,12 @@ Note: the hackathon didn't stricly follow the agenda below, see the meeting note
   * _(Kenneth)_ public bug tracker (GitHub issue tracker?)
   * _(Kenneth)_ policy for [contributing back](Contributing back) to EasyBuild (feature branches, pull requests, code review, release manager)
  * hackathon kick-off, with a focus on local interests
- * Allinea DDT - parallel debugger (webinar)
+ * parallel debuggers, webinar offered by Allinea DDT
 
 ### Friday
 
  * hackathon (continued)
-  * focus on local interests
+  * focus on local interests: Espresso, QuantumESPRESSO, bioinformatics software packages
   * bug fixing, cleaning up code
   * finish work for v1.x release
 
