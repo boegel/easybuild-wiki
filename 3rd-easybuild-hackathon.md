@@ -38,7 +38,7 @@ Please let Kenneth Hoste know if you're planning to attend.
 
 ### Tuesday
 
- * hackathon kick-off, focus on GPGPU support and local interests
+ * hackathon kick-off, focus on EasyBuild support for accelerators and local interests
 
 ### Wednesday
 
