@@ -52,6 +52,7 @@ These wiki pages contain as the EasyBuild documentation.
 ### Conferences
 
  * [[Supercomputing'2012 / PyHPC|Notes on EasyBuild promotion at Supercomputing'2012]]: EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workshop and the exhibit
+ * FOSDEM'13: EasyBuild lightning talks in FOSS for Scientists and Python devrooms, by Jens Timmerman and Kenneth Hoste (resp.)
 
 ### Conference calls
 
