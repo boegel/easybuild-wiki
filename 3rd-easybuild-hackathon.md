@@ -34,6 +34,7 @@ Please let Kenneth Hoste know if you're planning to attend.
  * current activities with EasyBuild
  * wishlist
 * video conference presentation by NVIDIA (Adam De Coninck?)
+ * (may potentially be held week before hackathon)
  * GPGPU toolbox for sysadmins and user support teams
  * building CUDA software
 * technical discussion on EasyBuild
