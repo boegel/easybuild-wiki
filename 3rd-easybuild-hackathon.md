@@ -32,6 +32,7 @@ Please let Kenneth Hoste know if you're planning to attend.
 * video conference presentation by NVIDIA (Adam De Coninck?)
  * GPGPU toolbox for sysadmins and user support teams
  * building CUDA software
+* technical discussion on EasyBuild
 
 ### Tuesday
 
