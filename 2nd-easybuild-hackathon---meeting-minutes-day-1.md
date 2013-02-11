@@ -24,7 +24,7 @@ During the first day of the [[2nd EasyBuild hackathon]], EasyBuild was introduce
 
  * EasyBuild could be a very useful tool to allow them to conform
 
-### Allinea DDT webinar (a bit off-topic)
+### webinar on parallel debuggers offered by Allinea DDT
 
  * TotalView vs Alinea DDT
  * TotalView has some nice features, e.g. scripting (in Tcl), replaying of execution, MemoryScape to debug memory allocation/deallocation, memory leaks, ...
