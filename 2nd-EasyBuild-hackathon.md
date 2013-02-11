@@ -1,6 +1,6 @@
 ### Basic Information
 
-* **time**: Thu-Fri Nov 29-30 2012, 10am-18pm CET
+* **time**: Thu-Fri Nov 29-30 2012, 10am-6pm CET
 * **location**: University of Luxembourg (Luxembourg), campus Kirchberg, building E, meeting room E.012
 * **notes**: coffee & refreshments provided by Uni.Lu, lunch at own expense
 
