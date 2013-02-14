@@ -1,7 +1,7 @@
 ### Basic Information
 
-* **time**: Mon-Wed Mar 11-13 2013, 9am-5pm CET
-* **location**: Nicosia, Cyprus (to be confirmed)
+* **time**: Mon-Wed Mar 11-13 2013, 10am-6pm (Cypriotic time)
+* **location**: Nicosia, Cyprus (confirmed)
 * **notes**: local provisions?
 
 ### Attendees
@@ -9,37 +9,43 @@
 Please let Kenneth Hoste know if you're planning to attend.
 
  * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
+ * Jens Timmerman (HPC-UGent, EasyBuild developer)
  * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
- * ...
+ * Jens Wiegand (exact title?)
+ * Alan O'Cais (title?)
+ * (more confirmations?)
 
 ## Agenda (planned)
 
 ### Monday
 
-* welcome by local organizers
+* _[10am]_ welcome by local organizers
  * mention practical arrangements for coming days
-* introduction round: who's who (brief, informal)
-* EasyBuild presentation by Kenneth Hoste
+* _[10.15am]_ introduction round: who's who (brief, informal)
+* _[10.30am-11.30am]_ EasyBuild presentation by KH/JT
  * intent is to train attendees on making optimal use of EasyBUild
  * introduction to purpose of EasyBuild and its design
  * example use cases
  * focus on modularity: easyblocks and compiler toolchains
  * getting started: writing easyconfigs; writing easyblocks; extending compiler toolchain support
  * contributing back
-* presentation by local organisation: 
+* _[lunch]_
+* _[1.30pm]_ presentation by local organisation **(who?)**: 
  * where and how does EasyBuild fit in with local needs?
  * current activities with EasyBuild
  * wishlist
-* video conference presentation by NVIDIA (Adam De Coninck?)
- * (may potentially be held week before hackathon)
+* _[2.30pm]_ technical discussion on EasyBuild
+ * open issues relevant to the attendees, future directions
+* _[5pm-6pm]_ video conference presentation (Adam De Coninck, NVIDIA) **confirmed**
  * GPGPU toolbox for sysadmins and user support teams
  * building CUDA software
-* technical discussion on EasyBuild
 
-### Tuesday
+### Tuesday [10am-6pm]
 
- * hackathon kick-off, focus on EasyBuild support for accelerators and local interests
+ * hackathon kick-off
+ * hands-on: getting started
+ * focus on EasyBuild support for accelerators and local interests
 
-### Wednesday
+### Wednesday [10am-6pm]
 
  * hackathon (continued)
