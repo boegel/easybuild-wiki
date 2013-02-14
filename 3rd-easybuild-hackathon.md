@@ -29,12 +29,12 @@ Please let Kenneth Hoste know if you're planning to attend.
  * focus on modularity: easyblocks and compiler toolchains
  * getting started: writing easyconfigs; writing easyblocks; extending compiler toolchain support
  * contributing back
-* _[lunch]_
-* _[1.30pm]_ presentation by local organisation **(who?)**: 
+* _[11.30am-12.30pm]_ presentation by local organisation **(who?)**: 
  * where and how does EasyBuild fit in with local needs?
  * current activities with EasyBuild
  * wishlist
-* _[2.30pm]_ technical discussion on EasyBuild
+* _[lunch]_
+* _[2.00pm(?)]_ technical discussion on EasyBuild
  * open issues relevant to the attendees, future directions
 * _[5pm-6pm]_ video conference presentation (Adam De Coninck, NVIDIA) **confirmed**
  * GPGPU toolbox for sysadmins and user support teams
