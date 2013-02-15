@@ -1,6 +1,6 @@
 ### Basic Information
 
-* **time**: Mon-Wed Mar 11-13 2013, 10am-6pm (Cypriotic time)
+* **time**: Mon-Wed Mar 11-13 2013, 10am-6pm (Nicosia time)
 * **location**: Nicosia, Cyprus (confirmed)
 * **notes**: local provisions?
 
