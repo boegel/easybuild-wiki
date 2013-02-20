@@ -4,7 +4,7 @@
 
 These wiki pages contain as the EasyBuild documentation.
 
-**NOTE (Oct-Nov-Dec 2012): The wiki pages are in need of a serious update, we're working on it.**
+**NOTE: The wiki pages are in need of a serious update, we're working on it.**
 
 * [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]] (subject to change, see issue #335)
@@ -47,7 +47,7 @@ These wiki pages contain as the EasyBuild documentation.
 
 * [[1st EasyBuild hackathon]]: Aug. 16th-17th 2012, Ghent (Belgium)
 * [[2nd EasyBuild hackathon]]: Nov. 28th-29th 2012, Kirchberg (Luxembourg)
-* [[3rd EasyBuild hackathon]]: (being planned)
+* [[3rd EasyBuild hackathon]]: Mar. 11-13th 2013, Nicosia (Cyprus)
 
 ### Conferences
 
