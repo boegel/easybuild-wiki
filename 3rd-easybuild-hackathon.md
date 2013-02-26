@@ -17,8 +17,8 @@ Please let Kenneth Hoste know if you're planning to attend.
  * Thekla Loizou (The Cyprus Institute)
  * Dina Mahmoud Ibrahim (Cairo University)
  * Alan O'Cais (Jülich Supercomputing Centre)
- * Alexander Schnurpfeil  (Jülich Supercomputing Centre)
- * Amihai Silverman (Technion – Israel Institute of Technology)
+ * Alexander Schnurpfeil (Jülich Supercomputing Centre)
+ * Konstantinos Stergiopoulos (The Cyprus Institute)
  * George Tsouloupas (The Cyprus Institute)
  * (more confirmations pending)
 
