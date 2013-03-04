@@ -2,12 +2,12 @@ Click on ![easyconfig logo](http://hpc.ugent.be/easybuild/images/easyblocks_conf
 to see to the list of easyconfig files.
 And on ![easyblock logo](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png) 
 to go to the easyblock for this package.
-## Supported Packages (240 in v1.2.0) 
+## Supported Packages (241 in v1.2.0 as of 2013-02-28) 
 <center>
 [A](#A) - [B](#B) - [C](#C) - [D](#D) - [E](#E) - [F](#F) - [G](#G) - [H](#H) - [I](#I) - [J](#J) - [L](#L) - [M](#M) - [N](#N) - [O](#O) - [P](#P) - [Q](#Q) - [R](#R) - [S](#S) - [T](#T) - [U](#U) - [V](#V) - [W](#W) - [X](#X) - [Y](#Y) - [Z](#Z)
 </center>
 
-### A (12 packages) <a name='A'/>
+### A (13 packages) <a name='A'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/a2ps)
@@ -26,6 +26,11 @@ to go to the easyblock for this package.
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/develop/easybuild/easyblocks/a/acml.py)
 [ ACML](http://developer.amd.com/libraries/acml)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/ALADIN)
+[![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
+ (https://github.com/hpcugent/easybuild-easyblocks/tree/develop/easybuild/easyblocks/a/aladin.py)
+[ ALADIN](http://www.cnrm.meteo.fr/aladin/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/a/AMOS)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -445,7 +450,7 @@ gompi
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs/h/Hypre)
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/develop/easybuild/easyblocks/h/hypre.py)
-[ Hypre]()
+[ Hypre](https://computation.llnl.gov/casc/linear_solvers/sls_hypre.html)
 
 ### I (14 packages) <a name='I'/>
 
