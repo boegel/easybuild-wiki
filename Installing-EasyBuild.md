@@ -1,5 +1,6 @@
 There are a couple of ways to install EasyBuild, depending on your use case. This page describes the various installation methods.
 
+ * [Bootstrapping](#bootstrapping)
  * [Standard installation of latest release](#standard_install)
  * [Installation from downloaded sources](#source_install)
  * [Installation of latest release from GitHub](#github_install)
@@ -7,6 +8,10 @@ There are a couple of ways to install EasyBuild, depending on your use case. Thi
 
 ***
 
+<a name="wiki-bootstrapping">
+## Bootstrapping
+
+The easiest way (by far) to installing EasyBuild is by using EasyBuild, see https://github.com/hpcugent/easybuild/wiki/Bootstrapping-EasyBuild .
 
 <a name="wiki-standard_install">
 ## Standard installation of latest release
