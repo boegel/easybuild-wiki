@@ -29,7 +29,7 @@ eb --version
 python bootstrap_eb.py /some/path
 ```
 
-The path you specify to the bootstrap script is where EasyBuild should be installed. If you also want software that is built using EasyBuild to be installed there, you'll need to set `EASYBUILDINSTALLPATH`, and/or looking into the [details on configuring EasyBuild](https://github.com/hpcugent/easybuild/wiki/Configuration).
+**Note**: The path you specify to the bootstrap script is where EasyBuild should be installed. If you also want software that is built using EasyBuild to be installed there, you'll need to set `EASYBUILDINSTALLPATH`, and/or look into the [details on configuring EasyBuild](https://github.com/hpcugent/easybuild/wiki/Configuration).
 
 ### Sanity check
 
