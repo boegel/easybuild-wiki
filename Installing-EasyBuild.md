@@ -13,6 +13,8 @@ There are a couple of ways to install EasyBuild, depending on your use case. Thi
 
 The easiest way (by far) to installing EasyBuild is by using EasyBuild, see https://github.com/hpcugent/easybuild/wiki/Bootstrapping-EasyBuild .
 
+Only when that fails to work for you for some reason, you should resort to one of the approaches below, which are more involved (but also give more control).
+
 <a name="wiki-standard_install">
 ## Standard installation of latest release
 
