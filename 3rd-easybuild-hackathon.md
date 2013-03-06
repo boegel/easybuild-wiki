@@ -6,8 +6,6 @@
 
 ### Attendees
 
-Please let Kenneth Hoste know if you're planning to attend.
-
  * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
  * Jens Timmerman (HPC-UGent, EasyBuild developer)
  * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
@@ -20,7 +18,7 @@ Please let Kenneth Hoste know if you're planning to attend.
  * Alexander Schnurpfeil (Jülich Supercomputing Centre)
  * Konstantinos Stergiopoulos (The Cyprus Institute)
  * George Tsouloupas (The Cyprus Institute)
- * (more confirmations pending)
+ * Ioanna Kalvari (University of Cyprus)
 
 ## Agenda (planned)
 
