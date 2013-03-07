@@ -9,6 +9,7 @@
  * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
  * Jens Timmerman (HPC-UGent, EasyBuild developer)
  * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
+ * Jens Wiegand (The Cyprus Institute)
  * Stelios Erotokritou (The Cyprus Institute)
  * Mohamed Gafaar (Bibliotheca Alexandrina)
  * Ioannis Kirmitzoglou (University of Cyprus)
@@ -24,7 +25,7 @@
 
 ### Monday
 
-* _[10am]_ welcome by local organizers
+* _[10am]_ welcome by local organizers (by Jens Wiegand)
  * mention practical arrangements for coming days
 * _[10.15am]_ introduction round: who's who (brief, informal)
 * _[10.30am-11.30am]_ EasyBuild presentation by KH/JT
