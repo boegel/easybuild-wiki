@@ -20,6 +20,7 @@
  * Konstantinos Stergiopoulos (The Cyprus Institute)
  * George Tsouloupas (The Cyprus Institute)
  * Ioanna Kalvari (University of Cyprus)
+ * Demetris Charalambous (Cyprus Meteorological Service)
 
 ## Agenda (planned)
 
