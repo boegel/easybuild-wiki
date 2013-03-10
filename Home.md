@@ -48,7 +48,6 @@ These wiki pages contain as the EasyBuild documentation.
 * [[1st EasyBuild hackathon]]: Aug. 16th-17th 2012, Ghent (Belgium)
 * [[2nd EasyBuild hackathon]]: Nov. 28th-29th 2012, Kirchberg (Luxembourg)
 * [[3rd EasyBuild hackathon]]: Mar. 11-13th 2013, Nicosia (Cyprus)
- * [GPGPU application notes (NVIDIA)](https://github.com/hpcugent/easybuild/wiki/GPGPU-apps-notes-NVIDIA)
 
 ### Conferences
 
