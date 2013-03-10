@@ -1,8 +1,8 @@
 ### Basic Information
 
 * **time**: Mon-Wed Mar 11-13 2013, 10am-6pm (Nicosia time)
-* **location**: Nicosia, Cyprus (confirmed)
-* **notes**: local provisions?
+* **location**: Nicosia, Cyprus
+* **notes**: organised by [LinkSCEEM](http://www.linksceem.eu/)
 
 ### Attendees
 
@@ -55,6 +55,7 @@
  * hackathon kick-off
  * hands-on: getting started
  * focus on EasyBuild support for accelerators and local interests
+ * [GPGPU application notes (NVIDIA)](https://github.com/hpcugent/easybuild/wiki/GPGPU-apps-notes-NVIDIA)
 
 ### Wednesday [10am-6pm]
 
