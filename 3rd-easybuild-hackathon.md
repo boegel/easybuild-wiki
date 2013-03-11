@@ -29,7 +29,7 @@
 * _[10am]_ welcome by local organizers (Jens Wiegand)
  * mention practical arrangements for coming days
 * _[10.15am]_ introduction round: who's who (brief, informal)
-* _[10.30am-11.30am]_ EasyBuild presentation (Kenneth Hoste, Jens Timmerman)
+* _[10.30am-11.30am]_ EasyBuild presentation (Kenneth Hoste, Jens Timmerman) [slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf)
  * intent is to train attendees on making optimal use of EasyBUild
  * introduction to purpose of EasyBuild and its design
  * example use cases
