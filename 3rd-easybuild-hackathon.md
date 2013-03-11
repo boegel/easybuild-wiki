@@ -46,7 +46,7 @@
 * _[lunch]_
 * _[2.00pm(?)]_ technical discussion on EasyBuild
  * open issues relevant to the attendees, future directions
-* _[5pm-6pm]_ video conference presentation (Adam De Coninck, NVIDIA) **confirmed**
+* _[5pm-6pm]_ video conference presentation (Adam De Coninck, NVIDIA) **confirmed** [[slides (PDF)](hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf)]
  * GPGPU toolbox for sysadmins and user support teams
  * building CUDA software
 
