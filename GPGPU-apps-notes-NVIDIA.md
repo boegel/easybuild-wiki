@@ -1,4 +1,4 @@
-The notes below show how to build selected applications with CUDA support enabled, and were provided by Adam De Coninck (NVIDIA Corporation).
+The notes below show how to build selected applications with CUDA support enabled, and were provided by Adam DeConinck (NVIDIA Corporation).
 
 ### GROMACS
 
