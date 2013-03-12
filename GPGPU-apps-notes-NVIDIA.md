@@ -380,3 +380,84 @@ Build notes
     
     make install
 ```
+
+### Charm++
+
+```
+Building Charm++ 6.2.1
+======================
+
+    wget http://charm.cs.uiuc.edu/distrib/charm-6.2.1_src.tar.gz
+    tar xzf charm-6.2.1_src.tar.gz
+    cd charm-6.2
+
+Charm++ has a bunch of different pre-selectable configurations which can be
+used, detailed on `http://charm.cs.uiuc.edu/manuals/html/charm++/A.html` . This
+includes options for whether or not to use MPI, whether to include Infiniband
+support, etc. Note that the `build` script may do some interactive question and
+answer. In this case I'll build Charm++ with MPI enabled, but you should choose
+your build process based on your cluster's needs.
+
+    module load openmpi
+    env MPICXX=mpicxx ./build charm++ mpi-linux-x86_64 --with-production
+    ./build charm++ net-linux-x86_64 ibverbs -with-production -j8
+
+Testing the build
+
+    cd mpi-linux-x86_64/tests/charm++/megatest
+    make pgm
+    mpirun -np 4 ./pgm
+```
+
+### NAMD
+
+This build process is known to work on Adam's cluster @ NVIDIA,
+but may not be the best performing, etc; it's based in part on
+the broken instructions, and in part on Adam his work to get it
+to build.
+
+In building NAMD, it's worth spending some time looking at the arguments
+to the `./config` file in the source directory, and also looking at the
+contents of the `arch/` directory, for information as to what parameters are
+available and useful. There's also some documentation on doing a build on
+the NAMD homepage at
+http://www.ks.uiuc.edu/Research/namd/2.9/notes.html#compiling , but it
+appears to be somewhat out of date...
+
+```
+NAMD 2.9 with CUDA support
+==========================
+
+Download NAMD from http://www.ks.uiuc.edu/Research/namd/ (requires 
+registration).
+
+    tar xzf NAMD_2.9_Source.tar.gz
+    cd NAMD_2.9_Source
+    
+NAMD requires tcl, fftw 2.1.5 and Charm++. In this example, I am using
+system tcl libraries and an fftw module. See the charm-6.2.markdown file for 
+details on building Charm++.
+
+Edit `Make.charm` to set the CHARMBASE parameter to the install path of
+Charm++.
+
+Edit `arch/Linux-x86_64.fftw` to set the FFTDIR parameter to the install path
+of FFTW. Note that your FFTW has to have been compiled with the 
+single-precision option enabled (--enable-float and 
+--enable-type-prefix) so you have the sfftw.h include files.
+
+Edit `arch/Linux-x86_64.tcl` to set the TCLDIR parameter to the install path
+of TCL. (In this case, using / , and making sure the libdir is correct, since
+I'm using the system TCL.) 
+
+For modules, I'm using the same OpenMPI I used to build Charm++, and I'm using
+the CUDA module.
+
+    module load cuda openmpi
+    ./config Linux-x86_64-g++ --charm-arch mpi-linux-x86_64 --with-cuda --cuda-prefix $CUDA_HOME
+    cd Linux-x86_64-g++
+    make
+
+This should produce a namd2 binary, as well as a charmrun binary and some other
+files.
+```
