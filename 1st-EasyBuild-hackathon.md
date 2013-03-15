@@ -17,20 +17,20 @@
 
 ### presentations
 note: informal presentations, no need to prepare slides
- * (_Fotis_) development timeline
- * (_Fotis_) overview of current open bug/feature requests
- * (_Fotis/Cédric_) experience report by Fotis and Cédric
+ * _(Fotis)_ development timeline
+ * _(Fotis)_ overview of current open bug/feature requests
+ * _(Fotis/Cédric)_ experience report by Fotis and Cédric
 
 ###  discussions
  * _(Kenneth)_ public bug tracker (GitHub issue tracker?)
  * _(Kenneth)_ policy for [contributing back](Contributing back) to EasyBuild (feature branches, pull requests, code review, release manager)
- * (_Fotis/Cédric_) [wishlist of Fotis and Cédric](https://github.com/fgeorgatos/easybuild/wiki/Wishlist)
+ * _(Fotis/Cédric)_ [wishlist of Fotis and Cédric](https://github.com/fgeorgatos/easybuild/wiki/Wishlist)
   * namespace format and and recommendations by the EasyBuild team
   * configuring, library building and related potential issues
   * how to handle `osdependencies` gracefully
    * extension: how to describe package info & dependencies (employ [CUFD](http://www.mancoosi.org/cudf/)?) 
- * (_Fotis_) class naming (`eb_` prefix)
- * (_Fotis_) can we benefit in any way from pkgsrc/ports/portage etc?
+ * _(Fotis)_ class naming (`eb_` prefix)
+ * _(Fotis)_ can we benefit in any way from pkgsrc/ports/portage etc?
 
 ###  hacking
  * bug fixing

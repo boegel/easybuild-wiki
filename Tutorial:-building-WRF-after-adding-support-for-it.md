@@ -186,7 +186,7 @@ has support for multiple compilers
 accordingly; likewise, some environment variables need to be set for the netCDF dependency which is also omitted here
 
 The fully featured easyblock implementing support for building, testing and installing WRF is available
-[here](https://github.com/hpcugent/easybuild-easyblocks/blob/master/easybuild/easyblocks/w/wrf.py)).
+[here](https://github.com/hpcugent/easybuild-easyblocks/blob/master/easybuild/easyblocks/w/wrf.py).
 
 #### Providing easyblock to EasyBuild
 
@@ -198,7 +198,7 @@ Simply place the Python module that is the easyblock with the appropriate name (
 Checking whether EasyBuild finds your easyblock can be done with `eb --list-easyblocks` or `eb --easyblock EB_WRF --avail-easyconfig-params=detailed`.
 
 <a name="wiki-wrf-easyconfig">
-## Making EasyBuild build and install a particular WRF version: putting together an easyconfig file
+## Build and install a particular WRF version: putting together an easyconfig file and using `eb`
 
 Finally, to build and install WRF using EasyBuild, you need to compose a simple easyconfig file that specifies all the details for the build (version,
 [compiler toolchain](https://github.com/hpcugent/easybuild/wiki/Compiler-toolchains) to use, etc.).

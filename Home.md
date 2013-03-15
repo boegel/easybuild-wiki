@@ -4,7 +4,7 @@
 
 These wiki pages contain as the EasyBuild documentation.
 
-**NOTE (Oct-Nov-Dec 2012): The wiki pages are in need of a serious update, we're working on it.**
+**NOTE: The wiki pages are in need of a serious update, we're working on it.**
 
 * [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]] (subject to change, see issue #335)
@@ -17,7 +17,6 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Using EasyBuild]]
  * [[Automatic dependency resolution]]
  * [[OS-specific notes]]
- * [[Tutorial: building WRF after adding support for it]]
 * [[Step-by-step guide]]
 * [[Compiler toolchains]] (up-to-date)
 * [[Easyconfig files]] (updated, may need work)
@@ -25,6 +24,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Development guide]]
  * [[Setting up your own easyblocks repository]] (ok, up-to-date)
  * [[Encode class names]]
+ * [[Tutorial: building WRF after adding support for it]] (ok, up-to-date)
  * [[Packaging and versioning]]
  * [[Unit and regression testing]] (ok, up-to-date)
  * [[Release process]] (ok, up-to-date)
@@ -47,10 +47,12 @@ These wiki pages contain as the EasyBuild documentation.
 
 * [[1st EasyBuild hackathon]]: Aug. 16th-17th 2012, Ghent (Belgium)
 * [[2nd EasyBuild hackathon]]: Nov. 28th-29th 2012, Kirchberg (Luxembourg)
+* [[3rd EasyBuild hackathon]]: Mar. 11-13th 2013, Nicosia (Cyprus)
 
 ### Conferences
 
  * [[Supercomputing'2012 / PyHPC|Notes on EasyBuild promotion at Supercomputing'2012]]: EasyBuild was actively promoted at Supercomputing'2012 in Salt Lake City during Birds-of-a-Feather sessions, the PyHPC workshop and the exhibit
+ * FOSDEM'13: EasyBuild lightning talks in FOSS for Scientists and Python devrooms, by Jens Timmerman and Kenneth Hoste (resp.)
 
 ### Conference calls
 

@@ -1,5 +1,6 @@
 There are a couple of ways to install EasyBuild, depending on your use case. This page describes the various installation methods.
 
+ * [Bootstrapping](#bootstrapping)
  * [Standard installation of latest release](#standard_install)
  * [Installation from downloaded sources](#source_install)
  * [Installation of latest release from GitHub](#github_install)
@@ -7,6 +8,12 @@ There are a couple of ways to install EasyBuild, depending on your use case. Thi
 
 ***
 
+<a name="wiki-bootstrapping">
+## Bootstrapping
+
+The easiest way (by far) to installing EasyBuild is [by using EasyBuild](https://github.com/hpcugent/easybuild/wiki/Bootstrapping-EasyBuild). By following the bootstrap procedure, you'll obtain an `EasyBuild` module you can load to start using EasyBuild.
+
+Only when that fails to work for you for some reason, you should resort to one of the approaches below, which are more involved (but also give more control).
 
 <a name="wiki-standard_install">
 ## Standard installation of latest release
@@ -77,6 +84,10 @@ The full list of commands to install EasyBuild in the installation prefix ```/tm
 pip install --prefix=/tmp easybuild
 export PATH=/tmp/bin:$PATH
 export PYTHONPATH=/tmp/lib/python2.7/site-packages:$PYTHONPATH
+```
+Or alternatively (with an old pip) 
+```bash
+pip install --install-option="--prefix=/tmp" easybuild
 ```
 
 To determine the path that should be added to the ```PYTHONPATH``` environment variable for a given installation prefix, you can use the following command:

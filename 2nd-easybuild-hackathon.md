@@ -1,1 +1,0 @@
-For now, see https://github.com/fgeorgatos/easybuild.experimental/wiki/Joint-HPC.UNI.LU-Users-Meeting,-HPCBIOS-kick-off-and,-2nd-EasyBuild-hackathon .
