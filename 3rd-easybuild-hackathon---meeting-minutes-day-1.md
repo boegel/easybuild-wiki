@@ -48,12 +48,6 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ### EasyBuild presentation
 
-#### Alan
-
- * adding support for BlueGene Q system
-  * perfect timeframe since it's quite new
-  * specific characteristic: crosscompilation, IBM XLC compiler, ...
-
 #### questions/remarks by George T.
 
  * `--download-only` command line option is missing **[feature request]**
@@ -96,6 +90,9 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 #### questions/remarks by Alan
 
+ * adding support for BlueGene Q system
+  * perfect timeframe since it's quite new
+  * specific characteristic: crosscompilation, IBM XLC compiler, ...
  * on BlueGene systems, running of tests will need to be skipped or done differently (remotely)
   * skipping can be done with e.g. `--try-amend=skipsteps=test,test_cases`
  * `OpenFOAM` is a pain because of large difference in system characteristics
@@ -137,7 +134,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * `--download-only` (from mirrors)
  * document jail tool (and add it to bootstrap)
  * goolf: OpenMPI 1.5, OpenBLAS, FFTW w/ `--enable-avx`
- * custom variables in module files (**see `modextravars`**)
+ * custom variables in module files (**see** `modextravars`)
  * CUDA support: in toolchain or not?
   * different CUDA versions, dependency chain, ...
  * PGI toolchain is also important for CI

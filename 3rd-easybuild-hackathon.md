@@ -17,10 +17,12 @@
  * Dina Mahmoud Ibrahim (Cairo University)
  * Alan O'Cais (Jülich Supercomputing Centre)
  * Alexander Schnurpfeil (Jülich Supercomputing Centre)
- * Konstantinos Stergiopoulos (The Cyprus Institute)
  * George Tsouloupas (The Cyprus Institute)
  * Ioanna Kalvari (University of Cyprus)
  * Demetris Charalambous (Cyprus Meteorological Service)
+ * George Fanourgakis (The Cyprus Institute)
+ * Nicolas ?? (??) **FIXME**
+ * Konstantinos Stergiopoulos (The Cyprus Institute) **(excused)**
 
 ## Training exercises
 
@@ -64,3 +66,10 @@ A set of training exercises to get familiar with EasyBuild is available [here](h
 ### Wednesday [10am-6pm]
 
  * hackathon (continued)
+
+## Notes
+
+ * [Monday: presentations, discussions and first hands-on experiences](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-1)
+ * [Tuesday: hackathon, discussions](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-2)
+ * [Wednesday: hackathon (continued), discussions](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-3)
+ 
