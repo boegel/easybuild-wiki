@@ -243,6 +243,8 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ## Hackathon notes
 
+ * environment modules may be Tcl-only version, which only provides `modulecmd.tcl`
+  * EasyBuild needs to be able to handle that
  * `modulecmd` may not be in path, but hardcoded in `module`
  * make bootstrap script work offline too, i.e. add option to supply it the required source tarballs
  * goolf v1.5.10
