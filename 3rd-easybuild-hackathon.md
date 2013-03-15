@@ -42,7 +42,7 @@ A set of training exercises to get familiar with EasyBuild is available [here](h
  * focus on modularity: easyblocks and compiler toolchains
  * getting started: writing easyconfigs; writing easyblocks; extending compiler toolchain support
  * contributing back
-* _[11.30am-12.00pm]_ presentation by local organisation (George Tsouloupas): 
+* _[11.30am-12.00pm]_ presentation by local organisation (George Tsouloupas) [[slides (PDF)](http://hpcugent.github.com/easybuild/files/EasyBuild-wishlist-Cyprus-Institute-hackathon-2013.pdf)]
  * where and how does EasyBuild fit in with local needs?
  * current activities with EasyBuild
  * wishlist
@@ -52,7 +52,7 @@ A set of training exercises to get familiar with EasyBuild is available [here](h
 * _[lunch]_
 * _[2.00pm(?)]_ technical discussion on EasyBuild
  * open issues relevant to the attendees, future directions
-* _[5pm-6pm]_ video conference presentation (Adam DeConinck, NVIDIA) **confirmed** [[slides (PDF)](http://hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf)]
+* _[5pm-6pm]_ video conference presentation (Adam DeConinck, NVIDIA) [[slides (PDF)](http://hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf)]
  * GPGPU toolbox for sysadmins and user support teams
  * building CUDA software
 
