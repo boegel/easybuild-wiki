@@ -48,6 +48,8 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ### EasyBuild presentation
 
+[slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf)
+
 #### questions/remarks by George T.
 
  * `--download-only` command line option is missing **[feature request]**
@@ -176,6 +178,8 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ### NVIDIA presentation (Adam) 
 
+[slides (PDF)](http://hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf)
+
  * [Alan] documentation for building CUDA applications provided by NIVIDA is very useful and hard to come by!
  * NVIDIA CUDA with OpenMPI: K20 + Mellanox IB
  * 'drop-in' libraries: cuBLAS
@@ -254,7 +258,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
   * LAPACK 3.4.2
   * FFTW 3.3.3 (single/double)
   * ScaLAPACK 2.0.2
- * problems with EasyBuild bootstrap script during training exercises
+ * problems with EasyBuild bootstrap script during [training exercises](http://hpcugent.github.com/easybuild/files/EasyBuild_training_exercises_Cyprus_hackathon_2013.pdf)
   * use `modulecmd help` instead of `-H` (latter doesn't work with Tcl environment modules?)
   * warn about installing with root
   * `lib` vs `lib64`
