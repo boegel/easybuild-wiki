@@ -176,8 +176,6 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ### NVIDIA presentation (Adam) 
 
-## Discussion notes
-
  * [Alan] documentation for building CUDA applications provided by NIVIDA is very useful and hard to come by!
  * NVIDIA CUDA with OpenMPI: K20 + Mellanox IB
  * 'drop-in' libraries: cuBLAS
