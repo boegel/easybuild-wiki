@@ -223,7 +223,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
   * developer.nvidia.com/llvm
   * http://docs.nvidia.com
   * http://developer.nvidia.com/nvidia-registered-developer-program to get GPUs
-  * adeconinck@nvidia.com
+  * adeconinck [at] nvidia.com for questions
  * follow-up conf. call
   * packaging of CUDA toolkit (`redhat`, `fedora`, `ubuntu`, ...)
    * reason to not have a monolitic install is OS-specific stuff like paths for files, driver, etc.
