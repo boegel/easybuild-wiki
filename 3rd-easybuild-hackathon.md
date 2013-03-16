@@ -1,3 +1,9 @@
+<p align="center">
+<img src="http://hpcugent.github.com/easybuild/files/EasyBuild_hackathon_Cyprus_20130313_group_picture_cropped_small.jpg" alt="group picture during 3rd EasyBuild hackathon @ Nicosia, Cyprus"/><br>
+group picture during 3rd EasyBuild hackathon @ Nicosia, Cyprus<br>
+<i>(left to right: Mohamed, Stelios, Dina, Jens W., Thekla, Eleftherios, Alan, Alexander, George T., Jens T., Kenneth, Fotis, George F.)</i>
+</p>
+
 ### Basic Information
 
 * **time**: Mon-Wed Mar 11-13 2013, 10am-6pm (Nicosia time)
