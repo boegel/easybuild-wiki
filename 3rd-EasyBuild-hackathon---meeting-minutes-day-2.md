@@ -21,14 +21,15 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ## Program
 
- * [10am-6pm] hackathon, day 1
+ * [10am-6pm] hackathon, day 2
  * [6pm-8.00pm] aftermath: discussathon with George T., Fotis, Jens T. and Kenneth
 
 ## Discussion notes
 
  * [Fotis]
   * discuss a way to make modules conflict for compilers, MPI, BLAS/LAPACK, ...(?)
-   * one way would be to add ghost modules being loaded as e.g. a compiler is needed
+   * ie. it makes not much sense to have 2 different MPI stacks loaded together, better spit a warning
+   * KH?: one way would be to add ghost modules being loaded as e.g. a compiler is needed
    * `COMPILER/GCC-4.6.3`
    * add extra `conflict COMPILER` line in GCC, icc, ifort modules
    * problems:
@@ -58,26 +59,28 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
   * building basic libraries
   * look into UNITE and its dependencies
  * George & Fotis
-  * CUDA toolkit 5.0.035
-  * GROMACS v4.6 (w/o CUDA)
-  * FFTW 3.3.3
+  * CUDA toolkit 5.0.35; DONE.
+  * GROMACS v4.6 (w/o CUDA); DONE.
+  * FFTW 3.3.3; DONE.
   * OpenMPI v1.7 for DMA to GPU support
-   * only 1.7rc8 is available
+   * only 1.7rc8 is available; DONE.
    * Fortran libraries were renamed in this version
     * `libmpi_f77` -> `libmpi_mpifh`
     * `libmpi_f90` -> `libmpi_usempi`
-   * requires GCC **newer** than v4.8 (which hasn't been releaed yet)
-  * OpenMPI v1.6.3 (Fotis)
-   * with slightly more flexible sanity check paths
-  * goolf 1.4.10
+   * requires GCC **newer** than v4.8 (which hasn't been released yet)
+  * OpenMPI v1.6.3 & v1.6.4 (Fotis); DONE.
+   * with slightly more relaxed sanity check paths
+  * goolf 1.4.10; ~DONE (deviations: FFTW is the default version, so far)
    * GCC 4.7.2
    * OpenMPI 1.6.4
    * OpenBLAS 0.2.6
    * LAPACK 3.4.2
    * FFTW 3.3.3 (single/double)
    * ScaLAPACK 2.0.2
+  * goolf 1.5.10; same as above, except with OpenMPI v1.7rc8; existing just as a prototype really
+  * gmolf: no much progress on that yet
   * goolfc
-   * CUDA toolkit 5.0.03
+   * CUDA toolkit 5.0.35
   * GROMACS v4.6 w/ CUDA support
  * Jens T.
   * help out with several people
