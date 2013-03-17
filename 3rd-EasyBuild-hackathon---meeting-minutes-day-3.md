@@ -21,7 +21,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ## Program
 
- * [10am-6pm] hackathon, day 2
+ * [10am-6pm] hackathon, day 3
  * [6pm-9.30pm] aftermath: discussathon with George T., Fotis, Jens T. and Kenneth
 
 ## Discussion notes
@@ -51,26 +51,26 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
    * support for installing CUDA toolkit via easyblock is ready
     * except for handling CUDA samples properly, which introduce an extra os dependency (`libglut.so`)
   * Python in a toolchain?
-   * Python is just a eligible for a toolchain as FFTW (or ScaLAPACK) is
-  * `-no-OFED` toolchain suffix
+   * Python is just as eligible for a toolchain as FFTW (or ScaLAPACK) is
+  * `-no-OFED` toolchain suffix, please!
    * should be dropped, cfr. issue opened by Xavier
   * how to recompile WRF with e.g. `ictcec` (with CUDA support included), without having to rebuild the world
   * PRACE CPE
-   * see https://github.com/fgeorgatos/easybuild.experimental/tree/master/users/fgeorgatos/PRACE
-   * 80-90% of the work seems done
-   * a kind of PRACE variables module is required
-    * can be assisted via `modextravars`
+    * see https://github.com/fgeorgatos/easybuild.experimental/tree/master/users/fgeorgatos/PRACE
+    * 80-90% of the work seems done
+    * a kind of PRACE variables module is required
+     * can be assisted via `modextravars`
   * site customizations: how can they be done without editing every single easyconfig file?
    * e.g. TotalView `LM_LICENSE_MANAGER`, `TVDSVRLAUNCHCMD`, ...
-   * can be done via e.g. `eb --try-amend='modextravars={"TVDSVRLAUNCHCMD": "oarsh"}'`
-   * or by setting `EASYBUILD_TRY_AMEND` environment variable
+   * can be done via e.g. `eb --try-amend='modextravars={"TVDSVRLAUNCHCMD": "oarsh"}'` ??
+   * or by setting `EASYBUILD_TRY_AMEND` environment variable ??
   * GRIDengine: benchmarking grid systems framework
    * paper available on continuous monitoring (w/ grid benchmarking)
   * next EasyBuild hackathon as a part of a PRACE training event for sysadmins?
   * `cdash` discussion
    * microbenchmarks and tests for MPI stacks
    * performance monitoring of different MPI stacks on systems
- * [prof. X/Fotis] **FIXME**
+ * [prof. Promponas/Fotis]
   * write a small abstract on EasyBuild for bioinformatics community
   * large bioinformatics conference in Berlin, July 2013 => Fotis?
 
@@ -81,7 +81,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
    * `libibverbs`, `libibumad` are missing as deps
    * patch `configure` in `src/tools` for `ga-5.1`: `--with-openib='$LDFLAGS -libverbs -libumad'`
  * George T. & Kenneth
-  * discussion on mutable toolchains, e.g. `tcamend={'FFTW': ('FFTWsp', '3.3.3')}`
+  * discussion on mutable toolchains, e.g. `--tcamend={'FFTW': ('FFTWsp', '3.3.3')}`
  * Dina
   * GCC sanity check failed because it was built on a 32-bit system, but build is OK
   * fixed by Kenneth by copying module in the right place, so `gompi can be created and go from there
@@ -90,12 +90,12 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * George T. + Fotis
   * `goolf` v1.4.10 and v1.5.10 (OpenMPI v1.6.4 and v1.7rc8)
   * FFTW(sp), GROMACS (CUDA)
-   * don't use `--enable-avx` in FFTW, because GROMACS performance will drop w/ 20%
+   * don't use `--enable-avx` in FFTW for GROMACS, because performance may drop ~20%
     * see http://www.gromacs.org/Documentation/Installation_Instructions#3.2.1._Running_in_parallel
   * also looked into `Charm++` (tricky) and `NAMD`
  * Thekla
    * install `goalf` and `ictce` toolchains on Euclid (and CyTera?)
-   * `gzip`, `tar` + homework by Fotis
+   * `gzip`, `tar`, more homework by Fotis :-) (but thanks for the contribution anyhow!)
  * George F.
   * finished build `Ferret` with `goalf` toolchain, after further patching/retesting
-   * builds with `ictce` toolchain, but `ferret` command segfaults
+   * builds with `ictce` toolchain, but `ferret` command then segfaults
