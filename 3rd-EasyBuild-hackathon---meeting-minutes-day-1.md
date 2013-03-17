@@ -67,22 +67,30 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
    * and results in further explosion of the set of available modules
   * create big fat toolchains and filter stuff out in `toolchainopts` with `filter` option?
  * are existing modules reused if they're needed? **[answer: yes]**
- * 
 
-#### questios/remarks by Fotis
+#### questions/remarks by Fotis
 
  * supporting alternative module naming schemes
-  * basically just an alternative view on the existing modules (?)
-  * flat or hierarchical
-   * hierarchical can be top-down (compiler->libraries->apps) or vice versa (software on top, what is what the users care about)
+  * basically just provide multiple alternative views on the existing modules - let's escape from the "one size show" concept
+   * flat (cray optimal) or hierarchical (lmod optimal), all can be valid
+   * hierarchical can be top-down (compiler->libraries->apps) or vice versa (software on top, that is what the users care about)
  * setting up mirrors for sources
+  * initial mirror prototype already in development/use at Uni.Lu; ~36GBs of software (open source & closed)
+  * The split between redistributable and non-, is unavoidable for a public service; zsync could help with either
   * `--try-amend` source URL should be supported via EasyBuild configuration file
    * **currently already supported via `EASYBUILD_TRY_AMEND` env var**
- * Trilinos should be in bold on slide with supported software
- * can `build_in_install_dir` be specified in easyconfig file?
+ * Trilinos and other such multi-dep libs, should be in bold on slide with supported software
+ * can `build_in_install_dir` be specified in easyconfig file? It might reduce needs for easyblocks in bioinfo packages
  * `ictce/3.2.2.u3` toolchain sources are no longer available, so use other toolchain in examples (WRF)
- * chroot into installation prefix, as an alternative to loading modules
- * customization of modules, sed through existing modules and change what it needed
+  * also there are bugs in icc/11.1.07* & flexlm, which are time-consuming to debug (EB processes *are* affected)
+ * chroot/jail into installation prefix, as a proper containment solution when building software:
+  * it makes it much safer to build 1000s of packages coming from pkgsrc (at least, at build time!)
+  * it will allow to catch osdependencies that now escape unnoticed
+  * it seems to be the correct thing to do also in relation to hashdist
+  * no need to build safety features inside easyconfigs, IMHO, that has no clear benefit
+ * possible directions on how to modify the current namespace (eg. think of lower-case modules):
+  * customize modulefiles with sed and change what is needed (can be tricky or risky to be correct)
+  * manually cultivate a symlink farm (only good for the first load, deps will be like before)
 
 #### questions/remarks by Mohamed
 
@@ -101,7 +109,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * error/warning log parser now spits out lots of false positives
   * regular expression used needs to be documented well
   * need to enhance regex to reduce amount of false positives
- *` bbcp` can never work if the required ports are not open
+ * `bbcp` can never work if the required ports are not open
   * add a test case for this?
   * support a way of spitting out a warning about this at the end of the installation
 
@@ -114,7 +122,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
  * document where to put source files
 
-### Presentation by JSE (Alan)
+### Presentation by JSC (Alan)
 
  * supercomputing training portal: http://linksceem.eu/ls2/component/content/article/198
   * big fat training cluster via VMs w/ terminal emulation in web browser
@@ -124,27 +132,29 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * try and get a toolchain working for BlueGene Q systems
  * categories of software used in PRACE
 
-### Presentation by Cyprus Institute (George T./Fotis)
+### Presentation by Cyprus Institute (George T./Fotis G.)
+
+N.B. This presentation incorporates also the 3rd-party needs of Uni.Lu
 
  * strong commitment from Cyprus Institute to EasyBuild
  * was really useful to quickly set up a software stack
   * GPU software, even though not all apps were there
- * useful for conformity across LinkSCEEM institutions
+ * useful for conformity across LinkSCEEM institutions - very important
  * also for setting up post-processing nodes (w/ different OS)
- * robot should not depend on fileame, but on contents of easyconfig
+ * robot should not depend on filename, but on contents of easyconfig
  * need support for multiple source paths (and dependencies? => Jens T.)
- * `--download-only` (from mirrors)
+ * `--download-only` (from mirrors), needed in relation to jumpstart procedures
  * document jail tool (and add it to bootstrap)
- * goolf: OpenMPI 1.5, OpenBLAS, FFTW w/ `--enable-avx`
+ * goolf: OpenMPI >=1.5, OpenBLAS, FFTW w/ `--enable-avx`
  * custom variables in module files (**see** `modextravars`)
  * CUDA support: in toolchain or not?
   * different CUDA versions, dependency chain, ...
- * PGI toolchain is also important for CI
+ * PGI toolchain is also important for CyI
  * OFED vs no-OFED: easy way to get rid of `-no-OFED` version suffix? via EB config file?
  * user environment: multiple source paths, custom version suffix for 'tagging' your own builds
  * FFTW single/double precision
   * separate module (and thus separate toolchains) vs 'fat' build
-  * support both single/double requires running configure/make/make install twice
+  * support both single/double in a single ffw module requires running configure/make/make install twice; doable? Yes.
  * local climate group requirements: Ferret, ... (see George F.)
  * Python as a part of the toolchain?
  * managing multiple EB versions
@@ -157,40 +167,44 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * figure out exact build options that were used
   * document querying log for e.g. configure options
   * or provide tools for it (via `eb`)
+  * will be useful in the future as part of any kind of `EasyDoc` activity, to post information on a website
  * issue of OS dependencies: portable way of specifying them
   * making sure we catch all dependencies (**jail tool provided by HashDist**)
  * `goalf`/`ictce` versioning schemes need to be documented
   * e.g. add `--enable-avx` to FFTW but keep toolchain version the same? 
-   * sidenote: `--enable-avx` with FFTW apparently is bad for GROMACS, up to 20% perf loss
+   * sidenote: `--enable-avx` with FFTW apparently is suboptimal for GROMACS, up to 20% perf loss (!)
   * will need to bump ATLAS anyway (because of Sandy Bridge support), hence `goalf` as well
   * keep versions fixed but tweaking builds is not a good idea
- * OpenMPI version bump to v1.5
-  * breaks ABI
+ * OpenMPI version: let's bump to v1.5, or later
+  * ABI is *guaranteed* to be compatible at version onwards (ie. change on the fly the OpenMPI module version, without need to rebuild code)
   * part of new goalf (v2.x?)
  * GROMACS on top of new `goalf` (`goolf`)
  * (Fotis took over for the remainder)
  * PRACE production environment
-  * mainly set of environment variables missing
-  * EasyBuild enables you to set up a PRACE environment in user space
+  * largely done; mainly a set of environment variables is missing (JT: could use `modextravars` for that)
+  * EasyBuild enables you to set up a PRACE environment in user space (huge selling point: you only need GCC/EnvMod/Py)
  * support for custom site-specific environment variables
- * HPC-BIOS pitch: standardization policy, see [URL] **FIXME**
+  * fi. *_LICENSE_FILE, DEBUGGERS environment and so on;
+  * see `modextravars` stated above
+ * HPCBIOS pitch: ie. a standardization effort, collection of policies, see http://hpcbios.readthedocs.org/en/latest/
+  * re-usable high-level documentation (intention is to attach it as .pdf to Users' Welcome Letters)
   * provide "standard" working environment for e.g. climate science
 
 ### NVIDIA presentation (Adam) 
 
 [slides (PDF)](http://hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf)
 
- * [Alan] documentation for building CUDA applications provided by NIVIDA is very useful and hard to come by!
+ * [Alan] documentation for building CUDA applications provided by NVIDIA is very useful and hard to come by!
  * NVIDIA CUDA with OpenMPI: K20 + Mellanox IB
  * 'drop-in' libraries: cuBLAS
   * actually a misnomer, since it provides different function names
  * CUDA (C)
   * compilers + tools
-   * `nvcc` should always be used, not with like `mpicc` which is optional (can handle linking with MPI libs yourself)
+   * `nvcc` should always be used, unlike `mpicc` which is optional (can handle linking with MPI libs yourself)
   * runtime API (`libcudart.so`)
   * IDE, visual profiler
   * collection of libraries (CUBLAS, CUFFT, Thrust, ...)
-  * quite similar to e.g. MPI
+  * quite similar to e.g. MPI (?)
  * usually there's a configure option like `--enable-cuda`, but no standard
   * similar for installation prefix for CUDA, e.g. `CUDA_HOME` (quite similar across apps)
  * some apps ship their own runtime
@@ -202,6 +216,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * most MPI implementations support CUDA (except for Intel MPI)
   * things may break for older versions
   * significant performance gain if communication layer supports DMA to GPU memory (GPU Direct, requires IB QDR/DFR and Mellanox)
+  * FG sidenote: ie. MVAPICH + CUDA is the likely the preferred testing ground
  * test examples: `matrixMul`, `simpleMPI`
  * CMake 2.8.7+ for good CUDA support
  * object code for correct device architecture should be used for best performance
@@ -232,6 +247,9 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
   * packaging of CUDA toolkit (`redhat`, `fedora`, `ubuntu`, ...)
    * reason to not have a monolitic install is OS-specific stuff like paths for files, driver, etc.
    * "let user provide CUDA toolkit installation instead of through EasyBuild" (**not a good idea**)
+    * FG sidenote: optimal practice @LU & @CY converges in the direction that:
+     * CUDA toolkit & software installation is user space => this has to be done with easybuild, multiple versions OK.
+     * driver installation must be done in root space => non-easybuild business, configuration management instead
    * use `-silent` for only toolkit (not driver)
    * OS-independent install package is being looked into
   * can notes for NAMD be provided as well?
@@ -253,7 +271,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * make bootstrap script work offline too, i.e. add option to supply it the required source tarballs
  * goolf v1.5.10
   * GCC 4.7.2
-  * OpenMPI 1.6.3 (1.7rc8 not production ready + requires GCC > v4.8!)
+  * OpenMPI >=1.6.3 (1.7rc8 not production ready + requires GCC > v4.8!)
   * OpenBLAS 0.2.6
   * LAPACK 3.4.2
   * FFTW 3.3.3 (single/double)
