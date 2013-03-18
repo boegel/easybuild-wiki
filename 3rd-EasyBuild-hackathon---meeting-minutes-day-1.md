@@ -52,7 +52,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 #### questions/remarks by George T.
 
- * `--download-only` command line option is missing **[feature request]**
+ * `--download-only` command line option is missing (see [framework#538](https://github.com/hpcugent/easybuild-framework/issues/538))
   * can be done indirectly now:
    * using `--stop fetch`, but will fail after first download failed
    * using `--regtest`, and 'breaking' `--job` so no jobs are submitted for the builds
