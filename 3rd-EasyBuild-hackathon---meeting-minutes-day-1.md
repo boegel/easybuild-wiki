@@ -70,20 +70,20 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 #### questions/remarks by Fotis
 
- * supporting alternative module naming schemes
+ * supporting alternative module naming schemes (see [framework#173](https://github.com/hpcugent/easybuild-framework/issues/173))
   * basically just provide multiple alternative views on the existing modules - let's escape from the "one size show" concept
    * flat (cray optimal) or hierarchical (lmod optimal), all can be valid
    * hierarchical can be top-down (compiler->libraries->apps) or vice versa (software on top, that is what the users care about)
  * setting up mirrors for sources
   * initial mirror prototype already in development/use at Uni.Lu; ~36GBs of software (open source & closed)
   * The split between redistributable and non-, is unavoidable for a public service; zsync could help with either
-  * `--try-amend` source URL should be supported via EasyBuild configuration file
+  * `--try-amend` source URL should be supported via EasyBuild configuration file (see [framework#462](https://github.com/hpcugent/easybuild-framework/issues/462))
    * **currently already supported via `EASYBUILD_TRY_AMEND` env var**
  * Trilinos and other such multi-dep libs, should be in bold on slide with supported software
- * can `build_in_install_dir` be specified in easyconfig file? It might reduce needs for easyblocks in bioinfo packages
+ * can `build_in_install_dir` be specified in easyconfig file? It might reduce needs for easyblocks in bioinfo packages (see [framework#539](https://github.com/hpcugent/easybuild-framework/issues/539))
  * `ictce/3.2.2.u3` toolchain sources are no longer available, so use other toolchain in examples (WRF)
   * also there are bugs in icc/11.1.07* & flexlm, which are time-consuming to debug (EB processes *are* affected)
- * chroot/jail into installation prefix, as a proper containment solution when building software:
+ * chroot/jail into installation prefix, as a proper containment solution when building software: (see [framework#540](https://github.com/hpcugent/easybuild-framework/issues/540))
   * it makes it much safer to build 1000s of packages coming from pkgsrc (at least, at build time!)
   * it will allow to catch osdependencies that now escape unnoticed
   * it seems to be the correct thing to do also in relation to hashdist
@@ -106,12 +106,12 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * on BlueGene systems, running of tests will need to be skipped or done differently (remotely)
   * skipping can be done with e.g. `--try-amend=skipsteps=test,test_cases`
  * `OpenFOAM` is a pain because of large difference in system characteristics
- * error/warning log parser now spits out lots of false positives
+ * error/warning log parser now spits out lots of false positives (see [framework#541](https://github.com/hpcugent/easybuild-framework/issues/541))
   * regular expression used needs to be documented well
   * need to enhance regex to reduce amount of false positives
  * `bbcp` can never work if the required ports are not open
   * add a test case for this?
-  * support a way of spitting out a warning about this at the end of the installation
+  * support a way of spitting out a warning about this at the end of the installation (see [framework#542](https://github.com/hpcugent/easybuild-framework/issues/542))
 
 #### notes by Jens T.
 
@@ -120,7 +120,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 #### general notes
 
- * document where to put source files
+ * document where to put source files (**see [wiki:Configuration](https://github.com/hpcugent/easybuild/wiki/Configuration)**)
 
 ### Presentation by JSC (Alan)
 
