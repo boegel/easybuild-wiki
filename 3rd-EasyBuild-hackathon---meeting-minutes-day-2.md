@@ -21,7 +21,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ## Program
 
- * [10am-6pm] hackathon, day 2
+ * [10am-6pm] 1st day of actual hackathon
  * [6pm-8.00pm] aftermath: discussathon with George T., Fotis, Jens T. and Kenneth
 
 ## Discussion notes
