@@ -18,7 +18,7 @@ def linux_distribution():
 
 print("""Python version: %s
 dist: %s
-linux_distrubution: %s
+linux_distribution: %s
 system: %s
 machine: %s
 platform: %s
@@ -47,7 +47,7 @@ platform.mac_ver(),
 ```
 Python version: ['2.4.3 (#1, Sep 21 2011, 19:55:41) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-51)]']
 dist: ('redhat', '5.7', 'Final')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-274.12.1.el5-x86_64-with-redhat-5.7-Final
@@ -61,7 +61,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Jun 18 2012, 08:55:23) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-52)]']
 dist: ('redhat', '5.8', 'Final')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-308.16.1.el5xen-x86_64-with-redhat-5.8-Final
@@ -75,7 +75,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Jan  9 2013, 06:47:03) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]']
 dist: ('redhat', '5.9', 'Final')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-308.4.1.el5xen-x86_64-with-redhat-5.9-Final
@@ -89,7 +89,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.6 (r266:84292, Sep 11 2012, 08:34:23) ', '[GCC 4.4.6 20120305 (Red Hat 4.4.6-4)]']
 dist: ('centos', '6.3', 'Final')
-linux_distrubution: ('CentOS', '6.3', 'Final')
+linux_distribution: ('CentOS', '6.3', 'Final')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32-279.9.1.el6.x86_64-x86_64-with-centos-6.3-Final
@@ -105,7 +105,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.4 (#2, Jan 24 2010, 11:50:13) ', '[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)]']
 dist: ('debian', '4.0', '')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-6-amd64-x86_64-with-debian-4.0
@@ -119,7 +119,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.5.2 (r252:60911, Jan 24 2010, 17:44:40) ', '[GCC 4.3.2]']
 dist: ('debian', '5.0.8', '')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.26-2-amd64-x86_64-with-debian-5.0.8
@@ -134,7 +134,7 @@ mac_ver: ('', ('', '', ''), '')
 fgeorgatos@gaia-10:~/arena/checkosversion$ python runme.py 
 Python version: ['2.7.3 (default, Dec 18 2012, 07:01:29) ', '[GCC 4.6.3]']
 dist: ('debian', '6.0.6', '')
-linux_distrubution: ('debian', '6.0.6', '')
+linux_distribution: ('debian', '6.0.6', '')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32-5-amd64-x86_64-with-debian-6.0.6
@@ -150,7 +150,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.7.3 (default, Jul 24 2012, 11:41:40) ', '[GCC 4.6.3 20120306 (Red Hat 4.6.3-2)]']
 dist: ('fedora', '16', 'Verne')
-linux_distrubution: ('Fedora', '16', 'Verne')
+linux_distribution: ('Fedora', '16', 'Verne')
 system: Linux
 machine: x86_64
 platform: Linux-3.6.7-4.fc16.x86_64-x86_64-with-fedora-16-Verne
@@ -164,7 +164,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.7.3 (default, Jul 24 2012, 10:05:38) ', '[GCC 4.7.0 20120507 (Red Hat 4.7.0-5)]']
 dist: ('fedora', '17', 'Beefy Miracle')
-linux_distrubution: ('Fedora', '17', 'Beefy Miracle')
+linux_distribution: ('Fedora', '17', 'Beefy Miracle')
 system: Linux
 machine: x86_64
 platform: Linux-3.6.11-1.fc17.x86_64-x86_64-with-fedora-17-Beefy_Miracle
@@ -181,7 +181,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Dec 10 2010, 17:24:35) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
 dist: ('redhat', '5.6', 'Tikanga')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-238.el5-x86_64-with-redhat-5.6-Tikanga
@@ -195,7 +195,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, May  1 2012, 13:52:57) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-52)]']
 dist: ('redhat', '5.8', 'Tikanga')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: i686
 platform: Linux-2.6.18-308.8.2.el5xen-i686-with-redhat-5.8-Tikanga
@@ -209,7 +209,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.6 (r266:84292, Aug 28 2012, 10:55:56) ', '[GCC 4.4.6 20120305 (Red Hat 4.4.6-4)]']
 dist: ('redhat', '6.3', 'Santiago')
-linux_distrubution: ('Red Hat Enterprise Linux Server', '6.3', 'Santiago')
+linux_distribution: ('Red Hat Enterprise Linux Server', '6.3', 'Santiago')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32-279.19.1.el6.x86_64-x86_64-with-redhat-6.3-Santiago
@@ -226,7 +226,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Sep  3 2009, 15:37:37) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-46)]']
 dist: ('redhat', '5.5', 'Final')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-194.17.4.el5-x86_64-with-redhat-5.5-Final
@@ -240,7 +240,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, May  5 2011, 16:39:10) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
 dist: ('redhat', '5.6', 'Final')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.34.7-1-x86_64-with-redhat-5.6-Final
@@ -253,7 +253,7 @@ with a more recent Python, that provides `platform.linux_distribution`:
 ```
 Python version: ['2.7.2 (default, Aug  9 2011, 03:48:50) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
 dist: ('redhat', '5.6', 'Final')
-linux_distrubution: ('CentOS', '5.6', 'Final')
+linux_distribution: ('CentOS', '5.6', 'Final')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.34.7-1-x86_64-with-redhat-5.6-Final
@@ -267,7 +267,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, May  5 2011, 16:39:10) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
 dist: ('redhat', '5.6', 'Final')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32-220.7.1.el6.vSMP.4.x86_64-x86_64-with-redhat-5.6-Final
@@ -283,7 +283,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, May  5 2011, 18:44:23) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-50)]']
 dist: ('redhat', '5.2', 'Boron')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-194.3.1.el5xen-x86_64-with-redhat-5.2-Boron
@@ -297,7 +297,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Jun 18 2012, 09:40:07) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-52)]']
 dist: ('redhat', '5.4', 'Boron')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-308.24.1.el5xen-x86_64-with-redhat-5.4-Boron
@@ -312,7 +312,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.7.3 (default, Nov 14 2012, 12:23:28) ', '[GCC 4.6.3]']
 dist: ('redhat', '5.6', 'Boron')
-linux_distrubution: ('Scientific Linux SL', '5.6', 'Boron')
+linux_distribution: ('Scientific Linux SL', '5.6', 'Boron')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-194.11.4.el5-x86_64-with-redhat-5.6-Boron
@@ -326,7 +326,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Feb 21 2012, 15:02:33) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-51)]']
 dist: ('redhat', '5.8', 'Boron')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-308.4.1.el5.perfctr.2.6.42.ug.1.ug-x86_64-with-redhat-5.8-Boron
@@ -340,7 +340,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.3 (#1, Jun 19 2012, 13:51:22) ', '[GCC 4.1.2 20080704 (Red Hat 4.1.2-52)]']
 dist: ('redhat', '5.8', 'Boron')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: x86_64
 platform: Linux-2.6.18-308.20.1.el5-x86_64-with-redhat-5.8-Boron
@@ -354,7 +354,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.6 (r266:84292, Jan  4 2012, 16:09:28) ', '[GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]']
 dist: ('redhat', '6.2', 'Carbon')
-linux_distrubution: ('Scientific Linux', '6.2', 'Carbon')
+linux_distribution: ('Scientific Linux', '6.2', 'Carbon')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32-220.17.1.el6.vSMP.3.x86_64-x86_64-with-redhat-6.2-Carbon
@@ -370,7 +370,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.4 (r264:75706, Aug  4 2010, 16:53:32) [C]']
 dist: ('', '', '')
-linux_distrubution: ('', '', '')
+linux_distribution: ('', '', '')
 system: SunOS
 machine: sun4u
 platform: SunOS-5.9-sun4u-sparc-32bit-ELF
@@ -386,7 +386,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.5 (r265:79063, May  6 2011, 17:25:59) ', '[GCC 4.5.0 20100604 [gcc-4_5-branch revision 160292]]']
 dist: ('SuSE', '11.3', 'x86_64')
-linux_distrubution: ('openSUSE ', '11.3', 'x86_64')
+linux_distribution: ('openSUSE ', '11.3', 'x86_64')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.34.10-0.6-desktop-x86_64-with-SuSE-11.3-x86_64
@@ -400,7 +400,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.2 (#1, Apr 20 2012, 03:25:31) ', '[GCC 4.1.2 20070115 (SUSE Linux)]']
 dist: ('SuSE', '10', 'ppc')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: ppc64
 platform: Linux-2.6.16.60-0.93.1-ppc64-ppc64-with-SuSE-10-ppc
@@ -414,7 +414,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.4.2 (#1, Jan 10 2008, 17:41:07) ', '[GCC 4.1.2 20070115 (prerelease) (SUSE Linux)]']
 dist: ('SuSE', '10', 'ia64')
-linux_distrubution: N/A
+linux_distribution: N/A
 system: Linux
 machine: ia64
 platform: Linux-2.6.16.60-0.39.3.PTF.506281.1-default-ia64-with-SuSE-10-ia64
@@ -428,7 +428,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6 (r26:66714, Mar 23 2010, 15:24:19) ', '[GCC 4.3.2 [gcc-4_3-branch revision 141291]]']
 dist: ('SuSE', '11', 'x86_64')
-linux_distrubution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
+linux_distribution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.27.19-5-default-x86_64-with-SuSE-11-x86_64
@@ -442,7 +442,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.8 (unknown, May 29 2012, 22:30:44) ', '[GCC 4.3.4 [gcc-4_3-branch revision 152973]]']
 dist: ('SuSE', '11', 'x86_64')
-linux_distrubution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
+linux_distribution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32.59-0.3-default-x86_64-with-SuSE-11-x86_64
@@ -456,7 +456,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.8 (unknown, May 29 2012, 22:30:44) ', '[GCC 4.3.4 [gcc-4_3-branch revision 152973]]']
 dist: ('SuSE', '11', 'x86_64')
-linux_distrubution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
+linux_distribution: ('SUSE Linux Enterprise Server ', '11', 'x86_64')
 system: Linux
 machine: x86_64
 platform: Linux-3.0.38-0.5-default-x86_64-with-SuSE-11-x86_64
@@ -472,7 +472,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.5 (r265:79063, Apr 16 2010, 13:09:56) ', '[GCC 4.4.3]']
 dist: ('Ubuntu', '10.04', 'lucid')
-linux_distrubution: ('Ubuntu', '10.04', 'lucid')
+linux_distribution: ('Ubuntu', '10.04', 'lucid')
 system: Linux
 machine: i686
 platform: Linux-2.6.32-34-generic-pae-i686-with-Ubuntu-10.04-lucid
@@ -486,7 +486,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.5 (r265:79063, Oct  1 2012, 22:04:36) ', '[GCC 4.4.3]']
 dist: ('Ubuntu', '10.04', 'lucid')
-linux_distrubution: ('Ubuntu', '10.04', 'lucid')
+linux_distribution: ('Ubuntu', '10.04', 'lucid')
 system: Linux
 machine: x86_64
 platform: Linux-2.6.32-32-server-x86_64-with-Ubuntu-10.04-lucid
@@ -500,7 +500,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.7.3 (default, Aug  1 2012, 05:14:39) ', '[GCC 4.6.3]']
 dist: ('Ubuntu', '12.04', 'precise')
-linux_distrubution: ('Ubuntu', '12.04', 'precise')
+linux_distribution: ('Ubuntu', '12.04', 'precise')
 system: Linux
 machine: x86_64
 platform: Linux-3.2.0-32-generic-x86_64-with-Ubuntu-12.04-precise
@@ -514,7 +514,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.7.3 (default, Sep 26 2012, 21:51:14) ', '[GCC 4.7.2]']
 dist: ('Ubuntu', '12.10', 'quantal')
-linux_distrubution: ('Ubuntu', '12.10', 'quantal')
+linux_distribution: ('Ubuntu', '12.10', 'quantal')
 system: Linux
 machine: x86_64
 platform: Linux-3.5.0-22-generic-x86_64-with-Ubuntu-12.10-quantal
@@ -530,7 +530,7 @@ mac_ver: ('', ('', '', ''), '')
 ```
 Python version: ['2.6.5 (r265:79063, May 28 2010, 10:16:29) ', '[GCC 4.2.1 (Apple Inc. build 5659)]']
 dist: ('', '', '')
-linux_distrubution: ('', '', '')
+linux_distribution: ('', '', '')
 system: Darwin
 machine: i386
 platform: Darwin-10.8.0-i386-64bit
@@ -546,7 +546,7 @@ mac_ver: ('10.6.8', ('', '', ''), 'i386')
 ```
 Python version: ['2.7.2 (default, Jun 20 2012, 16:23:33) ', '[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)]']
 dist: ('', '', '')
-linux_distrubution: ('', '', '')
+linux_distribution: ('', '', '')
 system: Darwin
 machine: x86_64
 platform: Darwin-12.2.1-x86_64-i386-64bit
@@ -558,7 +558,7 @@ mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
 ```
 Python version: ['2.7.2 (default, Jun 16 2012, 12:38:40) ', '[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)]']
 dist: ('', '', '')
-linux_distrubution: ('', '', '')
+linux_distribution: ('', '', '')
 system: Darwin
 machine: x86_64
 platform: Darwin-12.2.1-x86_64-i386-64bit
@@ -576,7 +576,7 @@ mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
 Python version: ['2.7.3 (default, Nov  9 2012, 16:25:03) ', '[GCC
 4.2.1]']
 dist: ('', '', '')
-linux_distrubution: ('', '', '')
+linux_distribution: ('', '', '')
 system: Linux
 machine: x86_64
 platform: Linux-3.2.11-x86_64-with-glibc2.3.2
