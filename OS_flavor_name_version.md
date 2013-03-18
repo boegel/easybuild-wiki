@@ -379,9 +379,23 @@ version: Generic_122300-60
 mac_ver: ('', ('', '', ''), '')
 ```
 
-### SUSE Linux Enterprise Server (SLES)
+### SUSE
 
-#### SLES 10 (on Power6)
+#### OpenSUSE 11.3
+
+```
+Python version: ['2.6.5 (r265:79063, May  6 2011, 17:25:59) ', '[GCC 4.5.0 20100604 [gcc-4_5-branch revision 160292]]']
+dist: ('SuSE', '11.3', 'x86_64')
+linux_distrubution: ('openSUSE ', '11.3', 'x86_64')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.34.10-0.6-desktop-x86_64-with-SuSE-11.3-x86_64
+uname: ('Linux', 'homer', '2.6.34.10-0.6-desktop', '#1 SMP PREEMPT 2011-12-13 18:27:38 +0100', 'x86_64', 'x86_64')
+version: #1 SMP PREEMPT 2011-12-13 18:27:38 +0100
+mac_ver: ('', ('', '', ''), '')
+```
+
+#### SUSE Linux Enterprise Server (SLES) 10 (on Power6)
 
 ```
 Python version: ['2.4.2 (#1, Apr 20 2012, 03:25:31) ', '[GCC 4.1.2 20070115 (SUSE Linux)]']
