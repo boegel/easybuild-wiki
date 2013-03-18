@@ -87,7 +87,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
   * it makes it much safer to build 1000s of packages coming from pkgsrc (at least, at build time!)
   * it will allow to catch osdependencies that now escape unnoticed
   * it seems to be the correct thing to do also in relation to hashdist
-  * no need to build safety features inside easyconfigs, IMHO, that has no clear benefit
+  * Fotis: no need to build safety features inside easyconfigs, IMHO, that has no clear benefit
  * possible directions on how to modify the current namespace (eg. think of lower-case modules):
   * customize modulefiles with sed and change what is needed (can be tricky or risky to be correct)
   * manually cultivate a symlink farm (only good for the first load, deps will be like before)
@@ -154,7 +154,7 @@ N.B. This presentation incorporates also the 3rd-party needs of Uni.Lu
  * user environment: multiple source paths, custom version suffix for 'tagging' your own builds
  * FFTW single/double precision
   * separate module (and thus separate toolchains) vs 'fat' build
-  * support both single/double in a single ffw module requires running configure/make/make install twice; doable? Yes.
+  * support both single/double in a single FFTW module requires running configure/make/make install twice; doable? Yes.
  * local climate group requirements: Ferret, ... (see George F.)
  * Python as a part of the toolchain?
  * managing multiple EB versions
