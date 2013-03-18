@@ -204,6 +204,20 @@ version: #1 SMP Tue May 29 12:36:24 EDT 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### RHEL 6.2
+
+```
+Python version: ['2.6.6 (r266:84292, May  1 2012, 13:52:17) ', '[GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]']
+dist: ('redhat', '6.2', 'Santiago')
+linux_distribution: ('Red Hat Enterprise Linux Server', '6.2', 'Santiago')
+system: Linux
+machine: x86_64
+platform: Linux-2.6.32-220.23.1.el6.x86_64-x86_64-with-redhat-6.2-Santiago
+uname: ('Linux', 'psglogin.psg.cluster.zone', '2.6.32-220.23.1.el6.x86_64', '#1 SMP Tue Jun 12 11:20:15 EDT 2012', 'x86_64', 'x86_64')
+version: #1 SMP Tue Jun 12 11:20:15 EDT 2012
+mac_ver: ('', ('', '', ''), '')
+```
+
 #### RHEL 6.3
 
 ```
