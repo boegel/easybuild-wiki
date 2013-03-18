@@ -38,7 +38,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ### LinkSCEEM presentation (Jens W.)
 
- * goal of LinkSCEEM project: establish HPC ecosystem in Eastern Midde-Terranean
+ * goal of LinkSCEEM project: establish HPC ecosystem in Eastern Middle-Terranean
   * resources, training, expertise, connectivity, ...
    * online training content is very important!
   * with support from NCSA, Jülich, ..
