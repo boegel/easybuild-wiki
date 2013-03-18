@@ -173,6 +173,7 @@ N.B. This presentation incorporates also the 3rd-party needs of Uni.Lu
  * `goalf`/`ictce` versioning schemes need to be documented
   * e.g. add `--enable-avx` to FFTW but keep toolchain version the same? 
    * sidenote: `--enable-avx` with FFTW apparently is suboptimal for GROMACS, up to 20% perf loss (!)
+   * see http://www.gromacs.org/Documentation/Installation_Instructions#3.2.1._Running_in_parallel
   * will need to bump ATLAS anyway (because of Sandy Bridge support), hence `goalf` as well
   * keep versions fixed but tweaking builds is not a good idea
  * OpenMPI version: let's bump to v1.5, or later

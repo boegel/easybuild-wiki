@@ -21,7 +21,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 ## Program
 
- * [10am-6pm] hackathon, day 3
+ * [10am-6pm] 2nd day of actual hackathon
  * [6pm-9.30pm] aftermath: discussathon with George T., Fotis, Jens T. and Kenneth
 
 ## Discussion notes
@@ -56,10 +56,10 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
    * should be dropped, cfr. issue opened by Xavier
   * how to recompile WRF with e.g. `ictcec` (with CUDA support included), without having to rebuild the world
   * PRACE CPE
-    * see https://github.com/fgeorgatos/easybuild.experimental/tree/master/users/fgeorgatos/PRACE
-    * 80-90% of the work seems done
-    * a kind of PRACE variables module is required
-     * can be assisted via `modextravars`
+   * see https://github.com/fgeorgatos/easybuild.experimental/tree/master/users/fgeorgatos/PRACE
+   * 80-90% of the work seems done
+   * a kind of PRACE variables module is required
+    * can be assisted via `modextravars`
   * site customizations: how can they be done without editing every single easyconfig file?
    * e.g. TotalView `LM_LICENSE_MANAGER`, `TVDSVRLAUNCHCMD`, ...
    * can be done via e.g. `eb --try-amend='modextravars={"TVDSVRLAUNCHCMD": "oarsh"}'` ??
