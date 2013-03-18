@@ -99,3 +99,8 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * George F.
   * finished build `Ferret` with `goalf` toolchain, after further patching/retesting
    * builds with `ictce` toolchain, but `ferret` command then segfaults
+
+<p align="center">
+<img src="http://hpcugent.github.com/easybuild/files/EasyBuild_hackathon_Cyprus_2013_whiteboard.jpg" alt="picture of whiteboard after 3rd EasyBuild hackathon @ Nicosia, Cyprus"/><br>
+picture of whiteboard after 3rd EasyBuild hackathon @ Nicosia, Cyprus
+</p>
