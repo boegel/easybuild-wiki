@@ -120,7 +120,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
 
 #### general notes
 
- * document where to put source files (***see [wiki:Configuration](https://github.com/hpcugent/easybuild/wiki/Configuration)***)
+ * document where to put source files **(see [wiki:Configuration](https://github.com/hpcugent/easybuild/wiki/Configuration))**
 
 ### Presentation by JSC (Alan)
 
