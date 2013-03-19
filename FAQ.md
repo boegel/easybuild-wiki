@@ -65,7 +65,16 @@ A better way around is to actually create a .eb file for the dependency
 without a sources field.
 
 You can add a sanitycheckcommand to check if the package is available
-(it would be nice if this is distribution independend)
+(it would be nice if this is distribution independent)
+
+This way
+* a build will fail without the os dependency available.
+* you can later override default tcsh with a custom build one when in
+need
+* reduce dependencies on OS repositories and distro specific mechanisms
+* actually report problems when there are exact version dependencies
+(otherwise a default yum/repo update can break a working HPC
+application)
 
 ### Can I build different numpy and scipy versions? ##
 
@@ -77,15 +86,6 @@ Python.
 Yes, if you create an easyconfig file with no sources and only dependencies.
 You could ofcourse also just create the module file yourself.
 
-This way
-* a build will fail without the os dependency available.
-* you can later override default tcsh with a custom build one when in
-need
-* reduce dependencies on OS repositories and distro specific mechanisms
-* actually report problems when there are exact version dependencies
-(otherwise a default yum/repo update can break a working HPC
-application).
-
 ### Easybuild complains about an OS dependency, yet I am certain it is installed
 
 Currently easybuild's support for OS dependencies is lacking. It will try to
@@ -94,6 +94,34 @@ If you know what you are doing, you can remove the OS dependency from the
 easyconfig file, and then build it.
 
 We are trying to remove as much os dependencies as possible, however we can not (yet) build an entire linux system from scratch.
+
+### I need a module for a software package with a certain toolchain, do I really need to rebuild the whole stack of dependencies with that toolchain?
+
+Compiler toolchains as used in EasyBuild are a set of modules that are grouped together under a mnemonic (e.g., `goalf`, `ictce`, `goolf`, ...). This is a lot more convenient than listing all commonly used dependencies in the module name to make them more explicit; consider picking between a module name like `CMake-2.8.7-goolf-1.4.10` or `CMake-2.8.7-GCC-4.7.2-OpenMPI-1.6.4-OpenBLAS-0.2.26-LAPACK-3.8.4-FFTW-3.3.3`.
+
+When you need to build a particular software package with a certain toolchain, e.g., so it can be used alongside other modules that were built with that toolchain, the easiest you can do is just build it. EasyBuild provides different command line option that make this task really easy, e.g., `--robot` for resolving dependencies, and `--try-toolchain` for tweaking the toolchain specified in an easyconfig file.
+
+The downside of this is a large set of modules that are added to the potentially already extensive set of available modules. We feel this is not a problem EasyBuild can solve; it should be tackled by the tools used to interact with the module files, i.e. the _environment modules_ package or alternatives like _lmod_. That being said, we are looking into a proper tool that makes dealing with large amounts of modules more feasible, and will add the necessary features to EasyBuild that are required to enable that tool to work. The most likely viable option we're looking into is to enhance _lmod_.
+
+#### Expert mode
+
+Another solution that could help to resolve conflicts that would be circumvented by rebuilding a software package with a new toolchain is to resort to _subtoolchains_ like `GCC` or `gompi`, that only contain a subset of libraries (e.g., no BLAS/LAPACK/FFTW or even MPI).
+
+For example, CMake can be built with a `GCC` toolchain, since it does not require any MPI, BLAS, etc. library to build.
+The resulting module can then be combined with modules built with a GCC-based toolchain that use the same GCC version, thus limiting the amount of seemingly needless module on the system.
+
+It does require to specify CMake as a dependency in a particular way because the toolchains are not an exact match, e.g.:
+
+```python
+name = 'foo'
+version = '1.2.3'
+
+toolchain = {'name': 'goolf', 'version': '1.4.10'}
+builddependencies = [('CMake', '2.8.7', '-GCC-4.7.2', True)]
+```
+
+**We do not recommend using these subtoolchains, because they cause more involved bookkeeping of dependencies,
+and may do more harm than good w.r.t. keeping the list of available modules understandable.**
 
 ***
 
