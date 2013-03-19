@@ -103,7 +103,7 @@ When you need to build a particular software package with a certain toolchain, e
 
 The downside of this is a large set of modules that are added to the potentially already extensive set of available modules. We feel this is not a problem EasyBuild can solve; it should be tackled by the tools used to interact with the module files, i.e. the _environment modules_ package or alternatives like _lmod_. That being said, we are looking into a proper tool that makes dealing with large amounts of modules more feasible, and will add the necessary features to EasyBuild that are required to enable that tool to work. The most likely viable option we're looking into is to enhance _lmod_.
 
-#### Expert mode
+#### Expert mode: using subtoolchains
 
 Another solution that could help to resolve conflicts that would be circumvented by rebuilding a software package with a new toolchain is to resort to _subtoolchains_ like `GCC` or `gompi`, that only contain a subset of libraries (e.g., no BLAS/LAPACK/FFTW or even MPI).
 
