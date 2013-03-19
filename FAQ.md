@@ -122,6 +122,7 @@ builddependencies = [('CMake', '2.8.7', '-GCC-4.7.2', True)]
 
 **We do not recommend using these subtoolchains, because they cause more involved bookkeeping of dependencies,
 and may do more harm than good w.r.t. keeping the list of available modules understandable.**
+Subtoolchains like `GCC`, `gompi`, `iccifort`, etc. are only meant to be used when constructing toolchains.
 
 ***
 
