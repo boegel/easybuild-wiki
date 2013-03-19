@@ -56,10 +56,10 @@ Because you've installed environment modules and Tcl in a non-default location, 
 To make a long story short, these are the commands you need to execute:
 
 ```bash
-export PATH=$HOME/.local/environment-modules/Modules/3.2.9/bin:$PATH
+export PATH=$HOME/.local/environment-modules/Modules/3.2.10/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/.local/Tcl/lib:$LD_LIBRARY_PATH
 # adjust line beow if you're using a shell other than bash, check with 'echo $SHELL'
-source $HOME/.local/environment-modules/Modules/3.2.9/init/bash
+source $HOME/.local/environment-modules/Modules/3.2.10/init/bash
 ```
 
 Pro tip: add these three lines in your `.bashrc` file, that way they'll be executed every time you log in.
