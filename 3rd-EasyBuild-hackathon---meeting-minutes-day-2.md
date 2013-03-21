@@ -15,7 +15,7 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * Dina Mahmoud Ibrahim (Cairo University, HPC sysadmin/user support)
  * Alan O'Cais (Jülich Supercomputing Centre, HPC user support & LinkSCEEM)
  * Alexander Schnurpfeil (Jülich Supercomputing Center, HPC user suppot)
- * Nicolas ?? (??, HPC user (OpenFOAM)) **FIXME**
+ * Nicolas Kanaris (The Cyprus Institute, HPC user (OpenFOAM))
  * George Fanourgakis (The Cyprus Institute, HPC user, molecular dynamics)
  * Stelios Erotokritou (The Cyprus Institute, HPC user support/PRACE)
 
