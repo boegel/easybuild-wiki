@@ -16,9 +16,9 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
  * Dina Mahmoud Ibrahim (Cairo University, HPC sysadmin/user support)
  * Alan O'Cais (Jülich Supercomputing Centre, HPC user support & LinkSCEEM)
  * Alexander Schnurpfeil (Jülich Supercomputing Center, HPC user suppot)
- * Nicolas ?? (??, HPC user (OpenFOAM)) **FIXME**
+ * Nicolas Kanaris (The Cyprus Institute, HPC user (OpenFOAM))
  * George Fanourgakis (The Cyprus Institute, HPC user, molecular dynamics)
- * Demetris Charalambous (Cyprus Meteorological Servicei, HPC user support?, weather forcecasting (WRF, ...)) (or OpenFOAM??) **FIXME**
+ * Demetris Charalambous (Cyprus Meteorological Servicei, HPC user support?, weather forcecasting (WRF, ...))
  * Ioanna Kalvari (University of Cyprus (bioinformatics), HPC user)
  * Ioannis Kirmitzoglou (University of Cyprus (bioinformatics), HPC user)
  * Adam DeConinck (NVIDIA Corporation, HPC sysadmin) [remote via Skype]
