@@ -68,6 +68,28 @@ These notes were mainly taken by Kenneth and Jens, with contributions by Fotis.
     * `libmpi_f77` -> `libmpi_mpifh`
     * `libmpi_f90` -> `libmpi_usempi`
    * requires GCC **newer** than v4.8 (which hasn't been released yet)
+    * see http://www.open-mpi.org/software/ompi/versions/ (bottom of page)
+```
+The incorrect interface was removed in Open MPI v1.7.
+
+To be clear: applications that use the old/incorrect MPI_SCATTERV
+binding will no longer be able to compile properly (*).  Developers
+must fix their applications or use an older version of Open MPI.
+
+(*) Note that using this incorrect MPI_SCATTERV interface will not be
+    recongized in v1.7 if you are using gfortran (as of gfortran
+    v4.8).
+
+    This is because gfortran <=v4.8 does not (yet) have the support
+    Open MPI needs for its new, full-featured "mpi" and "mpi_f08"
+    modules.  Hence, Open MPI falls back to the same "mpi" module from
+    the v1.6 series, but the "large" size of that module -- which
+    contains the MPI_SCATTERV interface -- been disabled because it is
+    broken.  Further, this "large" sized (old) "mpi" module has been
+    deemed unworthy of fixing because it has been wholly replaced by a
+    new, full-featured "mpi" module.  We anticipate supporting
+    gfortran in the new, full-featured module in the future.
+```
   * OpenMPI v1.6.3 & v1.6.4 (Fotis); DONE.
    * with slightly more relaxed sanity check paths
   * goolf 1.4.10; ~DONE (deviations: FFTW is the default version, so far)
