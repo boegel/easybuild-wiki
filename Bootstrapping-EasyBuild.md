@@ -22,7 +22,7 @@ eb --version
 
 ### Bootstrapping EasyBuild
 
-1. Download the bootstrap script from https://raw.github.com/hpcugent/easybuild-framework/bootstrap/easybuild/scripts/bootstrap_eb.py
+1. Download the bootstrap script from https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 2. Run it, specifying an install path for EasyBuild:
 
 ```shell
