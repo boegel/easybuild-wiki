@@ -26,7 +26,7 @@ eb --version
 2. Run it, specifying an install path for EasyBuild:
 
 ```shell
-python bootstrap_eb.py /some/path
+python bootstrap_eb.py $HOME/.local/easybuild
 ```
 
 **Note**: The path you specify to the bootstrap script is where EasyBuild should be installed. If you also want software that is built using EasyBuild to be installed there, you'll need to set `EASYBUILDINSTALLPATH`, and/or look into the [details on configuring EasyBuild](https://github.com/hpcugent/easybuild/wiki/Configuration).
@@ -38,7 +38,7 @@ python bootstrap_eb.py /some/path
 Set your `MODULEPATH` correctly if needed, and load the EasyBuild module with the specific version (see output of bootstrap script for more details):
 
 ```shell
-export MODULEPATH=/some/path/modules/all:$MODULEPATH
+export MODULEPATH=$HOME/.local/easybuild/modules/all:$MODULEPATH
 module load EasyBuild/<version>
 ```
 
