@@ -45,6 +45,13 @@ git tag -a v1.0
 git push origin v1.0
 ```
 
+### Step 3: Retest bootstrap script
+
+```bash
+wget https://raw.github.com/boegel/easybuild-framework/bootstrap/easybuild/scripts/bootstrap_eb.py
+python bootstrap_eb.py $HOME/.local/easybuild
+```
+
 ### Step 3: Announce release
 
 Finally, announce the newly released version through the various channels, i.e.:
