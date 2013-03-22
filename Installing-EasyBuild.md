@@ -14,7 +14,7 @@ There are a couple of ways to install EasyBuild, depending on your use case. Thi
 The easiest way (by far) to installing EasyBuild is by bootstrapping, i.e. installing EasyBuild with EasyBuild. By following the bootstrap procedure, you'll obtain an `EasyBuild` module you can load to start using EasyBuild.
 
 ```bash
-wget https://raw.github.com/hpcugent/easybuild-framework/bootstrap/easybuild/scripts/bootstrap_eb.py
+wget https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 python bootstrap_eb.py $HOME/.local/easybuild
 ```
 
