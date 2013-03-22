@@ -11,7 +11,7 @@ There are a couple of ways to install EasyBuild, depending on your use case. Thi
 <a name="wiki-bootstrapping">
 ## Bootstrapping
 
-The easiest way (by far) to installing EasyBuild is [by using EasyBuild](https://github.com/hpcugent/easybuild/wiki/Bootstrapping-EasyBuild). By following the bootstrap procedure, you'll obtain an `EasyBuild` module you can load to start using EasyBuild.
+The easiest way (by far) to installing EasyBuild is by **[bootstrapping](https://github.com/hpcugent/easybuild/wiki/Bootstrapping-EasyBuild)**, i.e. installing EasyBuild with EasyBuild. By following the bootstrap procedure, you'll obtain an `EasyBuild` module you can load to start using EasyBuild.
 
 Only when that fails to work for you for some reason, you should resort to one of the approaches below, which are more involved (but also give more control).
 
