@@ -20,7 +20,7 @@ python bootstrap_eb.py $HOME/.local/easybuild
 
 Only when that fails to work for you for some reason, you should resort to one of the approaches below, which are more involved (but also give more control).
 
-See [Bootstrapping EasyBuild] for more detailed information.
+See [[Bootstrapping EasyBuild]] for more detailed information.
 
 <a name="wiki-standard_install">
 ## Standard installation of latest release
