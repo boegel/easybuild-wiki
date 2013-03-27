@@ -147,7 +147,9 @@ source_path = os.path.join(home, "sources")
 repository_path = os.path.join(home, "ebfiles")
 repository = FileRepository(repository_path)
 
-log_format = ("easybuildlogs", "%(name)s-%(version)s.log")`
+log_format = ("easybuildlogs", "%(name)s-%(version)s.log")
+
+module_classes = ['base', 'bio', 'chem', 'compiler', 'lib', 'phys', 'tools']
 ```
 
 
