@@ -28,6 +28,7 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Packaging and versioning]]
  * [[Unit and regression testing]] (ok, up-to-date)
  * [[Release process]] (ok, up-to-date)
+ * [[Release schedule]] (ok, up-to-date)
 * [[Contributing back]]
  * [[Code style]]
  * [[Experimental repo]]
