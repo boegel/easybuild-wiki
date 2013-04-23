@@ -1,20 +1,20 @@
 This page gives a overview of previous and future EasyBuild releases, along with details on the planning of future releases.
 
-# Next release
+## Next release
 
-Release schedule for EasyBuild v1.4:
+Release schedule for **EasyBuild v1.4**:
 
-* feature freeze: April 25th 2013, 9am
-* planned release: May 2nd 2013
+* _feature freeze_: April 25th 2013, 9am
+* _planned release_: May 2nd 2013
 
-# Release planning
+## Release planning
 
-## Release early, release often
+### Release early, release often
 
 We target monthly releases of EasyBuild, following a "release early, release often" strategy.
 New releases are usually done on the last day of the month (or one of the first days of the next month).
 
-## Feature freeze
+### Feature freeze
 
 For every release, we try to stick to a strict schedule to try and make sure we can release "in time".
 
@@ -23,7 +23,7 @@ The week before a planned release, we set a _feature freeze_ deadline. Only pull
 Between the feature freeze and the planned release date, all the relevant open pull requests are reviewed and tested to make sure they're ready to be merged in the _develop_ branch, and a full regression test is run to reveal any bugs or regressions.
 Once the full regression test passes, a release candidate is made available, shortly followed by the actual release (either on the planned release date, or shortly after it if necessary).
 
-# Previous releases
+## Previous releases
 
 * EasyBuild v1.3.0: April 1st 2013
 * EasyBuild v1.2.0: February 28th 2013
