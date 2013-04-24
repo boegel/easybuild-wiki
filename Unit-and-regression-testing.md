@@ -24,7 +24,9 @@ OK
 Generating XML reports...
 ```
 
-The unit tests for `easybuild-easyblocks` and `easybuild-easyconfigs` are run in a very similar way:
+The unit tests for `easybuild-easyblocks` and `easybuild-easyconfigs` are run in a very similar way, see below.
+
+Currently, the unit tests for `easybuild-easyblocks` consist of instantiating an easyblock object for each of the available easyblock modules. Functional testing of easyblocks is done as a part of a regression test (see below).
 
 ```bash
 $ python -m test.easyblocks.suite
@@ -38,6 +40,8 @@ OK
 
 Generating XML reports...
 ```
+
+For the `easybuild-easyconfigs` repository, every easyconfig file is parsed and an easyblock for that easyconfig is instantiated as a sanity check. Next to this, a full dependency graph of the full set of available easyconfigs is constructed, to verify whether all dependencies can be resolved.
 
 ```bash
 $ python -m test.easyconfigs.suite
