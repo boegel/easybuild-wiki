@@ -2,30 +2,56 @@ EasyBuild is tested rigorously to try and ensure high-quality code.
 
 ## Unit testing
 
-Unittests should be added (if possible) for each added feature.
-Adding more unittests should be done by creating a new test module, adding a suite() method which returns a TestSuite object with all the testcases in it.
+Unit tests should be added (if possible) for each added feature.
+Adding more unit tests should be done by creating a new test module, adding a suite() method which returns a TestSuite object with all the testcases in it.
 
-In easybuild/test/suite.py you should add it to the list of modules then, so it will be included when somebody runs the suite.
+In `test/{framework/easyblocks/easyconfigs}/suite.py} you should add it to the list of modules then, so it will be included when somebody runs the suite.
 
-For every push to the `master` and `develop` of `easybuild-framework`, a set of unit tests is run.
+For every push to the `master` and `develop` branches of the `easybuild-framework`, `easybuild-easyblocks` and `easybuild-easyconfigs` repositories, a set of unit tests is run, possibly triggering the unit tests in another repository (`easybuild-framework` triggers `easybuild-easyblocks`, `easybuild-easyblocks` triggers `easybuild-easyconfigs`).
 
-To run the unit tests yourself, simply execute `python -m easybuild.test.suite` on an installed version of EasyBuild. This should give you output like below:
+To run the `easybuild-framework` unit tests yourself, simply execute `python -m test.framework.suite` on an installed version of EasyBuild. This should give you output like below:
 
 ```bash
-$ python -m easybuild.test.suite
+$ python -m test.framework.suite
 Running tests...
 ----------------------------------------------------------------------
-.............................
+..............................................................
 ----------------------------------------------------------------------
-Ran 29 tests in 6.932s
+Ran 62 tests in 609.384s
 
 OK
 
 Generating XML reports...
-Log available at /tmp/easybuild_tests.log , XML output of tests available in test-reports directory
+```
+
+The unit tests for `easybuild-easyblocks` and `easybuild-easyconfigs` are run in a very similar way:
+
+```bash
+$ python -m test.easyblocks.suite
+Running tests...
+----------------------------------------------------------------------
+..................................................................................................................
+----------------------------------------------------------------------
+Ran 114 tests in 40.291s
+
+OK
+
+Generating XML reports...
+```
+
+```bash
+$ python -m test.easyconfigs.suite
+Running tests...
+----------------------------------------------------------------------
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 950 tests in 30.966s
+
+OK
 ```
 
 ## Regression testing
+
 A more thorough test that also requires significantly more resources is a regression test, which consists of building all easyconfig files distributed with EasyBuild, in a pristine install directory.
 
 To run a full regression test: first append the easybuild directory to the PYTHONPATH. Also, set your MODULEPATH to something which doesn't have dependencies installed.
@@ -51,7 +77,7 @@ The results for both the unit tests and regression test are available through th
 
 #### Unit testing
 
-Jenkins also takes care automatically running the unit tests on every push to either the `master` or `develop` branch of the `easybuild-framework` repository.
+Jenkins also takes care automatically running the unit tests on every push to either the `master` or `develop` branch of the `easybuild-framework`, `easybuild-easyblocks` and `easybuild-easyconfigs` repositories.
 
 #### Regression testing
 
