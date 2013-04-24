@@ -9,6 +9,8 @@ In `test/{framework/easyblocks/easyconfigs}/suite.py` you should add it to the l
 
 For every push to the `master` and `develop` branches of the `easybuild-framework`, `easybuild-easyblocks` and `easybuild-easyconfigs` repositories, a set of unit tests is run, possibly triggering the unit tests in another repository (`easybuild-framework` triggers `easybuild-easyblocks`, `easybuild-easyblocks` triggers `easybuild-easyconfigs`).
 
+### easybuild-framework
+
 To run the `easybuild-framework` unit tests yourself, simply execute `python -m test.framework.suite` on an installed version of EasyBuild. This should give you output like below:
 
 ```bash
@@ -26,6 +28,8 @@ Generating XML reports...
 
 The unit tests for `easybuild-easyblocks` and `easybuild-easyconfigs` are run in a very similar way, see below.
 
+### easybuild-easyblocks
+
 Currently, the unit tests for `easybuild-easyblocks` consist of instantiating an easyblock object for each of the available easyblock modules. Functional testing of easyblocks is done as a part of a regression test (see below). Running this suite of unit tests requires that `easybuild-framework` is available in `$PYTHONPATH`.
 
 ```bash
@@ -40,6 +44,8 @@ OK
 
 Generating XML reports...
 ```
+
+### easybuild-easyconfigs
 
 For the `easybuild-easyconfigs` repository, every easyconfig file is parsed and an easyblock for that easyconfig is instantiated as a sanity check. Next to this, a full dependency graph of the full set of available easyconfigs is constructed, to verify whether all dependencies can be resolved. For these unit tests, both `easybuild-framework` and `easybuild-easyblocks` need to be available in `$PYTHONPATH`.
 
