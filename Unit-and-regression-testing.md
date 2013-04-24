@@ -5,7 +5,7 @@ EasyBuild is tested rigorously to try and ensure high-quality code.
 Unit tests should be added (if possible) for each added feature.
 Adding more unit tests should be done by creating a new test module, adding a suite() method which returns a TestSuite object with all the testcases in it.
 
-In `test/{framework/easyblocks/easyconfigs}/suite.py} you should add it to the list of modules then, so it will be included when somebody runs the suite.
+In `test/{framework/easyblocks/easyconfigs}/suite.py` you should add it to the list of modules then, so it will be included when somebody runs the suite.
 
 For every push to the `master` and `develop` branches of the `easybuild-framework`, `easybuild-easyblocks` and `easybuild-easyconfigs` repositories, a set of unit tests is run, possibly triggering the unit tests in another repository (`easybuild-framework` triggers `easybuild-easyblocks`, `easybuild-easyblocks` triggers `easybuild-easyconfigs`).
 
