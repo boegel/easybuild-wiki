@@ -190,7 +190,8 @@ class EB_MySoftware(ConfigureMake)
         """Configuration step, we set FC to F90,
         F77 and F90 are already set by EasyBuild to the right compiler, but this tool uses FF for F90 compiler.
         """ 
-        environment.setvar("FC", self.toolchain.get_variable('F90'))                                                     
+        environment.setvar("FC", self.toolchain.get_variable('F90'))   
+        self.cfg.update('makeopts', CC="%(CC)s"' % {'CC': os.getenv('CC')})                                                  
         ConfigureMake.configure_step(self)
         # different subdir if doing a source install
         if self.cfg['sourceinstall']:
