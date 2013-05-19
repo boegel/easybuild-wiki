@@ -4,7 +4,7 @@ This page gives a overview of previous and future EasyBuild releases, along with
 
 Release schedule for **EasyBuild v1.5**:
 
-* _feature freeze_: May 24th 2013
+* _feature freeze_: May 24th 2013 (9am)
 * _planned release_: May 31st 2013
 
 ## Release planning
