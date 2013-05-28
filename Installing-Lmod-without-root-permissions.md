@@ -12,3 +12,18 @@ cmake -DCMAKE_INSTALL_PREFIX=$HOME/lua -G 'Unix Makefiles'
 3. Build Lua by running `make`.
 
 4. Install Lua using `make install`.
+
+5. Make sure the `lua` binary is available in your `$PATH` (pro tip: put this in your `.bashrc`):
+
+```bash
+export PATH=$HOME/lua/bin:$PATH
+```
+
+### Lmod
+
+1. Go to https://github.com/TACC/Lmod/tags and download the latest available Lmod version (v5.0rc4 at the time of writing).
+
+2. Configure the Lmod build, while specifying a prefix to Lmod in:
+```bash
+./configure --prefix=$HOME/lmod
+```
