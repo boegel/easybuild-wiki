@@ -1,5 +1,7 @@
 This short guide will show how to install Lmod (and Lua, on which it depends) on Linux, without requiring root permissions.
 
+**INCOMPLETE, INSTRUCTIONS BELOW DON'T WORK YET**
+
 ### LuaDist
 
 First, let's install the `luadist` tool, a convenient way to install Lua and Lua modules:
