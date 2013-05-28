@@ -2,6 +2,25 @@ This short guide will show how to install Lmod (and Lua, on which it depends) on
 
 ### Lua
 
+### LuaDist
+
+First, let's install the `luadist` tool, a convenient way to install Lua and Lua modules:
+
+1. Clone the LuaDist git repository:
+
+```bash
+mkdir LuaDist
+cd LuaDist
+git clone https://github.com/LuaDist/Repository.git
+cd Repository
+cat .gitmodules | sed 's@git://@https://@g' > /tmp/gitmodules; mv /tmp/gitmodules .gitmodules
+cat .gitmodules >> .git/config 
+git submodule update --init bootstrap lua lua-git luadist-git luafilesystem luasocket srlua zlib
+./install bootstrap
+```
+
+
+
 1. Go to https://github.com/LuaDist/lua/tags and download the latest Lua version. At the time of writing, the latest available Lua version was 5.2.2, which can be downloaded [here](https://github.com/LuaDist/lua/archive/5.2.2.tar.gz). The remainder of these commands will assume Lua v5.2.2 is being installed, you may need to adjust them accordingly.
 
 2. Configuring the Lua build requires CMake (2.8 or more recent). Specify a prefix to install Lua in:
