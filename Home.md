@@ -10,6 +10,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[License]]
 * [[Dependencies]] (updated)
   * [[Installing environment modules without root permissions]] (up-to-date)
+  * [[Installing lmod without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]] (updated)
 * [[Getting started]] (updated)
