@@ -1,6 +1,6 @@
 This short guide will show how to install Lmod (and Lua, on which it depends) on Linux, without requiring root permissions.
 
-== Lua ==
+### Lua
 
 1. Go to https://github.com/LuaDist/lua/tags and download the latest Lua version. At the time of writing, the latest available Lua version was 5.2.2, which can be downloaded [here](https://github.com/LuaDist/lua/archive/5.2.2.tar.gz). The remainder of these commands will assume Lua v5.2.2 is being installed, you may need to adjust them accordingly.
 
