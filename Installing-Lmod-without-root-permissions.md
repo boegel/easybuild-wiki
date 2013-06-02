@@ -2,38 +2,23 @@ This short guide will show how to install Lmod (and Lua, on which it depends) on
 
 **INCOMPLETE, INSTRUCTIONS BELOW DON'T WORK YET**
 
-### LuaDist
-
-First, let's install the `luadist` tool, a convenient way to install Lua and Lua modules:
-
-1. Clone the LuaDist git repository:
-
-```bash
-mkdir LuaDist
-cd LuaDist
-git clone https://github.com/LuaDist/Repository.git
-cd Repository
-cat .gitmodules | sed 's@git://@https://@g' > /tmp/gitmodules; mv /tmp/gitmodules .gitmodules
-cat .gitmodules >> .git/config 
-git submodule update --init bootstrap lua lua-git luadist-git luafilesystem luasocket srlua zlib
-./install bootstrap
-```
-
 
 ### Lua
 
-1. Go to https://github.com/LuaDist/lua/tags and download the latest Lua version. At the time of writing, the latest available Lua version was 5.2.2, which can be downloaded [here](https://github.com/LuaDist/lua/archive/5.2.2.tar.gz). The remainder of these commands will assume Lua v5.2.2 is being installed, you may need to adjust them accordingly.
+Build and install Lua using the source tarball available in the Lmod SourceForge repository ([http://sourceforge.net/projects/lmod/files/](http://sourceforge.net/projects/lmod/files/)). This version is a lot easier to build, and already includes the required Lua modules. At the time of writing this relates to the `lua-5.1.4.5.tar.gz` tarball.
 
-2. Configuring the Lua build requires CMake (2.8 or more recent). Specify a prefix to install Lua in:
+1. Download and unpack [lua-5.1.4.5.tar.gz](http://sourceforge.net/projects/lmod/files/lua-5.1.4.5.tar.gz/download).
+
+2. Configure, build and install Lua in a custom prefix, e.g., `$HOME/lua`. Make sure you have `libreadline` and `ncurses` available on your system. The Lua binaries are statically linked to avoid problems with `libreadline` and/or `ncurses` modules that are loaded.
+
 ```bash
-cmake -DCMAKE_INSTALL_PREFIX=$HOME/lua -G 'Unix Makefiles'
+./configure --prefix=$HOME/lua
+# make MYLDFLAGS='-static' # static linking, but yield issues with Lua modules: 
+make # dynamic linking (default), yields issues with libreadline/ncurses modules
+make install
 ```
 
-3. Build Lua by running `make`.
-
-4. Install Lua using `make install`.
-
-5. Make sure the `lua` binary is available in your `$PATH` (pro tip: put this in your `.bashrc`):
+3. Make sure the `lua` binary is available in your `$PATH` (pro tip: put this in your `.bashrc`):
 
 ```bash
 export PATH=$HOME/lua/bin:$PATH
@@ -41,9 +26,9 @@ export PATH=$HOME/lua/bin:$PATH
 
 ### Lmod
 
-1. Go to https://github.com/TACC/Lmod/tags and download the latest available Lmod version (v5.0rc4 at the time of writing).
+1. Download and unpack the latest available Lmod version, [Lmod-5.0.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.0.tar.bz2/download) at the time of writing.
 
-2. Configure the Lmod build, while specifying a prefix to Lmod in:
+2. Configure, build and install Lmod build, in a custom prefix:
 ```bash
-./configure --prefix=$HOME/lmod
+./configure --prefix=$HOME/lmod && make install
 ```
