@@ -27,7 +27,7 @@ group picture during 3rd EasyBuild hackathon @ Nicosia, Cyprus<br>
  * Ioanna Kalvari (University of Cyprus)
  * Demetris Charalambous (Cyprus Meteorological Service)
  * George Fanourgakis (The Cyprus Institute)
- * Nicolas ?? (??) **FIXME**
+ * Nicolas Kanaris (The Cyprus Institute, HPC user (OpenFOAM))
  * Konstantinos Stergiopoulos (The Cyprus Institute) **(excused)**
 
 ## Training exercises
