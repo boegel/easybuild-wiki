@@ -28,14 +28,12 @@ patch -p1 < lua-5.1.4.5_Makefile-static-linking.patch
 ```
 
 
-2. Configure, build and install Lua in a custom prefix, e.g., `$HOME/lua`. Make sure you have `libreadline` and `ncurses` available on your system.
-
+3. Configure, build and install Lua in a custom prefix, e.g., `$HOME/lua`. Make sure you have `libreadline` and `ncurses` available on your system.
 ```bash
 ./configure --prefix=$HOME/lua && make && make install
 ```
 
-3. Make sure the `lua` binary is available in your `$PATH` (pro tip: put this in your `.bashrc`):
-
+4. Make sure the `lua` binary is available in your `$PATH` (pro tip: put this in your `.bashrc`):
 ```bash
 export PATH=$HOME/lua/bin:$PATH
 ```
