@@ -7,6 +7,27 @@ Build and install Lua using the source tarball available in the Lmod SourceForge
 
 1. Download and unpack [lua-5.1.4.5.tar.gz](http://sourceforge.net/projects/lmod/files/lua-5.1.4.5.tar.gz/download).
 
+2. Adjust the `lua/src/Makefile.in` makefile template to enforce static linking of the `readline` and `ncurses` libraries, using the following patch:
+```bash
+diff -ru lua-5.1.4.5.orig/lua/src/Makefile.in lua-5.1.4.5/lua/src/Makefile.in
+--- lua-5.1.4.5.orig/lua/src/Makefile.in	2011-02-18 19:49:01.000000000 +0100
++++ lua-5.1.4.5/lua/src/Makefile.in	2013-06-02 13:22:28.601496000 +0200
+@@ -98,7 +98,7 @@
+ 	$(MAKE) all MYCFLAGS=
+ 
+ linux:
+-	$(MAKE) all MYCFLAGS="$(MYCFLAGS) -DLUA_USE_LINUX" MYLIBS="-Wl,-E -ldl @LIBS@ -lncurses"
++	$(MAKE) all MYCFLAGS="$(MYCFLAGS) -DLUA_USE_LINUX" MYLIBS="-Wl,-E -ldl -Wl,-Bstatic @LIBS@ -lncurses -Wl,-Bdynamic"
+ 
+ macosx:
+ #	$(MAKE) all MYCFLAGS=-DLUA_USE_MACOSX
+```
+This can be done by saving the patch above in a file named `lua-5.1.4.5_Makefile-static-linking.patch`, and running the following command in the unpacked `lua-5.1.4.5` directory:
+```bash
+patch -p1 < lua-5.1.4.5_Makefile-static-linking.patch
+```
+
+
 2. Configure, build and install Lua in a custom prefix, e.g., `$HOME/lua`. Make sure you have `libreadline` and `ncurses` available on your system. The Lua binaries are statically linked to avoid problems with `libreadline` and/or `ncurses` modules that are loaded.
 
 ```bash
