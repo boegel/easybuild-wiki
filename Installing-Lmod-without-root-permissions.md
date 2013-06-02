@@ -8,7 +8,7 @@ Build and install Lua using the source tarball available in the Lmod SourceForge
 1. Download and unpack [lua-5.1.4.5.tar.gz](http://sourceforge.net/projects/lmod/files/lua-5.1.4.5.tar.gz/download).
 
 2. Adjust the `lua/src/Makefile.in` makefile template to enforce static linking of the `readline` and `ncurses` libraries (to avoid problems with `libreadline` and/or `ncurses` modules that are loaded), using the following patch:
-```bash
+```diff
 diff -ru lua-5.1.4.5.orig/lua/src/Makefile.in lua-5.1.4.5/lua/src/Makefile.in
 --- lua-5.1.4.5.orig/lua/src/Makefile.in	2011-02-18 19:49:01.000000000 +0100
 +++ lua-5.1.4.5/lua/src/Makefile.in	2013-06-02 13:22:28.601496000 +0200
