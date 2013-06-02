@@ -30,3 +30,8 @@ export PATH=$HOME/lua/bin:$PATH
 ```bash
 ./configure --prefix=$HOME/lmod && make install
 ```
+
+3. Update `$PATH` so `lmod` is available (put this in your `.bashrc`):
+```bash
+export PATH=$HOME/lmod/lmod/5.0/libexec:$PATH
+```
