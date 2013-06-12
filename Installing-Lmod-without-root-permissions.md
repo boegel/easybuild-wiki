@@ -22,7 +22,7 @@ diff -ru lua-5.1.4.5.orig/lua/src/Makefile.in lua-5.1.4.5/lua/src/Makefile.in
  macosx:
  #	$(MAKE) all MYCFLAGS=-DLUA_USE_MACOSX
 ```
-This can be done by saving the patch above in a file named `lua-5.1.4.5_Makefile-static-linking.patch` (**beware of tabs when copy-pasting the patch!**), and running the following command in the unpacked `lua-5.1.4.5` directory:
+This can be done by saving the patch above in a file named `lua-5.1.4.5_Makefile-static-linking.patch` **(beware of tabs when copy-pasting the patch!)**, and running the following command in the unpacked `lua-5.1.4.5` directory:
 ```bash
 patch -p1 < lua-5.1.4.5_Makefile-static-linking.patch
 ```
