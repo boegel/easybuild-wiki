@@ -44,7 +44,7 @@ export PATH=$HOME/lua/bin:$PATH
 
 2. Configure, build and install Lmod build, in a custom prefix:
 ```bash
-./configure --prefix=$HOME && make install
+./configure --prefix=$HOME && make pre-install
 ```
 
 3. Update `$PATH` so `lmod` is available (put this in your `.bashrc`):
