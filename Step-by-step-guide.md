@@ -208,50 +208,15 @@ moduleclass = 'lib'
 
 **Step 3.1.2: Build and install LAPACK**
 
-### Step 3.2: Building/installing ATLAS
+### Step 3.2: Building/installing OpenBLAS
 
-**Step 3.2.1: Create easyconfig for ATLAS**
+**Step 3.2.1: Create easyconfig for OpenBLAS**
+* Use this easyconfig: https://github.com/hpcugent/easybuild-easyconfigs/blob/master/easybuild/easyconfigs/o/OpenBLAS/OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2.eb
+* witch will need this patch https://github.com/hpcugent/easybuild-easyconfigs/blob/master/easybuild/easyconfigs/o/OpenBLAS/OpenBLAS-0.2.6_Makefile-LAPACK-sources.patch
 
-```python
-name = 'ATLAS'
-version = '3.8.4'
-
-homepage = 'http://math-atlas.sourceforge.net'
-description = """ATLAS (Automatically Tuned Linear Algebra Software) is the application of
-the AEOS (Automated Empirical Optimization of Software) paradigm, with the present emphasis
-on the Basic Linear Algebra Subprograms (BLAS), a widely used, performance-critical, linear
-algebra kernel library."""
-
-toolchain = {'name': 'GCC', 'version': '4.6.3'}
-toolchainopts = {'pic':True}
-
-sources = ['%s%s.tar.bz2'%(name.lower(),version)]
-source_urls = [('http://sourceforge.net/projects/math-atlas/files/Stable/%s' % version,'download')]
-
-lapack = 'LAPACK'
-lapackver = '3.4.0'
-
-dependencies = [(lapack, lapackver)]
-versionsuffix = '-%s-%s' % (lapack, lapackver)
-
-patches = ['ATLAS-3.8.4_illegal-instruction-fix.patch']
-
-## build full LAPACK library with supplied netlib LAPACK
-full_lapack = True
-
-## fix for http://math-atlas.sourceforge.net/errata.html#sharedProbe
-configopts = "-Ss f77lib '-L$(EBROOTGCC)/lib64 -lgfortran'"
-
-## ignore check done by ATLAS for CPU throttling;
-## you should set this to False (or remove it)
-## and disable CPU throttling (requires root privileges) if you can
-ignorethrottling = True
-
-moduleclass = 'lib'
-```
 
 **Step 3.2.2: Build and install ATLAS**
-
+`eb OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2.eb`
 
 <a name="wiki-step4"/>
 ## Step 4: FFTW library
@@ -260,7 +225,7 @@ moduleclass = 'lib'
 
 ```python
 name = 'FFTW'
-version = '3.3.1'
+version = '3.3.3'
 
 homepage = 'http://www.fftw.org'
 descripti on= """FFTW is a C subroutine library for computing the discrete Fourier transform (DFT)
@@ -289,7 +254,7 @@ moduleclass = 'lib'
 ```
 
 ### Step 4.2: Build and install FFTW
-
+`eb fftw.eb`
 
 
 
@@ -300,50 +265,32 @@ moduleclass = 'lib'
 
 ```python
 name = 'ScaLAPACK'
-version = '1.8.0'
+version = '2.0.2'
 
 homepage = 'http://www.netlib.org/scalapack/'
-description = "The ScaLAPACK (or Scalable LAPACK) library includes a subset of LAPACK routines redesigned for distributed memory MIMD parallel computers."
+description = """The ScaLAPACK (or Scalable LAPACK) library includes a subset of LAPACK routines
+redesigned for distributed memory MIMD parallel computers."""
 
-compname = 'GCC'
-compver = '4.6.3'
-comp = '%s-%s' % (compname, compver)
-
-toolchain = {'name': compname, 'version': compver}
+toolchain = {'name': 'gompi', 'version': '1.4.10'}
 toolchainopts = {'pic': True}
 
-sources = ['%s-%s.tgz' % (name.lower(), version)]
 source_urls = [homepage]
+sources = ['%(namelower)s-%(version)s.tgz']
 
-mpilib = 'OpenMPI'
-mpiver = '1.4.5'
-mpisuff = '-no-OFED'
-mpi = "-%s-%s%s" % (mpilib, mpiver, mpisuff)
+blaslib = 'OpenBLAS'
+blasver = '0.2.6'
+blassuff = '-LAPACK-3.4.2'
 
-blaslib = 'ATLAS'
-blasver = '3.8.4'
-blas = "-%s-%s" % (blaslib, blasver)
+versionsuffix = "-%s-%s%s" % (blaslib, blasver, blassuff)
 
-lapacklib = 'LAPACK'
-lapackver = '3.4.0'
-lapack = "-%s-%s" % (lapacklib, lapackver)
-
-blacslib = 'BLACS'
-blacsver = '1.1'
-blacs = "-%s-%s" % (blacslib, blacsver)
-
-versionsuffix = "%s%s%s%s" % (mpi, blas, lapack, blacs)
-
-dependencies = [(mpilib, mpiver, mpisuff),
-                (blaslib, blasver, lapack),
-                (lapacklib, lapackver),
-                (blacslib, blacsver, mpi)
+dependencies = [
+                (blaslib, blasver, blassuff),
                ]
 
 ## parallel build tends to fail, so disabling it
 parallel = 1
 
-moduleclass = 'lib'
+moduleclass = 'numlib'
 ```
 
 ### Step 5.2: Build and install ScaLAPACK
@@ -359,48 +306,46 @@ moduleclass = 'lib'
 ```python
 easyblock = "Toolchain"
 
-name = 'goalf'
-version = '1.1.0'
-versionsuffix = '-no-OFED'
+name = 'goolf'
+version = '1.4.10'
 
 homepage = '(none)'
-description = """GNU Compiler Collection (GCC) based compiler toolchain, including OpenMPI for MPI support, ATLAS (BLAS support), LAPACK, FFTW and ScaLAPACK."""
+description = """GNU Compiler Collection (GCC) based compiler toolchain, including
+ OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support), FFTW and ScaLAPACK."""
 
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
-compname = 'GCC'
-compver = '4.6.3'
-comp = '%s-%s' % (compname, compver)
+comp_name = 'GCC'
+comp_version = '4.7.2'
+comp = "%s-%s" % (comp_name, comp_version)
 
-mpilib = 'OpenMPI'
-mpiver = '1.4.5'
-mpisuff = '-no-OFED'
-mpi = '%s-%s%s' % (mpilib, mpiver, mpisuff)
+blaslib = 'OpenBLAS'
+blasver = '0.2.6'
+blas = '%s-%s' % (blaslib, blasver)
+blassuff = 'LAPACK-3.4.2'
 
-blaslib = 'ATLAS'
-blasver = '3.8.4'
-blas = '%s-%s'%(blaslib, blasver)
+# toolchain used to build goolf dependencies
+comp_mpi_tc_name = 'gompi'
+comp_mpi_tc_ver = "%s" % version
+comp_mpi_tc = "%s-%s" % (comp_mpi_tc_name, comp_mpi_tc_ver)
 
-lapacklib = 'LAPACK'
-lapackver = '3.4.0'
-lapack = '%s-%s'%(lapacklib, lapackver)
-
-## compiler toolchain depencies
-dependencies = [(compname, compver),
-                (mpilib, mpiver, '-%s%s'%(comp,mpisuff)),
-                (blaslib, blasver, '-%s-%s'%(comp,lapack)),
-                (lapacklib, lapackver, '-%s'%comp),
-                ('FFTW', '3.3.1', '-%s-%s'%(comp,mpi)),
-                ('ScaLAPACK','1.8.0', '-%s-%s-%s-%s-BLACS-1.1'%(comp,mpi,blas,lapack))
+# compiler toolchain depencies
+# we need GCC and OpenMPI as explicit dependencies instead of gompi toolchain
+# because of toolchain preperation functions
+dependencies = [
+                ('GCC', '4.7.2'),
+                ('OpenMPI', '1.6.4-%s' % comp),  # part of gompi-1.1.0
+                (blaslib, blasver, '-%s-%s' % (comp_mpi_tc, blassuff)),
+                ('FFTW', '3.3.3', "-%s" % comp_mpi_tc),
+                ('ScaLAPACK', '2.0.2', '-%s-%s-%s' % (comp_mpi_tc, blas, blassuff))
                ]
 
-moduleclass = 'compiler'
+moduleclass = 'toolchain'
 ```
 
-### Step 5.2: Install goalf compiler toolchain
+### Step 5.2: Install goolf compiler toolchain
 
-(more soon)
-
+`eb  goolf-1.4.10.eb`
 
 
 <a name="wiki-step7"/>
