@@ -2,7 +2,8 @@ Configuring [[EasyBuild]] is done by providing a configuration file.
 
 EasyBuild will use the file that is provided by the path/filename in the following order of preference:
 
-* path/filename specified on the EasyBuild command line (using --config or -C),
+* path/filename specified on the EasyBuild command line (using `--config`),
+ * Be aware, we are adding a new configuration format that will become default in the future, using configparser instead of python code. This is already available with the `--configfiles` option, but is not yet documented here.
 * path/filename obtained from the environment variable `EASYBUILDCONFIG` (if it is defined)
 * $HOME/.easybuild/config.py (as of EasyBuild v1.1)
 * the (default) configuration file at `<path where EasyBuild was installed>/easybuild/easybuild_config.py`
