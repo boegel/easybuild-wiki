@@ -1,15 +1,17 @@
 Configuring [[EasyBuild]] is done by providing a configuration file.
 
+EasyBuild expects the configuration file to contain valid Python code, because it executes its contents (using `exec`).
+The rationale is that this approach provides a lot of flexibility for configuring EasyBuild. However,
+we are going to move away from this path, and use the default python configuration format as parsed by [configparser](http://docs.python.org/2/library/configparser.html)
+This new format is already available, you can see it showing up in `eb --help` (all the configfile section names) and use it using the `--configfiles` option, or put a configfile in `$HOME/.easybuild/config.cfg` 
+This format is usable, but it is not yet documented here.
+
 EasyBuild will use the file that is provided by the path/filename in the following order of preference:
 
 * path/filename specified on the EasyBuild command line (using `--config`),
- * Be aware, we are adding a new configuration format that will become default in the future, using configparser instead of python code. This is already available with the `--configfiles` option, but is not yet documented here.
 * path/filename obtained from the environment variable `EASYBUILDCONFIG` (if it is defined)
 * $HOME/.easybuild/config.py (as of EasyBuild v1.1)
 * the (default) configuration file at `<path where EasyBuild was installed>/easybuild/easybuild_config.py`
-
-EasyBuild expects the configuration file to contain valid Python code, because it executes its contents (using `exec`).
-The rationale is that this approach provides a lot of flexibility for configuring EasyBuild.
 
 
 ## Configuration variables
