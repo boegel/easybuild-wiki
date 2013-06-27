@@ -4,7 +4,7 @@ EasyBuild expects the configuration file to contain valid Python code, because i
 The rationale is that this approach provides a lot of flexibility for configuring EasyBuild. However,
 we are going to move away from this path, and use the default python configuration format as parsed by [configparser](http://docs.python.org/2/library/configparser.html)
 This new format is already available, you can see it showing up in `eb --help` (all the configfile section names) and use it using the `--configfiles` option, or put a configfile in `$HOME/.easybuild/config.cfg` 
-This format is usable, but it is not yet documented here.
+**This new format is** usable, but it is** not yet documented here.**
 
 EasyBuild will use the file that is provided by the path/filename in the following order of preference:
 
