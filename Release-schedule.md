@@ -7,7 +7,7 @@ This page gives a overview of previous and future EasyBuild releases, along with
 * _feature freeze_: Mon. July 1st 2013 (9am)
 * _planned release_: Wed July 10th 2013
 
-Note: there will be no release end of July 2013 due to summer holidays. EasyBuild v1.7 is now roughly planned for end of August 2013.
+''Note'': there will be no release end of July 2013 due to summer holidays. EasyBuild v1.7 is now roughly planned for end of August 2013.
 
 ## Release planning
 
