@@ -2,7 +2,7 @@ This page gives a overview of previous and future EasyBuild releases, along with
 
 ## Next release
 
-(Preliminary) release schedule for **EasyBuild v1.6**:
+Release schedule for **EasyBuild v1.6**:
 
 * _feature freeze_: Mon. July 1st 2013 (9am)
 * _planned release_: Wed July 10th 2013
