@@ -40,7 +40,7 @@ export PATH=$HOME/lua/bin:$PATH
 
 ### Lmod
 
-1. Download and unpack the latest available Lmod version, [Lmod-5.0.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.0.tar.bz2/download) at the time of writing.
+1. Download and unpack the latest available Lmod version, [Lmod-5.0.1.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.0.1.tar.bz2/download) at the time of writing.
 
 2. Configure, build and install Lmod build, in a custom prefix:
 ```bash
@@ -49,5 +49,5 @@ export PATH=$HOME/lua/bin:$PATH
 
 3. Update `$PATH` so `lmod` is available (put this in your `.bashrc`):
 ```bash
-export PATH=$HOME/lmod/5.0/libexec:$PATH
+export PATH=$HOME/lmod/5.0.1/libexec:$PATH
 ```
