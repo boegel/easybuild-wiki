@@ -2,7 +2,7 @@
 
 ### Basic Information
 
-* **time**: August 2013 
+* **time**: August 2013 (doodle for planning exact date: http://www.doodle.com/7fi37kknmpbrs4n3)
 * **location**: Brussels or Ghent (Belgium)
 * **notes**: in planning stages
 
