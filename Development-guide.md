@@ -158,7 +158,7 @@ This will set environment variables, and keep track of them in between steps, so
 
 For defining what environment variables to set to what path in the produced environment modules file you need to implement the `make_module_req_guess` method. This method will check if a path exists, and if so create an environment variable pointing to it.
 This method should return a dictionary of `{'VARIABLE_NAME': 'directory'}` Default: 
-```python 
+```python
 {
     'PATH': ['bin'],                                                                                             
     'LD_LIBRARY_PATH': ['lib', 'lib64'],                                                                         
