@@ -153,11 +153,18 @@ Example:
 
   CP2K-20110124-gimkl-0.5.1.eb contains the following toolchain and dependencies
 
->   toolchain = {'name': 'gimkl', 'version': '0.5.1'}
-
->   dependencies = [['Libint', '1.1.4']]
+```python
+toolchain = {'name': 'gimkl', 'version': '0.5.1'}
+dependencies = [('Libint', '1.1.4')]
+```
 
   When installing with this easyconfig, the build system will look for dependency with name 'Libint' and version '1.1.4-gimkl-0.5.1'.
+
+To include dependencies that are independent of the toolchain, i.e. built with a `dummy` toolchain, you should use a 4-tuple with the last element set to `True`, e.g.:
+
+```python
+dependencies = [('Java', '1.7.0_21', '', True)]
+```
 
 ## License options
 
