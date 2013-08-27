@@ -6,7 +6,7 @@ An EasyBuild mailinglist `easybuild@lists.ugent.be` is available to subscribe to
 
 This list is used by both users and developers of EasyBuild, so if you have any questions or suggestions, you can post them there.
 
-Only members can post to this mailinglist. To request membership, see [https://lists.ugent.be/sympa/info/easybuild](https://lists.ugent.be/sympa/info/easybuild)
+Only members can post to this mailinglist. To request membership, see [https://lists.ugent.be/wws/info/easybuild](https://lists.ugent.be/wws/info/easybuild)
 
 ## IRC
 
