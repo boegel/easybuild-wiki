@@ -2,7 +2,7 @@ Click on ![easyconfig logo](http://hpc.ugent.be/easybuild/images/easyblocks_conf
 to see to the list of easyconfig files.
 And on ![easyblock logo](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png) 
 to go to the easyblock for this package.
-## Supported Packages (336 in v1.6 as of 2013-07-15) 
+## Supported Packages (356 in v1.7.0 as of 2013-09-03) 
 <center>
 [A](#A) - [B](#B) - [C](#C) - [D](#D) - [E](#E) - [F](#F) - [G](#G) - [H](#H) - [I](#I) - [J](#J) - [L](#L) - [M](#M) - [N](#N) - [O](#O) - [P](#P) - [Q](#Q) - [R](#R) - [S](#S) - [T](#T) - [U](#U) - [V](#V) - [W](#W) - [X](#X) - [Y](#Y) - [Z](#Z)
 </center>
@@ -88,7 +88,8 @@ to go to the easyblock for this package.
 [ bam2fastq](http://www.hudsonalpha.org/gsl/information/software/bam2fastq)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/b/BamTools)
-&nbsp;&nbsp;&nbsp;&nbsp;
+[![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
+ (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/b/bamtools.py)
 [ BamTools](https://github.com/pezmaster31/bamtools)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/b/Bash)
@@ -150,7 +151,8 @@ to go to the easyblock for this package.
 [ BLAST](http://blast.ncbi.nlm.nih.gov/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/b/BLAT)
-&nbsp;&nbsp;&nbsp;&nbsp;
+[![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
+ (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/b/blat.py)
 [ BLAT](http://genome.ucsc.edu/FAQ/FAQblat.html)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/b/Bonnie++)
@@ -463,7 +465,7 @@ ClangGCC
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/f/fsl.py)
 [ FSL](http://www.fmrib.ox.ac.uk/fsl/)
 
-### G (35 packages) <a name='G'/>
+### G (37 packages) <a name='G'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/g2clib)
@@ -523,9 +525,17 @@ ClangGCC
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ git](http://git-scm.com/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/GLib)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ GLib](http://www.gtk.org/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/GLIMMER)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ GLIMMER](http://www.cbcb.umd.edu/software/glimmer/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/GLPK)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ GLPK](http://www.gnu.org/software/glpk/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/glproto)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -611,7 +621,7 @@ goolfc
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ gzip](http://www.gnu.org/software/gzip/)
 
-### H (10 packages) <a name='H'/>
+### H (16 packages) <a name='H'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/h5py)
@@ -642,6 +652,30 @@ goolfc
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HMMER)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ HMMER](http://hmmer.janelia.org/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/horton)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ horton](http://theochem.github.io/horton)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HPCBIOS_Bioinfo)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ HPCBIOS_Bioinfo](http://hpcbios.readthedocs.org/en/latest/HPCBIOS_2012-94.html)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HPCBIOS_Debuggers)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ HPCBIOS_Debuggers](http://hpcbios.readthedocs.org/en/latest/HPCBIOS_06-05.html)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HPCBIOS_LifeSciences)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ HPCBIOS_LifeSciences](http://hpcbios.readthedocs.org/en/latest/HPCBIOS_2012-93.html)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HPCBIOS_Math)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ HPCBIOS_Math](http://hpcbios.readthedocs.org/en/latest/HPCBIOS_06-01.html)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HPCBIOS_Profilers)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ HPCBIOS_Profilers](http://hpcbios.readthedocs.org/en/latest/HPCBIOS_07-02.html)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/h/HPL)
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
@@ -747,7 +781,7 @@ iiqmpi
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ JUnit](http://sourceforge.net/projects/junit)
 
-### L (30 packages) <a name='L'/>
+### L (31 packages) <a name='L'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/l/LAPACK)
@@ -798,6 +832,10 @@ iiqmpi
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/l/Libint)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ Libint](https://sourceforge.net/p/libint/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/l/libint2)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ libint2](http://www.files.chem.vt.edu/chem-dept/valeev/software/libint/libint.html)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/l/libmatheval)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -873,7 +911,7 @@ iiqmpi
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ LZO](http://www.oberhumer.com/opensource/lzo/)
 
-### M (27 packages) <a name='M'/>
+### M (28 packages) <a name='M'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/m/M4)
@@ -943,6 +981,10 @@ iiqmpi
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/m/metis.py)
 [ METIS](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/m/molmod)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ molmod](http://molmod.github.io/molmod/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/m/Mothur)
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
@@ -1103,7 +1145,7 @@ iiqmpi
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/o/ORCA)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[ ORCA](http://cec.mpg.de/forum/)
+[ ORCA](http://www.thch.uni-bonn.de/tc/orca/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/o/orthomcl)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -1217,7 +1259,7 @@ iiqmpi
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/p/pyzmq.py)
 [ PyZMQ](http://www.zeromq.org/bindings:python)
 
-### Q (2 packages) <a name='Q'/>
+### Q (3 packages) <a name='Q'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/q/QLogicMPI)
@@ -1225,12 +1267,16 @@ iiqmpi
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/q/qlogicmpi.py)
 [ QLogicMPI](http://www.qlogic.com)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/q/Qt)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ Qt](http://qt-project.org/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/q/QuantumESPRESSO)
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/q/quantumespresso.py)
 [ QuantumESPRESSO](http://www.pwscf.org/)
 
-### R (5 packages) <a name='R'/>
+### R (6 packages) <a name='R'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/r/R)
@@ -1254,8 +1300,12 @@ iiqmpi
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/r/root.py)
 [ ROOT](http://root.cern.ch/drupal/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/r/Rosetta)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ Rosetta](https://www.rosettacommons.org)
 
-### S (18 packages) <a name='S'/>
+### S (21 packages) <a name='S'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/SAMtools)
@@ -1279,7 +1329,11 @@ iiqmpi
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/scipy)
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/s/scipy.py)
-[ scipy](http://www.numpy.org)
+[ scipy](http://www.scipy.org)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/SCons)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ SCons](http://www.scons.org/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/SCOOP)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -1321,6 +1375,10 @@ iiqmpi
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ SQLite](http://www.hwaci.com/sw/sqlite/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/Stacks)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ Stacks](http://creskolab.uoregon.edu/stacks/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/Stow)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ Stow](http://www.gnu.org/software/stow/stow.html)
@@ -1334,6 +1392,10 @@ iiqmpi
 [![EasyBlocks](http://hpc.ugent.be/easybuild/images/easyblocks_easyblocks_logo_16x16.png)] 
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/s/swig.py)
 [ SWIG](http://www.swig.org/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/sympy)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ sympy](http://sympy.org/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/s/Szip)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -1483,7 +1545,7 @@ iiqmpi
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/w/wrf.py)
 [ WRF](http://www.wrf-model.org)
 
-### X (5 packages) <a name='X'/>
+### X (7 packages) <a name='X'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/x/xcb-proto)
@@ -1500,6 +1562,14 @@ iiqmpi
  (https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/x/xml.py)
 [ XML](http://cran.r-project.org/web/packages/XML)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/x/XML-LibXML)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ XML-LibXML](http://search.cpan.org/src/SHLOMIF/XML-LibXML-2.0018/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/x/XML-Simple)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ XML-Simple](http://search.cpan.org/src/GRANTM/XML-Simple-2.20/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/x/xorg-macros)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ xorg-macros](http://cgit.freedesktop.org/xorg/util/macros)
@@ -1508,18 +1578,26 @@ iiqmpi
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ xproto](http://www.freedesktop.org/wiki/Software/xlibs)
 
-### Y (2 packages) <a name='Y'/>
+### Y (4 packages) <a name='Y'/>
 
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/y/yaff)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ yaff](http://molmod.github.io/yaff/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/y/YamCha)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ YamCha](http://chasen.org/~taku/software/yamcha/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/y/YAML-Syck)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ YAML-Syck](http://search.cpan.org/perldoc?YAML%3A%3ASyck)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/y/Yasm)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ Yasm](http://www.tortall.net/projects/yasm/)
 
-### Z (3 packages) <a name='Z'/>
+### Z (4 packages) <a name='Z'/>
 
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/z/ZeroMQ)
@@ -1529,6 +1607,10 @@ iiqmpi
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/z/zlib)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ zlib](http://www.zlib.net/)
+* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
+(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/z/zsh)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[ zsh](http://www.zsh.org/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/z/zsync)
 &nbsp;&nbsp;&nbsp;&nbsp;
