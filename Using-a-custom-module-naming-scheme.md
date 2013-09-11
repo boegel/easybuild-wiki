@@ -25,15 +25,16 @@ touch $HOME/easybuild/tools/module_naming_scheme/my_module_naming_scheme.py
 
 Note that the name of the Python module file (`my_module_naming_scheme.py` in this example) does not matter.
 
-In this module, the `det_full_module_name` method should be implemented that receives a dictionary-like value as argument which represents a parsed easyconfig file, and need to produce the module name as a tuple.
+In this module, the `det_full_module_name` method should be implemented that receives a dictionary-like value as argument which represents a parsed easyconfig file, and need to produce the module name as a string.
 The class providing this function must derive from `ModuleNamingScheme` which is provided by the EasyBuild framework. For example:
 
-```python
+```pythonimport os
+
 from easybuild.tools.module_naming_scheme import ModuleNamingScheme
 
 
 class MyModuleNamingScheme(ModuleNamingScheme):
-    """Class implementing a simple example of a custom module naming scheme for EasyBuild."""
+    """Class implementing a simple module naming scheme for testing purposes."""
 
     def det_full_module_name(self, ec):
         """
@@ -41,8 +42,7 @@ class MyModuleNamingScheme(ModuleNamingScheme):
 
         @param ec: dict-like object with easyconfig parameter values (e.g. 'name', 'version', etc.)
 
-        @return: n-element tuple with full module name, e.g.: ('gzip', '1.5'), ('intel', 'intelmpi', '4.1.13', 'gzip', '1.5'),
-        ('gnu', '4.6.3', 'gzip', '1.5', '-dev')
+        @return: n-element tuple with full module name, e.g.: ('gzip', '1.5'), ('intel', 'intelmpi', 'gzip', '1.5')
         """
 
         # figure out prefix determined by toolchain
@@ -69,7 +69,7 @@ class MyModuleNamingScheme(ModuleNamingScheme):
         if suff:
             name_ver = name_ver + (suff, )
 
-        return prefix + name_ver
+        return os.path.sep.join(prefix + name_ver)
 ```
 
 
