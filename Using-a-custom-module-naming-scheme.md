@@ -96,4 +96,4 @@ eb --module-naming-scheme=MyModuleNamingScheme gzip-1.5-goolf-1.4.10.eb --dry-ru
 
 ### Current limitations
 
-Currently, only the `name`, `version`, `versionsuffix` and `toolchain` easyconfig parameters are available in the dictionary(-like) value that is passed to the `det_full_module_name` function. See [framework issue #687](https://github.com/hpcugent/easybuild-framework/issues/687) for more information.
+Currently, only the `name`, `version`, `versionsuffix` and `toolchain` easyconfig parameters are available in the dictionary(-like) value that is passed to the `det_full_module_name` function. See [easybuild-framework issue #687](https://github.com/hpcugent/easybuild-framework/issues/687) for more information.
