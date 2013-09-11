@@ -2,7 +2,7 @@
 
 Since EasyBuild v1.8.0, you can use a self-defined alternative module naming scheme, instead of the default EasyBuild module naming scheme. This page describes how to implement such a custom module naming scheme, and how to direct EasyBuild to it.
 
-## Implementing a custom module naming scheme
+### Implementing a custom module naming scheme
 
 To implement a custom module naming scheme for EasyBuild, you must provide a class that derives from the 'abstract' class `ModuleNamingScheme` and implements a class method named `det_full_module_name`, in a module in the `easybuild.tools.module_naming_scheme` namespace.
 
@@ -73,7 +73,7 @@ class MyModuleNamingScheme(ModuleNamingScheme):
 ```
 
 
-## Making EasyBuild use the custom module naming scheme
+### Making EasyBuild use the custom module naming scheme
 
 To make EasyBuild use our custom module naming scheme, we need to make sure the path where it is located, i.e. the path where we created `easybuild/tools/module_naming_scheme/my_module_naming_scheme.py`, is included in `$PYTHONPATH`.
 
@@ -94,6 +94,6 @@ export EASYBUILD_MODULE_NAMING_SCHEME=MyModuleNamingScheme
 eb --module-naming-scheme=MyModuleNamingScheme gzip-1.5-goolf-1.4.10.eb --dry-run
 ```
 
-## Current limitations
+### Current limitations
 
 Currently, only the `name`, `version`, `versionsuffix` and `toolchain` easyconfig parameters are available in the dictionary(-like) value that is passed to the `det_full_module_name` function. See issue #687 for more information.
