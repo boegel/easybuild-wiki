@@ -53,5 +53,5 @@ eb --version
 After completion of the bootstrap procedure and loading the `EasyBuild` module, try running the EasyBuild unit tests. If this doesn't complete successfully, **[please open an issue](https://github.com/hpcugent/easybuild-framework/issues/new)** to report it.
 
 ```
-python -m easybuild.test.suite
+python -m test.framework.suite
 ```
