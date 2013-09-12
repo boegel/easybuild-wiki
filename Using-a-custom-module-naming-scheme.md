@@ -91,7 +91,7 @@ or
 
 ```bash
 export EASYBUILD_MODULE_NAMING_SCHEME=MyModuleNamingScheme
-eb --module-naming-scheme=MyModuleNamingScheme gzip-1.5-goolf-1.4.10.eb --dry-run
+eb gzip-1.5-goolf-1.4.10.eb --dry-run
 ```
 
 ### Current limitations
