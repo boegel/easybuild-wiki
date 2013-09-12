@@ -28,7 +28,8 @@ Note that the name of the Python module file (`my_module_naming_scheme.py` in th
 In this module, the `det_full_module_name` method should be implemented that receives a dictionary-like value as argument which represents a parsed easyconfig file, and need to produce the module name as a string.
 The class providing this function must derive from `ModuleNamingScheme` which is provided by the EasyBuild framework. For example:
 
-```pythonimport os
+```python
+import os
 
 from easybuild.tools.module_naming_scheme import ModuleNamingScheme
 
