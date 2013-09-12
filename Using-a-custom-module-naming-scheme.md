@@ -30,8 +30,12 @@ The class providing this function must derive from `ModuleNamingScheme` which is
 
 ```python
 import os
+from vsc import fancylogger
 
 from easybuild.tools.module_naming_scheme import ModuleNamingScheme
+
+
+_log = fancylogger.getLogger('my_module_naming_scheme', fname=False)
 
 
 class MyModuleNamingScheme(ModuleNamingScheme):
@@ -49,17 +53,44 @@ class MyModuleNamingScheme(ModuleNamingScheme):
         # figure out prefix determined by toolchain
         tc_name = ec['toolchain']['name']
         tc_ver = ec['toolchain']['version']
-        if tc_name == 'goolf':
-            prefix = ('gnu', 'openmpi', tc_ver)
-        elif tc_name == 'GCC':
-            prefix = ('gnu', tc_ver)
-        elif tc_name == 'ictce':
-            prefix = ('intel', 'intelmpi', tc_ver)
+
+        # mapping of toolchain name to module prefix
+        # alf: ATLAS, (Sca)LAPACK, FFTW
+        # olf: OpenBLAS, (Sca)LAPACK, FFTW
+        clang_gnu, gnu, intel = 'clang_gnu', 'gnu', 'intel'  # compilers
+        intelmpi, openmpi, mpich = 'intelmpi', 'openmpi', 'mpich',  # MPI libs
+        mvapich2, qlogicmpi = 'mvapich2', 'qlogicmpi'  # MPI libs (continued)
+        alf, acml, olf, mkl = 'alf', 'acml', 'olf', 'mkl'  # math libs
+        cuda = 'cuda'  # extras
+        tc_prefixes = {
+            'ClangGCC': (clang_gnu,),
+            'cgmpich': (clang_gnu, mpich),
+            'cgmpolf': (clang_gnu, mpich, olf),
+            'cgmvapich2': (clang_gnu, mvapich2),
+            'cgmvolf': (clang_gnu, mvapich2),
+            'cgompi': (clang_gnu, openmpi),
+            'cgoolf': (clang_gnu, openmpi, olf),
+            'GCC': (gnu,),
+            'gmacml': (gnu, mvapich2, acml),
+            'gmvapich2': (gnu, mvapich2),
+            'gmvolf': (gnu, mvapich2, olf),
+            'goalf': (gnu, openmpi, alf),
+            'gompi': (gnu, openmpi),
+            'goolf': (gnu, openmpi, olf),
+            'goolfc': (gnu, openmpi, olf, cuda),
+            'iccifort': (intel,),
+            'iiqmpi': (intel, qlogicmpi),
+            'ictce': (intel, intelmpi, mkl),
+            'iomkl': (intel, openmpi, mkl),
+            'iqacml': (intel, qlogicmpi, acml),
+        }
+        if tc_name == 'dummy':
+            prefix = ()
         else:
-            if not tc_name == 'dummy':
-                prefix = (tc_name, tc_ver)
+            if tc_name in tc_prefixes:
+                prefix = tc_prefixes[tc_name] + (tc_ver,)
             else:
-                prefix = ()
+                _log.error("Don't know how which module prefix to use for toolchain '%s'." % tc_name)
 
         name_ver = (ec['name'].lower(), ec['version'])
 
