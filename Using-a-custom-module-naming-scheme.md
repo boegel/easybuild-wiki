@@ -17,8 +17,8 @@ from pkgutil import extend_path
 # we're not the only ones in this namespace
 __path__ = extend_path(__path__, __name__)
 EOF
-cp $HOME/easybuild/__init__.py easybuild/tools/__init__.py
-cp $HOME/easybuild/__init__.py easybuild/tools/module_naming_scheme__init__.py
+cp $HOME/easybuild/__init__.py $HOME/easybuild/tools/__init__.py
+cp $HOME/easybuild/__init__.py $HOME/easybuild/tools/module_naming_scheme__init__.py
 # create empty my_module_naming_scheme Python module
 touch $HOME/easybuild/tools/module_naming_scheme/my_module_naming_scheme.py
 ```
