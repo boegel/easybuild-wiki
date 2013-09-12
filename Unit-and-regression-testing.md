@@ -26,6 +26,8 @@ OK
 Generating XML reports...
 ```
 
+Note: you will need either the `json` or `simplejson` Python module.The `json` module is available since Python 2.6, for older Python versions your best bet is to install `simplejson` (see https://pypi.python.org/pypi/simplejson). For Python 2.4, you will need to install an old `simplejson` version, since the `simplejson` 3.x required at least Python 2.5 (see https://pypi.python.org/pypi/simplejson/2.1.0).
+
 The unit tests for `easybuild-easyblocks` and `easybuild-easyconfigs` are run in a very similar way, see below.
 
 ### easybuild-easyblocks
