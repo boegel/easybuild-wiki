@@ -35,11 +35,12 @@ from vsc import fancylogger
 from easybuild.tools.module_naming_scheme import ModuleNamingScheme
 
 
-_log = fancylogger.getLogger('my_module_naming_scheme', fname=False)
-
-
 class MyModuleNamingScheme(ModuleNamingScheme):
     """Class implementing a simple module naming scheme for testing purposes."""
+
+    def __init__(self, *args, **kwargs):
+        """Initialize logger."""
+        self.log = fancylogger.getLogger('my_module_naming_scheme', fname=False)
 
     def det_full_module_name(self, ec):
         """
@@ -90,7 +91,7 @@ class MyModuleNamingScheme(ModuleNamingScheme):
             if tc_name in tc_prefixes:
                 prefix = tc_prefixes[tc_name] + (tc_ver,)
             else:
-                _log.error("Don't know how which module prefix to use for toolchain '%s'." % tc_name)
+                self.log.error("Don't know how which module prefix to use for toolchain '%s'." % tc_name)
 
         name_ver = (ec['name'].lower(), ec['version'])
 
