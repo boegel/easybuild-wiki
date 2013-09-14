@@ -40,6 +40,7 @@ class MyModuleNamingScheme(ModuleNamingScheme):
 
     def __init__(self, *args, **kwargs):
         """Initialize logger."""
+        super(MyModuleNamingScheme, self).__init__(*args, **kwargs)
         self.log = fancylogger.getLogger('my_module_naming_scheme', fname=False)
 
     def det_full_module_name(self, ec):
