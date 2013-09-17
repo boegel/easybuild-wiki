@@ -30,18 +30,12 @@ The class providing this function must derive from `ModuleNamingScheme` which is
 
 ```python
 import os
-from vsc import fancylogger
 
 from easybuild.tools.module_naming_scheme import ModuleNamingScheme
 
 
 class MyModuleNamingScheme(ModuleNamingScheme):
     """Class implementing a simple module naming scheme for testing purposes."""
-
-    def __init__(self, *args, **kwargs):
-        """Initialize logger."""
-        super(MyModuleNamingScheme, self).__init__(*args, **kwargs)
-        self.log = fancylogger.getLogger('my_module_naming_scheme', fname=False)
 
     def det_full_module_name(self, ec):
         """
