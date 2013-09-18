@@ -9,10 +9,17 @@
 ### Attendees
 
 confirmed list of attendees:
+* Yossi Baruch (Isragrid)
+* Stelios Erotokritou (The Cyprus Institute)
+* Mohammed Gaafar (Bibliotheca Alexandrina)
 * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
 * Thekla Loizou (Cyprus Institute, local organization)
+* Dina Mahmoud Ibrahim (Cairo University)
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
+* Alan O'Cais (Jülich Supercomputing Centre)
+* Andreas Panteli (The Cyprus Institute)
+* George Tsouloupas (The Cyprus Institute)
 * ...
 
 ## Agenda
