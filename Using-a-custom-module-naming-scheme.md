@@ -126,10 +126,10 @@ eb gzip-1.5-goolf-1.4.10.eb --dry-run
 
 There are a couple of important attention points that should be taken into account when designing a custom module naming scheme:
 
- * make sure the module naming scheme yields unique modules, such that there a no false positives when EasyBuild checks whether a module is already available
+ * make sure the **module naming scheme yields unique modules**, such that there a no false positives when EasyBuild checks whether a module is already available
   * this boils down to always taking into account at least the following easyconfig parameters: `name`, `version`, `toolchain` (both `name` and `version`), and `versionsuffix`
 
- * make sure no clashes between module files and module path subdirectories can occur
+ * make sure **no clashes between module files and module path subdirectories** can occur
   * e.g., a module naming scheme that consistently uses the toolchain `<name>/<version>` as a prefix would not work, because for example first a module file in the path `goolf/1.4.10` would be created, and then a path like `goolf/1.4.10/gzip/1.5` would be required but impossible since `1.4.10` can't be both a file and a directory at the same time...
 
 
