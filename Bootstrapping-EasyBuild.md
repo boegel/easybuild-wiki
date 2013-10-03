@@ -4,9 +4,9 @@ To resolve this, we've created a bootstrap script that installs the latest EasyB
 
 All you need is Python 2.4 (or a more recent 2.x) and environment modules installed on your system.
 
-## Call for testing
+## In case of problems...
 
-**We are currently still testing and evaluating the current bootstrap script, and are primarily looking for experiences with its use by others. Please test the script as outlined below, and provide feedback (mail kenneth.hoste #at# ugent.be with your findings)!**
+**Please open an issue:** https://github.com/hpcugent/easybuild/issues/new
 
 ### Collect info before running bootstrap script (only when testing)
 
