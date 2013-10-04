@@ -2,6 +2,8 @@
 
 Since EasyBuild v1.8.0, you can use a self-defined alternative module naming scheme, instead of the default EasyBuild module naming scheme. This page describes how to implement such a custom module naming scheme, and how to direct EasyBuild to make use of it.
 
+''Caveat'': **_never_** mix module naming schemes, i.e. make sure to use a different installation prefix when you start using a new module naming scheme. EasyBuild will happily remove anything that is installed in the installation path that is provided by the active module naming scheme if no module is available yet.
+
 ### Implementing a custom module naming scheme
 
 #### Step 0: Preparation: extend the `module_naming_scheme` namespace
@@ -115,6 +117,7 @@ Note the `(module: <string>)` part in the output that indicates that our custom 
 There are a couple of important attention points that should be taken into account when designing a custom module naming scheme:
 
  * make sure the **module naming scheme yields unique modules**, such that there a no false positives when EasyBuild checks whether a module is already available
+  * EasyBuild **does _not_ check** whether clashes between module names (can) occur
   * this boils down to always taking into account at least the following easyconfig parameters: `name`, `version`, `toolchain` (both `name` and `version`), and `versionsuffix`
 
  * make sure **no clashes between module files and module path subdirectories** can occur
