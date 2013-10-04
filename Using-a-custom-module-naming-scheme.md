@@ -33,7 +33,7 @@ Note that the particular name of the Python module file (`example_module_naming_
 In module you've just created, the `det_full_module_name` method should be implemented that receives a dictionary-like value as argument which represents a parsed easyconfig file, and need to produce the module name as a string.
 The class providing this function must derive from `ModuleNamingScheme` which is provided by the EasyBuild framework.
 
-Below, we implement a simple module naming scheme that uses the toolchain name and version as prefix in the module name to yield a hierarchically organized set of modules, e.g. `ictce/4.1.13/gzip/1.5`, `goolf/1.4.10/gzip/1.5`, etc., rather than as an extension to the version (as is done in the default EasyBuild module naming scheme, e.g. `gzip/1.5-ictce-4.1.13`, `gzip/1.5-goolf-1.4.10`, etc.):
+Below, we implement a simple module naming scheme that uses the toolchain name and version as prefix in the module name to yield a hierarchically organized set of modules, e.g. `goolf/1.4.10/gzip/1.5`, rather than as an extension to the version (as is done in the default EasyBuild module naming scheme, e.g. `gzip/1.5-goolf-1.4.10`):
 
 ```python
 import os
@@ -50,7 +50,7 @@ class ExampleModuleNamingScheme(ModuleNamingScheme):
 
         @param ec: dict-like object with easyconfig parameter values (e.g. 'name', 'version', etc.)
 
-        @return: string representing full module name, e.g.: 'ictce/4.1.13/gzip/1.5'
+        @return: string representing full module name, e.g.: 'goolf/1.4.10/gzip/1.5'
         """
 
         import os
