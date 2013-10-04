@@ -13,7 +13,7 @@ These wiki pages contain as the EasyBuild documentation.
   * [[Installing lmod without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
 * [[Quick demo for the impatient]] (updated)
-* [[Getting started]] (updated)
+* [[Getting started]] (ok, but need update to new style configuration)
  * [[Configuration]] (updated)
 * [[Using EasyBuild]]
  * [[Automatic dependency resolution]]
