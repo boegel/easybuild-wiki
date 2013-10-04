@@ -80,6 +80,7 @@ eb --module-naming-scheme=ExampleModuleNamingScheme test.eb --robot --dry-run
 # or
 export EASYBUILD_MODULE_NAMING_SCHEME=ExampleModuleNamingScheme
 eb test.eb --robot --dry-run
+```
 
 #### Step 3: Test your custom module naming scheme.
 
