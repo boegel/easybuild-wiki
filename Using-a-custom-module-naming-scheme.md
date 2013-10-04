@@ -108,7 +108,7 @@ $ eb --module-naming-scheme=ExampleModuleNamingScheme gzip-1.5-goolf-1.4.10.eb -
 [ ]/g/gzip/gzip-1.5-goolf-1.4.10.eb (module: goolf/1.4.10/gzip/1.5)
 ```
 
-Note the `(module: <string>)` part in the output that indicates that our custom module naming scheme is used, as opposed to the default EasyBuild module naming scheme (which would yield `gzip/1.5-ictce-1.4.10` for example).
+Note the `(module: <string>)` part in the output that indicates that our custom module naming scheme is used, as opposed to the default EasyBuild module naming scheme (which would yield `gzip/1.5-goolf-1.4.10` for example).
 
 ### Attention points
 
