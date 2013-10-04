@@ -12,7 +12,7 @@ This can be done as follows:
 
 ```bash
 # create paths
-export EB_MNS_DIR=$HOME/easybuild/tools/module_naming_scheme
+EB_MNS_DIR=$HOME/easybuild/tools/module_naming_scheme
 mkdir -p $EB_MNS_DIR
 # make Python packages span across multiple directories
 cat << EOF > $EB_MNS_DIR/__init__.py  # easybuild.tools.module_naming_scheme namespace
