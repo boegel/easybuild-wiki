@@ -30,7 +30,7 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Unit and regression testing]] (ok, up-to-date)
  * [[Release process]] (ok, up-to-date)
  * [[Release schedule]] (ok, up-to-date)
- * [[Using a custom module naming scheme]] (draft)
+ * [[Using a custom module naming scheme]] (ok, up-to-date)
 * [[Contributing back]]
  * [[Code style]]
  * [[Experimental repo]]
