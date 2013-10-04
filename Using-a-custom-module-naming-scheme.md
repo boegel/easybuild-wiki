@@ -1,8 +1,10 @@
 **[2013911] Note: this feature is currently in development, and thus this documentation is preliminary.**
 
-Since EasyBuild v1.8.0, you can use a self-defined alternative module naming scheme, instead of the default EasyBuild module naming scheme. This page describes how to implement such a custom module naming scheme, and how to direct EasyBuild to it.
+Since EasyBuild v1.8.0, you can use a self-defined alternative module naming scheme, instead of the default EasyBuild module naming scheme. This page describes how to implement such a custom module naming scheme, and how to direct EasyBuild to make use of it.
 
 ### Implementing a custom module naming scheme
+
+#### Step 0: Preparation: extend the `module_naming_scheme` namespace
 
 To implement a custom module naming scheme for EasyBuild, you must provide a class that derives from the 'abstract' class `ModuleNamingScheme` and implements a class method named `det_full_module_name`, in a module in the `easybuild.tools.module_naming_scheme` namespace.
 
@@ -10,23 +12,28 @@ This can be done as follows:
 
 ```bash
 # create paths
-mkdir -p $HOME/easybuild/tools/module_naming_scheme
+export EB_MNS_DIR=$HOME/easybuild/tools/module_naming_scheme
+mkdir -p $EB_MNS_DIR
 # make Python packages span across multiple directories
-cat << EOF > $HOME/easybuild/__init__.py
+cat << EOF > $EB_MNS_DIR/__init__.py  # easybuild.tools.module_naming_scheme namespace
 from pkgutil import extend_path
 # we're not the only ones in this namespace
 __path__ = extend_path(__path__, __name__)
 EOF
-cp $HOME/easybuild/__init__.py $HOME/easybuild/tools/__init__.py
-cp $HOME/easybuild/__init__.py $HOME/easybuild/tools/module_naming_scheme/__init__.py
-# create empty my_module_naming_scheme Python module
-touch $HOME/easybuild/tools/module_naming_scheme/my_module_naming_scheme.py
+cp $EB_MNS_DIR/__init__.py $EB_MNS_DIR/../__init__.py  # easybuild.tools namespace
+cp $EB_MNS_DIR/__init__.py $EB_MNS_DIR/../../__init__.py  # easybuild namespace
+# create empty example_module_naming_scheme Python module
+touch $EB_MNS_DIR/example_module_naming_scheme.py
 ```
 
-Note that the name of the Python module file (`my_module_naming_scheme.py` in this example) does not matter.
+Note that the particular name of the Python module file (`example_module_naming_scheme.py` in this example) does not matter.
 
-In this module, the `det_full_module_name` method should be implemented that receives a dictionary-like value as argument which represents a parsed easyconfig file, and need to produce the module name as a string.
-The class providing this function must derive from `ModuleNamingScheme` which is provided by the EasyBuild framework. For example:
+#### Step 1: Implement your custom module naming scheme
+
+In module you've just created, the `det_full_module_name` method should be implemented that receives a dictionary-like value as argument which represents a parsed easyconfig file, and need to produce the module name as a string.
+The class providing this function must derive from `ModuleNamingScheme` which is provided by the EasyBuild framework.
+
+A simple example is shown below:
 
 ```python
 import os
@@ -34,93 +41,73 @@ import os
 from easybuild.tools.module_naming_scheme import ModuleNamingScheme
 
 
-class MyModuleNamingScheme(ModuleNamingScheme):
-    """Class implementing a simple module naming scheme for testing purposes."""
+class ExampleModuleNamingScheme(ModuleNamingScheme):
+    """Class implementing an example module naming scheme."""
 
     def det_full_module_name(self, ec):
         """
-        Determine full module name from given easyconfig, according to a simple testing module naming scheme.
+        Determine full module name from given easyconfig, according to an example module naming scheme.
 
         @param ec: dict-like object with easyconfig parameter values (e.g. 'name', 'version', etc.)
 
-        @return: n-element tuple with full module name, e.g.: ('gzip', '1.5'), ('intel', 'intelmpi', 'gzip', '1.5')
+        @return: string representing full module name, e.g.: 'ictce/4.1.13/gzip/1.5'
         """
 
-        # figure out prefix determined by toolchain
+        import os
+
+        # fetch required values
+        name = ec['name']
+        version = ec['version']
         tc_name = ec['toolchain']['name']
-        tc_ver = ec['toolchain']['version']
+        tc_version = ec['toolchain']['version']
 
-        # mapping of toolchain name to module prefix
-        # alf: ATLAS, (Sca)LAPACK, FFTW
-        # olf: OpenBLAS, (Sca)LAPACK, FFTW
-        clang_gnu, gnu, intel = 'clang_gnu', 'gnu', 'intel'  # compilers
-        intelmpi, openmpi, mpich = 'intelmpi', 'openmpi', 'mpich',  # MPI libs
-        mvapich2, qlogicmpi = 'mvapich2', 'qlogicmpi'  # MPI libs (continued)
-        alf, acml, olf, mkl = 'alf', 'acml', 'olf', 'mkl'  # math libs
-        cuda = 'cuda'  # extras
-        tc_prefixes = {
-            'ClangGCC': (clang_gnu,),
-            'cgmpich': (clang_gnu, mpich),
-            'cgmpolf': (clang_gnu, mpich, olf),
-            'cgmvapich2': (clang_gnu, mvapich2),
-            'cgmvolf': (clang_gnu, mvapich2),
-            'cgompi': (clang_gnu, openmpi),
-            'cgoolf': (clang_gnu, openmpi, olf),
-            'GCC': (gnu,),
-            'gmacml': (gnu, mvapich2, acml),
-            'gmvapich2': (gnu, mvapich2),
-            'gmvolf': (gnu, mvapich2, olf),
-            'goalf': (gnu, openmpi, alf),
-            'gompi': (gnu, openmpi),
-            'goolf': (gnu, openmpi, olf),
-            'goolfc': (gnu, openmpi, olf, cuda),
-            'iccifort': (intel,),
-            'iiqmpi': (intel, qlogicmpi),
-            'ictce': (intel, intelmpi, mkl),
-            'iomkl': (intel, openmpi, mkl),
-            'iqacml': (intel, qlogicmpi, acml),
-        }
-        if tc_name == 'dummy':
-            prefix = ()
-        else:
-            if tc_name in tc_prefixes:
-                prefix = tc_prefixes[tc_name] + (tc_ver,)
-            else:
-                self.log.error("Don't know how which module prefix to use for toolchain '%s'." % tc_name)
-
-        name_ver = (ec['name'].lower(), ec['version'])
-
-        # add suffix part if there is a suffix
-        suff = ec['versionsuffix']
-        if suff.startswith('-'):
-            suff = suff[1:]
-        if suff:
-            name_ver = name_ver + (suff, )
-
-        return os.path.sep.join(prefix + name_ver)
+        # compose module name by stitching parts together, toolchain first
+        return os.path.join(tc_name, tc_version, name, version)
 ```
 
+#### Step 2: Making EasyBuild use the custom module naming scheme
 
-### Making EasyBuild use the custom module naming scheme
-
-To make EasyBuild use our custom module naming scheme, we need to make sure the path where it is located, i.e. the path where we created `easybuild/tools/module_naming_scheme/my_module_naming_scheme.py`, is included in `$PYTHONPATH`.
+To make EasyBuild use our custom module naming scheme, we need to make sure the path where it is located, i.e. the path where we created `easybuild/tools/module_naming_scheme/example_module_naming_scheme.py`, is included in `$PYTHONPATH`.
 
 ```bash
 export PYTHONPATH=$PYTHONPATH:$HOME
 ```
 
-Via the EasyBuild configuration option `--module-naming-scheme` (or, equivalently, the environment variable `$EASYBUILD_MODULE_NAMING_SCHEME`), we need to specify our custom module naming scheme should be used (using the class name of our module naming scheme implementation). For example:
+Via the EasyBuild configuration option `--module-naming-scheme` (or, equivalently, the environment variable `$EASYBUILD_MODULE_NAMING_SCHEME`), you need to specify our custom module naming scheme should be used (using the class name of our module naming scheme implementation):
 
 ```bash
-eb --module-naming-scheme=MyModuleNamingScheme gzip-1.5-goolf-1.4.10.eb --robot --dry-run
-```
+eb --module-naming-scheme=ExampleModuleNamingScheme test.eb --robot --dry-run
+# or
+export EASYBUILD_MODULE_NAMING_SCHEME=ExampleModuleNamingScheme
+eb test.eb --robot --dry-run
 
-or
+#### Step 3: Test your custom module naming scheme.
+
+To test the implementation of your custom module naming scheme, and whether EasyBuild picks it up, try the following:
 
 ```bash
-export EASYBUILD_MODULE_NAMING_SCHEME=MyModuleNamingScheme
-eb gzip-1.5-goolf-1.4.10.eb --dry-run
+$ eb --avail-module-naming-schemes
+List of supported module naming schemes:
+	EasyBuildModuleNamingScheme
+	ExampleModuleNamingScheme
 ```
+
+```bash
+$ eb --module-naming-scheme=ExampleModuleNamingScheme gzip-1.5-goolf-1.4.10.eb --robot --dry-run | sed 's@ /.*easyconfigs@@g'
+== temporary log file in case of crash /var/folders/6y/x4gmwgjn5qz63b7ftg4j_40m0000gn/T/easybuild-A9554O.log
+== Dry run: printing build status of easyconfigs and dependencies
+[ ]/g/GCC/GCC-4.7.2.eb (module: dummy/dummy/GCC/4.7.2)
+[ ]/h/hwloc/hwloc-1.6.2-GCC-4.7.2.eb (module: GCC/4.7.2/hwloc/1.6.2)
+[ ]/o/OpenMPI/OpenMPI-1.6.4-GCC-4.7.2.eb (module: GCC/4.7.2/OpenMPI/1.6.4)
+[ ]/g/gompi/gompi-1.4.10.eb (module: dummy/dummy/gompi/1.4.10)
+[ ]/o/OpenBLAS/OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2.eb (module: gompi/1.4.10/OpenBLAS/0.2.6)
+[ ]/f/FFTW/FFTW-3.3.3-gompi-1.4.10.eb (module: gompi/1.4.10/FFTW/3.3.3)
+[ ]/s/ScaLAPACK/ScaLAPACK-2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2.eb (module: gompi/1.4.10/ScaLAPACK/2.0.2)
+[ ]/g/goolf/goolf-1.4.10.eb (module: dummy/dummy/goolf/1.4.10)
+[ ]/g/gzip/gzip-1.5-goolf-1.4.10.eb (module: goolf/1.4.10/gzip/1.5)
+```
+
+Note the `(module: <string>)` part in the output that indicates that our custom module naming scheme is used, as opposed to the default EasyBuild module naming scheme (which would yield `gzip/1.5-ictce-1.4.10` for example).
 
 ### Attention points
 
