@@ -63,7 +63,7 @@ These wiki pages contain as the EasyBuild documentation.
  * ISC'13: [BoF session "Best Practices in Building & Installing Scientific Software"](http://www.isc-events.com/isc13_ap/presentationdetails.php?t=contribution&o=2108&a=select&ra=eventdetails)
   * [slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_BoF_ISC13_20130619.pdf)
  * SC'13: [BoF session "Getting Scientific Software Installed: Tools and Best Practices"](http://sc13.supercomputing.org/schedule/event_detail.php?evid=bof111)
- * [FOSDEM'14](https://fosdem.org/2014/): ["HPC and computational science" devroom] (more info soon)
+ * [FOSDEM'14](https://fosdem.org/2014/): "HPC and computational science" devroom (more info soon)
 
 ### Conference calls
 
