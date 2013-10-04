@@ -97,10 +97,10 @@ List of supported module naming schemes:
 $ eb --module-naming-scheme=ExampleModuleNamingScheme gzip-1.5-goolf-1.4.10.eb --robot --dry-run | sed 's@ /.*easyconfigs@@g'
 == temporary log file in case of crash /var/folders/6y/x4gmwgjn5qz63b7ftg4j_40m0000gn/T/easybuild-A9554O.log
 == Dry run: printing build status of easyconfigs and dependencies
-[ ]/g/GCC/GCC-4.7.2.eb (module: dummy/dummy/GCC/4.7.2)
-[ ]/h/hwloc/hwloc-1.6.2-GCC-4.7.2.eb (module: GCC/4.7.2/hwloc/1.6.2)
-[ ]/o/OpenMPI/OpenMPI-1.6.4-GCC-4.7.2.eb (module: GCC/4.7.2/OpenMPI/1.6.4)
-[ ]/g/gompi/gompi-1.4.10.eb (module: dummy/dummy/gompi/1.4.10)
+[x]/g/GCC/GCC-4.7.2.eb (module: dummy/dummy/GCC/4.7.2)
+[x]/h/hwloc/hwloc-1.6.2-GCC-4.7.2.eb (module: GCC/4.7.2/hwloc/1.6.2)
+[x]/o/OpenMPI/OpenMPI-1.6.4-GCC-4.7.2.eb (module: GCC/4.7.2/OpenMPI/1.6.4)
+[x]/g/gompi/gompi-1.4.10.eb (module: dummy/dummy/gompi/1.4.10)
 [ ]/o/OpenBLAS/OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2.eb (module: gompi/1.4.10/OpenBLAS/0.2.6)
 [ ]/f/FFTW/FFTW-3.3.3-gompi-1.4.10.eb (module: gompi/1.4.10/FFTW/3.3.3)
 [ ]/s/ScaLAPACK/ScaLAPACK-2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2.eb (module: gompi/1.4.10/ScaLAPACK/2.0.2)
