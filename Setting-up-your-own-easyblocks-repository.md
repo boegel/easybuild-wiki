@@ -13,7 +13,7 @@ once on your system.
 
 We present the path in which will host your set of easyblocks by the environment variable $MYEBDIR, e.g.,
 
-```
+```bash
 export MYEBDIR=$HOME/easybuild/my_easyblocks
 ```
 
@@ -30,7 +30,7 @@ mkdir -p $MYEBDIR/easybuild/easyblocks
 The Python modules representing your easyblocks should then be hosted directly in the `easyblocks`
 directory (not in subdirectories like `a`, `b`, etc., see [below](#searching) why). For example:
 
-```
+```bash
 $ ls $MYEBDIR/easybuild/easyblocks
 bar.py
 foo.py
