@@ -616,10 +616,6 @@ goolfc
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ gperf](http://www.gnu.org/software/gperf/)
 * [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
-(https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/graphviz)
-&nbsp;&nbsp;&nbsp;&nbsp;
-[ graphviz](http://www.graphviz.org/)
-* [![EasyConfigs](http://hpc.ugent.be/easybuild/images/easyblocks_configs_logo_16x16.png)] 
 (https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/Greenlet)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [ Greenlet](https://github.com/python-greenlet/greenlet)
