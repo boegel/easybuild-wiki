@@ -22,6 +22,7 @@ a **Python header** that is
 
 * set of version- or toolchain-specific sections
  * customizations that depend on particular version/toolchain
+* sections are indicated by section markers, e.g. `[section1]`
 * each section contains key-value statements, e.g. `version = 1.2.3` (note: no quotes!)
 
 ## Comparison with easyconfig format v1.0
