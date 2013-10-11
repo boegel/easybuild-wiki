@@ -12,6 +12,7 @@ These wiki pages contain as the EasyBuild documentation.
   * [[Installing environment modules without root permissions]] (up-to-date)
   * [[Installing lmod without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
+ * [[Bootstrapping EasyBuild]] (ok, up-to-date)
 * [[Quick demo for the impatient]] (updated)
 * [[Getting started]] (ok, but need update to new style configuration)
  * [[Configuration]] (updated)
