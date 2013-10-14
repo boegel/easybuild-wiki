@@ -11,7 +11,6 @@
 confirmed list of attendees:
 * Yossi Baruch (Isragrid)
 * Stelios Erotokritou (The Cyprus Institute)
-* Mohammed Gaafar (Bibliotheca Alexandrina)
 * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
 * Thekla Loizou (Cyprus Institute, local organization)
