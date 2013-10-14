@@ -34,12 +34,13 @@ We are thinking about setting up a way to allow people to remotely participate i
  * hands-on introductory EasyBuild sessions
  * discussing tasks to tackle during EasyBuild hackathon
 
-### Wednesday Oct 23rd 2013 (9am - 5pm)
+### Wednesday Oct 23rd 2013 (9am - 5pm, lunch 1pm-2pm)
 
  * hands-on introductory EasyBuild sessions
  * hacking sessions for enhancing EasyBuild and adding support for (new) software (versions) 
+ * [8pm] dinner (location TBA)
 
-### Thursday Oct 24th 2013 (9am - 5pm)
+### Thursday Oct 24th 2013 (9am - 5pm, lunch 1pm-2pm)
 
  * hands-on introductory EasyBuild sessions
  * hacking sessions for enhancing EasyBuild and adding support for (new) software (versions) 
