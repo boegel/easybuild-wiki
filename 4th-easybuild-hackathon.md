@@ -10,6 +10,7 @@
 
 confirmed list of attendees:
 * Yossi Baruch (Isragrid)
+* Xavier Besseron (University of Luxembourg)
 * Stelios Erotokritou (The Cyprus Institute)
 * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
@@ -19,7 +20,6 @@ confirmed list of attendees:
 * Alan O'Cais (Jülich Supercomputing Centre)
 * Andreas Panteli (The Cyprus Institute)
 * George Tsouloupas (The Cyprus Institute)
-* ...
 
 ## Agenda
 
