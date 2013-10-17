@@ -85,6 +85,8 @@ The main things we would like to get a view on is:
 
 We would like to schedule the conf calls such that the time at which they take place works well on both ends of the wire, i.e., taking into account **time zone differences**.
 
+#### Register your remote participation
+
 **If you would like to remotely participate in the 4th EasyBuild hackathon, please let us know before Friday Oct 18th 2013 1pm (CET) by filling in the doodle at http://doodle.com/625h6t2teegqp326taxn2ihg/admin?#cmt1168352803** .
 
 Please clearly indicate you'll be participating remote by adding a `(remote)` tag next to your name. Once we have a clear view on the remote participants, we will work out the details together with them.
