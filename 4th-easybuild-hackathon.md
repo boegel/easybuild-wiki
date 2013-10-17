@@ -71,7 +71,8 @@ Together with the local organizers, we would like to make it possible for people
  * the **presentations** on EasyBuild and UNITE **will be recorded**, and we will do what we can to make these recordings available as quickly as possible.
  * we will also try to **stream the talks** as they happen, so people can tune in remotely (if you have any suggestions on tools for this, let us know).
  * the **slides** of the talks will be available up front on the EasyBuild wiki.
- * we plan to schedule **conference calls** (Skype and/or Google Hangouts) with remote attendees to answer any questions they may have on the work they're doing with EasyBuild
+ * we plan to schedule **conference calls** (Skype and/or Google Hangouts) with remote attendees to answer any questions they may have on the work they're doing with EasyBuild _(see schedule below)_
+ * the [https://github.com/hpcugent/easybuild/wiki/Contact#irc **`#easybuild` IRC channel**] is the prime way for communicating with (remote) attendees and other EasyBuild enthusiasts outside of the hackathon conference calls
 
 The idea is that remote participants can try and tackle open issues on EasyBuild (doesn't matter what, any issue you care about), just like the hackathon attendees, and get help when/if they need it.
 
@@ -99,9 +100,10 @@ Conference calls will be done using **Google Hangouts** (via Google Plus), since
 
 Cypriot time | potential remote attendees | notes
 :--: | :-- | :--
-8.15am | Adam (10.15pm)  | before hackathon starts (?)
+8.15am | Adam (10.15pm)  | before hackathon starts _(possible?)_
 1.30pm | Ward (12.30pm)  | during hackathon lunch break
 6pm | Ward (5pm), Adam (8am) | after hackathon
+11pm (?) | Ward (10pm), Adam (1pm) | after local dinner _(exact time uncertain)_
 
 ## Meeting minutes
 
