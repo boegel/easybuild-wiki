@@ -83,7 +83,7 @@ The main things we would like to get a view on is:
  * the number of remote participants
  * at which times they are planning to participate
 
-We would like to schedule the conf calls such that the time at which they take place works well on both ends of the wire, i.e., taking into account **time zone differences**.
+We would like to schedule the conference calls such that the time at which they take place works well on both ends of the wire, i.e., taking into account **time zone differences**.
 
 #### Register your remote participation
 
