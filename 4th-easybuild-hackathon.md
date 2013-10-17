@@ -69,17 +69,23 @@ Below a couple of potentially interesting open issues that are listed that can b
 Together with the local organizers, we would like to make it possible for people who are not attending the hackathon physically to participate remotely.
 
 The presentations on EasyBuild and UNITE will be recorded, and we will do what we can to make these recordings available as quickly as possible.
+
 We will also try to stream the talks as they happen, so people can tune in remotely (if you have any suggestions on tools for this, let us know).
+
 The slides of the talks will be available up front on the EasyBuild wiki.
 
 Next to streaming and recording the talks, we also plan to schedule conference calls (Skype and/or Google Hangouts) with remote attendees to answer any questions they may have on the work they're doing with EasyBuild.
+
 The idea is that remote participants can try and tackle open issues on EasyBuild (doesn't matter what, any issue you care about), just like the hackathon attendees, and get help when/if they need it.
 
 To try and make these efforts work, it's important to plan ahead and get an idea of who would like to participate remotely.
+
 The main things we would like to get a view on is the number of remote participants, and at which times they are planning to participate.
+
 We would like to schedule the conf calls such that the time at which they take place works well on both ends of the wire, i.e., taking into account time zone differences.
 
 **If you would like to remotely participate in the 4th EasyBuild hackathon, please let us know before Friday Oct 18th 1pm (CET) by filling in the doodle at http://doodle.com/625h6t2teegqp326taxn2ihg/admin?#cmt1168352803** .
+
 Please clearly indicate you'll be participating remote by adding a `(remote)` tag next to your name. Once we have a clear view on the remote participants, we will work out the details together with them.
 
 
