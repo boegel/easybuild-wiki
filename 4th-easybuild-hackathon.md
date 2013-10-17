@@ -91,6 +91,17 @@ _**If you would like to remotely participate in the 4th EasyBuild hackathon, ple
 
 Please clearly indicate you'll be participating remote by adding a `(remote)` tag next to your name. Once we have a clear view on the remote participants, we will work out the details together with them.
 
+### Conference calls
+
+Conference calls will be done using **Google Hangouts** (via Google Plus), since that's the least restrictive (access to Google Plus is free, group conference calls on Skype now requiring the non-free Skype Premium option).
+
+#### Schedule
+
+Cypriot time | potential remote attendees | notes
+:--: | :-- | :--
+8.15am | Adam (10.15pm)  | before hackathon starts (?)
+1.30pm | Ward (12.30pm)  | during hackathon lunch break
+6pm | Ward (5pm), Adam (8am) | after hackathon
 
 ## Meeting minutes
 
