@@ -52,7 +52,13 @@ git push origin v1.0
 ```bash
 wget https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 python bootstrap_eb.py $HOME/.local/easybuild
-# install (an old) EasyBuild with bootstrapped EasyBuild module (should work since EasyBuild v1.8.2)
+```
+
+#### Step 3.1: Install EasyBuild with a bootstrapped EasyBuild
+
+Try to install (an old) EasyBuild with bootstrapped EasyBuild module (should work since EasyBuild v1.8.2).
+
+```
 export MODULEPATH=$HOME/.local/easybuild/modules/all
 module load EasyBuild
 eb EasyBuild-1.0.0.eb
