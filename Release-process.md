@@ -58,7 +58,7 @@ python bootstrap_eb.py $HOME/.local/easybuild
 
 Try to install (an old) EasyBuild with bootstrapped EasyBuild module (should work since EasyBuild v1.8.2).
 
-```
+```bash
 export MODULEPATH=$HOME/.local/easybuild/modules/all
 module load EasyBuild
 eb EasyBuild-1.0.0.eb
