@@ -101,9 +101,9 @@ Conference calls will be done using **Google Hangouts** (via Google Plus), since
 Cypriot time | potential remote attendees | notes
 :--: | :-- | :--
 8.15am | Bill & Adam (10.15pm)  | before hackathon starts _(possible?)_
-1.30pm | Ward (12.30pm)  | during hackathon lunch break
-6pm | Ward (5pm), Bill & Adam (8am) | after hackathon
-11pm (?) | Ward (10pm), Bill & Adam (1pm) | after local dinner _(exact time uncertain)_
+1.30pm | Ward & Petar (12.30pm)  | during hackathon lunch break
+6pm | Ward & Petar (5pm), Bill & Adam (8am) | after hackathon
+11pm (?) | Ward & Petar (10pm), Bill & Adam (1pm) | after local dinner _(exact time uncertain)_
 
 ## Meeting minutes
 
