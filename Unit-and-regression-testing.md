@@ -62,6 +62,15 @@ Ran 950 tests in 30.966s
 OK
 ```
 
+### Note on older Python 2.x versions
+
+With older Python 2.x versions, e.g. Python 2.4.x, you'll need to use a slightly different approach, since the `-m` option is not (fully) supported yet, e.g.:
+
+```bash
+python test/framework/suite.py
+```
+
+
 ## Regression testing
 
 A more thorough test that also requires significantly more resources is a regression test, which consists of building all easyconfig files distributed with EasyBuild, in a pristine install directory.
