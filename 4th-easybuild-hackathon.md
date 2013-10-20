@@ -21,6 +21,12 @@ confirmed list of attendees:
 * Andreas Panteli (The Cyprus Institute)
 * George Tsouloupas (The Cyprus Institute)
 
+(registered) _remote_ attendees:
+* Ward Poelmans (Ghent University, Belgium)
+* Adam DeConinck (NVIDIA Corp.)
+* Bill Broadley (UC Davis)
+* Petar Forai (Gregor Mendel Institute, Austria)
+
 ## Agenda
 
 Initial agenda, subject to change.
@@ -29,11 +35,16 @@ We are thinking about setting up a way to allow people to remotely participate i
 
 ### Tuesday Oct 22nd 2013 (9am - 5pm)
 
- * introduction to EasyBuild and recently added features
- * introduction to UNITE, current status and open issues
- * hands-on introductory EasyBuild sessions
- * discussing tasks to tackle during EasyBuild hackathon
+ * [9.00am - 9.30am] **welcome, getting started**
+  * [9.05am - 9.15am] setup for remote participation
+  * [9.15am - 9.30am] round-table: introduce yourself
+ * [9.30am - **presentations** on EasyBuild and UNITE
+  * [9.30am - 10.00am] introduction to UNITE, current status and open issues
+  * [10.00am - 10.45am] introduction to EasyBuild
+  * [10.45am - 11.15am] EasyBuild status update
+ * [11.15am - 1pm] explain contribution workflow with `git`, tasks for EasyBuild hackathon
  * **[1pm - 2pm] lunch provided**
+ * [2pm - 5pm] hands-on introductory EasyBuild sessions, getting the hackathon started
 
 ### Wednesday Oct 23rd 2013 (9am - 5pm)
 
@@ -47,6 +58,8 @@ We are thinking about setting up a way to allow people to remotely participate i
  * hands-on introductory EasyBuild sessions
  * hacking sessions for enhancing EasyBuild and adding support for (new) software (versions) 
  * **[1pm - 2pm] lunch provided**
+ * [2pm - 5pm] contributing back the work done during the hackathon: opening pull requests
+ * [4pm - 5pm] hackathon round-up: what got done, what's left to do
 
 ## Hackathon projects/tasks
 
