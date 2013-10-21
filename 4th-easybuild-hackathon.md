@@ -105,6 +105,9 @@ Since version 1.8.0, EasyBuild has support for using **custom module naming sche
 
 Try and implement a feature that was requested, for example:
 
+ * **a better 'quick demo for the impatient'** ([framework/#442](https://github.com/hpcugent/easybuild-framework/issues/442))
+ ** something that's actually _quick_, and can be used for tutorials, workshops, introductions
+ ** compiler toolchain based on `TinyCC`, with a default (slow) netlib `BLAS` and `LAPACK` (without MPI support)?
  * fail early when sanity check paths/commands are not what they should be ([framework/#703](https://github.com/hpcugent/easybuild-framework/issues/703))
  * define toolchain environment variables in toolchain modules ([framework/#604](https://github.com/hpcugent/easybuild-framework/issues/604))
  * make sure that all easyconfig parameters are available for alternative module naming schemes ([framework#687](https://github.com/hpcugent/easybuild-framework/issues/687))
