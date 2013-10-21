@@ -75,7 +75,10 @@ Pick any open pull request you care about, review it, and provide feedback:
 [easybuild-framework](https://github.com/hpcugent/easybuild-framework/pulls) - [easybuild-easyblocks](https://github.com/hpcugent/easybuild-easyblocks/pulls) - [easybuild-easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs/pulls)
 
 #### Implementing a custom module naming scheme that matches your site poilcy
- * see [merged pull request](https://github.com/hpcugent/easybuild-framework/pull/687) and [wiki page](https://github.com/hpcugent/easybuild/wiki/Using-a-custom-module-naming-scheme)
+
+Since version 1.8.0, EasyBuild has support for using **custom module naming schemes**. If your site maintains a strict policy w.r.t. module naming, try and implement it with the support EasyBuild currently has, and supply feedback on **what's missing or what can be improved**.
+
+ * see [merged pull request](https://github.com/hpcugent/easybuild-framework/pull/687) and [wiki page with documentation](https://github.com/hpcugent/easybuild/wiki/Using-a-custom-module-naming-scheme)
 
 
 #### Adding support for building and installing additional software packages
