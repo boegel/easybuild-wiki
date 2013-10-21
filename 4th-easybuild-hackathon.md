@@ -110,7 +110,7 @@ Together with the local organizers, we would like to make it possible for people
  * we will also try to **stream the talks** as they happen, so people can tune in remotely (if you have any suggestions on tools for this, let us know).
  * the **slides** of the talks will be available up front on the EasyBuild wiki.
  * we plan to schedule **conference calls** (Skype and/or Google Hangouts) with remote attendees to answer any questions they may have on the work they're doing with EasyBuild _(see schedule below)_
- * the [https://github.com/hpcugent/easybuild/wiki/Contact#irc **`#easybuild` IRC channel**] is the prime way for communicating with (remote) attendees and other EasyBuild enthusiasts outside of the hackathon conference calls
+ * the **[`#easybuild` IRC channel](https://github.com/hpcugent/easybuild/wiki/Contact#irc)** is the prime way for communicating with (remote) attendees and other EasyBuild enthusiasts outside of the hackathon conference calls
 
 The idea is that remote participants can try and tackle open issues on EasyBuild (doesn't matter what, any issue you care about), just like the hackathon attendees, and get help when/if they need it.
 
