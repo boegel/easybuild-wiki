@@ -135,7 +135,7 @@ Please clearly indicate you'll be participating remote by adding a `(remote)` ta
 
 ### Conference calls
 
-Conference calls will be done using **Google Hangouts** (via Google Plus), since that's the least restrictive (access to Google Plus is free, group conference calls on Skype now requiring the non-free Skype Premium option).
+Conference calls will be done using **Google Hangouts** (via Google Plus), since that's the least restrictive (access to Google Plus is free, group conference calls on Skype now require the non-free Skype Premium option).
 
 #### Schedule
 
