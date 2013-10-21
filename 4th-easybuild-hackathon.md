@@ -93,9 +93,9 @@ Try and implement a feature that was requested, for example:
 
  * fail early when sanity check paths/commands are not what they should be ([framework/#703](https://github.com/hpcugent/easybuild-framework/issues/703))
  * define toolchain environment variables in toolchain modules ([framework/#604](https://github.com/hpcugent/easybuild-framework/issues/604))
- * make sure that all easyconfig parameters are available for alternative module naming schemes [framework#687](https://github.com/hpcugent/easybuild-framework/issues/687))
- * trip over unknown configure options [easyblocks/#157](https://github.com/hpcugent/easybuild-easyblocks/issues/157))
- * cmake: add support for "out-of-source" build [easyblocks/#215](https://github.com/hpcugent/easybuild-easyblocks/issues/215))
+ * make sure that all easyconfig parameters are available for alternative module naming schemes ([framework#687](https://github.com/hpcugent/easybuild-framework/issues/687))
+ * trip over unknown configure options ([easyblocks/#157](https://github.com/hpcugent/easybuild-easyblocks/issues/157))
+ * cmake: add support for "out-of-source" build ([easyblocks/#215](https://github.com/hpcugent/easybuild-easyblocks/issues/215))
 
 Browse through the lists of open issues, and pick a feature request you care about:
 
