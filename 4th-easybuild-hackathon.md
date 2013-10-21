@@ -66,6 +66,17 @@ We are thinking about setting up a way to allow people to remotely participate i
 
 Below a couple of potentially interesting open issues are listed that can be tackled during the hacking sessions:
 
+#### Get started with EasyBuild
+
+Try and get EasyBuild working on your system(s) of interest:
+ * install EasyBuild
+ * run the framework unit tests:
+```bash
+python -m test.framework.suite
+```
+ * build and install a toolchain (**note: may take a while (hours)**)
+ * build and install one or more of the [supported software packages](https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages)
+
 #### Review an open pull request, provide feedback
 
 We maintain a "two pairs of eyes" policy for contributions, i.e. someone else than the other has to review a contribution for it can be merged in (see also [Review process](https://github.com/hpcugent/easybuild/wiki/Contributing-back#review-process)).
