@@ -68,32 +68,34 @@ Below a couple of potentially interesting open issues are listed that can be tac
 
 #### Review an open pull request, provide feedback
 
+We maintain a "two pairs of eyes" policy for contributions, i.e. someone else than the other has to review a contribution for it can be merged in (see also [https://github.com/hpcugent/easybuild/wiki/Contributing-back#review-process](Review process)).
 
+Pick any open pull request you care about, review it, and provide feedback: [easybuild-framework](https://github.com/hpcugent/easybuild-framework/pulls) - [easybuild-easyblocks](https://github.com/hpcugent/easybuild-easyblocks/pulls) - [easybuild-easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs/pulls)
 
 #### Implementing a custom module naming scheme that matches your site poilcy
- * see [https://github.com/hpcugent/easybuild-framework/pull/687) merged pull request] and [https://github.com/hpcugent/easybuild/wiki/Using-a-custom-module-naming-scheme wiki page]
+ * see [merged pull request](https://github.com/hpcugent/easybuild-framework/pull/687) and [wiki page](https://github.com/hpcugent/easybuild/wiki/Using-a-custom-module-naming-scheme)
 
 
 #### Adding support for building and installing additional software packages
  
  * check if there's an issue already open w.r.t. the software package you want to look into
-  * if not, [https://github.com/hpcugent/easybuild-easyconfigs/issues/new open an issue in the easybuild-easyconfigs repository]
+  * if not, [open an issue in the easybuild-easyconfigs repository](https://github.com/hpcugent/easybuild-easyconfigs/issues/new open an issue in the easybuild-easyconfigs repository)
   * check whether HPC-UGent has (outdated) support available, and ask them for the easyconfigs/easyblocks to port when they do
-   * see [https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages/ede46976d7367a86fe76ae79adba7b8e9fd9f118 here]
-  * check whether an automatically generated easyconfig is available as a starting point in the [https://github.com/fgeorgatos/easybuild.experimental/tree/master/contrib/pkgsrc easybuild.experimental repository]
+   * see [here](https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages/ede46976d7367a86fe76ae79adba7b8e9fd9f118)
+  * check whether an automatically generated easyconfig is available as a starting point in the [easybuild.experimental repository](https://github.com/fgeorgatos/easybuild.experimental/tree/master/contrib/pkgsrc)
  * of particular interest: support for more **GPGPU applications** (e.g., NAMD, ...), performance tools (UNITE, ...), etc.
 
 #### Implementing requested features
 
 Try and implement a feature that was requested, for example:
 
- * [https://github.com/hpcugent/easybuild-framework/issues/703 fail early when sanity check paths/commands are not what they should be (framework/#703)]
- * [https://github.com/hpcugent/easybuild-framework/issues/604 define toolchain environment variables in toolchain modules (framework/#604)]
- * [https://github.com/hpcugent/easybuild-framework/issues/687 make sure that all easyconfig parameters are available for alternative module naming schemes (framework#687)]
- * [https://github.com/hpcugent/easybuild-easyblocks/issues/157 trip over unknown configure options (easyblocks/#157)]
- * [https://github.com/hpcugent/easybuild-easyblocks/issues/215 cmake: add support for "out-of-source" build (easyblocks/#215)]
+ * [fail early when sanity check paths/commands are not what they should be (framework/#703)](https://github.com/hpcugent/easybuild-framework/issues/703)
+ * [define toolchain environment variables in toolchain modules (framework/#604)](https://github.com/hpcugent/easybuild-framework/issues/604)
+ * [make sure that all easyconfig parameters are available for alternative module naming schemes (framework#687)](https://github.com/hpcugent/easybuild-framework/issues/687)
+ * [trip over unknown configure options (easyblocks/#157)](https://github.com/hpcugent/easybuild-easyblocks/issues/157)
+ * [cmake: add support for "out-of-source" build (easyblocks/#215)](https://github.com/hpcugent/easybuild-easyblocks/issues/215)
 
-Browse through the lists of open issues, and pick a feature request you care about: [https://github.com/hpcugent/easybuild-framework/issues?state=open easybuild-framework] - [https://github.com/hpcugent/easybuild-easyblocks/issues?state=open easybuild-easyblocks] - [https://github.com/hpcugent/easybuild-easyconfigs/issues?state=open - easybuild-easyconfigs]
+Browse through the lists of open issues, and pick a feature request you care about: [easybuild-framework](https://github.com/hpcugent/easybuild-framework/issues?state=open) - [easybuild-easyblocks](https://github.com/hpcugent/easybuild-easyblocks/issues?state=open) - [easybuild-easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs/issues?state=open)
 
 
 ## Remote participation
