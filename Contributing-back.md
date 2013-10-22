@@ -2,11 +2,11 @@ We'd love you to contribute back to EasyBuild, and here's how you can do it: the
 
 **Note**: Needs to fix text below w.r.t. different EasyBuild repos and `develop` vs `version` branches.
 
-## Preperation
+## Preparation
 
 ### Fork EasyBuild
 
-First, you'll need to fork [EasyBuild on GitHub](http://github.com/hpcugent/easybuild).
+First, you'll need to fork [EasyBuild on GitHub](http://github.com/hpcugent/easybuild-easyconfigs).
 
 If you do not have a (free) GitHub account yet, you'll need to get one.
 
@@ -17,7 +17,7 @@ You should also register an SSH public key, so you can easily clone, push to and
 Clone your fork of the EasyBuild repository to your favorite workstation. 
 
 ```bash
-git clone git@github.com:hpcugent/easybuild.git
+git clone git@github.com:<GITHUB_LOGIN>/easybuild-easyconfigs.git
 ```
 
 ### Pull in the develop branch
@@ -26,8 +26,8 @@ Pull the _develop_ branch from the main EasyBuild repository:
 
 ```bash
 cd easybuild
-git remote add github_hpcugent git@github.com:hpcugent/easybuild.git
-git branch develop
+git remote add github_hpcugent git@github.com:hpcugent/easybuild-easyconfigs.git
+git branch develop github_hpcugent/develop
 git checkout develop
 git pull github_hpcugent develop
 ```
