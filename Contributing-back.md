@@ -25,7 +25,7 @@ git clone git@github.com:<GITHUB_LOGIN>/easybuild-easyconfigs.git
 Pull the _develop_ branch from the main EasyBuild repository:
 
 ```bash
-cd easybuild
+cd easybuild-easyconfigs
 git remote add github_hpcugent git@github.com:hpcugent/easybuild-easyconfigs.git
 git branch develop github_hpcugent/develop
 git checkout develop
@@ -76,7 +76,7 @@ Make sure you commit your work, and try to do it in bite-size chunks, so the com
 For example:
 
 ```bash
-git add easybuild/easyblocks/l/linuxfromscratch.py
+git add easybuild/easyconfigs/l/LinuxFromScratch.eb
 git commit -m "support for Linux From Scratch"
 ```
 
@@ -101,7 +101,7 @@ git push origin <BRANCH_NAME>
 
 Issue a pull request for your branch into the main EasyBuild repository, as follows:
 
- * go to github.com/YOUR\_GITHUB\_LOGIN/easybuild, and make sure the branch you just pushed is selected (not _master_, but _<BRANCH_NAME>_)
+ * go to github.com/YOUR\_GITHUB\_LOGIN/easybuild-easyconfigs, and make sure the branch you just pushed is selected (not _master_, but _<BRANCH_NAME>_)
 
  * issue a pull request (see button at the top of the page) for your branch to the **_develop_** branch of the main EasyBuild repository; **note**: don't issue a pull request to the _master_ branch, as it will be simply closed by the EasyBuild team
 
@@ -114,7 +114,7 @@ If you're contributing code to an existing issue you can also convert the issue 
 GITHUBUSER=your_username && PASSWD=your_password && BRANCH=branch_name && ISSUE=issue_number && \
 curl --user "$GITHUBUSER:$PASSWD" --request POST \
 --data "{\"issue\": \"$ISSUE\", \"head\": \"$GITHUBUSER:$BRANCH\", \"base\": \"develop\"}" \
-https://api.github.com/repos/hpcugent/easybuild/pulls
+https://api.github.com/repos/hpcugent/easybuild-easyconfigs/pulls
 ```
 This is currently only supported by github from the command line and not via the web interface.
 You might also want to look into [hub](https://github.com/defunkt/hub) for more command line features.
