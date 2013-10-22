@@ -37,12 +37,12 @@ We are thinking about setting up a way to allow people to remotely participate i
 
  * [9.00am - 9.45am] **welcome, getting started**
   * [9.00am - 9.15am] setup for remote participation
-  * [9.15am - 9.30am] Welcome (Jens Wiegand)
+  * [9.15am - 9.30am] Welcome (Jens Wiegand) **([slides](http://users.ugent.be/~kehoste/welcome_LinkSCEEM.pdf)
   * [9.30am - 9.45am] round-table: introduce yourself
  * [9.45am - 11.30am] **presentations** on EasyBuild and UNITE
-  * [9.45am - 10.15am] Introduction to UNITE, current status and open issues (Dr. Bernd Mohr)
-  * [10.15am - 11.00am] Introduction to EasyBuild (Kenneth Hoste)
-  * [11.00am - 11.30am] EasyBuild status update (Kenneth Hoste)
+  * [9.45am - 10.15am] Introduction to UNITE, current status and open issues (Dr. Bernd Mohr) **([slides](http://users.ugent.be/~kehoste/cyprus-unite-2013.pdf))**
+  * [10.15am - 11.00am] Introduction to EasyBuild (Kenneth Hoste)i **([slides](ihttp://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf)))**
+  * [11.00am - 11.30am] EasyBuild status update (Kenneth Hoste) **([slides](http://users.ugent.be/~kehoste/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
  * [11.45am - 1pm] explaining contribution workflow with `git`, tasks for EasyBuild hackathon
  * **[1pm - 2pm] lunch provided**
  * [2pm - 5pm] hands-on introductory EasyBuild sessions, getting the hackathon started
