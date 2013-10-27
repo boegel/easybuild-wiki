@@ -140,6 +140,27 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 
 ### EasyBuild status update (Kenneth Hoste, UGent)
 
+**([slides](http://users.ugent.be/~kehoste/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
+
+ * new easyconfig format
+  * will (significantly) complicate testing
+  * keeping support for previous version is very important
+   * keep ability to reproduce previous builds
+   * consume old format, produce easyconfig in new format (archive, installdir)
+ * wiki page on `Contributing back` should have a separate section on testing
+  * e.g. unit tests, etc.
+ * bootstrap procedure should be mentioned/outlined on `Getting started` page
+ * upgrading EasyBuild: how?
+  * add support for `--upgrade`?
+  * since v1.8.2, `eb EB.eb` will work to produce a new EasyBuild module
+ * support for optional dependencies would be nice
+  * 3 levels for dependencies: must (only currently supported flavor), should (use it when it's there), may (only use when requested explicitly)
+ * _[BM]_: why are `bzip2`, `bash`, `binutils` supported and listed as dependencies?
+  * primary reason is fixing versions of dependencies for reproducability
+  * support way of specifying minimal supported version for deps?
+ * `"stow"` modules
+  * collapse a set of modules into a single symlinked mess
+  * fewer modules, shorter `$PATH` and co, ...
 
 
 
