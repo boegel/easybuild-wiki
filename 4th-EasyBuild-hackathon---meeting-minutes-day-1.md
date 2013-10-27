@@ -32,6 +32,8 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * [11.10am - 11.15am] **round table: briefly introduce yourself**
  * [11.15am - 1pm] **EasyBuild introduction** _(Kenneth Hoste, UGent)_ **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
  * [2pm - 3pm] **EasyBuild status update** _(Kenneth Hoste, UGent)_ **([slides](http://users.ugent.be/~kehoste/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
+ * [3pm - 5.15pm] **hackathon**
+ * [5.15pm - 8pm] aftermath: discussions
 
 **All presentations were recorded by Alan, material will be made available when it has been processed.**
 
@@ -160,47 +162,22 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
   * support way of specifying minimal supported version for deps?
  * `"stow"` modules
   * collapse a set of modules into a single symlinked mess
+  * or, install a bunch of software packages under a single install path
   * fewer modules, shorter `$PATH` and co, ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ * framework unit tests
+  * some test files (e.g. `toy-0.0.tgz`) not installed (see [#739](https://github.com/hpcugent/easybuild-framework/pull/739) for fix)
 
 ## Hackathon notes
 
- * support for Tcl environment modules added
+ * discussion on new easyconfig format that is being worked on
+ * support for Tcl environment modules added together (with _BM_)
+ * look into `modules.py` unit tests hard overriding `$MODULEPATH`, causing problems with `purge` if modules are loaded when tests are run (with `_AO`)
+ * update documentation of contributing back (with _XB_)
+ * discussion on current organization of repositories
+  * move `generic` easyblocks to `framework` repo
+  * merge `easyblocks` and `easyconfigs` repositories together
+   * easier to keep in sync when pull requests are opened
+   * less confusing for new contributors, lowers threshold for making PRs for new software
+  * other option (_XB_):
+   * merge `framework` and `easyblocks`, since both are code
+   * keep `easyconfigs` separate, since they're basically input files
