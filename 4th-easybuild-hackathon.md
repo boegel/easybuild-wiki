@@ -20,7 +20,7 @@ confirmed list of attendees:
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
 * Alan O'Cais (Jülich Supercomputing Centre)
 * Andreas Panteli (The Cyprus Institute)
-* Savvas Polydorides (University of Cyprus)
+* Savvas Polydorides (University of Cyprus) **[excused]**
 * George Tsouloupas (The Cyprus Institute)
 
 (registered) _remote_ attendees:
@@ -43,11 +43,13 @@ We are thinking about setting up a way to allow people to remotely participate i
   * [9.30am - 9.45am] round-table: introduce yourself
  * [9.45am - 11.30am] **presentations** on EasyBuild and UNITE
   * [9.45am - 10.15am] Introduction to UNITE, current status and open issues (Dr. Bernd Mohr) **([slides](http://users.ugent.be/~kehoste/cyprus-unite-2013.pdf))**
-  * [10.15am - 11.00am] Introduction to EasyBuild (Kenneth Hoste)i **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
+  * [10.15am - 11.00am] Introduction to EasyBuild (Kenneth Hoste) **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
   * [11.00am - 11.30am] EasyBuild status update (Kenneth Hoste) **([slides](http://users.ugent.be/~kehoste/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
  * [11.45am - 1pm] explaining contribution workflow with `git`, tasks for EasyBuild hackathon
  * **[1pm - 2pm] lunch provided**
  * [2pm - 5pm] hands-on introductory EasyBuild sessions, getting the hackathon started
+
+**Note: all presentations were recorded by Alan, material will be made available when it has been processed.**
 
 ### Wednesday Oct 23rd 2013 (9am - 5pm)
 
