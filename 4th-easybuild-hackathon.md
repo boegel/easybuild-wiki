@@ -2,7 +2,7 @@
 
 * **date**: Oct. Tuesday 22nd - Thursday 24th 2013
 * **location**: The Cyprus Institute, Nicosia (Cyprus)
-* **notes**: agenda set, further details later
+* **notes**: -
 
 ### Attendees
 
