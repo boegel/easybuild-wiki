@@ -1,5 +1,3 @@
-**This hackathon is being planned, details will be completed as they become available.**
-
 ### Basic Information
 
 * **date**: Oct. Tuesday 22nd - Thursday 24th 2013
