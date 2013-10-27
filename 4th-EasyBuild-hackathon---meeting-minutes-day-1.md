@@ -27,10 +27,10 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 
 (note: started with some delay due to setting up recording equipment in combination with setup for potential remote attendees)
 
- * [9.40am-9.50am] presentation on LinkSCEEM project (Jens Wiegand, CyI) **([slides](http://users.ugent.be/~kehoste/welcome_LinkSCEEM.pdf))**
- * [10am - 11am] Introduction to UNITE (Dr. Bernd Mohr, JSC) **([slides](http://users.ugent.be/~kehoste/cyprus-unite-2013.pdf))**
- * [11.10am - 11.15am] round table: briefly introduce yourself
- * [11.15am - 1pm] EasyBuild introduction **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
+ * [9.40am - 9.50am] **presentation on LinkSCEEM project _(Jens Wiegand, CyI)_** **([slides](http://users.ugent.be/~kehoste/welcome_LinkSCEEM.pdf))**
+ * [10am - 11am] **Introduction to UNITE _(Dr. Bernd Mohr, JSC)_** **([slides](http://users.ugent.be/~kehoste/cyprus-unite-2013.pdf))**
+ * [11.10am - 11.15am] **round table: briefly introduce yourself**
+ * [11.15am - 1pm] **EasyBuild introduction _(Kenneth Hoste, UGent)_** **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
 
 **All presentations were recorded by Alan, material will be made available when it has been processed.**
 
