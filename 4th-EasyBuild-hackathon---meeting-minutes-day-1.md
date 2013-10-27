@@ -17,7 +17,6 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
  * Alan O'Cais (Jülich Supercomputing Centre)
  * Andreas Panteli (The Cyprus Institute)
- * Savvas Polydorides (University of Cyprus)
  * George Tsouloupas (The Cyprus Institute)
  * **(extra attendee, afternoon only? ask George)**
 
