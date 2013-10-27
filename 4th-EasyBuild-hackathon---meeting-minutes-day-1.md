@@ -1,4 +1,4 @@
-(Tuesday Oct 22nd 2013, 9am-9pm)
+(Tuesday Oct 22nd 2013, 9am-5pm)
 
 The first day of the [[4th EasyBuild hackathon]] consisted of presentations, discussions and
 initial hands-on experience with EasyBuild for attendees new to the tool.
@@ -17,7 +17,6 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
  * Alan O'Cais (Jülich Supercomputing Centre)
  * Andreas Panteli (The Cyprus Institute)
- * Savvas Polydorides (University of Cyprus)
  * George Tsouloupas (The Cyprus Institute)
  * **(extra attendee, afternoon only? ask George)**
 
