@@ -1,4 +1,4 @@
-(Tuesday Oct 22nd 2013, 9am-9pm)
+(Tuesday Oct 22nd 2013, 9am-5pm)
 
 The first day of the [[4th EasyBuild hackathon]] consisted of presentations, discussions and
 initial hands-on experience with EasyBuild for attendees new to the tool.
