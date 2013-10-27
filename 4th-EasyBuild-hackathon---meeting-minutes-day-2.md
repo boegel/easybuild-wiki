@@ -53,6 +53,9 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
      * can be fixed by using `module use <path` instead of hard setting `$MODULEPATH` (?)
     * switched to using latest `modulecmd.tcl` version available online
   * toy tests are broken due to hardcoded `$MODULEPATH` in `modules.py`
+  * issues with `modulecmd.tcl` being called with `subprocess.Popen` under a `bash` shell
+   * caused by fact that (old) DEISA version of `modulecmd.tcl` doesn't have a proper hashbang
+  * would like to focus next on composing modules to wrap around system compilers/MPI
  * _Dina_
   * look into installing `VMD`
    * (minimal?) dependencies: `FLTK`, `Mesa`, `Tcl`, `Tk`, and `netCDF`
@@ -86,7 +89,3 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
    * also installs CUDA, MPICH, ...
    * unclear if PGI also works with CUDA, MPICH
    * CUDA is probably required for C/C++ CUDA compiler
- * _Alan_
-  * issues with `modulecmd.tcl` being called with `subprocess.Popen` under a `bash` shell
-   * caused by fact that (old) DEISA version of `modulecmd.tcl` doesn't have a proper hashbang
-  * would like to focus next on composing modules to wrap around system compilers/MPI
