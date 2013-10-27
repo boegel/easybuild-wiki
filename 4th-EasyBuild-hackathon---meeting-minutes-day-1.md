@@ -31,6 +31,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * [10am - 11am] **Introduction to UNITE** _(Dr. Bernd Mohr, JSC)_ **([slides](http://users.ugent.be/~kehoste/cyprus-unite-2013.pdf))**
  * [11.10am - 11.15am] **round table: briefly introduce yourself**
  * [11.15am - 1pm] **EasyBuild introduction** _(Kenneth Hoste, UGent)_ **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
+ * [2pm - 3pm] **EasyBuild status update** _(Kenneth Hoste, UGent)_ **([slides](http://users.ugent.be/~kehoste/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
 
 **All presentations were recorded by Alan, material will be made available when it has been processed.**
 
@@ -114,7 +115,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
     * or because vendor is being paid to maintain the tools on the system, so they should really be used as is
    * this is a form of site-specific customizations
 
-### EasyBuild introduction
+### EasyBuild introduction (Kenneth Hoste, UGent)
 
 **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
 
@@ -137,7 +138,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * support for downloading from repository instead of hard URL, e.g. svn, git (see [framework#112](https://github.com/hpcugent/easybuild-framework/issues/112))
 
 
-
+### EasyBuild status update (Kenneth Hoste, UGent)
 
 
 
