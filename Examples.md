@@ -9,7 +9,7 @@ repositoryPath = ('svn+ssh://user@code.ugent.be/easybuild/trunk/easybuild/specfi
 logFormat = ("easybuild", "easybuild-%(name)s-%(version)s-%(date)s.%(time)s.log")
 ```
 
-## Python-2.7-ictce-4.0.0.eb
+## Python-2.7-ictce-5.5.0.eb
 ```python
 name='Python'
 version='2.7'
@@ -17,7 +17,7 @@ version='2.7'
 homepage='http://python.org/'
 description="Python is a programming language that lets you work more quickly and integrate your systems more effectively."
 
-toolkit={'name':'ictce','version':'4.0.0'}
+toolkit={'name':'ictce','version':'5.5.0'}
 toolkitopts={'pic':True,'opt':True,'optarch':True}
 
 patches=['python_libffi_int128_icc.patch']
