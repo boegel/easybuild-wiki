@@ -9,13 +9,13 @@ Note: steps 1 and 2 only have to be done **once**.
 1. Fork the [`easybuild-wiki`](https://github.com/hpcugent/easybuild-wiki) repository that contains the raw wiki pages in MarkDown format
 2. Clone your repository to your workstation, and define the `hpcugent` `easybuild-wiki` repository as upstream remote
 
-```
+```bash
 git clone git@github.com:<GITHUB_LOGIN>/easybuild-wiki.git
 cd easybuild-wiki
 git remote add upstream git@github.com:hpcugent/easybuild-wiki.git
 ```
 3. Edit a wiki page, commit the changes and push to your repository
-```
+```bash
 vim Home.md
 git commit -am "fix typo"
 git push origin master
@@ -36,7 +36,7 @@ git pull upstream master
 
 When EasyBuild wiki contribution pull requests are merged in, the following steps should be performed to push the changes through to the actual wiki pages:
 
-```
+```bash
 git remote add easybuild_wiki git@github.com:hpcugent/easybuild.wiki.git
 cd easybuild-wiki
 git pull origin master
