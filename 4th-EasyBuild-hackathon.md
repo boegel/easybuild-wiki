@@ -162,6 +162,8 @@ Cypriot time | potential remote attendees | notes
 6pm | Ward & Petar (5pm), Bill & Adam (8am) | after hackathon
 11pm (?) | Ward & Petar (10pm), Bill & Adam (1pm) | after local dinner _(exact time uncertain)_
 
-## Meeting minutes
+## Notes
 
- * (none yet)
+ * [Tuesday: presentations, discussions and first hands-on experiences](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-1)
+ * [Wednesday: hackathon, discussions](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-2)
+ * [Thursday: hackathon (continued), discussions](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-3)
