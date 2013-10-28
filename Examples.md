@@ -9,26 +9,33 @@ repositoryPath = ('svn+ssh://user@code.ugent.be/easybuild/trunk/easybuild/specfi
 logFormat = ("easybuild", "easybuild-%(name)s-%(version)s-%(date)s.%(time)s.log")
 ```
 
-## Python-2.7-ictce-5.5.0.eb
+## Python-2.7.5-ictce-5.5.0.eb
 ```python
-name='Python'
-version='2.7'
+name = 'Python'
+version = '2.7.5'
 
-homepage='http://python.org/'
-description="Python is a programming language that lets you work more quickly and integrate your systems more effectively."
+homepage = 'http://python.org/'
+description = "Python is a programming language that lets you work more quickly and integrate your systems more effectively."
 
-toolkit={'name':'ictce','version':'5.5.0'}
-toolkitopts={'pic':True,'opt':True,'optarch':True}
+toolchain = {'name': 'ictce', 'version': '5.5.0'}
+toolchainopts = {'pic': True, 'opt': True, 'optarch': True}
 
-patches=['python_libffi_int128_icc.patch']
+source_urls = ['http://www.python.org/ftp/%(namelower)s/%(version)s/']
+sources = ['%(name)s-%(version)s.tgz']
 
-osdependencies=['tk-devel']
+patches = ['python-%(version)s_libffi_int128_icc.patch']
 
-sources=['%s-%s.tgz'%(name,version)]
+# python needs bzip2 to build the bz2 package
+dependencies = [
+    ('bzip2', '1.0.6'),
+    ('zlib', '1.2.8'),
+    ('libreadline', '6.2'),
+    ('ncurses', '5.9'),
+]
 
 configopts="--with-threads"
 
-moduleclass='base'
+moduleclass='lang'
 ```
 
 ## icc.eb
