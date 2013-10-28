@@ -32,6 +32,8 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 
 ## Hackathon notes
 
+ * _Fotis_
+  * help people out with questions/problems
  * _Bernd_
   * get EasyBuild working with Tcl environment modules, get builds started with `gompi` toolchain (on laptop)
   * issues with getting GCC (and OpenMPI) build to work
@@ -55,7 +57,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
      * can be fixed by using `module use <path` instead of hard setting `$MODULEPATH` (?)
     * switched to using latest `modulecmd.tcl` version available online
   * toy tests are broken due to hardcoded `$MODULEPATH` in `modules.py`
-  * issues with `modulecmd.tcl` being called with `subprocess.Popen` under a `bash` shell
+  * issues with `modulecmd.tcl` being called with `subprocess.Popen` under a `bash` shell (see [framework#733](https://github.com/hpcugent/easybuild-framework/issues/733))
    * caused by fact that (old) DEISA version of `modulecmd.tcl` doesn't have a proper hashbang
   * would like to focus next on composing modules to wrap around system compilers/MPI
  * _Dina_
