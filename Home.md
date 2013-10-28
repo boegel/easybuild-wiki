@@ -57,6 +57,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[3rd EasyBuild hackathon]]: Mar. 11-13th 2013, Nicosia (Cyprus)
  * quick links: [EasyBuild presentation](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf) - [CUDA presentation (NVIDIA)](http://hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf) - [GPGPU application notes (NVIDIA)](https://github.com/hpcugent/easybuild/wiki/GPGPU-apps-notes-NVIDIA) - notes: [day 1](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-3)
 * [[4th EasyBuild hackathon]]: Oct. 22nd-24th 2013, Nicosia (Cyprus)
+ * quick links: [UNITE presentation](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_UNITE.pdf) - [EasyBuild introduction](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf) - [EasyBuild status update](http://hpcugent.github.io/easybuild/files/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf) notes: [day 1](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-3)
 
 ### Conferences and meetings
 

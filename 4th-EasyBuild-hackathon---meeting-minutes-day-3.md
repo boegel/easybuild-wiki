@@ -1,4 +1,4 @@
-(Thursday Oct 24th 2013, 9am-5pm)
+(Thursday Oct 24th 2013, 9am-6pm)
 
 The third day of the [[4th EasyBuild hackathon]] consisted of attendees working with and on EasyBuild,
 trying to build software packages of interest, or adding support for them, and tackling open issues they care about.
