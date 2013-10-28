@@ -53,7 +53,6 @@ When EasyBuild wiki contribution pull requests are merged in, the following step
 
 ```bash
 git remote add easybuild_wiki git@github.com:hpcugent/easybuild.wiki.git
-cd easybuild-wiki
 git pull origin master
 git pull easybuild_wiki master
 # resolve conflicts, if any
