@@ -4,38 +4,44 @@ Currently, GitHub doesn't allow assigning fine-grained permissions to repositori
 
 To contribute to the EasyBuild wiki, follow the steps below.
 
-Note: steps 1 and 2 only have to be done **once**.
+#### Setup (only needed once)
 
-1. Fork the [`easybuild-wiki`](https://github.com/hpcugent/easybuild-wiki) repository that contains the raw wiki pages in MarkDown format
-2. Clone your repository to your workstation, and define the `hpcugent` `easybuild-wiki` repository as upstream remote
-
+* Fork the [`easybuild-wiki`](https://github.com/hpcugent/easybuild-wiki) repository that contains the raw wiki pages in MarkDown format
+* Clone your repository to your workstation, and define the `hpcugent` `easybuild-wiki` repository as upstream remote
 ```bash
-git clone git@github.com:<GITHUB_LOGIN>/easybuild-wiki.git
+git clone git@github.com:YOUR_GITHUB_LOGIN/easybuild-wiki.git
 cd easybuild-wiki
 git remote add upstream git@github.com:hpcugent/easybuild-wiki.git
 ```
-3. Edit a wiki page, commit the changes and push to your repository
+
+#### Make a contribution
+
+* Edit a wiki page, commit the changes and push to your repository
 ```bash
 vim Home.md
 git commit -am "fix typo"
 git push origin master
 ```
-4. Create a pull request for your changes to the `hpcugent` repository
+* Create a pull request for your changes to the `hpcugent` repository
 
 ### Preview new wiki pages
 
-To preview the changes you've just made, you can push them to the wiki of your own `easybuild-wiki` repository:
+To preview the changes you've just made, you can push them to the wiki of your own `easybuild-wiki` repository.
+
+#### Setup (only needed once)
 
 ```bash
-git remote add my_wiki git@github.com:<GITHUB_LOGIN>/easybuild-wiki.wiki.git  # only needed once
+git remote add my_wiki git@github.com:YOUR_GITHUB_LOGIN/easybuild-wiki.wiki.git
 git pull my_wiki master
 ```
+
+#### Update your preview
 
 ```bash
 git push my_wiki master
 ```
 
-You can then view your version of the wiki at https://github.com/<YOUR_GITHUB_LOGIN>/easybuild-wiki/wiki (note: change the `YOUR_GITHUB_LOGIN` part to obtain a valid URL).
+You can then view your version of the wiki at https://github.com/YOUR_GITHUB_LOGIN/easybuild-wiki/wiki (note: change the `YOUR_GITHUB_LOGIN` part to obtain a valid URL).
 
 ### Update
 
@@ -45,14 +51,22 @@ To update your `easybuild-wiki` repository, use:
 git pull upstream master
 ```
 
-### Merging pull requests
+### Include merged pull requests
 
 **Note: the procedure below requires admin rights on the `easybuild` repository where the EasyBuild wiki is hosted, and thus might not work for you.**
 
-When EasyBuild wiki contribution pull requests are merged in, the following steps should be performed to push the changes through to the actual wiki pages:
+When EasyBuild wiki contribution pull requests are merged in, the following steps should be performed to push the changes through to the actual wiki pages.
+
+
+#### Setup (only needed once)
 
 ```bash
 git remote add easybuild_wiki git@github.com:hpcugent/easybuild.wiki.git
+```
+
+#### Get merged PRs included in main EasyBuild wiki
+
+```bash
 git pull upstream master
 git pull easybuild_wiki master
 # resolve conflicts, if any
