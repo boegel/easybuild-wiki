@@ -29,3 +29,18 @@ To update your `easybuild-wiki` repository, use:
 ```
 git pull upstream master
 ```
+
+### Merging pull requests
+
+**Note: the procedure below requires admin rights on the `easybuild` repository where the EasyBuild wiki is hosted, and thus might not work for you.**
+
+When EasyBuild wiki contribution pull requests are merged in, the following steps should be performed to push the changes through to the actual wiki pages:
+
+```
+git remote add easybuild_wiki git@github.com:hpcugent/easybuild.wiki.git
+cd easybuild-wiki
+git pull origin master
+git pull easybuild_wiki master
+# resolve conflicts, if any
+git push easybuild_wiki master
+```
