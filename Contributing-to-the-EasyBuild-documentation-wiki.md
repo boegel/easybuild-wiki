@@ -22,6 +22,21 @@ git push origin master
 ```
 4. Create a pull request for your changes to the `hpcugent` repository
 
+### Preview new wiki pages
+
+To preview the changes you've just made, you can push them to the wiki of your own `easybuild-wiki` repository:
+
+```bash
+git remote add my_wiki git@github.com:<GITHUB_LOGIN>/easybuild-wiki.wiki.git  # only needed once
+git pull my_wiki master
+```
+
+```bash
+git push my_wiki master
+```
+
+You can then view your version of the wiki at https://github.com/<YOUR_GITHUB_LOGIN>/easybuild-wiki/wiki (note: change the `YOUR_GITHUB_LOGIN` part to obtain a valid URL).
+
 ### Update
 
 To update your `easybuild-wiki` repository, use:
