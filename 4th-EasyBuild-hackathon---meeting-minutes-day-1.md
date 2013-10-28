@@ -2,6 +2,7 @@
 
 The first day of the [[4th EasyBuild hackathon]] consisted of presentations, discussions and
 initial hands-on experience with EasyBuild for attendees new to the tool.
+
 These notes were taken by Kenneth, suggestions for additions and improvements are very welcome.
 
 ## Attendees

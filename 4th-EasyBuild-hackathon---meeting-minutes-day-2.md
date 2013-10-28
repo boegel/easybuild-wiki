@@ -2,6 +2,7 @@
 
 The second day of the [[4th EasyBuild hackathon]] consisted of attendees working with and on EasyBuild,
 trying to build software packages of interest, or adding support for them, and tackling open issues they care about.
+
 These notes were taken by Kenneth, suggestions for additions and improvements are very welcome.
 
 ## Attendees
@@ -27,6 +28,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 
  * [9am - 4.50pm] **hackathon**
  * [4.50pm - 5.20pm] **round-table: who is working on what, how is it going**
+ * [5.20pm - 7.50pm] aftermath: discussions
 
 ## Hackathon notes
 
@@ -89,3 +91,52 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
    * also installs CUDA, MPICH, ...
    * unclear if PGI also works with CUDA, MPICH
    * CUDA is probably required for C/C++ CUDA compiler
+
+ * discussion during dinner
+  * _Bernd_: biggest issue now is logging and error messages being produced
+   * when stuff goes wrong, people new to the tool are lost
+   * almost impossible for newcomers to find their way in log files
+    * lack of documentation, guidelines, ...
+  * dependencies are often missing in easyconfig files
+   * [`HashDist` jail tool](https://github.com/hashdist/hdist-jail) should resolve this
+    * _KH_ tried it, couldn't get it to work as expected
+   * _GT_: try a more naive approach after the software is built using `ld` and checking what is being linked in from the OS
+    * _KH_: won't include static libraries, header files required during configure/build, etc.
+
+## Discussion notes
+
+(with _Xavier_, _Fotis_, _George_, _Kenneth_
+
+ * development setup should be documented
+  * simply involves setting `$PATH` and `$PYTHONPATH`
+  * be careful with `.pyc` files for files that are in one branch but not in another
+ * full fool-proof EasyBuild installation procedure may help newcomers
+  * provide a box on wiki page that can be pasted that sets up everything
+  * see whiteboard picture:
+   * set `$EASYBUILD_INSTALLPATH`, with a `CHANGEME` comment
+   * bootstrap to `$EASYBUILD_INSTALLPATH`
+   * set `$MODULEPATH` and load EasyBuild module
+   * run `eb --version`
+   * indicate stuff to add to `.bashrc` (but don't do it ourselves!)
+ * questions/concerns w.r.t. mixing software builds done by various EasyBuild versions
+  * bugs fixed in new releases may cause builds to be different, how to know which builds are affected?
+  * one solution may be to include the EasyBuild version in the `installpath`
+   * but this still makes mixing possible with multi-dir `$MODULEPATH`
+  * only real solution is to rebuild the whole software stack for a new release of EasyBuild
+   * currently done at CyI and Uni.lu (_GT_, _FG_)
+ * which policy should be used w.r.t. making modules available to users?
+  * providing all modules is an issue, because there's too much (_XB_)
+  * only provide current and last version, maybe previous version too
+   * this yields concerns w.r.t. reproducability
+  * only solution seems to be solving this with a modules tool that allows setting defaults (e.g. toolchain), hiding stuff (only `avail`, not `load`) while still making them easily accessible when needed, etc.
+  * brings back discussion on a Python modules tool
+   * is it worth the effort?
+   * can we make the shift transparent by providing wrappers that mimic the quirky behavior of other module tools?
+  * C environment modules also support caching (for `avail`) (_XB_)
+  * why is running `module avail` faster the 2nd time (_FG_)
+   * can't just be the file system cache, something else must be going on
+ * support for custom module naming schemes ([framework#687](https://github.com/hpcugent/easybuild-framework/issues/687))
+  * should include `moduleclass` too, to provide more flexibility
+  * **always** use EasyBuild module naming scheme
+   * as a fallback in case the custom module naming scheme fails at some point
+   * 'on the side' and hidden, e.g. in `$EASYBUILD_INSTALLPATH/modules/.easybuild/all`
