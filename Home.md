@@ -38,6 +38,7 @@ These wiki pages contain as the EasyBuild documentation.
  * [[Experimental repo]]
 * [[Other tools]]
 * [[List of supported software packages]] (updated) (legacy list [here](https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages/ede46976d7367a86fe76ae79adba7b8e9fd9f118))
+* [[Conference calls]]
 * [[FAQ]] (updated, may need additional entries)
 * [[Contact]]
 
