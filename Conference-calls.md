@@ -14,7 +14,7 @@ The intention is to keep the calls **focused** and **fast-paced**, which is refl
 
 ### Practical
 
-The conference calls are done by means of a **Google Hangout**. We opted for this approach since hangouts are 100% free, as opposed to Skype Premium which is required for group calls and screen sharing.
+The conference calls are done by means of a **Google Hangout**. We opted for this approach since hangouts are 100% free (as in beer), as opposed to Skype Premium which is required for group calls and screen sharing.
 
 To be able to join the conference calls, you need to [**join the EasyBuild community on Google+**](https://plus.google.com/communities/103632287931200436158), which requires a (free) Google+ account.
 
