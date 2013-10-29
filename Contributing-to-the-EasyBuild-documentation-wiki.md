@@ -67,6 +67,7 @@ git remote add easybuild_wiki git@github.com:hpcugent/easybuild.wiki.git
 #### Get merged PRs included in main EasyBuild wiki
 
 ```bash
+git checkout master
 # sync with upstream repo (pull in merged PRs)
 git pull upstream master
 # pull in wiki edits
@@ -76,7 +77,7 @@ git pull easybuild_wiki master
 git push easybuild_wiki master
 ```
 
-### Update eaysbuild-wiki repository with wiki edits
+### Update easybuild-wiki repository with wiki edits
 
 **Note: the procedure below requires admin rights on the `easybuild` repository where the EasyBuild wiki is hosted, and thus might not work for you.**
 
