@@ -8,9 +8,9 @@ EasyBuild conference calls are intended to enable community members to **stay up
 
 **Everybody is free to join in**, be it actively (speaking up, proposing agenda points, ...) or passively (just listening in with video/sound muted).
 
-The conference calls will be **focused**, **fast-paced**, and will be held **bi-weekly** (i.e., every other week).
+The conference calls are planned well ahead, and are held **bi-weekly** (i.e., every other week).
 
-This is reflected in the fact that the **duration will be limited to 30 minutes**, and that the main **agenda points** will be available before the start of the meeting, with a small slot reserved for open questions/suggestions.
+The intention is to keep the calls **focused** and **fast-paced**, which is reflected in the fact that the **duration will be limited to 30 minutes**, and that the main **agenda points** will be available before the start of the meeting, with a small slot reserved for open questions/suggestions.
 
 ### Planning
 
