@@ -2,6 +2,15 @@ To keep each other up-to-date with recent developments and ongoing efforts, we s
 
 **Note: Since this process is still quite new to us, we're still discovering a setup that works out well. Hence, the below is subject to change.**
 
+### Format
+
+EasyBuild conference calls are intended to enable community members to **stay up-to-date with current and future development efforts**, both by HPC-UGent and others.
+
+**Everybody is free to join in**, be it actively (speaking up, proposing agenda points, ...) or passively (just listening in with video/sound muted).
+
+The conference calls will be **focused**, **fast-paced**, and will be held **bi-weekly** (i.e., every other week).
+
+This is reflected in the fact that the **duration will be limited to 30 minutes**, and that the main **agenda points** will be available before the start of the meeting, with a small slot reserved for open questions/suggestions.
 
 ### Planning
 
@@ -9,10 +18,15 @@ EasyBuild conference calls are planned **every first and third Tuesday of the mo
 
 The following conference calls are currently planned at:
  * _**Tuesday November 5th 2013, 3pm CET**_
+  * (no agenda points yet)
  * Tuesday November 19th 2013, 2.30pm CET _(note: during SC13 in Denver, 7.30am local time)_
+  * (no agenda points yet)
  * Tuesday December 3rd 2013, 3pm CET
+  * (no agenda points yet)
  * Tuesday December 17th 2013, 3pm CET
+  * (no agenda points yet)
  * Tuesday January 7th 2014, 3pm CET
+  * (no agenda points yet)
 
 Google+ Hangout URIs will be provided shortly before the conference calls, both via the EasyBuild community on Google+ and via the EasyBuild mailing list.
 
