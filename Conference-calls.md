@@ -7,9 +7,12 @@ To keep each other up-to-date with recent developments and ongoing efforts, we s
 
 EasyBuild conference calls are planned **every first and third Tuesday of the month, at 3pm CET**.
 
-The following conference calls are planned at:
+The following conference calls are currently planned at:
  * _**Tuesday November 5th 2013, 3pm CET**_
  * Tuesday November 19th 2013, 2.30pm CET _(note: during SC13 in Denver, 7.30am local time)_
+ * Tuesday December 3rd 2013, 3pm CET
+ * Tuesday December 17th 2013, 3pm CET
+ * Tuesday January 7th 2014, 3pm CET
 
 Google+ Hangout URIs will be provided shortly before the conference calls, both via the EasyBuild community on Google+ and via the EasyBuild mailing list.
 
