@@ -42,7 +42,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
   * started looking into building performance tools with EasyBuild
    * `opari2` works
    * goal: Scalasca with dependencies
-  * also interesting in getting compiler toolchain with system compiler/MPI to work (cfr. work by Alan)
+  * also interested in getting compiler toolchain with system compiler/MPI to work (cfr. work by Alan)
   * EasyBuild looks very good, should work for UNITE after spending some time with it
    * build modules for performance tools in UNITE, then just symlink to those installations
  * _Kenneth_
@@ -74,7 +74,8 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
    * builds requires more than 1GB of memory to avoid heavy swapping
    * minimal requirements should be specified for a system to use EasyBuild on
    * making build stats available publicly would help people in estimating system requirements
-  * start looking into using EasyBuild on AGE grid
+  * start looking into using EasyBuild on EGI (European Grid Initiative) grid; (FG: let's make sure RHEL6 gets env-modules >=3.2.10) 
+    ref: https://bugzilla.redhat.com/show_bug.cgi?id=976369 # Vote this, otherwise EGI & EasyBuild marriage will be painful
  * _Thekla_
   * `arpack-ng` is working (see [easyconfigs#481](https://github.com/hpcugent/easybuild-easyconfigs/pull/481))
   * `ParFlow` with `Silo` dependency works
@@ -89,7 +90,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
    * `ExtraE` requires `binutils` but then with `-fPIC` arise
  * _George_
   * looking into installation of `PGI`
-   * very interactive, no automation options
+   * very interactive, no automation options, download slow
    * also installs CUDA, MPICH, ...
    * unclear if PGI also works with CUDA, MPICH
    * CUDA is probably required for C/C++ CUDA compiler
@@ -99,11 +100,13 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
    * when stuff goes wrong, people new to the tool are lost
    * almost impossible for newcomers to find their way in log files
     * lack of documentation, guidelines, ...
-  * dependencies are often missing in easyconfig files
+  * (os)dependencies are often missing in easyconfig files
    * [`HashDist` jail tool](https://github.com/hashdist/hdist-jail) should resolve this
     * _KH_ tried it, couldn't get it to work as expected
-   * _GT_: try a more naive approach after the software is built using `ld` and checking what is being linked in from the OS
+   * _GT_: try a more naive approach after the software is built using `ldd` and checking what is being linked in from the OS
     * _KH_: won't include static libraries, header files required during configure/build, etc.
+   * _FG_: there is no _perfect_ or _naive_ approach here! `ldd` does top-down check, while `hashdist` and `builds-on-minimal-OS` do bottom-up.
+     Both are useful and should be examined together, as build confinement options.
 
 ## Discussion notes
 
@@ -117,28 +120,33 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
   * see whiteboard picture:
    * set `$EASYBUILD_INSTALLPATH`, with a `CHANGEME` comment
    * bootstrap to `$EASYBUILD_INSTALLPATH`
-   * set `$MODULEPATH` and load EasyBuild module
+   * set `$MODULEPATH` and `module load EasyBuild` module
    * run `eb --version`
    * indicate stuff to add to `.bashrc` (but don't do it ourselves!)
  * questions/concerns w.r.t. mixing software builds done by various EasyBuild versions
-  * bugs fixed in new releases may cause builds to be different, how to know which builds are affected?
+  * bugs fixed in new releases may cause builds to be different, how to know which builds are affected? (FG: not possible)
   * one solution may be to include the EasyBuild version in the `installpath`
    * but this still makes mixing possible with multi-dir `$MODULEPATH`
   * only real solution is to rebuild the whole software stack for a new release of EasyBuild
-   * currently done at CyI and Uni.lu (_GT_, _FG_)
+   * currently done at CyI and Uni.lu (_GT_, _FG_) (FG: this guarantees maximum reproducibility & predictable rollback)
  * which policy should be used w.r.t. making modules available to users?
   * providing all modules is an issue, because there's too much (_XB_)
   * only provide current and last version, maybe previous version too
-   * this yields concerns w.r.t. reproducability
+   * this yields concerns w.r.t. reproducibility
   * only solution seems to be solving this with a modules tool that allows setting defaults (e.g. toolchain), hiding stuff (only `avail`, not `load`) while still making them easily accessible when needed, etc.
   * brings back discussion on a Python modules tool
    * is it worth the effort?
    * can we make the shift transparent by providing wrappers that mimic the quirky behavior of other module tools?
   * C environment modules also support caching (for `avail`) (_XB_)
   * why is running `module avail` faster the 2nd time (_FG_)
-   * can't just be the file system cache, something else must be going on
+   * can't just be the file system cache, something else must be going on top of that (TCL could be a contributor)
  * support for custom module naming schemes ([framework#687](https://github.com/hpcugent/easybuild-framework/issues/687))
   * should include `moduleclass` too, to provide more flexibility
-  * **always** use EasyBuild module naming scheme
+  * **always** use EasyBuild flat module naming scheme
    * as a fallback in case the custom module naming scheme fails at some point
    * 'on the side' and hidden, e.g. in `$EASYBUILD_INSTALLPATH/modules/.easybuild/all`
+   * or, simply allow for multiple views available in parallel: (_FG_)
+    * $EASYBUILD_INSTALLPATH/modules/all                    # default flat, some systems can ONLY handle this one
+    * $EASYBUILD_INSTALLPATH/modules/bycategory/{bio}...    # the existing categories should be under a collective dir
+    * $EASYBUILD_INSTALLPATH/modules/bytoolchain/{goolf}... # really useful to reduce module avail output
+    * $EASYBUILD_INSTALLPATH/modules/custom                 # combinations of the above or other custom schemes
