@@ -158,7 +158,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * support for optional dependencies would be nice
   * 3 levels for dependencies: must (only currently supported flavor), should (use it when it's there), may (only use when requested explicitly)
  * _[BM]_: why are `bzip2`, `bash`, `binutils` supported and listed as dependencies?
-  * primary reason is fixing versions of dependencies for reproducability
+  * primary reason is fixing versions of dependencies for reproducibility
   * support way of specifying minimal supported version for deps?
  * `"stow"` modules
   * collapse a set of modules into a single symlinked mess
@@ -176,8 +176,8 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * discussion on current organization of repositories
   * move `generic` easyblocks to `framework` repo
   * merge `easyblocks` and `easyconfigs` repositories together
-   * easier to keep in sync when pull requests are opened
+   * easier to keep in sync when pull requests are opened, commit IDs remain in sync/consistent
    * less confusing for new contributors, lowers threshold for making PRs for new software
-  * other option (_XB_):
+  * or, alternative option (_XB_):
    * merge `framework` and `easyblocks`, since both are code
    * keep `easyconfigs` separate, since they're basically input files
