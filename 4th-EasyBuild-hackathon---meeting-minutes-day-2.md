@@ -120,7 +120,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
   * see whiteboard picture:
    * set `$EASYBUILD_INSTALLPATH`, with a `CHANGEME` comment
    * bootstrap to `$EASYBUILD_INSTALLPATH`
-   * set `$MODULEPATH` and `module load EasyBuild` module
+   * set `$MODULEPATH` and run `module load EasyBuild`
    * run `eb --version`
    * indicate stuff to add to `.bashrc` (but don't do it ourselves!)
  * questions/concerns w.r.t. mixing software builds done by various EasyBuild versions
