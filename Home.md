@@ -6,6 +6,9 @@ These wiki pages contain as the EasyBuild documentation.
 
 **NOTE: The wiki pages are in need of a serious update, we're working on it.**
 
+
+### For EasyBuild users
+
 * [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]]
 * [[Dependencies]] (updated)
@@ -23,24 +26,28 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Compiler toolchains]] (up-to-date)
 * [[Easyconfig files]] (updated, may need work)
  * [[Examples]]
-* [[Development guide]]
- * [[Setting up your own easyblocks repository]] (ok, up-to-date)
- * [[Encode class names]]
- * [[Tutorial: building WRF after adding support for it]] (ok, up-to-date)
- * [[Packaging and versioning]]
- * [[Unit and regression testing]] (ok, up-to-date)
- * [[Release process]] (ok, up-to-date)
- * [[Release schedule]] (ok, up-to-date)
- * [[Using a custom module naming scheme]] (ok, up-to-date)
-* [[Contributing back]]
- * [[Code style]]
- * [[Contributing to the EasyBuild documentation wiki]] 
- * [[Experimental repo]]
-* [[Other tools]]
 * [[List of supported software packages]] (updated) (legacy list [here](https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages/ede46976d7367a86fe76ae79adba7b8e9fd9f118))
 * [[Conference calls]]
 * [[FAQ]] (updated, may need additional entries)
 * [[Contact]]
+* [[Other tools]]
+
+### For EasyBuild developers
+
+* [[Development guide]]
+* API documentation (framework, easyblocks): [stable (master)](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_master/Documentation/?) - [develop](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_develop/Documentation)
+* [[Setting up your own easyblocks repository]] (ok, up-to-date)
+* [[Encode class names]]
+* [[Tutorial: building WRF after adding support for it]] (ok, up-to-date)
+* [[Packaging and versioning]]
+* [[Unit and regression testing]] (ok, up-to-date)
+* [[Release process]] (ok, up-to-date)
+* [[Release schedule]] (ok, up-to-date)
+* [[Using a custom module naming scheme]] (ok, up-to-date)
+* [[Contributing back]]
+* [[Code style]]
+* [[Contributing to the EasyBuild documentation wiki]] 
+* [[Experimental repo]]
 
 ## Presentations
 
