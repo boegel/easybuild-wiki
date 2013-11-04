@@ -34,15 +34,14 @@ Initial agenda, subject to change.
 We are thinking about setting up a way to allow people to remotely participate in the hackathon (e.g., regular Skype sessions on progress, etc.).
 
 ### Tuesday Oct 22nd 2013 (9am - 5pm)
-
  * [9.00am - 9.45am] **welcome, getting started**
   * [9.00am - 9.15am] setup for remote participation
   * [9.15am - 9.30am] Welcome (Jens Wiegand) **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_welcome_LinkSCEEM.pdf))**
   * [9.30am - 9.45am] round-table: introduce yourself
  * [9.45am - 11.30am] **presentations** on EasyBuild and UNITE
   * [9.45am - 10.15am] Introduction to UNITE, current status and open issues (Dr. Bernd Mohr) **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_UNITE.pdf))**
-  * [10.15am - 11.00am] Introduction to EasyBuild (Kenneth Hoste) **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
-  * [11.00am - 11.30am] EasyBuild status update (Kenneth Hoste) **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
+  * [10.15am - 11.00am] Introduction to EasyBuild (Kenneth Hoste) **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))** **(recorded presentation: [part 1](http://www.youtube.com/watch?v=bOeNsfLB2t4) - [part 2](http://www.youtube.com/watch?v=e7fyHtO8_qs))**
+  * [11.00am - 11.30am] EasyBuild status update (Kenneth Hoste) **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))** **([recorded presentation](http://www.youtube.com/watch?v=A140WvbqaNw))**
  * [11.45am - 1pm] explaining contribution workflow with `git`, tasks for EasyBuild hackathon
  * **[1pm - 2pm] lunch provided**
  * [2pm - 5pm] hands-on introductory EasyBuild sessions, getting the hackathon started
