@@ -30,7 +30,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
  * [9.40am - 9.50am] **presentation on LinkSCEEM project** _(Jens Wiegand, CyI)_ **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_welcome_LinkSCEEM.pdf))**
  * [10am - 11am] **Introduction to UNITE** _(Dr. Bernd Mohr, JSC)_ **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_UNITE.pdf))**
  * [11.10am - 11.15am] **round table: briefly introduce yourself**
- * [11.15am - 1pm] **EasyBuild introduction** _(Kenneth Hoste, UGent)_ **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
+ * [11.15am - 1pm] **EasyBuild introduction** _(Kenneth Hoste, UGent)_ **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))** **(recorded presentation: [part 1](http://www.youtube.com/watch?v=bOeNsfLB2t4) - [part 2](http://www.youtube.com/watch?v=e7fyHtO8_qs))**
  * [2pm - 3pm] **EasyBuild status update** _(Kenneth Hoste, UGent)_ **([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
  * [3pm - 5.15pm] **hackathon**
  * [5.15pm - 8pm] aftermath: discussions
@@ -120,6 +120,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 ### EasyBuild introduction (Kenneth Hoste, UGent)
 
 **([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf))**
+**(recorded presentation: [part 1](http://www.youtube.com/watch?v=bOeNsfLB2t4) - [part 2](http://www.youtube.com/watch?v=e7fyHtO8_qs))**
 
  * build dependencies shouldn't be version fixed, should be allowed to float around? (TODO: open issue)
  * is there a way of cleaning up old modules without breaking stuff
@@ -143,6 +144,7 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 ### EasyBuild status update (Kenneth Hoste, UGent)
 
 **([slides](http://users.ugent.be/~kehoste/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf))**
+**([recorded presentation](http://www.youtube.com/watch?v=A140WvbqaNw))**
 
  * new easyconfig format
   * will (significantly) complicate testing
