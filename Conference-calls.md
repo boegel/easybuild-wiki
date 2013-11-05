@@ -29,6 +29,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
  * _Tuesday November 5th 2013, 3pm - 3.30pm (CET)_
   * (short) progress on support for new easyconfig format (Kenneth)
   * progress report on adding support for UNITE and the individual performance tools that are part of it (Bernd)
+  * current status of 'toolchain soup' (Ward)
   * remaining time is for open questions on broad topics
 
 #### Future EasyBuild conference calls
