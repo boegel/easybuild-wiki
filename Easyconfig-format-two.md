@@ -32,6 +32,7 @@ name = 'doesnotexist'
 
 homepage = "http://www.example.com/"
 description = "doesnotexist is bug free software"
+docurl = "http://www.example.com/docs"
 
 license = VeryRestrictive
 
