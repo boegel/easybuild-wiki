@@ -6,7 +6,7 @@ Notes on the 1st EasyBuild conference call, Tuesday Nov. 5th 2013 (3pm -3.30pm)
 
 #### Attendees
 
-Alphabetical list of attendees:
+Alphabetical list of attendees (11):
 
 * Yossi Baruch (Isragrid)
 * Xavier Besseron (Uni.lu)
@@ -78,7 +78,7 @@ foo=rab
 
 ##### Current status of 'toolchain soup'
 
- * Q (Ward): _You want to build something with a certain compiler but first you need to update several deps to the correct toolchain version, create new easyconfigs because they only exists for gcc and not ictce (or vice versa), ... Is this something the v2.0 format will solve?_
+ * question by Ward: _You want to build something with a certain compiler but first you need to update several deps to the correct toolchain version, create new easyconfigs because they only exists for gcc and not ictce (or vice versa), ... Is this something the v2.0 format will solve?_
  * `--try-toolchain --robot` doesn't work as expected yet (see [framework#474](https://github.com/hpcugent/easybuild-framework/issues/474))
   * so, currently requires 'manual' work 
    * module for new toolchain and toolchain elements need to be provided first
@@ -94,7 +94,7 @@ foo=rab
 
 ###### Loading (and using) multiple debuggers/profilers together (Fotis)
 
- * question of Fotis, mainly directed to Bernd: can multiple debuggers or profilers be loaded at the same time?
+ * question by Fotis, mainly directed to Bernd: can multiple debuggers or profilers be loaded at the same time?
   * (Bernd) loaded yes, should probably work, but using multiple profilers at the same time on a particular applicaton will not work due to low-level trickery
   * (Xavier) using multiple debugger instances (e.g. two GDBs) on the same running process will not work because of signal handling
   * (Fotis) question was more targeted on just having multiple debugger/profiler modules loaded at the same time
