@@ -1,7 +1,7 @@
 Notes on the 1st EasyBuild conference call, Tuesday Nov. 5th 2013 (3pm -3.30pm)
 
  * [planned event](https://plus.google.com/u/0/events/cfarbd6ms0v1d03942uf75h672g?authkey=CJr7g7DJhY6ulwE)
- * [link to Google Hangout](none)
+ * link to Google Hangout: https://plus.google.com/116729781669672561222/posts/3LfHWAy7dDy
 
 #### Attendees
 
@@ -55,4 +55,3 @@ Notes on topics discussed during the conference call (by Kenneth)
 ###### some_topic
 
  * 
-
