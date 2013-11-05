@@ -26,19 +26,14 @@ EasyBuild conference calls are planned **every first and third Tuesday of the mo
 Google+ Hangout URIs will be provided shortly before the conference calls, both via the EasyBuild community on Google+ and via the EasyBuild mailing list.
 
 #### Next EasyBuild conference call
- * _Tuesday November 5th 2013, 3pm - 3.30pm (CET)_ ([[Conference call notes 20131105]])
-  * link to join (Google+ Hangout): https://plus.google.com/116729781669672561222/posts/3LfHWAy7dDy
-   * (short) progress on support for new easyconfig format (Kenneth)
-   * progress report on adding support for UNITE and the individual performance tools that are part of it (Bernd)
-   * current status of 'toolchain soup' (Ward)
-   * remaining time is for open questions on broad topics
+
+ * Tuesday November 19th 2013, 2.30pm - 3pm (CET) _(note: during SC13 in Denver, 7.30am - 8am local time)_
+  * (no agenda points yet)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday November 19th 2013, 2.30pm - 3pm (CET) _(note: during SC13 in Denver, 7.30am - 8am local time)_
-  * (no agenda points yet)
  * Tuesday December 3rd 2013, 3pm - 3.30pm (CET)
   * (no agenda points yet)
  * Tuesday December 17th 2013, 3pm - 3.30pm (CET)
