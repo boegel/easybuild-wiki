@@ -77,13 +77,13 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
   * looking into `ncdf` and `ncdf4` R packages
    * as a separate module, since they have `netCDF` as dependency
    * ran into a `zlib` version clash between `R` module and `netCDF`
-    * resolved by creating new easyconfig for `R`, and using same `zlib` as for `netCDF`
+    * resolved by creating new easyconfig for `R/3.0.2`, and using same `zlib` as for `netCDF`
   * add easyconfig for `Silo` and `ParFlow` ([easyconfigs#483](https://github.com/hpcugent/easybuild-easyconfigs/pull/483))
   * add easyconfig for `CDO` ([easyconfigs#484](https://github.com/hpcugent/easybuild-easyconfigs/pull/484))
  * _Fotis_
   * `goolfc` update (see [easyconfigs#477](https://github.com/hpcugent/easybuild-easyconfigs/pull/477))
-   * new OpenMPI, CUDA
-   * `-malign-double` should be enabled by default, which is required by CUDA for getting good performance (see [framework#627](https://github.com/hpcugent/easybuild-framework/issues/627))
+   * new GCC, OpenMPI and other bits; also employed most recent CUDA contributed by @ajdecon; in short, latest and greatest
+   * `-malign-double` should be enabled by default, which is required by CUDA for getting good performance and/or ABI compatibility (see [framework#627](https://github.com/hpcugent/easybuild-framework/issues/627))
   * help people out with questions/problems
  * _Dina_
   * try and get VMD plugins installation working, as a first step towards VMD support
@@ -107,22 +107,24 @@ These notes were taken by Kenneth, suggestions for additions and improvements ar
 (with _Xavier_, _Fotis_, _Kenneth_)
 
  * jail tool is bottom-up
-  * _FG_: if you whitelist something, you may start missing stuff again
+  * _FG_: if you whitelist something, you may start missing stuff again (ie. not reporting osdependencies properly)
    * _KH_: only if you resolve it by allowing OS deps?
+   * _FG_: it is probably very wise to adhere to the rule "osdependencies reported via deps, are redundant and not needed"
   * top-down: via `ldd`
    * but, then stuff like static libs, required header files, etc. are missed
   * _XB_: `makeinstall` tool to easily create packages, but doesn't take into account deps, etc.
+  * _FG_: `checkinstall` is probably what we want to refer here; ref. http://asic-linux.com.mx/~izto/checkinstall/
  * _FG_: getting environment modules 3.2.10 into RHEL6
-  * required to reel in grid people
-  * EasyBuild is a (very) consistent way to roll out software, even cross-OS
- * technical reason for using only `top` toolchains, and just rebuilding tools like `CMake` with those
+  * required to reel in grid people; _FG_ has already been bugging Gergely Sipos since spring 2013 about EB.
+  * EasyBuild is a (very) consistent way to roll out software, even cross-distro, and pretty possible cross-OS
+ * technical reason for using only `top` (ictce/goolf/...) toolchains, and just rebuilding tools like `CMake` with those
   * recursive `--try-toolchain` will not work with other approaches to only obtain a minimal set of modules that easily allow switching MPI stacks
    * rebuilding software stack with another toolchain would require lots of manual work
  * [off-topic] discuss Valentin's (Uni.lu) work on using GAs to autotune configure options for best performance
   * using EasyBuild to rebuild software packages with different setup
-  * mainly for `GROMACS`, `QuantumESPRESSO` (and `RaxML`)
+  * mainly for `GROMACS`, `QuantumESPRESSO` (and considering `RaxML` for its fancy MPI with pthreads hybrid model)
   * should be *really* strict about testing and validating correctness of resulting binaries
   * also consider using modules to predict outcomes and let that steer the GA, to significantly speed up search process
-  * _FG_: `RaxML` is significantly tuned to processor architecture (caches)
-   * which makes it extremely sensitive to the value of one particular config option
-   * can machine learning models catch/learn something like that?
+  * _FG_: `RaxML` is a special case; it is significantly tuned to specific processor architectures (eg. x86 L1/2/3 caches)
+   * which makes it extremely sensitive to the value of particular config options and run-time MPI stack tuning
+   * can machine learning models catch/learn something like that? what can we extract and automate out of this?

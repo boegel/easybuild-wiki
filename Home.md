@@ -6,6 +6,9 @@ These wiki pages contain as the EasyBuild documentation.
 
 **NOTE: The wiki pages are in need of a serious update, we're working on it.**
 
+
+### For EasyBuild users
+
 * [[What is EasyBuild?|EasyBuild]] (updated)
 * [[License]]
 * [[Dependencies]] (updated)
@@ -23,24 +26,28 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Compiler toolchains]] (up-to-date)
 * [[Easyconfig files]] (updated, may need work)
  * [[Examples]]
-* [[Development guide]]
- * [[Setting up your own easyblocks repository]] (ok, up-to-date)
- * [[Encode class names]]
- * [[Tutorial: building WRF after adding support for it]] (ok, up-to-date)
- * [[Packaging and versioning]]
- * [[Unit and regression testing]] (ok, up-to-date)
- * [[Release process]] (ok, up-to-date)
- * [[Release schedule]] (ok, up-to-date)
- * [[Using a custom module naming scheme]] (ok, up-to-date)
-* [[Contributing back]]
- * [[Code style]]
- * [[Contributing to the EasyBuild documentation wiki]] 
- * [[Experimental repo]]
-* [[Other tools]]
 * [[List of supported software packages]] (updated) (legacy list [here](https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages/ede46976d7367a86fe76ae79adba7b8e9fd9f118))
 * [[Conference calls]]
 * [[FAQ]] (updated, may need additional entries)
 * [[Contact]]
+* [[Other tools]]
+
+### For EasyBuild developers
+
+* [[Development guide]]
+* API documentation (framework, easyblocks): [stable (master)](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_master/Documentation/?) - [develop](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_develop/Documentation) (automatically updated)
+* [[Setting up your own easyblocks repository]] (ok, up-to-date)
+* [[Encode class names]]
+* [[Tutorial: building WRF after adding support for it]] (ok, up-to-date)
+* [[Packaging and versioning]]
+* [[Unit and regression testing]] (ok, up-to-date)
+* [[Release process]] (ok, up-to-date)
+* [[Release schedule]] (ok, up-to-date)
+* [[Using a custom module naming scheme]] (ok, up-to-date)
+* [[Contributing back]]
+* [[Code style]]
+* [[Contributing to the EasyBuild documentation wiki]] 
+* [[Experimental repo]]
 
 ## Presentations
 
@@ -59,6 +66,7 @@ These wiki pages contain as the EasyBuild documentation.
  * quick links: [EasyBuild presentation](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf) - [CUDA presentation (NVIDIA)](http://hpcugent.github.com/easybuild/files/CUDA_Toolkit_for_Sysadmins.pdf) - [GPGPU application notes (NVIDIA)](https://github.com/hpcugent/easybuild/wiki/GPGPU-apps-notes-NVIDIA) - notes: [day 1](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/3rd-easybuild-hackathon---meeting-minutes-day-3)
 * [[4th EasyBuild hackathon]]: Oct. 22nd-24th 2013, Nicosia (Cyprus)
  * quick links: [UNITE presentation](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_UNITE.pdf) - [EasyBuild introduction](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf) - [EasyBuild status update](http://hpcugent.github.io/easybuild/files/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf) notes: [day 1](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-3)
+  * recorded presentations: [Introduction to EasyBuild](http://www.youtube.com/watch?v=bOeNsfLB2t4) - [WRF example use case](http://www.youtube.com/watch?v=e7fyHtO8_qs) - [EasyBuild status update](http://www.youtube.com/watch?v=A140WvbqaNw)
 
 ### Conferences and meetings
 
