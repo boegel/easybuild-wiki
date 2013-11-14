@@ -1,6 +1,6 @@
 **Note: this documentation is for a feature in development, and is thus preliminary and subject to change.**
 
-This page describes the v2.0 format for easyconfig files in detail. This format is supported since EasyBuild v1.9 (**FIXME**),
+This page describes the v2.0 format for easyconfig files in detail. This format is supported since EasyBuild v1.x (**FIXME**),
 and will become the only supported format starting with EasyBuild v2.0.
 
 ## Format outline
