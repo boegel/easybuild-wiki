@@ -27,7 +27,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday November 19th 2013, 2.30pm - 3pm (CET) _(note: during SC13 in Denver, 7.30am - 8am local time)_
+ * Tuesday November 19th 2013, 3.00pm - 3.30pm (CET) _(note: during SC13 in Denver, 7.00am - 7.30am local time)_
   * (no agenda points yet)
 
 #### Future EasyBuild conference calls
