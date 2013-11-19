@@ -55,6 +55,13 @@ These wiki pages contain as the EasyBuild documentation.
 * November 2012 @ [PyHPC-2012 workshop at Supercomputer 2012 conference](http://sc12.supercomputing.org/schedule/event_detail.php?evid=wksp118): _EasyBuild: Building Software With Ease_, by Kenneth Hoste, Jens Timmerman, Andy Georges and Stijn Deweirdt ([paper](http://hpcugent.github.com/easybuild/files/easybuild-PyHPC-SC12_paper.pdf), [slides full talk (PDF)](http://hpcugent.github.com/easybuild/files/easybuild-PyHPC-SC12_slides.pdf), EasyBuild v1.0)
 * February 2013 @ [FOSDEM'13](http://fosdem.org/2013/): EasyBuild lightning talks in _FOSS for Scientists_ and _Python_ devrooms (EasyBuild v1.1)
 * March 2013 @ [[3rd EasyBuild hackathon]]: _EasyBuild: Building Software With Ease_, by Kenneth Hoste ([slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf), EasyBuild v1.2)
+* October 2013 @ [[4th EasyBuild hackathon]]: _Introduction to EasyBuild_, by Kenneth Hoste ([slides (PDF)](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf), EasyBuild v1.8.2)
+
+## Videos
+
+ * [Introduction to EasyBuild](http://www.youtube.com/watch?v=bOeNsfLB2t4) (Oct'13, EasyBuild v1.8.2)
+ * [WRF example use case](http://www.youtube.com/watch?v=e7fyHtO8_qs) (Oct'13, EasyBuild v1.8.2)
+ * [EasyBuild status update](http://www.youtube.com/watch?v=A140WvbqaNw) (Oct'13, EasyBuild v1.8.2)
 
 ## Meetings
 
