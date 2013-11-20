@@ -2,6 +2,8 @@
 
 BoF details on SC'13 website @ [http://sc13.supercomputing.org/schedule/event_detail.php?evid=bof111](http://sc13.supercomputing.org/schedule/event_detail.php?evid=bof111)
 
+**If you attended this session, please fill out the evaluation form if you haven't already.**
+
 #### Slides
 
  * [BoF slides](http://hpcugent.github.io/easybuild/files/SC13_BoF_Getting_Scientific_Software_Installed.pdf)
