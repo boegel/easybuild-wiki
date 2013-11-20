@@ -8,5 +8,4 @@ BoF details on SC'13 website @ [http://sc13.supercomputing.org/schedule/event_de
  * [Lmod lightning talk](http://hpcugent.github.io/easybuild/files/SC13_BoF_Lmod.pdf)
  * [HashDist lightning talk](http://hpcugent.github.io/easybuild/files/SC13_BoF_HashDist.pdf)
  * [EasyBuild lightning talk](http://hpcugent.github.io/easybuild/files/SC13_BoF_EasyBuild.pdf)
-
-#### Show-of-hands results
+ * [results of show-of-hands part of the session that steered discussion](http://hpcugent.github.io/easybuild/files/SC13_BoF_show-of-hands-results.pdf)
