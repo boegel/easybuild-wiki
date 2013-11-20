@@ -2,7 +2,7 @@
 
 BoF details on SC'13 website @ [http://sc13.supercomputing.org/schedule/event_detail.php?evid=bof111](http://sc13.supercomputing.org/schedule/event_detail.php?evid=bof111)
 
-**If you attended this session, please fill out the evaluation form if you haven't already.**
+**If you attended this session, please fill out the evaluation form if you haven't already, via http://bit.ly/sc13-eval .**
 
 #### Slides
 
