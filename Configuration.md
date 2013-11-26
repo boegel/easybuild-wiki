@@ -2,6 +2,10 @@
 
 (this page discusses the new style of configuring EasyBuild, which is supported since EasyBuild v1.3.0; for the legacy way of configuring EasyBuild, see [here](https://github.com/hpcugent/easybuild/wiki/Configuration-legacy))
 
+
+
+## Supported configuration types
+
 Configuring EasyBuild can be done using:
 * `eb` with **command line arguments**
 * setting **environment variables**
@@ -9,29 +13,112 @@ Configuring EasyBuild can be done using:
 
 Of course, combining any of these types of configuration works too (and is even fairly common).
 
-The order of preference for the different configuration types is a listed above, i.e., environment variables override the corresponding entries in the configuration file,
+The order of preference for the different configuration types is as listed above, i.e., environment variables override the corresponding entries in the configuration file,
 while command line arguments in turn override the corresponding environment variables _and_ matching entries in the configuration file.
 
 
-## Consistentency across supported configuration types
+### Consistentency across supported configuration types
 
-Note that the various available configuration options are handled **consistently** across the supported configuration types, i.e. for defining the configuration setting `foo-option` to `bar`, the following alternatives are available:
- * configuration file entry (key-value assignment):
+Note that the various available configuration options are handled **consistently** across the supported configuration types, 
+i.e. for defining the configuration setting `foo-option` to `bar`, the following alternatives are available:
+* configuration file entry (key-value assignment):
 ```python
 foo-option = bar
 ```
- * environment variable (upper case, `EASYBUILD_` prefix, `-`s become `_`s):
+* environment variable (upper case, `EASYBUILD_` prefix, `-`s become `_`s):
 ```bash
 $ export EASYBUILD_FOO_OPTION=bar
-$ echo $EASYBUILD_FOO_OPTION
-bar
 ```
- * command line argument (long options preceded by `--` and using `=`):
+* command line argument (long options preceded by `--` and using `=`):
 ```bash
 $ eb --foo-option=bar
 ```
 
 For more details w.r.t. each of the supported configuration types, see below.
+
+
+
+### Configuration file
+
+
+#### List of used configuration files
+
+The set of configuration files that will be used by EasyBuild is determined in the following order of preference:
+* the path(s) specified via **command line argument `--configfiles`**
+* the path(s) specified via the **`$EASYBUILD_CONFIGFILES` environment variable**
+* the **default path** for the EasyBuild configuration file, i.e. `$HOME/.easybuild/config.cfg`
+
+Note that each available configuration file will be used, and that the configuration settings specified in these files
+will be retained according to the order of preference as indicated above.
+
+On top of this, the command line argument `--ignoreconfigfiles` allows to specify configuration files that should be _ignored_
+by EasyBuild (regardless of whether they are specified via any of the options above).
+
+
+#### Configuration file format
+
+The EasyBuild configuration file follows the default Python configuration format as parsed by the `configparser` module
+(see [http://docs.python.org/2/library/configparser.html](http://docs.python.org/2/library/configparser.html)).
+
+Configuration files are organized in sections, the section name for a particular configuration setting are indicated in the output of `eb --help`.
+Some examples sections are: `MAIN`, `basic`, `config`, `informative`, `override`, `regtest`, `software`, `unittest`).
+
+Sections are indicated by specifying the section name in square brackets on a dedicated line.
+Configuration settings are specified in a `key = value` format, **without using quotes for string-like values**.
+Comment lines that start with a hash character `#` are supported.
+
+An example dummy configuration file that should make everything clear is shown below.
+
+```python
+[MAIN]
+# always enable debug logging
+debug = True
+[config]
+# use Lmod as modules tool
+modules-tool = Lmod
+# use different default installation path
+prefix = /home/you/work/easybuild/
+```
+
+
+### Environment variables
+
+All configuration settings listed as long options in `eb --help` can also be specified via `EASYBUILD_`-prefixed environment variables.
+
+Configuration settings specified this way always override the setting specified in a configuration file.
+
+Several examples of using environment variables to configure EasyBuild are shown in the sections below.
+
+
+### Command line arguments
+
+The configuration type with the highest prededence relies on `eb` command line arguments, which override settings specified
+via environment variables or in configuration files.
+
+For some configuration options, both short and long command line arguments are available (see `eb --help`);
+the long options indicate how the configuration setting should be specified
+in a configuration file or via an `$EASYBUILD_XYZ` environment variable.
+
+For boolean configuration settings, both the are `--foo` and `--disable-foo` variants are always available.
+
+
+### Legacy configuration (**deprecated!**)
+
+In EasyBuild v1.x, a couple of configuration options other than the ones above are available that follow the **legacy configuration style**, including:
+* the `-C` and `--config` command line arguments
+* the `$EASYBUILDCONFIG` environment variable
+* the default path `$HOME/.easybuild/config.py`
+* the legacy fallback path `<installpath>/easybuild/easybuild_config.py`
+
+Likewise, the following legacy environment variables allowed to override selected configuration settings:
+
+* `$EASYBUILDBUILDPATH`: build path to be used by EasyBuild (**use `$EASYBUILD_BUILDPATH` instead**)
+* `$EASYBUILDINSTALLPATH`: install path to be used by EasyBuild (**use `$EASYBUILD_INSTALLPATH instead**)
+* `$EASYBUILDSOURCEPATH`: source path to be used by EasyBuild (**use `$EASYBUILD_SOURCEPATH` instead**)
+* `$EASYBUILDPREFIX`: build/install/source path prefix to be used (**use `$EASYBUILD_PREFIX instead**)
+
+_**We _strongly_ advise to switch to the new way of configuring EasyBuild as soon as possible, since the legacy style will no longer be supported in EasyBuild v2.x.**_
+
 
 
 ## Available configuration settings
@@ -204,106 +291,3 @@ The module naming scheme that should be used by EasyBuild can be specified using
 More details are available on the dedicated wiki page [[Using a custom module naming scheme]].
 
 
-## Supported configuration types
-
-
-### Configuration file
-
-The EasyBuild configuration file follows the default Python configuration format as parsed by the `configparser` module (see [http://docs.python.org/2/library/configparser.html](http://docs.python.org/2/library/configparser.html)).
-
-The set of configuration files that will be used by EasyBuild is determined in the following order of preference:
-* the path(s) specified via **command line argument `--configfiles`**
-* the path(s) specified via the **`$EASYBUILD_CONFIGFILES` environment variable**
-* the **default path** for the EasyBuild configuration file, i.e. `$HOME/.easybuild/config.cfg`
-
-On top of this, the command line argument `--ignoreconfigfiles` allows to specify configuration files that should be _ignored_ by EasyBuild (regardless of whether they are specified via any of the options above).
-
-
-### Environment variables
-
-
-### Command line arguments
-
-
-### Legacy configuration options (deprecated)
-
-In EasyBuild v1.x, a couple of configuration options other than the ones below are available that follow the **legacy configuration style**, including:
-* the `-C` and `--config` command line arguments
-* the `$EASYBUILDCONFIG` environment variable
-* the default path `$HOME/.easybuild/config.py`
-* the legacy fallback path `<installpath>/easybuild/easybuild_config.py`
-
-_**We _strongly_ advise to switch to the new way of configuring EasyBuild as soon as possible, since the legacy style will no longer be supported in EasyBuild v2.x.**_
-
-
-### Default configuration
-
-
-
-
-
-
-<a name="wiki-example_config">
-## Example configuration
-
-This is a simple example configuration file, that specifies the user's home directory as the `install_path` and  that uses /tmp/easybuild as the `build_path`.
-Additionally, it states that the .eb repository resides in $HOME/ebfiles and that it stores flat files:
-
-```python
-import os
-
-home = os.getenv('HOME')
-
-build_path = "/tmp/easybuild"
-install_path = home
-source_path = os.path.join(home, "sources")
-
-repository_path = os.path.join(home, "ebfiles")
-repository = FileRepository(repository_path)
-
-log_format = ("easybuildlogs", "%(name)s-%(version)s.log")
-
-module_classes = ['base', 'bio', 'chem', 'compiler', 'lib', 'phys', 'tools']
-```
-
-
-## Default configuration
-
-The default configuration file that comes with EasyBuild (`easybuild/easybuild_config.py`) can be used as a starting point if you create your own configuration file,
-see [here](https://github.com/hpcugent/easybuild-framework/tree/master/easybuild/easybuild_config.py).
-
-
-### Paths
-
-In the default configuration file, the prefix for the build, install and source directories is obtained from the `EASYBUILDPREFIX` environment variable.
-If this variable was not defined, the prefix is set to $HOME/.local/easybuild/
-
-If for some reason `HOME` is not defined, the configuration file falls back to using `/tmp/easybuild` as the prefix for the various paths.
-
-These paths are then defined as follows:
-
-* `build_path`: `<prefix>/easybuild/build`
-* `install_path`: `<prefix>/easybuild`
-* `source_path`: `<prefix>/easybuild/sources`
-
-
-### Easyconfigs repository
-
-The `repository_path` is specified as `<prefix>/ebfiles_repo`, and
-`repository` is set to `FileRepository`
-
-
-### Log format
-
-The default log format uses all fields available:
-
-```python
-("easybuildlog", "easybuild-%(name)s-%(version)s-%(date)s.%(time)s.log")
-```
-
-## Reconfiguration using environment variables
-
-You can (temporarily) override both the `build_path`, `source_path` and `install_path` settings by defining the `EASYBUILDBUILDPATH`,
-`EASYBUILDSOURCEPATH` and `EASYBUILDINSTALLPATH` environment variables.
-
-Overriding the configuration file is commonly done when testing new easyblocks.
