@@ -11,20 +11,34 @@ To get an overview of compiler toolchains that EasyBuild knows about, use the `-
 
 ```bash
 $ ./eb --list-toolchains
-List of known toolchains:
-	GCC: GCC
-	dummy: 
-	gimkl: GCC, imkl, impi
-	gmacml: ACML, BLACS, FFTW, GCC, MVAPICH2, ScaLAPACK
-	gmpich2: GCC, MPICH2
-	gmvapich2: GCC, MVAPICH2
-	goalf: ATLAS, BLACS, FFTW, GCC, OpenMPI, ScaLAPACK
-	gompi: GCC, OpenMPI
-	gqacml: ACML, BLACS, FFTW, GCC, QLogicMPI, ScaLAPACK
-	iccifort: icc, ifort
-	ictce: icc, ifort, imkl, impi
-	iomkl: OpenMPI, icc, ifort, imkl
-	ismkl: MPICH2, icc, ifort, imkl
+List of known toolchains (toolchainname: module[,module...]):
+        ClangGCC: Clang, GCC
+        GCC: GCC
+        cgmpich: ClangGCC, MPICH
+        cgmpolf: BLACS, ClangGCC, FFTW, MPICH, OpenBLAS, ScaLAPACK
+        cgmvapich2: ClangGCC, MVAPICH2
+        cgmvolf: BLACS, ClangGCC, FFTW, MVAPICH2, OpenBLAS, ScaLAPACK
+        cgompi: ClangGCC, OpenMPI
+        cgoolf: BLACS, ClangGCC, FFTW, OpenBLAS, OpenMPI, ScaLAPACK
+        dummy:
+        gcccuda: CUDA, GCC
+        gimkl: GCC, imkl, impi
+        gmacml: ACML, BLACS, FFTW, GCC, MVAPICH2, ScaLAPACK
+        gmpich2: GCC, MPICH2
+        gmpolf: BLACS, FFTW, GCC, MPICH2, OpenBLAS, ScaLAPACK
+        gmvapich2: GCC, MVAPICH2
+        gmvolf: BLACS, FFTW, GCC, MVAPICH2, OpenBLAS, ScaLAPACK
+        goalf: ATLAS, BLACS, FFTW, GCC, OpenMPI, ScaLAPACK
+        gompi: GCC, OpenMPI
+        goolf: BLACS, FFTW, GCC, OpenBLAS, OpenMPI, ScaLAPACK
+        goolfc: BLACS, CUDA, FFTW, GCC, OpenBLAS, OpenMPI, ScaLAPACK
+        gqacml: ACML, BLACS, FFTW, GCC, QLogicMPI, ScaLAPACK
+        iccifort: icc, ifort
+        ictce: icc, ifort, imkl, impi
+        iiqmpi: QLogicMPI, icc, ifort
+        iomkl: OpenMPI, icc, ifort, imkl
+        iqacml: ACML, BLACS, FFTW, QLogicMPI, ScaLAPACK, icc, ifort
+        ismkl: MPICH2, icc, ifort, imkl
 ```
 
 For each compiler toolchain, the constituent elements (compiler + libraries) are printed, which provides the necessary information to select a toolchain. To select a version of a particular toolchain, just check which environment modules are available for the toolchain you selected (e.g., `module av goalf`), or build a toolchain environment module (using EasyBuild) featuring the versions of the compiler and libraries you need.
