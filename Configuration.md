@@ -72,7 +72,7 @@ For boolean configuration settings, values that evaluated to `True` (e.g., `true
 
 Comment lines start with a hash character `#` (just like in Python code).
 
-An example dummy configuration file that should make everything clear is shown below.
+An example configuration file that should make everything clear is shown below.
 
 ```python
 [basic]
@@ -82,7 +82,7 @@ logtostdout = true
 # use Lmod as modules tool
 modules-tool: Lmod
 # use different default installation path
-prefix = /home/you/work/easybuild/
+prefix=/home/you/work/easybuild/
 ```
 
 
