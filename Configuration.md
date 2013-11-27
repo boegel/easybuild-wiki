@@ -33,9 +33,11 @@ foo-option = bar
 ```bash
 $ export EASYBUILD_FOO_OPTION=bar
 ```
-* command line argument (long options preceded by `--` and using `=`):
+* command line argument (long options preceded by `--` and (optionally) using `=`):
 ```bash
 $ eb --foo-option=bar
+# or
+$ eb --foo-option bar
 ```
 
 For more details w.r.t. each of the supported configuration types, see below.
@@ -69,7 +71,7 @@ Some examples sections are: `MAIN`, `basic`, `config`, `informative`, `override`
 
 Sections are indicated by specifying the section name in square brackets on a dedicated line, e.g., `[basic]`.
 
-Configuration settings are specified in a `key = value`,  `key: value` or `key value` format, **without using quotes for string-like values**.
+Configuration settings are specified in a `key = value` or `key: value` format, **without using quotes for string-like values**.
 For boolean configuration settings, values that evaluated to `True` (e.g., `true`, `1`, ...) are all equivalent to enabling the setting.
 
 Comment lines start with a hash character `#` (just like in Python code).
@@ -84,7 +86,7 @@ logtostdout = true
 # use Lmod as modules tool
 modules-tool: Lmod
 # use different default installation path
-prefix /home/you/work/easybuild/
+prefix=/home/you/work/easybuild/
 ```
 
 
