@@ -1,7 +1,8 @@
 # EasyBuild configuration
 
-(this page discusses the new style of configuring EasyBuild, which is supported since EasyBuild v1.3.0; for the legacy way of configuring EasyBuild,
-see [here](https://github.com/hpcugent/easybuild/wiki/Configuration-legacy))
+Tthis page discusses the new (and recommended) style of configuring EasyBuild, which is supported since EasyBuild v1.3.0.
+
+Deprecated/outdated documentation on the legacy way of configuring EasyBuild, see [here](https://github.com/hpcugent/easybuild/wiki/Configuration-legacy).
 
 
 
@@ -16,6 +17,7 @@ Of course, combining any of these types of configuration works too (and is even 
 
 The order of preference for the different configuration types is as listed above, i.e., environment variables override the corresponding entries in the configuration file,
 while command line arguments in turn override the corresponding environment variables _and_ matching entries in the configuration file.
+
 
 
 ### Consistentency across supported configuration types
@@ -67,7 +69,7 @@ Some examples sections are: `MAIN`, `basic`, `config`, `informative`, `override`
 
 Sections are indicated by specifying the section name in square brackets on a dedicated line, e.g., `[basic]`.
 
-Configuration settings are specified in a `key = value` or `key: value` format, **without using quotes for string-like values**.
+Configuration settings are specified in a `key = value`,  `key: value` or `key value` format, **without using quotes for string-like values**.
 For boolean configuration settings, values that evaluated to `True` (e.g., `true`, `1`, ...) are all equivalent to enabling the setting.
 
 Comment lines start with a hash character `#` (just like in Python code).
@@ -82,8 +84,9 @@ logtostdout = true
 # use Lmod as modules tool
 modules-tool: Lmod
 # use different default installation path
-prefix=/home/you/work/easybuild/
+prefix /home/you/work/easybuild/
 ```
+
 
 
 ### Environment variables
@@ -101,10 +104,11 @@ export EASYBUILD_DEBUG=1
 More examples of using environment variables to configure EasyBuild are shown in the sections below.
 
 
+
 ### Command line arguments
 
-The configuration type with the highest prededence is `eb` command line arguments, which override settings specified
-via environment variables or in configuration files.
+The configuration type with the highest precedence are the `eb` command line arguments, which override settings specified
+through environment variables or in configuration files.
 
 For some configuration options, both short and long command line arguments are available (see `eb --help`);
 the long options indicate how the configuration setting should be specified
@@ -120,6 +124,7 @@ eb --debug -l ...
 # use /dev/shm as build path, install to temporary install path, disable debug logging
 eb --buildpath=/dev/shm --installpath=/tmp/$USER --disable-debug
 ```
+
 
 
 ### Legacy configuration (**deprecated!**)
@@ -148,6 +153,7 @@ To obtain a full and up-to-date list of available configuration settings, see `e
 We refrain from listing all available configuration settings here, to avoid outdated documentation.
 
 A couple of selected configuration settings are discussed below, in particular the mandatory settings.
+
 
 
 ### Mandatory configuration settings
@@ -250,7 +256,7 @@ $ export EASYBUILD_REPOSITORY=GitRepository
 $ export EASYBUILD_REPOSITORYPATH=<path>, <subdir>
 ```
 
-You don not have to worry about importing these classes, EasyBuild will make them available to the configuration file.
+You do not have to worry about importing these classes, EasyBuild will make them available to the configuration file.
 
 Using `git` requires the `GitPython` Python modules, using `svn` requires the `pysvn` Python module (see [[Dependencies]]).
 
