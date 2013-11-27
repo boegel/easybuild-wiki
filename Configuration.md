@@ -1,228 +1,341 @@
 # EasyBuild configuration
 
-(this page discusses the new style of configuring EasyBuild, which is supported since EasyBuild v1.3.0; for the legacy way of configuring EasyBuild, see [here](https://github.com/hpcugent/easybuild/wiki/Configuration-legacy))
+Tthis page discusses the new (and recommended) style of configuring EasyBuild, which is supported since EasyBuild v1.3.0.
+
+Deprecated/outdated documentation on the legacy way of configuring EasyBuild, see [here](https://github.com/hpcugent/easybuild/wiki/Configuration-legacy).
+
+
+
+## Supported configuration types
 
 Configuring EasyBuild can be done by:
-* calling `eb` with **command line arguments** to tweak the configuration
-* setting **environment variables**
-* providing a **configuration file**
+* using `eb` with **command line arguments**
+* setting **environment variables** (`$EASYBUILD_...`)
+* providing one or more **configuration files**
 
 Of course, combining any of these types of configuration works too (and is even fairly common).
 
-The order of preference for the different configuration types is a listed above, i.e., environment variables override the corresponding entries in the configuration file,
+The order of preference for the different configuration types is as listed above, i.e., environment variables override the corresponding entries in the configuration file,
 while command line arguments in turn override the corresponding environment variables _and_ matching entries in the configuration file.
 
-## Available configuration settings
 
-### Mandatory configuration settings
 
-## Different configuration options
+### Consistentency across supported configuration types
 
-### Legacy configuration options (deprecated)
+Note that the various available configuration options are handled **consistently** across the supported configuration types, 
+i.e. for defining the configuration setting `foo-option` (in section `somesection`) to `bar`, the following alternatives are available:
+* configuration file entry (key-value assignment):
+```python
+[somesection]
+foo-option = bar
+```
+* environment variable (upper case, `EASYBUILD_` prefix, `-`'s become `_`'s):
+```bash
+$ export EASYBUILD_FOO_OPTION=bar
+```
+* command line argument (long options preceded by `--` and (optionally) using `=`):
+```bash
+$ eb --foo-option=bar
+# or
+$ eb --foo-option bar
+```
 
-In EasyBuild v1.x, a couple of configuration options other than the ones below are available that follow the **legacy configuration style**, including:
-* the `-C` and `--config` command line arguments
-* the `$EASYBUILDCONFIG` environment variable
-* the default path `$HOME/.easybuild/config.py`
-* the legacy fallback path `<installpath>/easybuild/easybuild_config.py`
+For more details w.r.t. each of the supported configuration types, see below.
 
-_**We _strongly_ advise to switch to the new way of configuring EasyBuild as soon as possible, since the legacy style will no longer be supported in EasyBuild v2.x.**_
+
 
 ### Configuration file
 
-The EasyBuild configuration file follows the default Python configuration format as parsed by the `configparser` module (see [http://docs.python.org/2/library/configparser.html](http://docs.python.org/2/library/configparser.html)).
+
+#### List of used configuration files
 
 The set of configuration files that will be used by EasyBuild is determined in the following order of preference:
 * the path(s) specified via **command line argument `--configfiles`**
 * the path(s) specified via the **`$EASYBUILD_CONFIGFILES` environment variable**
 * the **default path** for the EasyBuild configuration file, i.e. `$HOME/.easybuild/config.cfg`
 
-On top of this, the command line argument `--ignoreconfigfiles` allows to specify configuration files that should be _ignored_ by EasyBuild (regardless of whether they are specified via any of the options above).
+Note that each available configuration file will be used, and that the configuration settings specified in these files
+will be retained according to the order of preference as indicated above.
 
-## Environment variables
-
-## Command line arguments
-
-
-## Configuration variables
-
-The configuration file must define the following five variables: `build_path`, `install_path`, `source_path`, `repository`, and `log_format`.
-If one of them is not defined, EasyBuild will complain and exit.
+On top of this, the command line argument `--ignoreconfigfiles` allows to specify configuration files that should be _ignored_
+by EasyBuild (regardless of whether they are specified via any of the options above).
 
 
-<a name="wiki-build_path">
-### Build path (required)
+#### Configuration file format
 
-The `build_path` variable specifies the directory in which EasyBuild builds its software packages.
+The EasyBuild configuration file follows the default Python configuration format as parsed by the `configparser` module
+(see [http://docs.python.org/2/library/configparser.html](http://docs.python.org/2/library/configparser.html)).
 
-Each software package is (by default) built in a subdirectory of the `build_path` under `<name>/<version>/<toolkit><versionsuffix>`.
+Configuration files are organized in sections, the section name for a particular configuration setting are indicated in the output of `eb --help`.
+Some examples sections are: `MAIN`, `basic`, `config`, `informative`, `override`, `regtest`, `software`, `unittest`, ... .
 
-Note that the build directories are emptied by EasyBuild when the installation is completed (by default).
+Sections are indicated by specifying the section name in square brackets on a dedicated line, e.g., `[basic]`.
 
+Configuration settings are specified in a `key = value` or `key: value` format, **without using quotes for string-like values**.
+For boolean configuration settings, values that evaluated to `True` (e.g., `true`, `1`, ...) are all equivalent to enabling the setting.
 
-<a name="wiki-install_path">
-### Install path (required)
+Comment lines start with a hash character `#` (just like in Python code).
 
-The `install_path` variable specifies the directory in which EasyBuild installs software packages and the corresponding module files.
+An example configuration file that should make everything clear is shown below.
 
-The packages themselves are installed under `install_path/software` in their own subdirectory aptly named `<name>/<version>-<toolkit><versionsuffix>`
-(by default), where name is the package name. The corresponding module files are installed under `install_path/modules`.
-
-**Setting MODULEPATH**
-
-After the configuration, you need to make sure that `MODULEPATH` environment variable is extended with the `modules/all` subdirectory of the `install_path`, i.e.:
-
-```bash
-export MODULEPATH=<install_path>/modules/all:$MODULEPATH
+```python
+[basic]
+# always enable logging to stdout
+logtostdout = true
+[config]
+# use Lmod as modules tool
+modules-tool: Lmod
+# use different default installation path
+prefix=/home/you/work/easybuild/
 ```
 
-It is probably a good idea to add this to your (favourite) shell .rc file, e.g.,  `.bashrc`, and/or the `.profile` login scripts,
-so you do not need to adjust the `MODULEPATH` variable every time you start a new session.
 
 
-<a name="wiki-source_path">
-### Source path (required)
+### Environment variables
 
-The `source_path` variable specifies the directory in which EasyBuild looks for software source and install files.
+All configuration settings listed as long options in `eb --help` can also be specified via `EASYBUILD_`-prefixed environment variables.
 
-Similarly to the configuration file lookup, EasyBuild looks for the installation files as given by the `sources` variable
-in the .eb easyconfig file, in the following order of preference:
+Configuration settings specified this way always override the corresponding setting specified in a configuration file.
 
-* `<source_path>/<name>`: a subdirectory determined by the name of the software package
-* `<source_path>/<letter>/<name>`: in the style of the `easyblocks`/`easyconfigs` directories:
+For example, to enable debug logging using an environment variable:
+
+```bash
+export EASYBUILD_DEBUG=1
+```
+
+More examples of using environment variables to configure EasyBuild are shown in the sections below.
+
+
+
+### Command line arguments
+
+The configuration type with the highest precedence are the `eb` command line arguments, which override settings specified
+through environment variables or in configuration files.
+
+For some configuration options, both short and long command line arguments are available (see `eb --help`);
+the long options indicate how the configuration setting should be specified
+in a configuration file or via an environment variable (`$EASYBUILD_<LONGOPTION>`).
+
+For boolean configuration settings, both the `--<option>` and `--disable-<option>` variants are always available.
+
+Examples (more below):
+
+```bash
+# enable debug logging (long option) and logging to stdout (short option)
+eb --debug -l ...
+# use /dev/shm as build path, install to temporary install path, disable debug logging
+eb --buildpath=/dev/shm --installpath=/tmp/$USER --disable-debug
+```
+
+
+
+### Legacy configuration (**deprecated!**)
+
+In EasyBuild v1.x, a couple of configuration options other than the ones above are available that follow the **legacy configuration style**, including:
+* the `-C` and `--config` command line arguments (**use `--configfiles` instead**)
+* the `$EASYBUILDCONFIG` environment variable (**use `$EASYBUILD_CONFIGFILES` instead**)
+* the default path `$HOME/.easybuild/config.py` (**new-style default path is `$HOME/.easybuild/config.cfg`**)
+* the legacy fallback path `<installpath>/easybuild/easybuild_config.py` (**only default/fallback path is `$HOME/.easybuild/config.cfg`**)
+
+Likewise, the following legacy environment variables allowed to override selected configuration settings:
+
+* `$EASYBUILDBUILDPATH`: build path to be used by EasyBuild (**use `$EASYBUILD_BUILDPATH` instead**)
+* `$EASYBUILDINSTALLPATH`: install path to be used by EasyBuild (**use `$EASYBUILD_INSTALLPATH` instead**)
+* `$EASYBUILDSOURCEPATH`: source path to be used by EasyBuild (**use `$EASYBUILD_SOURCEPATH` instead**)
+* `$EASYBUILDPREFIX`: build/install/source path prefix to be used (**use `$EASYBUILD_PREFIX` instead**)
+
+**We _strongly_ advise to switch to the new way of configuring EasyBuild as soon as possible,
+since the legacy configuration style will no longer be supported in EasyBuild v2.x.**
+
+
+
+## Available configuration settings
+
+To obtain a full and up-to-date list of available configuration settings, see `eb --help`.
+We refrain from listing all available configuration settings here, to avoid outdated documentation.
+
+A couple of selected configuration settings are discussed below, in particular the mandatory settings.
+
+
+
+### Mandatory configuration settings
+
+A handful of configuration settings are **mandatory**, and should be provided using one of the supported configuration types.
+
+The following configuration settings are currently mandatory (more details in the sections below):
+ * source path
+ * build path
+ * install path
+ * easyconfigs repository
+ * format for name of logfile
+
+If any of these configuration settings is not provided in one way or another, EasyBuild will complain and exit.
+
+In practice, all of these have reasonable defaults.
+
+
+#### Source path (`--sourcepath`)
+
+_default_: `$HOME/.local/easybuild/sources/`
+
+The `sourcepath` configuration setting specifies the parent path of the directory in which EasyBuild looks for software source and install files.
+
+Looking for the files specified via the `sources` parameter in the .eb easyconfig file is done in the following order of preference:
+
+* `<sourcepath>/<name>`: a subdirectory determined by the name of the software package
+* `<sourcepath>/<letter>/<name>`: in the style of the `easyblocks`/`easyconfigs` directories:
   in a subdirectory determined by the first letter (in lower case) of the software package and by its full `name`
-* `<source_path>`: directly in the source path
+* `<sourcepath>`: directly in the source path
 
 Note that these locations are also used when EasyBuild looks for patch files in addition to the various `easybuild/easyconfigs`
 directories that are listed in the PYTHONPATH.
 
 
-<a name="wiki-repository">
-### Easyconfigs repository (required)
+#### Build path (`--buildpath`)
 
-EasyBuild has support for keeping track of (tested) .eb easyconfigs. These files are build specification files for software package installation.
-After successfully installing a software package using EasyBuild, the corresponding .eb file is uploaded to a repository defined by the `repository` configuration variable.
+_default_: `$HOME/.local/easybuild/build/`
 
-Currently, EasyBuild supports the following repository types:
+The `buildpath` configuration setting specifies the parent path of the (temporary) directories in which EasyBuild builds its software packages.
 
-* `FileRepository('path', 'subdir/path'))`: a plain flat file repository; `path` is the path where files will be stored.
-* `GitRepository('path', 'path/in/repository'`: a _non-empty_ **bare** git repository (created with `git init --bare` or `git clone --bare`);
-   `path` is the path to the git repository (can also be a URL), `path/in/repository` is a path inside the repository where to save the files
-* `SvnRepository('path')`: an SVN repository; `path` contains the subversion repository location, again, this can be a directory or a URL
+Each software package is (by default) built in a subdirectory of the specified `buildpath` under `<name>/<version>/<toolchain><versionsuffix>`.
 
-You need to set the `repository` variable inside the config like so:
-```python
-repository = FileRepository(path)
+Note that the build directories are emptied and removed by EasyBuild when the installation is completed (by default).
+
+Tip: using `/dev/shm` as build path can significantly speed up builds, if it is available and provides a sufficient amount of space.
+
+
+#### Install path (`--installpath`)
+
+_default_: `$HOME/.local/easybuild/`
+
+The `installpath` configuration setting specifies the parent path of the directories in which EasyBuild installs software packages and the corresponding module files.
+
+The packages themselves are installed under `<installpath>/software` in their own subdirectory following the active module naming scheme (e.g.,
+`<name>/<version>-<toolkit><versionsuffix>`, by default). The corresponding module files are installed under `<installpath>/modules/all`,
+and symlinks are installed in `<installpath>/modules/<moduleclass>`.
+
+##### Setting `$MODULEPATH`
+
+After (re)configuring EasyBuild, you need to make sure that `$MODULEPATH` environment variable is extended with the `modules/all` subdirectory of the `installpath`
+so you can load the modules created for the software built with EasyBuild, i.e.:
+
+```bash
+export MODULEPATH=<installpath>/modules/all:$MODULEPATH
 ```
 
-Or, optionally a subdir argument can be specified:
+It is probably a good idea to add this to your (favourite) shell `.rc` file, e.g., `~/.bashrc`, and/or the `~/.profile` login scripts,
+so you do not need to adjust `$MODULEPATH` every time you start a new session.
 
+
+#### Easyconfigs repository (`--repository`, `--repositorypath`)
+
+_default_: `FileRepository` at `$HOME/.local/easybuild/ebfiles_repo`
+
+EasyBuild has support for archiving (tested) `.eb` easyconfig files.
+After successfully installing a software package using EasyBuild, the corresponding `.eb` file is uploaded to a repository
+defined by the `repository` and `repositorypath` configuration settings.
+
+Currently, EasyBuild supports the following repository types (see also `eb --avail-repositories`):
+
+* `FileRepository('path', 'subdir')`: a plain flat file repository; `path` is the path where files will be stored, `subdir` is an _optional_ subdirectory of
+that path where the files should be stored
+* `GitRepository('path', 'subdir/in/repo'`: a _non-empty_ **bare** git repository (created with `git init --bare` or `git clone --bare`);
+   `path` is the path to the git repository (can also be a URL); `subdir/in/repo` is optional, and specifies a subdirectory of the repository where files should be stored in
+* `SvnRepository('path', 'subdir/in/repo')`: an SVN repository; `path` contains the subversion repository location (directory or URL), the optional second value
+specifies a subdirectory in the repository
+
+You need to set the `repository` setting inside a configuration file like this:
 ```python
-repository = FileRepository(repositoryPath, subdir)
+[config]
+repository = FileRepository
+repositorypath = <path>
 ```
 
-You don't have to worry about importing these classes, EasyBuild will make them available to the config file.
+Or, optionally an extra argument representing a subdirectory can be specified, e.g.:
+
+```bash
+$ export EASYBUILD_REPOSITORY=GitRepository
+$ export EASYBUILD_REPOSITORYPATH=<path>, <subdir>
+```
+
+You do not have to worry about importing these classes, EasyBuild will make them available to the configuration file.
 
 Using `git` requires the `GitPython` Python modules, using `svn` requires the `pysvn` Python module (see [[Dependencies]]).
 
-If access to the easyconfigs repository fails for some reason (e.g., no network or a required Python module), EasyBuild will
-issue a warning. The software package will still be installed, but the (successful) easyconfig will not be automatically added to the repository.
+If access to the easyconfigs repository fails for some reason (e.g., no network or a missing required Python module), EasyBuild will
+issue a warning. The software package will still be installed, but the (successful) easyconfig will not be automatically added to the archive
+(i.e., it is not considered a fatal error).
 
 
-<a name="wiki-log_format">
-### Log format (required)
+#### Logfile format (`--logfile-format`)
 
-The `log_format` variable contains a tuple specifying a log directory name and a template string. In both of these values, using the following fields is supported:
+_default_: `easybuild, easybuild-%(name)s-%(version)s-%(date)s.%(time)s.log`
 
-* `name`: the name of the software package to install
-* `version`: the version of the software package to install
-* `date`: the date on which the installation was performed (in `YYYYMMDD` format, e.g. `20120324`)
-* `time`: the time at which the installation was started (in `HHMMSS` format, e.g. `214359`)
+The `logfile-format` configuration setting contains a tuple specifying a log directory name and a template log file name.
+In both of these values, using the following string templates is supported:
 
-Example :
+* `%(name)s`: the name of the software package to install
+* `%(version)s`: the version of the software package to install
+* `%(date)s`: the date on which the installation was performed (in `YYYYMMDD` format, e.g. `20120324`)
+* `%(time)s`: the time at which the installation was started (in `HHMMSS` format, e.g. `214359`)
+
+For example, the logfile format can be specified as follows in the EasyBuild configuration file:
 
 ```python
-log_format = ("easylog", "easybuild-%(name)s.log")
+logfile-format = "easylog", "easybuild-%(name)s.log"
 ```
 
-<a name="wiki-install_suffixes">
-### Software and modules install path suffixes
+
+
+### Optional configuration settings
+
+
+#### Software and modules install path suffixes (`--subdir-software`, `--subdir-modules`)
 
 (supported since v1.1.0)
 
-By default, EasyBuild will use the install path suffix `software` for the software installations, and the suffix `modules` for the generated module files.
+_defaults_: `software` as software install path suffix, `modules` as modules install path suffix
 
-These defaults can be adjusted by defining the `software_install_suffix` and/or `modules_install_suffix` variables in the configuration file, e.g.:
+The software and modules install path suffixes can be adjusted using the `subdir-software` and/or `subdir-modules` configuration settings, for example:
 
-```python
-import os
-software_install_suffix = os.path.join('easybuild', 'installs')
-modules_install_suffix = os.path.join('easybuild', 'modules')
+```bash
+$ export EASYBUILD_SUBDIR_SOFTWARE=installs
+$ eb --subdir-modules=module_files ...
 ```
 
-Note: EasyBuild will still use the additional `all` and `base` suffixes for the module install paths, along with a directory for every module class that's being used.
+Note: EasyBuild will still use the additional `all` and `<moduleclass>` suffixes for the module install paths.
 
-<a name="wiki-example_config">
-## Example configuration
 
-This is a simple example configuration file, that specifies the user's home directory as the `install_path` and  that uses /tmp/easybuild as the `build_path`.
-Additionally, it states that the .eb repository resides in $HOME/ebfiles and that it stores flat files:
+#### Modules tool (`--modules-tool`)
 
-```python
-import os
+_default_: `EnvironmentModulesC`
 
-home = os.getenv('HOME')
+Specifying the modules tool that should be used by EasyBuild can be done using the `modules-tool` configuration setting.
+A list of supported modules tools can be obtained using `eb --avail-modules-tools`.
 
-build_path = "/tmp/easybuild"
-install_path = home
-source_path = os.path.join(home, "sources")
+Currently, the following modules tools are supported:
 
-repository_path = os.path.join(home, "ebfiles")
-repository = FileRepository(repository_path)
+* `EnvironmentModulesC`: C version of environment modules (`modulecmd`)
+* `EnvironmentModulesTcl`: Tcl-only version of environment modules (`modulecmd.tcl`)
+* `Lmod`: Lmod, an modern alternative to environment modules, written in Lua (`lmod`)
 
-log_format = ("easybuildlogs", "%(name)s-%(version)s.log")
+You can determine which modules tool you are using by checking the output of `type module` (in a `bash` shell), or `alias module` (in a `tcsh` shell).
 
-module_classes = ['base', 'bio', 'chem', 'compiler', 'lib', 'phys', 'tools']
+The actual module command (i.e., `modulecmd`, `modulecmd.tcl`, `lmod`, ...) must be available via `$PATH` (which is not standard).
+
+For example, to indicate that EasyBuild should be using `Lmod` as modules tool:
+
+```bash
+eb --modules-tool=Lmod ...
 ```
 
 
-## Default configuration
+#### Active module naming scheme (`--module-naming-scheme`)
 
-The default configuration file that comes with EasyBuild (`easybuild/easybuild_config.py`) can be used as a starting point if you create your own configuration file,
-see [here](https://github.com/hpcugent/easybuild-framework/tree/master/easybuild/easybuild_config.py).
+_default_: `EasyBuildModuleNamingScheme`
 
+The module naming scheme that should be used by EasyBuild can be specified using the `module-naming-scheme` configuration setting.
 
-### Paths
-
-In the default configuration file, the prefix for the build, install and source directories is obtained from the `EASYBUILDPREFIX` environment variable.
-If this variable was not defined, the prefix is set to $HOME/.local/easybuild/
-
-If for some reason `HOME` is not defined, the configuration file falls back to using `/tmp/easybuild` as the prefix for the various paths.
-
-These paths are then defined as follows:
-
-* `build_path`: `<prefix>/easybuild/build`
-* `install_path`: `<prefix>/easybuild`
-* `source_path`: `<prefix>/easybuild/sources`
+For more details, see the dedicated wiki page [[Using a custom module naming scheme]].
 
 
-### Easyconfigs repository
-
-The `repository_path` is specified as `<prefix>/ebfiles_repo`, and
-`repository` is set to `FileRepository`
-
-
-### Log format
-
-The default log format uses all fields available:
-
-```python
-("easybuildlog", "easybuild-%(name)s-%(version)s-%(date)s.%(time)s.log")
-```
-
-## Reconfiguration using environment variables
-
-You can (temporarily) override both the `build_path`, `source_path` and `install_path` settings by defining the `EASYBUILDBUILDPATH`,
-`EASYBUILDSOURCEPATH` and `EASYBUILDINSTALLPATH` environment variables.
-
-Overriding the configuration file is commonly done when testing new easyblocks.
