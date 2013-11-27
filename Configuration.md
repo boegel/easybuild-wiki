@@ -1,6 +1,6 @@
 # EasyBuild configuration
 
-Tthis page discusses the new (and recommended) style of configuring EasyBuild, which is supported since EasyBuild v1.3.0.
+This page discusses the new (and recommended) style of configuring EasyBuild, which is supported since EasyBuild v1.3.0.
 
 Deprecated/outdated documentation on the legacy way of configuring EasyBuild, see [here](https://github.com/hpcugent/easybuild/wiki/Configuration-legacy).
 
