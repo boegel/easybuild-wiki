@@ -112,6 +112,15 @@ in a configuration file or via an environment variable (`$EASYBUILD_<LONGOPTION>
 
 For boolean configuration settings, both the `--<option>` and `--disable-<option>` variants are always available.
 
+Examples (more below):
+
+```bash
+# enable debug logging (long option) and logging to stdout (short option)
+eb --debug -l ...
+# use /dev/shm as build path, install to temporary install path, disable debug logging
+eb --buildpath=/dev/shm --installpath=/tmp/$USER --disable-debug
+```
+
 
 ### Legacy configuration (**deprecated!**)
 
@@ -145,7 +154,7 @@ A couple of selected configuration settings are discussed below, in particular t
 
 A handful of configuration settings are **mandatory**, and should be provided using one of the supported configuration types.
 
-The following configuration settings are currently mandatory:
+The following configuration settings are currently mandatory (more details in the sections below):
  * source path
  * build path
  * install path
@@ -289,7 +298,7 @@ $ eb --subdir-modules=module_files ...
 Note: EasyBuild will still use the additional `all` and `<moduleclass>` suffixes for the module install paths.
 
 
-#### Modules tool
+#### Modules tool (`--modules-tool`)
 
 _default_: `EnvironmentModulesC`
 
@@ -313,7 +322,7 @@ eb --modules-tool=Lmod ...
 ```
 
 
-#### Active module naming scheme
+#### Active module naming scheme (`--module-naming-scheme`)
 
 _default_: `EasyBuildModuleNamingScheme`
 
