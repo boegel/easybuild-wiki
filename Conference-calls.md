@@ -28,7 +28,9 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 #### Next EasyBuild conference call
 
  * Tuesday December 3rd 2013, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+  * preliminary agenda:
+   * update on EasyBuild-related activities at the SC13 conference
+   * rough outline for development activity for the coming weeks 
 
 #### Future EasyBuild conference calls
 
