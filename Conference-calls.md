@@ -18,6 +18,7 @@ The conference calls are done by means of a **Google Hangout**. We opted for thi
 
 To be able to join the conference calls, you need to [**join the EasyBuild community on Google+**](https://plus.google.com/communities/103632287931200436158), which requires a Google+ account.
 
+To join an EasyBuild conference call, **use the link in `Video calls in this community` box on the [EasyBuild community page](https://plus.google.com/communities/103632287931200436158)** shortly before the start of the conference call.
 
 ### Planning
 
