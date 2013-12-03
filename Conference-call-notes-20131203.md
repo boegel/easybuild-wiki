@@ -12,7 +12,7 @@ Alphabetical list of attendees (5):
 * Andy Georges (HPC-UGent)
 * Kenneth Hoste (HPC-UGent)
 * Andreas Panteli (CyI)
-* Ward Poelmans (HPC-UGent)
+* Ward Poelmans (Ghent University)
 
 #### Agenda
 
