@@ -1,3 +1,5 @@
+(back to [[Conference calls]])
+
 Notes on the 1st EasyBuild conference call, Tuesday Nov. 5th 2013 (3pm -3.30pm)
 
  * [planned event](https://plus.google.com/u/0/events/cfarbd6ms0v1d03942uf75h672g?authkey=CJr7g7DJhY6ulwE)

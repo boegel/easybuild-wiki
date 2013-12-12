@@ -1,12 +1,18 @@
+(back to [[Conference calls]])
+
 Notes on the 3rd EasyBuild conference call, Tuesday Dec. 3rd 2013 (3pm -3.30pm CET)
 
  * follow link in "Video calls" section on [EasyBuild community Google+ page](https://plus.google.com/communities/103632287931200436158)
 
 #### Attendees
 
-Alphabetical list of attendees (X):
+Alphabetical list of attendees (5):
 
+* Fotis Georgatos (Uni.lu)
+* Andy Georges (HPC-UGent)
 * Kenneth Hoste (HPC-UGent)
+* Andreas Panteli (CyI)
+* Ward Poelmans (Ghent University)
 
 #### Agenda
 

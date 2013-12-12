@@ -1,3 +1,5 @@
+(back to [[Conference calls]])
+
 Notes on the 2nd EasyBuild conference call, Tuesday Nov. 19th 2013 (3pm -3.30pm CET)
 
  * follow link in "Video calls" section on [EasyBuild community Google+ page](https://plus.google.com/communities/103632287931200436158)
