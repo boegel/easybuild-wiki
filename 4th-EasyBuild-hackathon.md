@@ -163,6 +163,7 @@ Cypriot time | potential remote attendees | notes
 
 ## Notes
 
+ * [EasyBuild cheat sheet](http://hpcugent.github.io/easybuild/files/EasyBuild_cheatsheet_Oct13.pdf)
  * [Tuesday: presentations, discussions and first hands-on experiences](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-1)
  * [Wednesday: hackathon, discussions](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-2)
  * [Thursday: hackathon (continued), discussions](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-3)
