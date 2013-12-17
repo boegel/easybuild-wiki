@@ -16,6 +16,7 @@ These wiki pages contain as the EasyBuild documentation.
   * [[Installing lmod without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
  * [[Bootstrapping EasyBuild]] (ok, up-to-date)
+* [[Setting up tab completion for bash]] (ok, up-to-date)
 * [[Quick demo for the impatient]] (updated)
 * [[Getting started]] (ok, but need update to new style configuration)
  * [[Configuration]] (updated)
