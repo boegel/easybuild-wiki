@@ -9,10 +9,10 @@ Notes on the 4th EasyBuild conference call, Tuesday Dec. 17th 2013 (3pm -3.30pm 
 Alphabetical list of attendees (5):
 
 * Fotis Georgatos (Uni.lu)
-* Andy Georges (HPC-UGent)
 * Kenneth Hoste (HPC-UGent)
 * Andreas Panteli (CyI)
 * Ward Poelmans (Ghent University)
+* Thekla Loizou (CyI)
 
 #### Agenda
 
