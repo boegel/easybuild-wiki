@@ -29,6 +29,8 @@ Alphabetical list of attendees (5):
 * initial EasyBuild training (last week) at JSC went well, except for a couple of hickups
  * cfr. https://github.com/hpcugent/easybuild-framework/issues/787, https://github.com/hpcugent/easybuild-framework/issues/788
 * core team is going to look into EasyBuild in the coming weeks, in preparation for the EasyBuild hackathon at JSC (Feb 19th-21st 2013)
+* it would be useful to be able to keep track of who did which build
+ * (Kenneth) should become very easy once we have the support for site customizations in place, e.g., making every module set a `$CONTACT` environment variable
 * Alan is also looking into making the switch to Lmod, together with EasyBuild
 
 ##### Sharing an install target with multiple users (Alan)
