@@ -12,6 +12,7 @@ In agreement with the organizers at JSC, **attendance is limited** for the hands
 
 confirmed list of attendees:
 
+* Petar Forai (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria)
 * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
