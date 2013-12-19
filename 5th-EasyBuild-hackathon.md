@@ -6,7 +6,7 @@
 
 ### Attendees
 
-In agreement with the organizers at JSC, **attendance is limited** for the hands-on session (Thursday, Friday):
+In agreement with the organizers at JSC, **attendance is limited** for the hands-on sessions (Thursday, Friday):
  * max. 20 JSC attendees
  * max. 5 non-JSC attendees (not including EasyBuild experts from HPC-UGent)
 
