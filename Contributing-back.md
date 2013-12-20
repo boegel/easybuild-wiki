@@ -27,6 +27,7 @@ Pull the _develop_ branch from the main EasyBuild repository:
 ```bash
 cd easybuild-easyconfigs
 git remote add github_hpcugent git@github.com:hpcugent/easybuild-easyconfigs.git
+git fetch github_hpcugent
 git branch develop github_hpcugent/develop
 git checkout develop
 git pull github_hpcugent develop
