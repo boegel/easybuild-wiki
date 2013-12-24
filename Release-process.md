@@ -61,7 +61,7 @@ Try to install (an old) EasyBuild with bootstrapped EasyBuild module (should wor
 ```bash
 export MODULEPATH=$HOME/.local/easybuild/modules/all
 module load EasyBuild
-eb EasyBuild-1.0.0.eb
+eb EasyBuild-1.0.0.eb --force
 ```
 
 ### Step 3: Announce release
