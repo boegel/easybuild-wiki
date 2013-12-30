@@ -17,6 +17,7 @@ confirmed list of attendees:
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
 * Alan O'Cais (Jülich Supercomputing Centre)
+* George Tsouloupas (The Cyprus Institute)
 
 ## Agenda
 
