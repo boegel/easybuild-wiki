@@ -15,9 +15,11 @@ confirmed list of attendees:
 * Petar Forai (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria)
 * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
+* Thekla Loizou (The Cyprus Institute)
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
 * Alan O'Cais (Jülich Supercomputing Centre)
 * George Tsouloupas (The Cyprus Institute)
+* Aaron Zauner (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria)
 
 ## Agenda
 
