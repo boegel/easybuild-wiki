@@ -83,7 +83,7 @@ These wiki pages contain as the EasyBuild documentation.
  * FOSDEM'13: EasyBuild lightning talks in FOSS for Scientists and Python devrooms, by Jens Timmerman and Kenneth Hoste (resp.)
  * ISC'13: [BoF session "Best Practices in Building & Installing Scientific Software"](http://www.isc-events.com/isc13_ap/presentationdetails.php?t=contribution&o=2108&a=select&ra=eventdetails)
   * [slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_BoF_ISC13_20130619.pdf)
- * [[SC13 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"]]
+ * [[SC13 BoF session: "Getting Scientific Software Installed: Tools and Best Practices"]]
  * [FOSDEM'14](https://fosdem.org/2014/): "HPC and computational science" devroom (more info soon)
 
 ### Conference calls
