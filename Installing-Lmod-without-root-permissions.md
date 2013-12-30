@@ -40,9 +40,9 @@ export PATH=$HOME/lua/bin:$PATH
 
 ### Lmod
 
-1. Download and unpack the latest available Lmod version, [Lmod-5.1.5.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.1.5.tar.bz2/download) at the time of writing.
+1. Download and unpack the latest available Lmod version, [Lmod-5.2.1.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.2.1.tar.bz2/download) at the time of writing.
 ```bash
-tar xfvj Lmod-5.1.5.tar.bz2 && cd Lmod-5.1.5
+tar xfvj Lmod-5.2.1.tar.bz2 && cd Lmod-5.2.1
 ```
 
 
