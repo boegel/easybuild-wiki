@@ -19,7 +19,7 @@ confirmed list of attendees:
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
 * Alan O'Cais (Jülich Supercomputing Centre)
 * George Tsouloupas (The Cyprus Institute)
-* Aaron Zauner (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria)
+* Aaron Zauner (azet.org)
 
 ## Agenda
 
