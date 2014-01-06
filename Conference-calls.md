@@ -28,17 +28,14 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday December 17th 2013, 3pm - 3.30pm (CET)
- * agenda points:
-  * update on EasyBuild activities @ Jülich Supercomputer Centre (JSC) (Alan O'Cais)
-  * support for group of EasyBuild users with a shared install target (Alan O'Cais)
-  * keeping track of popular module files (Fotis Georgatos)
+ * Tuesday January 7th 2014, 3pm - 3.30pm (CET)
+  * (no agenda points yet)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday January 7th 2014, 3pm - 3.30pm (CET)
+ * Tuesday January 21st 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
 
 ### Notes
