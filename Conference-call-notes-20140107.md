@@ -10,6 +10,7 @@ Alphabetical list of attendees (x):
 
 * Fotis Georgatos (Uni.lu)
 * Kenneth Hoste (HPC-UGent)
+* Ward Poelmans (Ghent University)
 * Georges Tsouloupas (CyI)
 
 #### Agenda
@@ -21,3 +22,5 @@ Alphabetical list of attendees (x):
 ##### EasyBuild v1.11 development planning (Kenneth)
 
 * 
+
+##### Collecting module statistics (George)
