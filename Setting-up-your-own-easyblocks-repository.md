@@ -39,12 +39,11 @@ linuxfromscratch.py
 
 ### Step 2: Setting up Python packages
 
-Both the `easybuild` and `easyblocks` directories should be Python packages, so they should contain
+The `easybuild/easyblocks` path should be a Python package, so it should contain
 an `__init__.py` file. This file can, and should in this case, be empty; see the [note](#searching) on searching
 Python modules in Python packages for the reason why they should be empty.
 
 ```bash
-touch $MYEBDIR/easybuild/__init__.py
 touch $MYEBDIR/easybuild/easyblocks/__init__.py
 ```
 
@@ -59,14 +58,14 @@ to find your easyblocks, by adding the path to the Python path.
 export PYTHONPATH=$PYTHONPATH:$MYEBDIR
 ```
 
-**Note**: You need to add the path to your easyblocks at the end, not at the beginning (see
+**Note**: Add the path to your easyblocks at the end, not at the beginning, to avoid messing with the `easybuild` namespace (see
 [below](#searching) as to why).
 
 
 <a name="wiki-searching">
 ### Note: The way in Python modules in Python packages are searched and found
 
-The reason why some notes were made in the steps above is the weay in which searching for Python modules
+The reason why some notes were made in the steps above is the way in which searching for Python modules
 in the Python path, and some custom hacking in `__init__.py` of the `easyblocks` package that comes
 with an EasyBuild installation.
 
