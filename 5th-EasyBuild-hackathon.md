@@ -12,12 +12,14 @@ In agreement with the organizers at JSC, **attendance is limited** for the hacka
 
 confirmed list of attendees:
 
+* Stijn De Weirdt (HPC-UGent, EasyBuild creator)
 * Petar Forai (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria)
 * Fotis Georgatos (University of Luxembourg, HPC sysadmin and active contributor)
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
 * Thekla Loizou (The Cyprus Institute)
 * Dr. Bernd Mohr (Jülich Supercomputing Centre, UNITE)
 * Alan O'Cais (Jülich Supercomputing Centre)
+* Jens Timmerman (HPC-UGent, EasyBuild developer)
 * George Tsouloupas (The Cyprus Institute)
 * Aaron Zauner (azet.org)
 
