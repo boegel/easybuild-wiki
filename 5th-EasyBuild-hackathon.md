@@ -6,7 +6,7 @@
 
 ### Attendees
 
-In agreement with the organizers at JSC, **attendance is limited** for the hands-on sessions (Thursday, Friday):
+In agreement with the organizers at JSC, **attendance is limited** for the hackathon sessions:
  * max. 20 JSC attendees
  * max. 5 non-JSC attendees (not including EasyBuild experts from HPC-UGent)
 
@@ -27,8 +27,11 @@ _(initial agenda, subject to change)_
 
 ### Wednesday Feb 19th 2014
  * [10.30am] meeting between EasyBuild and Scalasca team (invitation only)
- * [2.00pm] presentation: Introduction to EasyBuild (by Kenneth Hoste, EasyBuild - HPC-UGent)
- * [3.00pm] guided tour of JSC facilities
+ * [1.00pm] presentation: Introduction to EasyBuild (by Kenneth Hoste, EasyBuild - HPC-UGent)
+ * [2.00pm] hackathon setup
+  * getting EasyBuild installed
+  * getting started with EasyBuild
+ * [5.00pm] guided tour of JSC facilities
 
 ### Thursday Feb 20th 2014
  * [9am - 5pm] EasyBuild hackathon
