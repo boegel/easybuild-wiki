@@ -25,7 +25,7 @@ Alphabetical list of attendees (7):
 
 ##### Update on support for easyconfig format v2 (Kenneth)
 
-* currently support example: https://github.com/hpcugent/easybuild-framework/tree/master/test/framework/easyconfigs/v2.0/libpng.eb
+* currently support example: https://github.com/hpcugent/easybuild-framework/tree/develop/test/framework/easyconfigs/v2.0/libpng.eb
  * shows use of supported and default sections, specifying of dependencies
 * not working yet: section markers for software version or toolchains, e.g. `[> 1.0]` or `[goolf < 2.0]`
 * values in sections are not Python code, so strings are specified without quotes
