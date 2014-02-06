@@ -57,6 +57,7 @@ These wiki pages contain as the EasyBuild documentation.
 * February 2013 @ [FOSDEM'13](http://fosdem.org/2013/): EasyBuild lightning talks in _FOSS for Scientists_ and _Python_ devrooms (EasyBuild v1.1)
 * March 2013 @ [[3rd EasyBuild hackathon]]: _EasyBuild: Building Software With Ease_, by Kenneth Hoste ([slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf), EasyBuild v1.2)
 * October 2013 @ [[4th EasyBuild hackathon]]: _Introduction to EasyBuild_, by Kenneth Hoste ([slides (PDF)](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf), EasyBuild v1.8.2)
+* November 2013 @ [[SC13 BoF session]]: _EasyBuild lightning talk_, by Andy Georges ([slides (PDF)](http://hpcugent.github.io/easybuild/files/SC13_BoF_EasyBuild.pdf)
 
 ## Videos
 
