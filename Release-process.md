@@ -50,7 +50,7 @@ git push origin v1.0
 ### Step 3: Retest bootstrap script
 
 ```bash
-wget https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
+curl -O https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 python bootstrap_eb.py $HOME/.local/easybuild
 ```
 
