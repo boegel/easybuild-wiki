@@ -29,7 +29,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 #### Next EasyBuild conference call
 
  * Tuesday February 18th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+  * update on support for format v2 easyconfig files (Kenneth)
 
 #### Future EasyBuild conference calls
 
