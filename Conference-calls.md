@@ -35,6 +35,10 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 **(note: subject to change)**
 
+ * Tuesday February 25th 2014, 10pm (CET), topics include:
+  * open issues w.r.t. multiple EasyBuild users
+  * integration with Lmod and SLURM
+  * best way of creating/changing Makefiles (e.g. OpenSees)
  * Tuesday March 4th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
  * Tuesday March 18th 2014, 3pm - 3.30pm (CET)
