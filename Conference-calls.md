@@ -28,17 +28,15 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday February 18th 2014, 3pm - 3.30pm (CET)
-  * update on support for format v2 easyconfig files (Kenneth)
+ * Tuesday February 25th 2014, 10pm (CET), topics include:
+  * open issues w.r.t. multiple EasyBuild users
+  * integration with Lmod and SLURM
+  * best way of creating/changing Makefiles (e.g. OpenSees)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday February 25th 2014, 10pm (CET), topics include:
-  * open issues w.r.t. multiple EasyBuild users
-  * integration with Lmod and SLURM
-  * best way of creating/changing Makefiles (e.g. OpenSees)
  * Tuesday March 4th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
  * Tuesday March 18th 2014, 3pm - 3.30pm (CET)
