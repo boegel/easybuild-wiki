@@ -1,6 +1,6 @@
 (back to [[Conference calls]])
 
-Notes on the 6th EasyBuild conference call, Tuesday Feb. 5th 2014 (3pm -3.30pm CET)
+Notes on the 6th EasyBuild conference call, Tuesday Feb. 4th 2014 (3pm -3.30pm CET)
 
  * follow link in "Video calls" section on [EasyBuild community Google+ page](https://plus.google.com/communities/103632287931200436158)
 
