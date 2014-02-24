@@ -1,3 +1,5 @@
+[[5th easybuild hackathon]] - [notes day 2](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-2) - [notes day 3](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-3)
+
 ## presentation: Introduction to EasyBuild
 
 * [slides (PDF)](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-JSC-Feb14.pdf)
