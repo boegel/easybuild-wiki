@@ -41,7 +41,7 @@ _(initial agenda, subject to change)_
 
 ### Wednesday Feb 19th 2014
  * [10.30am] meeting between EasyBuild and Scalasca team (invitation only)
- * [1.00pm] presentation: Introduction to EasyBuild (by Kenneth Hoste, EasyBuild - HPC-UGent)
+ * [1.00pm] presentation: Introduction to EasyBuild (by Kenneth Hoste, EasyBuild - HPC-UGent) ([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-JSC-Feb14.pdf))
  * [2.00pm] hackathon setup
   * getting EasyBuild installed
   * getting started with EasyBuild
