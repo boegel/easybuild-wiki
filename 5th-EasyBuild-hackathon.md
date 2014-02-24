@@ -39,7 +39,7 @@ Alan O'Cais (Jülich Supercomputing Centre, User support)
 
 _(initial agenda, subject to change)_
 
-### Wednesday Feb 19th 2014
+### Wednesday Feb 19th 2014 ([notes](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-1))
  * [10.30am] meeting between EasyBuild and Scalasca team (invitation only)
  * [1.00pm] presentation: Introduction to EasyBuild (by Kenneth Hoste, EasyBuild - HPC-UGent) ([slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-JSC-Feb14.pdf))
  * [2.00pm] hackathon setup
@@ -47,13 +47,13 @@ _(initial agenda, subject to change)_
   * getting started with EasyBuild
  * [5.00pm] guided tour of JSC facilities
 
-### Thursday Feb 20th 2014
+### Thursday Feb 20th 2014 ([notes](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-2))
  * [9am - 5pm] EasyBuild hackathon
   * hands-on introduction to EasyBuild, with support from EasyBuild experts
   * look into and resolve open issues with EasyBuild that are important for JSC systems
   * work on open issues or software support you care about
 
-### Friday Feb 21st 2014
+### Friday Feb 21st 2014 ([notes](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-3))
  * [9am - 5pm] EasyBuild hackathon (continued)
 
 
