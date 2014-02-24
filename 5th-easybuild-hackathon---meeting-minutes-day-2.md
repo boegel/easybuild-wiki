@@ -1,3 +1,5 @@
+[[5th easybuild hackathon]] - [notes day 1](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-1) - [notes day 3](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-3)
+
 #### Markus: implementing a custom module naming scheme for a hierarchical scheme
  * currently missing in EasyBuild:
   * prepend to `$MODULEPATH` in generated compiler/mpi modules should be automagic
