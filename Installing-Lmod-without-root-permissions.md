@@ -43,3 +43,11 @@ tar xfvj Lmod-5.3.tar.bz2 && cd Lmod-5.3
 ```bash
 export PATH=$HOME/lmod/5.3/libexec:$PATH
 ```
+
+Optionally, give it a spin:
+```bash
+$ lmod --version
+
+Modules based on Lua: Version 5.3 (5.3) 2014-02-17 16:15
+    by Robert McLay mclay@tacc.utexas.edu
+```
