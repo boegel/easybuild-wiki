@@ -25,7 +25,7 @@ eb --version
 Download the bootstrap script, and run it, specifying an install path for EasyBuild:
 
 ```shell
-curl https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py > bootstrap_eb.py
+curl -O https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 python bootstrap_eb.py $HOME/.local/easybuild
 ```
 
