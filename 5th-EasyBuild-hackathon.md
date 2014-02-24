@@ -45,3 +45,10 @@ _(initial agenda, subject to change)_
 
 ### Friday Feb 21st 2014
  * [9am - 5pm] EasyBuild hackathon (continued)
+
+
+## Notes
+
+ * [Wednesday: introduction presentation, first hands-on experiences](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-1)
+ * [Thursday: hackathon, discussions](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-2)
+ * [Friday: hackathon (continued), discussions](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-3)
