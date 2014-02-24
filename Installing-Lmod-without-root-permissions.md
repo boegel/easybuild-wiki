@@ -12,7 +12,7 @@ Build and install Lua using the source tarball available in the Lmod SourceForge
 ./configure --with-static=yes --prefix=$HOME/lua && make && make install
 ```
 
-**Step 3**: Make sure the `lua` binary is available in your `$PATH` (pro tip: put this in your `.bashrc`):
+**Step 3**: Make sure the `lua` binary is available in your `$PATH` (only required when building Lmod, see below):
 ```bash
 export PATH=$HOME/lua/bin:$PATH
 ```
