@@ -37,8 +37,6 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 **(note: subject to change)**
 
- * Tuesday March 4th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
  * Tuesday March 18th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
  * Tuesday April 1st 2014, 3pm - 3.30pm (CET)
