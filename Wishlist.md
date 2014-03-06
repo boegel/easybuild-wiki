@@ -4,7 +4,7 @@ Here is a list of features that are desired to have in next versions of EasyBuil
 # USER-oriented features:
 * [ ] Add possibility to save the logfile somewhere even when failures happen (/tmp is no good for queue submitted jobs)
  * [x] interim solution is to use -ld; OK.
- * [ ] ANSWER: "/tmp" is hardcoded now, so an issue needs to be opened for this; See #84
+ * [x] ANSWER: "/tmp" is hardcoded now, so an issue needs to be opened for this; See #84
 * [ ] Consider support of "formal" language to describe *package info & dependencies*, eg. CUDF syntax
  * http://blog.mancoosi.org
  * http://www.mancoosi.org/papers/cbse11.pdf "MPM: a modular package manager"
