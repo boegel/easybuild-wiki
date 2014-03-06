@@ -13,8 +13,8 @@ Here is a list of features that are desired to have in next versions of EasyBuil
 * [x] Consider category-oriented module sets (eg. `module load bioinformatics-tools`)
  * [x] may be done outside of EB logic, IFF the meaning is to mangle MODULEPATH? "moduleclass" can help
  * [x] ANSWER: either as said OR, produce an easyconfig with multiple dependencies; TBD
-* [ ] Allow for custom-definition of easyblock paths (instead of enforcing any "a-z/" dir structure
- * [ ] ANSWER: it seems to be OK w. PYTHONPATH? nope, the a-z dirs need to have "reverse" mapping (ref. ".."); TBD
+* [x] Allow for custom-definition of easyblock paths (instead of enforcing any "a-z/" dir structure
+ * [x] ANSWER: it seems to be OK w. PYTHONPATH? almost, first a-z dir needs to have "reverse" mapping (ref. ".."); TBD
   * KH: the a-z trick can only be used once, other easyblocks repos must use the flat structure (cfr. https://github.com/hpcugent/easybuild/wiki/Setting-up-your-own-easyblocks-repository)
 * [x] How to organize a collection of .eb files coming from different sources? (eg. distinct git repos)
  * [x] Seen at http://joeyh.name/code/mr/ : "When updating a git repository, pull from two different upstreams and merge the two together."
@@ -35,7 +35,7 @@ Here is a list of features that are desired to have in next versions of EasyBuil
 * [x] Consider the bigger picture as seen at http://eniac.cyi.ac.cy/display/UserDoc/HPC+Baseline+Configuration
  * [x] ANSWER: discussed; interesting for Flamish supercomputing activities
 * [x] BENELUX collab?
- * [ ] ANSWER: discussed; TBD
+ * [x] ANSWER: discussed; TBD
 
 # SYSADMIN-oriented features:
 
@@ -43,11 +43,11 @@ Here is a list of features that are desired to have in next versions of EasyBuil
 * [x] Give freedom to define the namespace format (eg. original Package names OR the lower case version)
  * [x] allow to export *namespace* in both UpperCase and LowerCase conventions # a post-install hook? TBD
 * [x] Support more configurable formats of version strings (check below, how other HPC sites do it)
- * [ ] nested levels (ie. split version string in sub sections)
- * [ ] provide hooks for gnu/gcc/intel/pgi etc strings
+ * [x] nested levels (ie. split version string in sub sections) (yes, via #879)
+ * [x] provide hooks for gnu/gcc/intel/pgi etc strings (custom-module-namespace allows whatever nowadays)
  * [x] IDEA: For now, supply a "custom_namespace_function" variable, to define eg. modulename.lower();
 * [x] Provide some smart way to handle osdependencies like "tcsh" which may have no meaning on Debian # a particularly important case are the boost-devel vs boost-dev differences (rpm vs deb conventions)
- * [ ] and for now allow escaping with --ignore-os-dependencies
+ * [x] and for now allow escaping with --ignore-os-dependencies (--ignore-osdeps does this since ~ v1.10)
 
 # Building GROMACS-GPU
 
