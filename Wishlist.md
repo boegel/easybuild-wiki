@@ -14,11 +14,12 @@ Here is a list of features that are desired to have in next versions of EasyBuil
  * [x] may be done outside of EB logic, IFF the meaning is to mangle MODULEPATH? "moduleclass" can help
  * [x] ANSWER: either as said OR, produce an easyconfig with multiple dependencies; TBD
 * [ ] Allow for custom-definition of easyblock paths (instead of enforcing any "a-z/" dir structure
- * [ ] ANSWER: it seems to be OK w. PYTHON_PATH? nope, the a-z dirs need to have "reverse" mapping (ref. ".."); TBD
-* [ ] How to organize a collection of .eb files coming from different sources? (eg. distinct git repos)
- * [ ] Seen at http://joeyh.name/code/mr/ : "When updating a git repository, pull from two different upstreams and merge the two together."
- * [ ] ie. can EasyBuild --robot dependency resolution support multiple paths?
- * [ ] ANSWER: will support multiple directories; prefer to use many indeed
+ * [ ] ANSWER: it seems to be OK w. PYTHONPATH? nope, the a-z dirs need to have "reverse" mapping (ref. ".."); TBD
+  * KH: the a-z trick can only be used once, other easyblocks repos must use the flat structure (cfr. https://github.com/hpcugent/easybuild/wiki/Setting-up-your-own-easyblocks-repository)
+* [x] How to organize a collection of .eb files coming from different sources? (eg. distinct git repos)
+ * [x] Seen at http://joeyh.name/code/mr/ : "When updating a git repository, pull from two different upstreams and merge the two together."
+ * [x] ie. can EasyBuild --robot dependency resolution support multiple paths? (yes, since v1.10)
+ * [x] ANSWER: will support multiple directories; prefer to use many indeed; (v1.10 OK)
 * [ ] Consider integrated support for relocatable .rpms (with --prefix), .srpms & RPM's .spec files
  * [ ] in effect, let's create a handler for non "*.eb" suffixes to be managed externally; that would allow
    to create from eg. a .spec file (for RPMs) the equivalent .eb, then parse that from "stdio" 
