@@ -2,9 +2,9 @@ Here is a list of features that are desired to have in next versions of EasyBuil
 (importance of them varies according to who you ask ;-)
 
 # USER-oriented features:
-* [ ] Add possibility to save the logfile somewhere even when failures happen (/tmp is no good for queue submitted jobs)
+* [ ] Add possibility to save the logfile somewhere even when failures happen (/tmp is not great for queue-submitted jobs!)
  * [x] interim solution is to use -ld; OK.
- * [x] ANSWER: "/tmp" is hardcoded now, so an issue needs to be opened for this; See #84
+ * [x] ANSWER: "/tmp" was hardcoded before, now OK, issues opened for this; See #84, #695 (ref. $TMPDIR / --tmpdir)
 * [ ] Consider support of "formal" language to describe *package info & dependencies*, eg. CUDF syntax
  * http://blog.mancoosi.org
  * http://www.mancoosi.org/papers/cbse11.pdf "MPM: a modular package manager"
@@ -22,10 +22,10 @@ Here is a list of features that are desired to have in next versions of EasyBuil
  * [x] ANSWER: will support multiple directories; prefer to use many indeed; (v1.10 OK)
 * [ ] Consider integrated support for relocatable .rpms (with --prefix), .srpms & RPM's .spec files
  * [ ] in effect, let's create a handler for non "*.eb" suffixes to be managed externally; that would allow
-   to create from eg. a .spec file (for RPMs) the equivalent .eb, then parse that from "stdio" 
- * [ ] ANSWER: it's already supported, but in previous versions; to be cleaned up
+   to create from eg. a .spec file (for RPMs) the equivalent .eb, then parse that stdio->stdout and spit out an easyconfig 
+ * [ ] ANSWER: it's already supported, but in previous versions; to be cleaned up?
 * [x] extreme thought: yes, this is an extreme thought: consider module search/install extensions!
- * [ ] ANSWER: or try it with "module load" instead ;-)
+ * [ ] ANSWER: or try it automatically by way of "module load" instead ;-)
 * [x] promote easybuild within bioinformatics community, esp. for "clinical or translational workflows", as described below: http://www.bioinfo-core.org/index.php/11th_Discussion-7_November_2011#Topic_2:_Managing_and_Tracking_Software_Updates_.28Led_by_Brent_Richter.29
  * [x] ANSWER: makes sense to approach communities; TBD
 * [x] support cmake-like builds (see example below)
