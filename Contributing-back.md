@@ -11,6 +11,7 @@ First, you'll need to fork [EasyBuild on GitHub](http://github.com/hpcugent/easy
 If you do not have a (free) GitHub account yet, you'll need to get one.
 
 You should also register an SSH public key, so you can easily clone, push to and pull from your repository.
+This can be done via https://github.com/settings/ssh if you're logged in on GitHub.
 
 ### Clone your EasyBuild repository
 
@@ -27,6 +28,7 @@ Pull the _develop_ branch from the main EasyBuild repository:
 ```bash
 cd easybuild-easyconfigs
 git remote add github_hpcugent git@github.com:hpcugent/easybuild-easyconfigs.git
+git fetch github_hpcugent
 git branch develop github_hpcugent/develop
 git checkout develop
 git pull github_hpcugent develop

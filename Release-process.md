@@ -50,7 +50,7 @@ git push origin v1.0
 ### Step 3: Retest bootstrap script
 
 ```bash
-wget https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
+curl -O https://raw.github.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 python bootstrap_eb.py $HOME/.local/easybuild
 ```
 
@@ -61,7 +61,7 @@ Try to install (an old) EasyBuild with bootstrapped EasyBuild module (should wor
 ```bash
 export MODULEPATH=$HOME/.local/easybuild/modules/all
 module load EasyBuild
-eb EasyBuild-1.0.0.eb
+eb EasyBuild-1.0.0.eb --force
 ```
 
 ### Step 3: Announce release

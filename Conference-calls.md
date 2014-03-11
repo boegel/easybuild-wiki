@@ -28,24 +28,29 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday December 3rd 2013, 3pm - 3.30pm (CET) ([notes](https://github.com/hpcugent/easybuild/wiki/Conference-call-notes-20131203))
- * preliminary agenda:
-  * update on EasyBuild-related activities at the SC13 conference
-  * rough outline for development activity for the coming weeks
+ * Tuesday February 25th 2014, 10pm (CET), topics include:
+  * open issues w.r.t. multiple EasyBuild users
+  * integration with Lmod and SLURM
+  * best way of creating/changing Makefiles (e.g. OpenSees)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday December 17th 2013, 3pm - 3.30pm (CET)
+ * Tuesday March 18th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
- * Tuesday January 7th 2014, 3pm - 3.30pm (CET)
+ * Tuesday April 1st 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
 
 ### Notes
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20140225]]
+ * [[Conference call notes 20140218]]
+ * [[Conference call notes 20140204]]
+ * [[Conference call notes 20140107]]
+ * [[Conference call notes 20131217]]
  * [[Conference call notes 20131203]]
  * [[Conference call notes 20131119]]
  * [[Conference call notes 20131105]]

@@ -90,6 +90,29 @@ prefix=/home/you/work/easybuild/
 ```
 
 
+#### Generating a template configuration file
+
+Since EasyBuild v1.10, a command line option `--confighelp` is available that prints out the help text as an annotated configuration file. This can be used as an empty template configuration file:
+
+```bash
+mkdir -p $HOME/.easybuild
+eb --confighelp > $HOME/.easybuild/config.cfg
+```
+
+```bash
+$ head $HOME/.easybuild/config.cfg
+[MAIN]
+# Enable debug log mode (def False)
+#debug=
+# Enable info log mode (def False)
+#info=
+# Enable info quiet/warning mode (def False)
+#quiet=
+
+[basic]
+# Print build overview incl. dependencies (full paths) (def False)
+```
+
 
 ### Environment variables
 

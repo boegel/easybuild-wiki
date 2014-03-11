@@ -16,6 +16,7 @@ These wiki pages contain as the EasyBuild documentation.
   * [[Installing lmod without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
  * [[Bootstrapping EasyBuild]] (ok, up-to-date)
+* [[Setting up tab completion for bash]] (ok, up-to-date)
 * [[Quick demo for the impatient]] (updated)
 * [[Getting started]] (ok, but need update to new style configuration)
  * [[Configuration]] (updated)
@@ -55,7 +56,9 @@ These wiki pages contain as the EasyBuild documentation.
 * November 2012 @ [PyHPC-2012 workshop at Supercomputer 2012 conference](http://sc12.supercomputing.org/schedule/event_detail.php?evid=wksp118): _EasyBuild: Building Software With Ease_, by Kenneth Hoste, Jens Timmerman, Andy Georges and Stijn Deweirdt ([paper](http://hpcugent.github.com/easybuild/files/easybuild-PyHPC-SC12_paper.pdf), [slides full talk (PDF)](http://hpcugent.github.com/easybuild/files/easybuild-PyHPC-SC12_slides.pdf), EasyBuild v1.0)
 * February 2013 @ [FOSDEM'13](http://fosdem.org/2013/): EasyBuild lightning talks in _FOSS for Scientists_ and _Python_ devrooms (EasyBuild v1.1)
 * March 2013 @ [[3rd EasyBuild hackathon]]: _EasyBuild: Building Software With Ease_, by Kenneth Hoste ([slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_hackathon_Cyprus_20130311.pdf), EasyBuild v1.2)
+* June 2013 @ [ISC'13](http://www.isc-events.com/isc13/): BoF session: _Best Practices in Building & Installing Scientific Software_ ([slides (PDF)](http://hpcugent.github.io/easybuild/files/easybuild_BoF_ISC13_20130619.pdf), EasyBuild v1.5.0)
 * October 2013 @ [[4th EasyBuild hackathon]]: _Introduction to EasyBuild_, by Kenneth Hoste ([slides (PDF)](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf), EasyBuild v1.8.2)
+* November 2013 @ [[SC13 BoF session]]: _EasyBuild lightning talk_, by Andy Georges ([slides (PDF)](http://hpcugent.github.io/easybuild/files/SC13_BoF_EasyBuild.pdf), EasyBuild v1.9.0)
 
 ## Videos
 
@@ -74,6 +77,8 @@ These wiki pages contain as the EasyBuild documentation.
 * [[4th EasyBuild hackathon]]: Oct. 22nd-24th 2013, Nicosia (Cyprus)
  * quick links: [UNITE presentation](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Cyprus_Oct13_UNITE.pdf) - [EasyBuild introduction](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Cyprus-Oct13.pdf) - [EasyBuild status update](http://hpcugent.github.io/easybuild/files/EasyBuild_status-update_hackathon-Cyprus-Oct13.pdf) - notes: [day 1](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/4th-easybuild-hackathon---meeting-minutes-day-3)
   * recorded presentations: [Introduction to EasyBuild](http://www.youtube.com/watch?v=bOeNsfLB2t4) - [WRF example use case](http://www.youtube.com/watch?v=e7fyHtO8_qs) - [EasyBuild status update](http://www.youtube.com/watch?v=A140WvbqaNw)
+* [[5th EasyBuild hackathon]]: Feb. 19th-21st 2014, Jülich (Germany)
+ * [EasyBuild introduction slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-JSC-Feb14.pdf)
 
 ### Conferences and meetings
 
@@ -81,9 +86,10 @@ These wiki pages contain as the EasyBuild documentation.
  * FOSDEM'13: EasyBuild lightning talks in FOSS for Scientists and Python devrooms, by Jens Timmerman and Kenneth Hoste (resp.)
  * ISC'13: [BoF session "Best Practices in Building & Installing Scientific Software"](http://www.isc-events.com/isc13_ap/presentationdetails.php?t=contribution&o=2108&a=select&ra=eventdetails)
   * [slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_BoF_ISC13_20130619.pdf)
- * [[SC13 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"]]
+ * [[SC13 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"
  * [FOSDEM'14](https://fosdem.org/2014/): "HPC and computational science" devroom (more info soon)
 
 ### Conference calls
 
  * [[20121126 HashDist|Notes-on-EasyBuild-HashDist-conf-call-(20121126)]]: Google hangout conf call with Dag Sverre Seljebotn on HashDist and EasyBuild
+ * [bi-weekly EasyBuild conf calls](Conference calls)
