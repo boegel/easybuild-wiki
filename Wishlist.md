@@ -2,51 +2,52 @@ Here is a list of features that are desired to have in next versions of EasyBuil
 (importance of them varies according to who you ask ;-)
 
 # USER-oriented features:
-* Add possibility to save the logfile somewhere even when failures happen (/tmp is no good for queue submitted jobs)
- * interim solution is to use -ld; OK.
- * ANSWER: "/tmp" is hardcoded now, so an issue needs to be opened for this; See #84
-* Consider support of "formal" language to describe *package info & dependencies*, eg. CUDF syntax
+* [ ] Add possibility to save the logfile somewhere even when failures happen (/tmp is not great for queue-submitted jobs!)
+ * [x] interim solution is to use -ld; OK.
+ * [x] ANSWER: "/tmp" was hardcoded before, now OK, issues opened for this; See #84, #695 (ref. $TMPDIR / --tmpdir)
+* [ ] Consider support of "formal" language to describe *package info & dependencies*, eg. CUDF syntax
  * http://blog.mancoosi.org
  * http://www.mancoosi.org/papers/cbse11.pdf "MPM: a modular package manager"
  * http://arxiv.org/abs/1109.0456 "Aligning component upgrades"
  * ANSWER: may consider; TBD
-* Consider category-oriented module sets (eg. `module load bioinformatics-tools`)
- * may be done outside of EB logic, IFF the meaning is to mangle MODULEPATH? "moduleclass" can help
- * ANSWER: either as said OR, produce an easyconfig with multiple dependencies; TBD
-* Allow for custom-definition of easyblock paths (instead of enforcing any "a-z/" dir structure
- * ANSWER: it seems to be OK w. PYTHON_PATH? nope, the a-z dirs need to have "reverse" mapping (ref. ".."); TBD
-* How to organize a collection of .eb files coming from different sources? (eg. distinct git repos)
- * Seen at http://joeyh.name/code/mr/ : "When updating a git repository, pull from two different upstreams and merge the two together."
- * ie. can EasyBuild --robot dependency resolution support multiple paths?
- * ANSWER: will support multiple directories; prefer to use many indeed
-* Consider integrated support for relocatable .rpms (with --prefix), .srpms & RPM's .spec files
- * in effect, let's create a handler for non "*.eb" suffixes to be managed externally; that would allow
-   to create from eg. a .spec file (for RPMs) the equivalent .eb, then parse that from "stdio" 
- * ANSWER: it's already supported, but in previous versions; to be cleanup
-* extreme thought: yes, this is an extreme thought: consider module search/install extensions!
- * ANSWER: or try it with "module load" instead ;-)
-* promote easybuild within bioinformatics community, esp. for "clinical or translational workflows", as described below: http://www.bioinfo-core.org/index.php/11th_Discussion-7_November_2011#Topic_2:_Managing_and_Tracking_Software_Updates_.28Led_by_Brent_Richter.29
- * ANSWER: makes sense to approach communities; TBD
-* support cmake-like builds (see example below)
- * ANSWER: for the default case an easyblock is upcoming; TBD
-* how to override certain steps ("/bin/true" is considered a hack as of now)
- * ANSWER: to be discussed; first create wiki page with all the [[Build ports naming conventions]]
-* Consider the bigger picture as seen at http://eniac.cyi.ac.cy/display/UserDoc/HPC+Baseline+Configuration
- * ANSWER: discussed; interesting for Flamish supercomputing activities
-* BENELUX collab?
- * ANSWER: discussed; TBD
+* [x] Consider category-oriented module sets (eg. `module load bioinformatics-tools`)
+ * [x] may be done outside of EB logic, IFF the meaning is to mangle MODULEPATH? "moduleclass" can help
+ * [x] ANSWER: either as said OR, produce an easyconfig with multiple dependencies; TBD
+* [x] Allow for custom-definition of easyblock paths (instead of enforcing any "a-z/" dir structure
+ * [x] ANSWER: it seems to be OK w. PYTHONPATH? almost, first a-z dir needs to have "reverse" mapping (ref. ".."); TBD
+  * KH: the a-z trick can only be used once, other easyblocks repos must use the flat structure (cfr. https://github.com/hpcugent/easybuild/wiki/Setting-up-your-own-easyblocks-repository)
+* [x] How to organize a collection of .eb files coming from different sources? (eg. distinct git repos)
+ * [x] Seen at http://joeyh.name/code/mr/ : "When updating a git repository, pull from two different upstreams and merge the two together."
+ * [x] ie. can EasyBuild --robot dependency resolution support multiple paths? (yes, since v1.10)
+ * [x] ANSWER: will support multiple directories; prefer to use many indeed; (v1.10 OK)
+* [ ] Consider integrated support for relocatable .rpms (with --prefix), .srpms & RPM's .spec files
+ * [ ] in effect, let's create a handler for non "*.eb" suffixes to be managed externally; that would allow
+   to create from eg. a .spec file (for RPMs) the equivalent .eb, then parse that stdio->stdout and spit out an easyconfig 
+ * [ ] ANSWER: it's already supported, but in previous versions; to be cleaned up?
+* [x] extreme thought: yes, this is an extreme thought: consider module search/install extensions!
+ * [ ] ANSWER: or try it automatically by way of "module load" instead ;-)
+* [x] promote easybuild within bioinformatics community, esp. for "clinical or translational workflows", as described below: http://www.bioinfo-core.org/index.php/11th_Discussion-7_November_2011#Topic_2:_Managing_and_Tracking_Software_Updates_.28Led_by_Brent_Richter.29
+ * [x] ANSWER: makes sense to approach communities; TBD
+* [x] support cmake-like builds (see example below)
+ * [x] ANSWER: for the default case an easyblock is upcoming; TBD
+* [x] how to override certain steps ("/bin/true" is considered a hack as of now)
+ * [x] ANSWER: to be discussed; first create wiki page with all the [[Build ports naming conventions]]
+* [x] Consider the bigger picture as seen at http://eniac.cyi.ac.cy/display/UserDoc/HPC+Baseline+Configuration
+ * [x] ANSWER: discussed; interesting for Flamish supercomputing activities
+* [x] BENELUX collab?
+ * [x] ANSWER: discussed; TBD
 
 # SYSADMIN-oriented features:
 
-* Define the *namespace* "by a standard"; eg. like [https://github.com/fgeorgatos/HPC-RFC/blob/master/0001/0001.md]
-* Give freedom to define the namespace format (eg. original Package names OR the lower case version)
- * allow to export *namespace* in both UpperCase and LowerCase conventions # a post-install hook? TBD
-* Support more configurable formats of version strings (check below, how other HPC sites do it)
- * nested levels (ie. split version string in sub sections)
- * provide hooks for gnu/gcc/intel/pgi etc strings
- * IDEA: For now, supply a "custom_namespace_function" variable, to define eg. modulename.lower();
-* Provide some smart way to handle osdependencies like "tcsh" which may have no meaning on Debian # a particularly important case are the boost-devel vs boost-dev differences (rpm vs deb conventions)
- * and for now allow escaping with --ignore-os-dependencies
+* [x] Define the *namespace* "by a standard"; eg. like [https://github.com/fgeorgatos/HPC-RFC/blob/master/0001/0001.md]
+* [x] Give freedom to define the namespace format (eg. original Package names OR the lower case version)
+ * [x] allow to export *namespace* in both UpperCase and LowerCase conventions # a post-install hook? TBD
+* [x] Support more configurable formats of version strings (check below, how other HPC sites do it)
+ * [x] nested levels (ie. split version string in sub sections) (yes, via #879)
+ * [x] provide hooks for gnu/gcc/intel/pgi etc strings (custom-module-namespace allows whatever nowadays)
+ * [x] IDEA: For now, supply a "custom_namespace_function" variable, to define eg. modulename.lower();
+* [x] Provide some smart way to handle osdependencies like "tcsh" which may have no meaning on Debian # a particularly important case are the boost-devel vs boost-dev differences (rpm vs deb conventions)
+ * [x] and for now allow escaping with --ignore-os-dependencies (--ignore-osdeps does this since ~ v1.10)
 
 # Building GROMACS-GPU
 
