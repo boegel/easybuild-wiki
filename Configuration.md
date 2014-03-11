@@ -52,7 +52,7 @@ For more details w.r.t. each of the supported configuration types, see below.
 The set of configuration files that will be used by EasyBuild is determined in the following order of preference:
 * the path(s) specified via **command line argument `--configfiles`**
 * the path(s) specified via the **`$EASYBUILD_CONFIGFILES` environment variable**
-* the **default path** for the EasyBuild configuration file, i.e. `$HOME/.easybuild/config.cfg`
+* the **default path** for the EasyBuild configuration file, i.e. `$XDG_CONFIG_HOME/easybuild/config.cfg` (`XDG_CONFIG_HOME` defaults to `$HOME/.config`).
 
 Note that each available configuration file will be used, and that the configuration settings specified in these files
 will be retained according to the order of preference as indicated above.
@@ -134,8 +134,8 @@ eb --buildpath=/dev/shm --installpath=/tmp/$USER --disable-debug
 In EasyBuild v1.x, a couple of configuration options other than the ones above are available that follow the **legacy configuration style**, including:
 * the `-C` and `--config` command line arguments (**use `--configfiles` instead**)
 * the `$EASYBUILDCONFIG` environment variable (**use `$EASYBUILD_CONFIGFILES` instead**)
-* the default path `$HOME/.easybuild/config.py` (**new-style default path is `$HOME/.easybuild/config.cfg`**)
-* the legacy fallback path `<installpath>/easybuild/easybuild_config.py` (**only default/fallback path is `$HOME/.easybuild/config.cfg`**)
+* the default path `$HOME/.easybuild/config.py` (**new-style default path is `$XDG_CONFIG_HOME/easybuild/config.cfg`**)
+* the legacy fallback path `<installpath>/easybuild/easybuild_config.py` (**only default/fallback path is `$XDG_CONFIG_HOME/easybuild/config.cfg`**)
 
 Likewise, the following legacy environment variables allowed to override selected configuration settings:
 
