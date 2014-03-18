@@ -29,7 +29,8 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 #### Next EasyBuild conference call
 
  * Tuesday March 18th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+ * topics:
+  * customising permissions on installations via environment variables (Alan O'Cais (JSC))
 
 #### Future EasyBuild conference calls
 
