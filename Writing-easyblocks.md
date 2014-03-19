@@ -43,5 +43,7 @@ sanity check paths, sanity check commands
 
 ### Custom tests
 
+### Running commands requiring interaction
+
 ## Style considerations
 
