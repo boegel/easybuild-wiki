@@ -158,8 +158,12 @@ Exmaples:
 The return type of `extra_options` should be a list of 2-element tuples (e.g. as returned
 by the `items()` method called on dictionary values). In EasyBuild v2.x the return type will be
 changed to a dictionary (`dict`), but this change can't be made in EasyBuild v1.x without breaking
-backward compatibility. Passing a `dict` value to `EasyBlock.extra_options` does work already however,
-and will result in the correct return type (see above).
+backward compatibility.
+
+Passing a `dict` value to `EasyBlock.extra_options` does work already however, and will result in
+the correct return type (see above). So, as long as you stick to the code style shown in the examples
+(returning via `EasyBlock.extra_options`), your code should be future proof, even when the return type
+of `extra_options` is changed in EasyBuild v2.0.
 
 
 ### Custom tests
