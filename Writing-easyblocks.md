@@ -149,6 +149,10 @@ class Derived(Base):
     ...
 ```
 
+Exmaples:
+* [ConfigureMake easyblock](https://github.com/hpcugent/easybuild-easyblocks/blob/master/easybuild/easyblocks/generic/configuremake.py)
+* [CMakeMake easyblock](https://github.com/hpcugent/easybuild-easyblocks/blob/master/easybuild/easyblocks/generic/cmakemake.py)
+
 #### Note on return type of `extra_options`
 
 The return type of `extra_options` should be a list of 2-element tuples (e.g. as returned
