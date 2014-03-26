@@ -8,7 +8,6 @@ A fully worked out example for WRF is available at [Tutorial: building WRF after
 
 ## Structure of an easyblock
 
-<<<<<<< HEAD
 
 ## Design considerations
 
@@ -20,10 +19,12 @@ A fully worked out example for WRF is available at [Tutorial: building WRF after
 ## Implementing an easyblock
 
 
-=======
+
 ## Design considerations
 
 ### Software-specific vs generic easyblocks
+
+
 
 ## Implementing an easyblock
 
