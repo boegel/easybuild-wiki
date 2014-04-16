@@ -1,7 +1,7 @@
 ### Basic Information
 
 * **date**: Wednesday June 18th - Friday June 20th 2014
-* **location**: Gregor Mendel Institute of Molecular Plant Biology (GMI), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>)
+* **venue**: Vienna Bio Center at the Institute of Molecular Pathology, Dr. Bohrgasse 3-5 (IMBA/GMI building), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>)
 * **notes**: shortly before the ISC'14 conference in Leipzig, Germany
 
 ### Attendees
