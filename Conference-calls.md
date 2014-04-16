@@ -28,8 +28,8 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday April 15th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+ * **Thursday** April 17th 2014, 3pm - 3.30pm (CET)
+  * better organise reviewing and testing of (easyconfigs) pull requests (Kenneth)
 
 #### Future EasyBuild conference calls
 
