@@ -1,6 +1,6 @@
 ### Basic Information
 
-* **date**: Wednesday June 18th - Friday Feb 20th 2014
+* **date**: Wednesday June 18th - Friday June 20th 2014
 * **location**: Gregor Mendel Institute of Molecular Plant Biology (GMI), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>)
 * **notes**: shortly before the ISC'14 conference in Leipzig, Germany
 
@@ -23,10 +23,10 @@ _(initial agenda, subject to change)_
 ### Wednesday June 18th 2014
  * [10am - 12pm] Introduction to EasyBuild, status update, Q&A (Kenneth Hoste)
  * [1pm - 3pm] Introduction to Lmod, relation to EasyBuild, Q&A (Robert McLay)
- * [3pm - 5pm] Hackathon: getting started, first hands-on experience with EasyBuild and Lmod
+ * [3pm - 6pm] Hackathon: getting started, first hands-on experience with EasyBuild and Lmod
 
 ### Thursday June 19th 2014
- * [9am - 5pm] Hackathon
+ * [10am - 6pm] Hackathon
   * hands-on introduction to EasyBuild and Lmod, with support from core developers
   * work on open issues or software support you care about
 
