@@ -13,8 +13,10 @@ list of confirmed attendees:
 
 * Pablo Escobar (Swiss Institute of Bioinformatics - University of Basel, EasyBuild user and contributor)
 * Petar Forai (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria; EasyBuild user and contributor)
+* Fotis Georgatos (freelancer, EasyBuild contributor)
 * Kenneth Hoste (HPC-UGent, Belgium; EasyBuild developer and release manager)
 * Robert McLay (Texas Advanced Computing Centre (TACC), US; Lmod developer)
+* Jens Timmerman (HPC-UGent, Belgium; EasyBuild developer)
 * Aaron Zauner (azet.org, Austria; EasyBuild user and contributor)
 
 ## Agenda
