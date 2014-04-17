@@ -82,6 +82,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[5th EasyBuild hackathon]]: Feb. 19th-21st 2014, Jülich (Germany)
  * [EasyBuild introduction slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-JSC-Feb14.pdf)
  * notes: [day 1](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-3)
+* [[6th EasyBuild hackathon]]: June 18-20th 2014, Vienna (Austria)
 
 ### Conferences and meetings
 
