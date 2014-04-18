@@ -44,6 +44,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20140417]]
  * [[Conference call notes 20140318]]
  * [[Conference call notes 20140225]]
  * [[Conference call notes 20140218]]
