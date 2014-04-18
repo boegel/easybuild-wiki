@@ -21,7 +21,7 @@ Alphabetical list of attendees (4):
 
 * more frequent releases of easyconfigs?
     * is of little value, EasyBuild doesn't care where easyconfigs are located (they don't need to be part of a release)
-* separate pool of new easyconfigs
+* separate pool of new easyconfigs that are not part of a release yet (or maybe not even merged yet in `develop`)
     * in an 'experimental' branch
     * make `-—search` aware of it
 * make handling of pull requests easier for the release
