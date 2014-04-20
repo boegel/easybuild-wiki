@@ -1,6 +1,6 @@
 The code style we follow in the EasyBuild code repository is mainly dictated by [PEP008](http://www.python.org/dev/peps/pep-0008/).
 
-(https://github.com/jcrocholl/pep8)[pep8] might be a useful tool to enforce the code style more strictly.
+[`pep8`](https://github.com/jcrocholl/pep8) might be a useful tool to enforce the code style more strictly.
 
 (needs more work)
 
