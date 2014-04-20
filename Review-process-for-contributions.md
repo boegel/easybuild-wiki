@@ -16,9 +16,27 @@ Depending on the particular EasyBuild repository (framework, easyblocks or easyc
 
 ### Unit test suite
 
-For every pull request, our [Jenkins setup](https://jenkins1.ugent.be/view/EasyBuild%20(develop)/)
+For every pull request, our [Jenkins setup](https://jenkins1.ugent.be/view/EasyBuild%20(develop)/) will automatically run the unit test suite for that repository, and report back on the outcome in the pull request itself.
+
+**Only pull requests for which the unit test suite (still) passes, i.e. for which Jenkins gives a green light, are eligible for merging.**
+
+For contributions to the EasyBuild framework, additional unit tests should be added when new functionality is being implemented, or when existing functionality is extended.
 
 ### Code style
+
+Contributions are also reviewed on code style, with the intention to maintain a uniform feel across the EasyBuild codebase (which significantly lowers the bar for others).
+
+For Python code, we mainly adhere to the [PEP008](http://www.python.org/dev/peps/pep-0008/) code style, with a couple of exceptions (e.g. max column width is 120 characters).
+
+A couple of noteworthy code style aspects are:
+
+ * correct indentation: **no** tabs, 4-space indentation
+ * naming:
+  * meaningful variable and function/method names
+  * no single letter names (except in list comprehensions)
+  * **no** CamelCase (only in class names)
+ * docstrings for modules, classes, and functions and methods are considered required
+ * code comments for non-trivial **blocks** of code are desirable
 
 ### Testing result
 
