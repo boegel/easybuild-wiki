@@ -8,11 +8,16 @@ Reviews mainly consist of evaluating the technical aspect of contributions, whic
 
 The following specific attention points are taken into account when contributions are reviewed:
 
+ * implementation
  * unit test suite
  * code style
  * testing result
 
 Depending on the particular EasyBuild repository (framework, easyblocks or easyconfigs) to which the contribution is being made, there is a different focus on each of these.
+
+### Implementation
+
+The implementation of the contribution is critically evaluated. The reviewer is encouraged to issue remarks (by means on inline comments in the pull request) with remarks and suggestions for improvements.
 
 ### Unit test suite
 
