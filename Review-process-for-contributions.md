@@ -31,9 +31,11 @@ To help streamline the reviewing process, a couple of EasyBuild community member
   * Kenneth Hoste (HPC-UGent, _release manager_)
   * Stijn De Weirdt (HPC-UGent)
   * Jens Timmerman (HPC-UGent)
+  * Ward Poelmans (UGent)
  * [easyblocks](https://github.com/hpcugent/easybuild-easyblocks):
   * Kenneth Hoste (HPC-UGent, _release manager_)
   * Jens Timmerman (HPC-UGent)
+  * Ward Poelmans (UGent)
  * [easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs):
   * Kenneth Hoste (HPC-UGent, _release manager_)
   * Pablo Escobar (UoB - SIB), Petar Forai (GMI)
