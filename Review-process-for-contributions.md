@@ -27,8 +27,17 @@ Anybody who feels confident enough to review a particular contributions can do s
 
 To help streamline the reviewing process, a couple of EasyBuild community members have agreed with taking up the responsibility of reviewer for the different repositories.
 
- * [framework](https://github.com/hpcugent/easybuild-framework): Kenneth Hoste (HPC-UGent, _release manager_), Stijn De Weirdt (HPC-UGent), Jens Timmerman (HPC-UGent)
- * [easyblocks](https://github.com/hpcugent/easybuild-easyblocks): Kenneth Hoste (HPC-UGent, _release manager_), Jens Timmerman (HPC-UGent)
- * [easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs): Kenneth Hoste (HPC-UGent, _release manager_), Pablo Escobar (UoB - SIB), Petar Forai (GMI), Fotis Georgatos (freelancer), Ward Poelmans (UGent)
+ * [framework](https://github.com/hpcugent/easybuild-framework):
+  * Kenneth Hoste (HPC-UGent, _release manager_)
+  * Stijn De Weirdt (HPC-UGent)
+  * Jens Timmerman (HPC-UGent)
+ * [easyblocks](https://github.com/hpcugent/easybuild-easyblocks):
+  * Kenneth Hoste (HPC-UGent, _release manager_)
+  * Jens Timmerman (HPC-UGent)
+ * [easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs):
+  * Kenneth Hoste (HPC-UGent, _release manager_)
+  * Pablo Escobar (UoB - SIB), Petar Forai (GMI)
+  * Fotis Georgatos (freelancer)
+  * Ward Poelmans (UGent)
 
 If you would like to join the list of volunteers for reviewing contributions, please contact Kenneth Hoste.
