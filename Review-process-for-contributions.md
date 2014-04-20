@@ -43,11 +43,15 @@ A couple of noteworthy code style aspects are:
  * docstrings for modules, classes, and functions and methods are considered required
  * code comments for non-trivial **blocks** of code are desirable
 
+**TODO**: put together a script to help with code style review, e.g. based on PyLint (where applicable).
+
 ### Testing result
 
 Obviously, the contributed functionality or support should work for other people interested in it.
 
 The person reviewing the contribution is expected to test it as good as possible, and report back on the result in the pull request.
+
+**TODO**: provide a script to test easyconfigs pull requests with, that spits out some kind of testing report.
 
 ## Reviewers
 
