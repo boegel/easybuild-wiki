@@ -40,6 +40,9 @@ A couple of noteworthy code style aspects are:
 
 ### Testing result
 
+Obviously, the contributed functionality or support should work for other people interested in it.
+
+The person reviewing the contribution is expected to test it as good as possible, and report back on the result in the pull request.
 
 ## Reviewers
 
