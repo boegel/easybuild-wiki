@@ -71,4 +71,6 @@ To help streamline the reviewing process, a couple of EasyBuild community member
   * Fotis Georgatos (freelancer)
   * Ward Poelmans (UGent)
 
+**You do not need to be listed as a voluntary reviewer to help out with reviewing pull requests, either occasionally or just once.**
+
 If you would like to join the list of volunteers for reviewing contributions, please contact Kenneth Hoste.
