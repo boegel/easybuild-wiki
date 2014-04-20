@@ -16,6 +16,8 @@ Depending on the particular EasyBuild repository (framework, easyblocks or easyc
 
 ### Unit test suite
 
+For every pull request, our [Jenkins setup](https://jenkins1.ugent.be/view/EasyBuild)
+
 ### Code style
 
 ### Testing result
