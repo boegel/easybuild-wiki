@@ -48,6 +48,6 @@ Optionally, give it a spin:
 ```bash
 $ lmod --version
 
-Modules based on Lua: Version 5.3 (5.3) 2014-02-17 16:15
+Modules based on Lua: Version 5.4.2 (5.4.2) 2014-04-17 16:26
     by Robert McLay mclay@tacc.utexas.edu
 ```
