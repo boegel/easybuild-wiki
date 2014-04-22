@@ -29,9 +29,9 @@ $ ldd $HOME/lua/bin/lua
 
 ### Lmod
 
-**Step 1**: Download and unpack the latest available Lmod version, [Lmod-5.3.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.3.tar.bz2/download) at the time of writing.
+**Step 1**: Download and unpack the latest available Lmod version, [Lmod-5.4.2.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.4.2.tar.bz2/download) at the time of writing.
 ```bash
-tar xfvj Lmod-5.3.tar.bz2 && cd Lmod-5.3
+tar xfvj Lmod-5.4.2.tar.bz2 && cd Lmod-5.4.2
 ```
 
 **Step 2**: Configure, build and install Lmod build, in a custom prefix:
@@ -41,7 +41,7 @@ tar xfvj Lmod-5.3.tar.bz2 && cd Lmod-5.3
 
 **Step 3**: Update `$PATH` so `lmod` is available (put this in your `.bashrc`):
 ```bash
-export PATH=$HOME/lmod/5.3/libexec:$PATH
+export PATH=$HOME/lmod/5.4.2/libexec:$PATH
 ```
 
 Optionally, give it a spin:
