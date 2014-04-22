@@ -46,6 +46,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[Release schedule]] (ok, up-to-date)
 * [[Using a custom module naming scheme]] (ok, up-to-date)
 * [[Contributing back]]
+* [[Review process for contributions]]
 * [[Code style]]
 * [[Contributing to the EasyBuild documentation wiki]] 
 * [[Experimental repo]]
