@@ -1,8 +1,25 @@
 ### Basic Information
 
 * **date**: Wednesday June 18th - Friday June 20th 2014
-* **venue**: Vienna Bio Center at the Institute of Molecular Pathology, Dr. Bohrgasse 3-5 (IMBA/GMI building), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>)
+* **venue**: Vienna Bio Center at the Institute of Molecular Pathology, Dr. Bohrgasse 3-5 (IMBA/GMI building), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>) - https://www.google.com/maps/place/Doktor-Bohr-Gasse/@48.1894362,16.4016187,17z/
 * **notes**: shortly before the ISC'14 conference in Leipzig, Germany
+
+### Hotel suggestions
+
+* Hotels in the 3rd district:
+  * http://www.artis-hotels.at/en/artis_hotel_vienna_rennweg/home/index.html
+  * http://www.marriott.com/hotels/travel/viese-imperial-riding-school-renaissance-vienna-hotel/
+  * http://www.hoteldaniel.com/en/vienna.html
+  * http://www.nh-hotels.com/nh/en/hotels/austria/vienna/nh-belvedere.html
+  * http://www.lindner.de/en/LHAB
+  * http://www.mercure.com/gb/home/index.shtml
+
+* Hotels in "the city" (all quite expensive):
+  * http://www.radissonblu.com/hotels/austria/vienna
+  * http://www.imperialvienna.com/
+  * http://www.schick-hotels.com/index-hotel-am-parkring-vienna.en.htm
+  * http://www.ritzcarlton.com/en/Properties/Vienna/Default.htm
+  * http://www.ihg.com/intercontinental/hotels/gb/en/vienna/vieha/hoteldetail?cm_mmc=GoogleMaps-_-ic-_-ATEN-_-vieha
 
 ### Attendees
 
