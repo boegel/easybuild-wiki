@@ -19,6 +19,18 @@ list of confirmed attendees:
 * Jens Timmerman (HPC-UGent, Belgium; EasyBuild developer)
 * Aaron Zauner (azet.org, Austria; EasyBuild user and contributor)
 
+## Topics
+
+Attendees are free to work on what they want, but a couple of topics of interest are typically attached to each hackathon. The intention is to have discussions on these topics, and that some attendees work on these issues:
+
+* improve integration between Lmod and EasyBuild (Robert, the main/only Lmod developer will be there too)
+* how we can further improve/automate the testing of EasyBuild (ad incoming PRs)
+* getting rid of Python 2.4 support, moving on to Python 2.6, supporting Python 3.x
+* outlook to EasyBuild v2.0: getting rid of deprecated behavior
+  * no more Python 2.4 support (move on to only Python 2.6 or more recent 2.x)
+  * no more old-style configuration files
+  * extra_options return type (should be dict instead of list of tuples) 
+
 ## Agenda
 
 _(initial agenda, subject to change)_
