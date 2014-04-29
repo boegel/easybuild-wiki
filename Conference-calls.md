@@ -28,15 +28,17 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * **Thursday** April 17th 2014, 3pm - 3.30pm (CET)
-  * better organise reviewing and testing of (easyconfigs) pull requests (Kenneth)
+ * Tuesday April 29th 2014, 3pm - 3.30pm (CET)
+  * follow-up on improving time required to review/test incoming (easyconfig) PRs
+     * feedback on https://github.com/hpcugent/easybuild/wiki/Review-process-for-contributions
+     * test report script: what kind of metadata should it collect?
+  * feedback on tentative list of topics for next EasyBuild hackathon
+     * see https://github.com/hpcugent/easybuild/wiki/6th-EasyBuild-hackathon#topics
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday April 29th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
  * Tuesday May 13th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
 
