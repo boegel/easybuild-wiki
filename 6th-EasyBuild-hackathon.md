@@ -11,11 +11,13 @@ Please contact Kenneth Hoste to confirm your participation.
 
 list of confirmed attendees:
 
+* Erich Birngruber (Medical University of Vienna)
 * Pablo Escobar (Swiss Institute of Bioinformatics - University of Basel, EasyBuild user and contributor)
 * Petar Forai (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria; EasyBuild user and contributor)
 * Fotis Georgatos (freelancer, EasyBuild contributor)
 * Kenneth Hoste (HPC-UGent, Belgium; EasyBuild developer and release manager)
 * Robert McLay (Texas Advanced Computing Centre (TACC), US; Lmod developer)
+* Georg Rath (Medical University of Vienna, EasyBuild contributor)
 * Jens Timmerman (HPC-UGent, Belgium; EasyBuild developer)
 * Aaron Zauner (azet.org, Austria; EasyBuild user and contributor)
 
