@@ -8,7 +8,7 @@ Notes on the 11th EasyBuild conference call, Tuesday Apr. 29th 2014 (3pm - 3.30p
 
 Alphabetical list of attendees (5):
 
-* Pablo Escobar
+* Pablo Escobar (University of Basel, Switzerland)
 * Petar Forai (GMI, Austria)
 * Fotis Georgatos (University of Luxembourg)
 * Kenneth Hoste (HPC-UGent, Belgium)
