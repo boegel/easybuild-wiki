@@ -16,7 +16,8 @@ Alphabetical list of attendees (5):
 
 #### Agenda
 
-* 
+* follow-up on improving testing of contributions (e.g. easyconfigs PRs)
+* next EasyBuild hackathon topics
 
 #### Notes
 
