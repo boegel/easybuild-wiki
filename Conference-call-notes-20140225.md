@@ -9,7 +9,7 @@ Notes on the 8th EasyBuild conference call, Tuesday Feb. 25th 2014 (10pm - 10.40
 Alphabetical list of attendees (7):
 
 * Geert Jan Bex (UHasselt (VSC partner), Belgium)
-* Jordi Blasco Pallares (NeSI, New Zealand)
+* Pablo Escobar ()
 * Fotis Georgatos (University of Luxembourg)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Peter Maxwell (NeSI, New Zealand)
