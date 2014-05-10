@@ -14,6 +14,7 @@ list of confirmed attendees:
 * Erich Birngruber (Medical University of Vienna)
 * Pablo Escobar (Swiss Institute of Bioinformatics - University of Basel, EasyBuild user and contributor)
 * Petar Forai (Gregor Mendel Institute of Molecular Plant Biology (GMI), Austria; EasyBuild user and contributor)
+* Markus Geimer (Jülich Supercomputing Centre, Scalasca trace analyzer developer)
 * Fotis Georgatos (freelancer, EasyBuild contributor)
 * Kenneth Hoste (HPC-UGent, Belgium; EasyBuild developer and release manager)
 * Robert McLay (Texas Advanced Computing Centre (TACC), US; Lmod developer)
