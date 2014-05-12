@@ -6,31 +6,18 @@ Notes on the 11th EasyBuild conference call, Tuesday Apr. 29th 2014 (3pm - 3.30p
 
 #### Attendees
 
-Alphabetical list of attendees (5):
+Alphabetical list of attendees (2):
 
-* Pablo Escobar (University of Basel, Switzerland)
-* Petar Forai (GMI, Austria)
-* Fotis Georgatos (University of Luxembourg)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Ward Poelmans (UGent, Belgium)
 
 #### Agenda
 
-* follow-up on improving testing of contributions (e.g. easyconfigs PRs)
-* next EasyBuild hackathon topics
+* follow-up on improving time required to review/test incoming (easyconfig) PRs
+  * test report script: eb --test-easyconfigs-pr functionality
+  * https://github.com/hpcugent/easybuild-framework/pull/920
+* discussion on support for toolchain-neutral software (e.g. PerfExpert)
+  * https://github.com/hpcugent/easybuild-framework/issues/570
+  * https://github.com/hpcugent/easybuild-easyconfigs/pull/839
 
 #### Notes
-
- * put together test report script (KH+JT)
-   * automatically test easyconfigs PR, post comment when testing is done
-   * collect metadata (system info, etc.) in a gist
- * hackathon: look into VM setup + Jenkins for automated testing
- * high-level overview of framework presentation (during hackathon or dedicated conf call)
-   * AP Kenneth: plan a date for a conf call on this
-      * supported by a wiki page with a high-level overview of framework
-   * see also https://github.com/hpcugent/easybuild/wiki/Writing-easyblocks
- * make contributing to wiki easier via separate repository (https://github.com/hpcugent/easybuild-wiki)
-   * allow direct wiki editing on a 'staged' wiki
- * autoconfiguration, e.g. via waf => another topic for the hackathon
-    * checking whether include files/libraries are there, also for sanity checking
- * talk to HPC-admin magazine about an EasyBuild article (Jeff Laton)
