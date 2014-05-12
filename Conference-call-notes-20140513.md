@@ -13,7 +13,11 @@ Alphabetical list of attendees (2):
 
 #### Agenda
 
-* follow-up on improving testing of contributions (e.g. easyconfigs PRs)
-* next EasyBuild hackathon topics
+ * follow-up on improving time required to review/test incoming (easyconfig) PRs
+    * test report script: `eb --test-easyconfigs-pr` functionality
+     * https://github.com/hpcugent/easybuild-framework/pull/920
+ * discussion on support for toolchain-neutral software (e.g. PerfExpert)
+  * https://github.com/hpcugent/easybuild-framework/issues/570
+  * https://github.com/hpcugent/easybuild-easyconfigs/pull/839
 
 #### Notes
