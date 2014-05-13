@@ -113,20 +113,20 @@ Anybody who feels confident enough to review a particular contributions can do s
 To help streamline the reviewing process, a couple of EasyBuild community members have agreed with taking up the responsibility of reviewer for the different repositories.
 
  * [framework](https://github.com/hpcugent/easybuild-framework):
-  * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Stijn De Weirdt (HPC-UGent)
-  * Jens Timmerman (HPC-UGent)
-  * Ward Poelmans (UGent)
+  * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
+  * Stijn De Weirdt (HPC-UGent), @stdweird
+  * Jens Timmerman (HPC-UGent), @JensTimmerman 
+  * Ward Poelmans (UGent), @wpoely86
  * [easyblocks](https://github.com/hpcugent/easybuild-easyblocks):
-  * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Jens Timmerman (HPC-UGent)
-  * Ward Poelmans (UGent)
+  * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
+  * Jens Timmerman (HPC-UGent), @JensTimmerman
+  * Ward Poelmans (UGent), @wpoely86
  * [easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs):
-  * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Pablo Escobar (UniBas - SIB)
-  * Petar Forai (GMI)
-  * Fotis Georgatos (freelancer)
-  * Ward Poelmans (UGent)
+  * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
+  * Pablo Escobar (UniBas - SIB), @pescobar
+  * Petar Forai (GMI), @pforai
+  * Fotis Georgatos (freelancer), @fgeorgatos
+  * Ward Poelmans (UGent), @wpoely86
 
 **You do not need to be listed as a voluntary reviewer to help out with reviewing pull requests, either occasionally or just once.**
 
