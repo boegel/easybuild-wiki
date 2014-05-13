@@ -76,14 +76,14 @@ Notes:
 For example, to test https://github.com/hpcugent/easybuild-easyconfigs/pull/767 (`goolf/1.5.14-no-OFED` toolchain + gzip test case), use:
 
 ```
-eb --test-easyconfigs-pr=767 --github-user=GITHUB_USER --force --debug --robot
+eb --test-easyconfigs-pr=767 --github-user=GITHUB_USER --robot --force --debug
 ```
 
 A couple of remarks:
 
  * a valid GitHub username must be supplied via `--github-user`
- * a GitHub token for that user must be available in your systems keyring
- * `--robot` is required to make sure the builds are being executed in the right order, i.e. taken interdependencies into account
+   * a GitHub token for that user must be available in your systems keyring
+ * `--robot` is required to make sure the builds are being executed in the right order, i.e. taking interdependencies into account
  * `--force` is required to make sure that modified easyconfig files are being rebuilt if they were built before
  * `--debug` is nice to have, especially w.r.t. failed builds for which build logs are also uploaded
 
