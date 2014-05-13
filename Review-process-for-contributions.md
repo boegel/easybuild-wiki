@@ -51,7 +51,59 @@ Obviously, the contributed functionality or support should work for other people
 
 The person reviewing the contribution is expected to test it as good as possible, and report back on the result in the pull request.
 
-**TODO**: provide a script to test easyconfigs pull requests with, that spits out some kind of testing report.
+#### Automated testing of easyconfigs pull requests
+
+Since EasyBuild v1.13, a command line option aptly named `--test-easyconfigs-pr` is available to easily test easyconfigs pull requests (PRs) on your system.
+When it is used, `eb` will:
+
+ 1. fetch all patched files from the specified easyconfigs PR on GitHub, i.e. easyconfig files, patches, etc.
+ 2. build all touched easyconfig files
+ 3. compose a comprehensive test report (in Markdown format)
+     * this includes test results, system information (OS, Python, ...), EasyBuild configuration, session environment, etc.
+ 4. upload the test report, and build logs for failed builds, as gists on GitHub, and post a comment in the respective pull request on GitHub
+     * because of this, a GitHub username and token are required
+
+Notes:
+
+ * you are responsible for making sure that the required versions of `easybuild-framework` and `easybuild-easyblocks` are being used
+   * this may be the latest `develop` branches, or an update available in a particular PR (especially w.r.t. easyblocks)
+ * you can test an easyconfig PR without reporting back a test result using `--from-pr` (which doesn't require GitHub credentials)
+ * you can generate a test report without uploading it to GitHub using `--dump-test-report`
+   * this also works with other sources of easyconfigs files, e.g. local files, your EasyBuild installation, etc.
+
+##### Example usage
+
+For example, to test https://github.com/hpcugent/easybuild-easyconfigs/pull/767 (`goolf/1.5.14-no-OFED` toolchain + gzip test case), use:
+
+```
+eb --test-easyconfigs-pr=767 --github-user=GITHUB_USER --force --debug --robot
+```
+
+A couple of remarks:
+
+ * `--robot` is required to make sure the builds are being executed in the right order, i.e. taken interdependencies into account
+ * `--force` is required to make sure that modified easyconfig files are being rebuilt
+ * `--debug` is nice to have
+ * a valid GitHub username should be supplied via `--github-user`
+ * a GitHub token for that user should be available in your systems keyring
+
+##### Setting things up
+
+To obtain a GitHub token:
+
+ 1. visit https://github.com/settings/tokens/new and log in with the GitHub user account you would like to use with EasyBuild
+ 2. enter a token description, e.g. "EasyBuild easyconfigs PR testing"
+ 3. make sure the `repo` and `gist` scopes are enabled
+
+To install your GitHub token in your systems keyring:
+
+ 1. make sure the [`keyring` Python module](https://pypi.python.org/pypi/keyring) is available for the Python version you're using (check with `python -c "import keyring"`)
+    * note: if you're still using Python 2.4.x, you'll need to use [`keyring` version 0.5.1](https://pypi.python.org/packages/source/k/keyring/keyring-0.5.1.tar.gz); more recent are not compatible with Python versions older than 2.6
+ 2. add your GitHub token in your keyring using Python:
+```
+# do replace GITHUB_USER with your own GitHub username
+python -c "import getpass, keyring; keyring.set_password('github_token', 'GITHUB_USER', getpass.getpass())"
+```
 
 ## Reviewers
 
