@@ -97,11 +97,12 @@ To obtain a GitHub token:
 
 To install your GitHub token in your systems keyring:
 
- 1. make sure the [`keyring` Python module](https://pypi.python.org/pypi/keyring) is available for the Python version you're using (check with `python -c "import keyring"`)
+ 1. make sure the [`keyring` Python module](https://pypi.python.org/pypi/keyring) is available for the Python version you're using
+    * check with `python -c "import keyring"`
     * note: if you're still using Python 2.4.x, you'll need to use [`keyring` version 0.5.1](https://pypi.python.org/packages/source/k/keyring/keyring-0.5.1.tar.gz); more recent are not compatible with Python versions older than 2.6
  2. add your GitHub token in your keyring using Python:
 ```
-# do replace GITHUB_USER with your own GitHub username
+# pro tip: copy-paste this, but do replace GITHUB_USER with your own GitHub username
 python -c "import getpass, keyring; keyring.set_password('github_token', 'GITHUB_USER', getpass.getpass())"
 ```
 
