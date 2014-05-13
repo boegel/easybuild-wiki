@@ -123,7 +123,7 @@ To help streamline the reviewing process, a couple of EasyBuild community member
   * Ward Poelmans (UGent)
  * [easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs):
   * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Pablo Escobar (UoB - SIB)
+  * Pablo Escobar (UniBas - SIB)
   * Petar Forai (GMI)
   * Fotis Georgatos (freelancer)
   * Ward Poelmans (UGent)
