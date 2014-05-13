@@ -8,9 +8,9 @@ Notes on the 12th EasyBuild conference call, Friday May 16th 2014 (3pm - 3.30pm 
 
 Alphabetical list of attendees (5):
 
-* Pablo Escobar (University of Basel, Switzerland)
+* Pablo Escobar (UniBas - SIB, Switzerland)
 * Petar Forai (GMI, Austria)
-* Fotis Georgatos (University of Luxembourg)
+* Fotis Georgatos (Uni.lu, Luxembourg)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Ward Poelmans (UGent, Belgium)
 
