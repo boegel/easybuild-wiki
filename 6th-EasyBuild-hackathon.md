@@ -20,6 +20,7 @@ list of confirmed attendees:
 * Robert McLay (Texas Advanced Computing Centre (TACC), US; Lmod developer)
 * Georg Rath (Medical University of Vienna, EasyBuild contributor)
 * Jens Timmerman (HPC-UGent, Belgium; EasyBuild developer)
+* George Tsouloupas (The Cyprus Institute; EasyBuild user and contributor)
 * Aaron Zauner (azet.org, Austria; EasyBuild user and contributor)
 
 ## Topics
