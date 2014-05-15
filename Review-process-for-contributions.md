@@ -53,30 +53,35 @@ The person reviewing the contribution is expected to test it as good as possible
 
 #### Automated testing of easyconfigs pull requests
 
-Since EasyBuild v1.13, a command line option aptly named `--test-easyconfigs-pr` is available to easily test easyconfigs pull requests (PRs) on your system.
-When it is used, `eb` will:
+Since EasyBuild v1.13, the command line options `--from-pr` and `--upload-test-report` are available to easily test easyconfigs pull requests (PRs) on your system.
+When `--from-pr` is used, `eb` will:
 
  1. fetch all patched files from the specified easyconfigs PR on GitHub, i.e. easyconfig files, patches, etc.
  2. build all touched easyconfig files
  3. compose a comprehensive test report (in Markdown format)
      * this includes test results, system information (OS, Python, ...), EasyBuild configuration, session environment, etc.
- 4. upload the test report, and build logs for failed builds, as gists on GitHub, and post a comment in the respective pull request on GitHub
+
+When `--upload-test-report` is used in addition, `eb` will also:
+
+ * upload the test report as a gist on GitHub
+ * upload build logs for failed builds as gists
+ * post a comment in the respective pull request on GitHub
      * because of this, a GitHub username and token are required
 
 Notes:
 
  * you are responsible for making sure that the required versions of `easybuild-framework` and `easybuild-easyblocks` are being used
    * this may be the latest `develop` branches, or an update available in a particular PR (especially w.r.t. easyblocks)
- * you can test an easyconfig PR without reporting back a test result using `--from-pr` (which doesn't require GitHub credentials)
+ * you can test an easyconfig PR without reporting back a test result using only `--from-pr` (which doesn't require GitHub credentials)
  * you can generate a test report without uploading it to GitHub using `--dump-test-report`
-   * this also works with other sources of easyconfigs files, e.g. local files, your EasyBuild installation, etc.
+ * generating a test report also works with other sources of easyconfigs files, e.g. local files, your EasyBuild installation, etc.
 
 ##### Example usage
 
 For example, to test https://github.com/hpcugent/easybuild-easyconfigs/pull/767 (`goolf/1.5.14-no-OFED` toolchain + gzip test case), use:
 
 ```
-eb --test-easyconfigs-pr=767 --github-user=GITHUB_USER --robot --force --debug
+eb --from-pr=767 --github-user=GITHUB_USER --upload-test-report --robot --force --debug
 ```
 
 A couple of remarks:
@@ -104,6 +109,10 @@ To install your GitHub token in your systems keyring:
 ```
 # pro tip: copy-paste this, but do replace GITHUB_USER with your own GitHub username
 python -c "import getpass, keyring; keyring.set_password('github_token', 'GITHUB_USER', getpass.getpass())"
+```
+To check that your GitHub token was installed correctly, use:
+```
+python -c "import keyring; print keyring.get_password('github_token', 'GITHUB_USER')"
 ```
 
 ## Reviewers
