@@ -30,8 +30,9 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
  * Tuesday May 13th 2014, 3pm - 3.30pm (CET)
   * follow-up on improving time required to review/test incoming (easyconfig) PRs
-     * test report script: `eb --test-easyconfigs-pr` functionality
+     * test report script: `eb --from-pr --upload-test-report` functionality
       * https://github.com/hpcugent/easybuild-framework/pull/920
+      * https://github.com/hpcugent/easybuild/wiki/Review-process-for-contributions#automated-testing-of-easyconfigs-pull-requests
   * discussion on support for toolchain-neutral software (e.g. PerfExpert)
    * https://github.com/hpcugent/easybuild-framework/issues/570
    * https://github.com/hpcugent/easybuild-easyconfigs/pull/839
