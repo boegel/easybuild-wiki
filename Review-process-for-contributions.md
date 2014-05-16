@@ -146,15 +146,15 @@ To help streamline the reviewing and testing process, a couple of EasyBuild comm
 
 #### Overview
 
-| Name            | GitHub user id | Test systems                           |
-| -------------   |:--------------:| --------------------------------------:|
-| Stijn De Weirdt | @stdweird      | Scientific Linux 5/6                   |
-| Pablo Escobar   | @pescobar      | baz                                    |
-| Petar Forai     | @pforai        | baz                                    |
-| Fotis Georgatos | @fgeorgatos    | Debian 6, RHEL6                        |
-| Kenneth Hoste   | @boegel        | Scientific Linux 5/6, (OS X, OpenSUSE) |
-| Ward Poelmans   | @wpoely86      | bar                                    |
-| Jens Timmerman  | @JensTimmerman | Scientific Linux 5/6                   |
+| Name            | GitHub user id | Affiliation   | Test systems                           |
+| -------------   |:--------------:| -------------:| --------------------------------------:|
+| Stijn De Weirdt | @stdweird      | HPC-UGent     | Scientific Linux 6                     |
+| Pablo Escobar   | @pescobar      | UniBAS        | baz                                    |
+| Petar Forai     | @pforai        | GMI           | baz                                    |
+| Fotis Georgatos | @fgeorgatos    | freelance     | Debian 6, RHEL6                        |
+| Kenneth Hoste   | @boegel        | HPC-UGent     | Scientific Linux 6, (OS X, OpenSUSE)   |
+| Ward Poelmans   | @wpoely86      | UGent         | Debian 7.2, Fedora 20, SL6             |
+| Jens Timmerman  | @JensTimmerman | HPC-UGent     | Scientific Linux 6                     |
 
 #### Assignments
  * [framework](https://github.com/hpcugent/easybuild-framework):
