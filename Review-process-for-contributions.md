@@ -106,6 +106,32 @@ To install your GitHub token in your systems keyring:
 python -c "import getpass, keyring; keyring.set_password('github_token', 'GITHUB_USER', getpass.getpass())"
 ```
 
+**Note**
+
+Depending on your OS configuration and the version of the Python `keyring` module you're using, you may be requested to
+use a master password when accessing your keyring. More specific, on desktop systems (GNOME, KDE, OS X, …) the `keyring` module will integrate with your system keyring.
+
+While storing your GitHub token encrypted and password-protected is important, this limits the usefulness of `--upload-test-report` since it implies manual intervention.
+
+If you feel strongly about being able to use `--upload-test-report` fully autonomously you can configure `keyring` to store your GitHub token differently, thus avoiding a master password.
+
+To do so, create the following text file at `$HOME/.local/share/python_keyring/keyringrc.cfg` before you store your GitHub token in your keyring:
+
+
+```
+[backend]
+# depending on version of the python-keyring package
+# newer versions (supported since python-keyring v1.1)
+default-keyring=keyring.backends.file.PlaintextKeyring
+
+# older versions (python-keyring v1.0 or older)
+# default-keyring=keyring.backend.UncryptedFileKeyring
+```
+
+
+Note that this does **not** imply that your GitHub token is stored in clear text (it’s base64 encoded), see the file named `keyring_pass.cfg` in `$HOME/.local/share/python_keyring`, although it is definitely less secure to not use a master password.
+
+
 ## Reviewers
 
 Anybody who feels confident enough to review a particular contributions can do so.
