@@ -149,8 +149,8 @@ To help streamline the reviewing and testing process, a couple of EasyBuild comm
 | Name            | GitHub user id | Affiliation   | Test systems                           |
 | -------------   |:--------------:| -------------:| --------------------------------------:|
 | Stijn De Weirdt | @stdweird      | HPC-UGent     | Scientific Linux 6                     |
-| Pablo Escobar   | @pescobar      | UniBAS        | baz                                    |
-| Petar Forai     | @pforai        | GMI           | baz                                    |
+| Pablo Escobar   | @pescobar      | UniBAS        | ?                                      |
+| Petar Forai     | @pforai        | GMI           | ?                                      |
 | Fotis Georgatos | @fgeorgatos    | freelance     | Debian 6, RHEL6                        |
 | Kenneth Hoste   | @boegel        | HPC-UGent     | Scientific Linux 6, (OS X, OpenSUSE)   |
 | Ward Poelmans   | @wpoely86      | UGent         | Debian 7.2, Fedora 20, SL6             |
