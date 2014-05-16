@@ -98,7 +98,7 @@ To obtain a GitHub token:
 
  1. visit https://github.com/settings/tokens/new and log in with the GitHub user account you would like to use with EasyBuild
  2. enter a token description, e.g. "EasyBuild easyconfigs PR testing"
- 3. make sure the `repo` and `gist` scopes are enabled
+ 3. make sure (only) the `repo` and `gist` scopes are enabled
 
 To install your GitHub token in your systems keyring:
 
