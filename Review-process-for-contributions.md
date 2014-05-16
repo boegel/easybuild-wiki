@@ -53,30 +53,35 @@ The person reviewing the contribution is expected to test it as good as possible
 
 #### Automated testing of easyconfigs pull requests
 
-Since EasyBuild v1.13, a command line option aptly named `--test-easyconfigs-pr` is available to easily test easyconfigs pull requests (PRs) on your system.
-When it is used, `eb` will:
+Since EasyBuild v1.13, the command line options `--from-pr` and `--upload-test-report` are available to easily test easyconfigs pull requests (PRs) on your system.
+When `--from-pr` is used, `eb` will:
 
  1. fetch all patched files from the specified easyconfigs PR on GitHub, i.e. easyconfig files, patches, etc.
  2. build all touched easyconfig files
  3. compose a comprehensive test report (in Markdown format)
      * this includes test results, system information (OS, Python, ...), EasyBuild configuration, session environment, etc.
- 4. upload the test report, and build logs for failed builds, as gists on GitHub, and post a comment in the respective pull request on GitHub
+
+When `--upload-test-report` is used in addition, `eb` will also:
+
+ * upload the test report as a gist on GitHub
+ * upload build logs for failed builds as gists
+ * post a comment in the respective pull request on GitHub
      * because of this, a GitHub username and token are required
 
 Notes:
 
  * you are responsible for making sure that the required versions of `easybuild-framework` and `easybuild-easyblocks` are being used
    * this may be the latest `develop` branches, or an update available in a particular PR (especially w.r.t. easyblocks)
- * you can test an easyconfig PR without reporting back a test result using `--from-pr` (which doesn't require GitHub credentials)
+ * you can test an easyconfig PR without reporting back a test result using only `--from-pr` (which doesn't require GitHub credentials)
  * you can generate a test report without uploading it to GitHub using `--dump-test-report`
-   * this also works with other sources of easyconfigs files, e.g. local files, your EasyBuild installation, etc.
+ * generating a test report also works with other sources of easyconfigs files, e.g. local files, your EasyBuild installation, etc.
 
 ##### Example usage
 
 For example, to test https://github.com/hpcugent/easybuild-easyconfigs/pull/767 (`goolf/1.5.14-no-OFED` toolchain + gzip test case), use:
 
 ```
-eb --test-easyconfigs-pr=767 --github-user=GITHUB_USER --robot --force --debug
+eb --from-pr=767 --github-user=GITHUB_USER --upload-test-report --robot --force --debug
 ```
 
 A couple of remarks:
@@ -104,6 +109,10 @@ To install your GitHub token in your systems keyring:
 ```
 # pro tip: copy-paste this, but do replace GITHUB_USER with your own GitHub username
 python -c "import getpass, keyring; keyring.set_password('github_token', 'GITHUB_USER', getpass.getpass())"
+```
+To check that your GitHub token was installed correctly, use:
+```
+python -c "import keyring; print keyring.get_password('github_token', 'GITHUB_USER')"
 ```
 
 **Note**
@@ -139,20 +148,20 @@ Anybody who feels confident enough to review a particular contributions can do s
 To help streamline the reviewing process, a couple of EasyBuild community members have agreed with taking up the responsibility of reviewer for the different repositories.
 
  * [framework](https://github.com/hpcugent/easybuild-framework):
-  * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Stijn De Weirdt (HPC-UGent)
-  * Jens Timmerman (HPC-UGent)
-  * Ward Poelmans (UGent)
+  * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
+  * Stijn De Weirdt (HPC-UGent), @stdweird
+  * Jens Timmerman (HPC-UGent), @JensTimmerman 
+  * Ward Poelmans (UGent), @wpoely86
  * [easyblocks](https://github.com/hpcugent/easybuild-easyblocks):
-  * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Jens Timmerman (HPC-UGent)
-  * Ward Poelmans (UGent)
+  * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
+  * Jens Timmerman (HPC-UGent), @JensTimmerman
+  * Ward Poelmans (UGent), @wpoely86
  * [easyconfigs](https://github.com/hpcugent/easybuild-easyconfigs):
-  * Kenneth Hoste (HPC-UGent, _release manager_)
-  * Pablo Escobar (UoB - SIB)
-  * Petar Forai (GMI)
-  * Fotis Georgatos (freelancer)
-  * Ward Poelmans (UGent)
+  * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
+  * Pablo Escobar (UniBas - SIB), @pescobar
+  * Petar Forai (GMI), @pforai
+  * Fotis Georgatos (freelancer), @fgeorgatos
+  * Ward Poelmans (UGent), @wpoely86
 
 **You do not need to be listed as a voluntary reviewer to help out with reviewing pull requests, either occasionally or just once.**
 

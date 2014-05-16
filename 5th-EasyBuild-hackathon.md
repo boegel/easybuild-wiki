@@ -23,7 +23,7 @@ list of attendees:
 * Kenneth Hoste (HPC-UGent, EasyBuild developer and release manager)
 * Thekla Loizou (The Cyprus Institute)
 * Bernd Mohr (Jülich Supercomputing Centre, UNITE, lead Tools team)
-Alan O'Cais (Jülich Supercomputing Centre, User support)
+* Alan O'Cais (Jülich Supercomputing Centre, User support)
 * Peter Philippen (Jülich Supercomputing Centre, Tools team, Opari2 developer)
 * Christian Rössel (Jülich Supercomputing Centre, Tools Team, Score-P maintainer and developer)
 * Pavel Saviankou (Jülich Supercomputing Centre, Tools team, Cube developer)
