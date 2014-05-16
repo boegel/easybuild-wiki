@@ -126,17 +126,14 @@ If you feel strongly about being able to use `--upload-test-report` fully autono
 
 To do so, create the following text file at `$HOME/.local/share/python_keyring/keyringrc.cfg` before you store your GitHub token in your keyring:
 
-
 ```
 [backend]
 # depending on version of the python-keyring package
 # newer versions (supported since python-keyring v1.1)
 default-keyring=keyring.backends.file.PlaintextKeyring
-
 # older versions (python-keyring v1.0 or older)
 # default-keyring=keyring.backend.UncryptedFileKeyring
 ```
-
 
 Note that this does **not** imply that your GitHub token is stored in clear text (it’s base64 encoded), see the file named `keyring_pass.cfg` in `$HOME/.local/share/python_keyring`, although it is definitely less secure to not use a master password.
 
