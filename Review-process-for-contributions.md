@@ -138,12 +138,25 @@ default-keyring=keyring.backends.file.PlaintextKeyring
 Note that this does **not** imply that your GitHub token is stored in clear text (it’s base64 encoded), see the file named `keyring_pass.cfg` in `$HOME/.local/share/python_keyring`, although it is definitely less secure to not use a master password.
 
 
-## Reviewers
+## Reviewers/testers
 
-Anybody who feels confident enough to review a particular contributions can do so.
+Anybody who feels confident enough to review and test a particular contributions can do so.
 
-To help streamline the reviewing process, a couple of EasyBuild community members have agreed with taking up the responsibility of reviewer for the different repositories.
+To help streamline the reviewing and testing process, a couple of EasyBuild community members have agreed with taking up the responsibility of reviewer/tester for the different repositories.
 
+#### Overview
+
+| Name            | GitHub user id | Test systems                           |
+| -------------   |:--------------:| --------------------------------------:|
+| Stijn De Weirdt | @stdweird      | Scientific Linux 5/6                   |
+| Pablo Escobar   | @pescobar      | baz                                    |
+| Petar Forai     | @pforai        | baz                                    |
+| Fotis Georgatos | @fgeorgatos    | Debian 6, RHEL6                        |
+| Kenneth Hoste   | @boegel        | Scientific Linux 5/6, (OS X, OpenSUSE) |
+| Ward Poelmans   | @wpoely86      | bar                                    |
+| Jens Timmerman  | @JensTimmerman | Scientific Linux 5/6                   |
+
+#### Assignments
  * [framework](https://github.com/hpcugent/easybuild-framework):
   * Kenneth Hoste (HPC-UGent, _release manager_), @boegel
   * Stijn De Weirdt (HPC-UGent), @stdweird
