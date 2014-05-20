@@ -17,6 +17,7 @@ list of confirmed attendees:
 * Markus Geimer (Jülich Supercomputing Centre, Scalasca trace analyzer developer)
 * Fotis Georgatos (freelancer, EasyBuild contributor)
 * Kenneth Hoste (HPC-UGent, Belgium; EasyBuild developer and release manager)
+* Arun Kumar (Bayer, Germany, EasyBuild user)
 * Robert McLay (Texas Advanced Computing Centre (TACC), US; Lmod developer)
 * Georg Rath (Medical University of Vienna, EasyBuild contributor)
 * Jens Timmerman (HPC-UGent, Belgium; EasyBuild developer)
