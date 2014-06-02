@@ -13,7 +13,7 @@ These wiki pages contain as the EasyBuild documentation.
 * [[License]]
 * [[Dependencies]] (updated)
   * [[Installing environment modules without root permissions]] (up-to-date)
-  * [[Installing lmod without root permissions]] (up-to-date)
+  * [[Installing Lmod without root permissions]] (up-to-date)
 * [[Installing EasyBuild]] (updated)
  * [[Bootstrapping EasyBuild]] (ok, up-to-date)
 * [[Setting up tab completion for bash]] (ok, up-to-date)
