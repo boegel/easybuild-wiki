@@ -137,6 +137,20 @@ Note that to 'build' a toolchain environment module, you should use the `dummy` 
 
 **Important remark**: the list of dependencies in the toolchain environment module should match the list of classes in the toolchain definition as implemented by the Python module in `easybuild.toolchains`. More specifically, the names of the dependency modules should match the `NAME` of the toolchain elements as specified in the `easybuild.toolchains.*` Python classes for them.
 
+#### Note on toolchain versions
+
+Each toolchain is assigned a version, just like software packages.
+
+Coming up with a sensible version number is difficult, so after giving it some thought, we figured to just run with a limited set of heuristics for versioning toolchains. I.e. for a toolchain with version `x.y.z`:
+
+* the major version number `x` is used to 'group' toolchains that feature different elements, but are from the same 'generation'; if one of the toolchain elements gets a major update, `x` is increased;
+ * e.g. for the `ictce` toolchains (Intel tools), a new major version number of `icc`/`ifort` compilers results in an increase of the major version number of `ictce`
+* the minor version number `y` is increased when multiple toolchain elements get a minor update;
+ * e.g. for the `goolf` toolchains, v1.5.14 is an updated version of v1.4.10, without any major updates in the toolchain elements
+* the tiny version number `z` is changed when the version of one toolchain element is adjusted;
+ * also, `z` is picked such that *downgrades* of individual toolchain elements are possible while retaining a logical ordering (i.e. downgrading one element should results in a lower value for `z`, and shouldn't clash with existing toolchain versions)
+ * e.g. `goolf` v1.4.10 provides freedom to downgrade `GCC` v4.7.2 an earlier v4.7.x should the need arise (e.g. for testing/benchmarking); likewise for the other toolchain elements
+
 ### Contribute back!
 
 After you've implemented and tested the support for a new compiler toolchain (and its constituent elements), please consider contributing it back so other EasyBuilders can also benefit from it. See [[Contributing back]] for more information.
