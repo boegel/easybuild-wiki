@@ -5,7 +5,7 @@ In the world of High Performance Computing where EasyBuild was born, this usuall
 
 The following sections describe how to either pick an already supported compiler toolchain, or how to construct your own toolchain and provide the necessary things so that EasyBuild can use it.
 
-# Select one of the supported compiler toolchains
+## Select one of the supported compiler toolchains
 
 To get an overview of compiler toolchains that EasyBuild knows about, use the `--list-toolchains` command line option (available since EasyBuild v1.1). This will print something like below:
 
@@ -45,13 +45,13 @@ For each compiler toolchain, the constituent elements (compiler + libraries) are
 
 If none of these toolchains fits your needs, you will need to construct your own compiler toolchain.
 
-# Create a new compiler toolchain
+## Create a new compiler toolchain
 
 EasyBuild has very modular support for compiler toolchains, making it very easy to construct your own toolchain and make EasyBuild use it.
 
 If you implement support for new compiler toolchains and/or toolchain elements, [please consider contributing them back to the main easybuild-framework repository](https://github.com/hpcugent/easybuild/wiki/Contributing-back).
 
-## Create your own EasyBuild toolchains package
+### Create your own EasyBuild toolchains package
 
 Before you create your own compiler toolchain, you need to set up your own `easybuild.toolchains` package in which you can implemented the required Python module that will provide support for your toolchain. Of course, **you will only need to do this once** (for every `easybuild.toolchains` package).
 
@@ -68,11 +68,11 @@ touch easybuild/__init__.py
 
 This will create an empty `easybuild.toolchains` package, and also initialize the `compiler`, `fft`, `linalg` and `mpi` subpackages. 
 
-## Implement support for the toolchain
+### Implement support for the toolchain
 
 To make EasyBuild support your toolchain, you will need to provide Python modules that implement that support. If all of the constituent toolchain element already have Python modules available in the `easybuild.toolchains` subpackages, you'll only need to provide a Python module that defines your compiler toolchain.
 
-### Python modules for toolchain elements
+#### Python modules for toolchain elements
 
 For each of the toolchain elements, i.e. compiler suite and each one of the libraries, a Python module should be available in the appropriate `easybuild.toolchains` subpackage.
 
@@ -84,7 +84,7 @@ If you need to implement support for yet unsupported compilers and/or libraries,
 
 If you need support from the EasyBuild developers, don't hesitate to [open an issue in the easybuild-framework repository](https://github.com/hpcugent/easybuild-framework/issues/new), or [contact us](https://github.com/hpcugent/easybuild/wiki/Contact).
 
-### Python module for toolchain
+#### Python module for toolchain
 
 Next to making sure EasyBuild supports the toolchain elements, you also need to define the toolchain itself, by implementing a very simple Python module in `easybuild.toolchains`. As an example, the toolchain definition for `ictce` 
 is shown below (see also [easybuild/toolchains/ictce.py](https://github.com/hpcugent/easybuild-framework/blob/master/easybuild/toolchains/ictce.py)).
@@ -106,7 +106,7 @@ class Ictce(IntelIccIfort, IntelMPI, IntelMKL, IntelFFTW):
 
 To add support for a toolchain, it suffices define a class that inherits from all of the the classes implementing support for the toolchain elements, and set a toolchain name as `NAME` (that should match the name of the toolchain environment module, see below). EasyBuild will then take care of the nasty details.
 
-## Create an environment module for the toolchain
+### Create an environment module for the toolchain
 
 You need to build a environment module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding environemnt module to make the compiler and libraries available for use.
 
@@ -126,17 +126,17 @@ description = """Intel Cluster Toolchain Compiler Edition provides Intel C,C++ a
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
 dependencies = [ 
-                ('icc', '2011.6.233'),
-                ('ifort', '2011.6.233'),
-                ('impi', '4.0.2.003'),
-                ('imkl', '10.3.6.233')
-               ]
+    ('icc', '2011.6.233'),
+    ('ifort', '2011.6.233'),
+    ('impi', '4.0.2.003'),
+    ('imkl', '10.3.6.233'),
+]
 ```
 
 Note that to 'build' a toolchain environment module, you should use the `dummy` toolchain (since you won't actually be building anything, just creating an environment module file).
 
 **Important remark**: the list of dependencies in the toolchain environment module should match the list of classes in the toolchain definition as implemented by the Python module in `easybuild.toolchains`. More specifically, the names of the dependency modules should match the `NAME` of the toolchain elements as specified in the `easybuild.toolchains.*` Python classes for them.
 
-## Contribute back!
+### Contribute back!
 
 After you've implemented and tested the support for a new compiler toolchain (and its constituent elements), please consider contributing it back so other EasyBuilders can also benefit from it. See [[Contributing back]] for more information.
