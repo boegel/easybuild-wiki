@@ -28,23 +28,13 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday May 13th 2014, 3pm - 3.30pm (CET)
-  * follow-up on improving time required to review/test incoming (easyconfig) PRs
-     * test report script: `eb --from-pr --upload-test-report` functionality
-      * https://github.com/hpcugent/easybuild-framework/pull/920
-      * https://github.com/hpcugent/easybuild/wiki/Review-process-for-contributions#automated-testing-of-easyconfigs-pull-requests
-  * discussion on support for toolchain-neutral software (e.g. PerfExpert)
-   * https://github.com/hpcugent/easybuild-framework/issues/570
-   * https://github.com/hpcugent/easybuild-easyconfigs/pull/839
+ * **Wednesday** June 11th 2014, 1.15pm - 1.45pm (CET)
+  * [[deprecated functionality|https://github.com/hpcugent/easybuild/wiki/Deprecated-functionality]] (outlook to EasyBuild v2.0)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday May 27th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
- * Tuesday June 10th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
  * Tuesday June 24th 2014, 3pm - 3.30pm (CET)
   * **note**: during ISC'14
   * EasyBuild hackathon @ Leipzig post-mortem
