@@ -40,3 +40,10 @@ For readability of >2 words, it is suggested to use \_CamelCase\_ style.
 So, yes, `_GreekSmallLetterEtaWithPsiliAndOxia_` *could* indeed be a fully
 valid package name; package "electron" in the original spelling anyone? ;-)
 
+### Determining the class name for a given package
+
+```python
+>>> from easybuild.tools.filetools import encode_class_name
+>>> encode_class_name('GAMESS-US')
+'EB_GAMESS_minus_US'
+```
