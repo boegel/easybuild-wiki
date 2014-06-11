@@ -6,11 +6,11 @@ This page presents an overview of deprecated functionality, together with availa
 **In EasyBuild v2.0 we will drop the support for this deprecated functionality, forcing you to use the alternative
 features instead.**
 
-## Python compatiblity
+## Python compatibility
 
 Python 2.4 compatibility is deprecated.
 
-* _deprecated since:_ EasyBuild v1.14.0 (July'13)
+* _deprecated since:_ EasyBuild v1.14.0 (July'14)
 * _no longer supported since:_ EasyBuild v2.0 (planned)
 * _alternatives_: **upgrade to Python v2.6.x or v2.7.x**
 
