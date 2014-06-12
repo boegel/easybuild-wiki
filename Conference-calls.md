@@ -28,17 +28,15 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * **Wednesday** June 11th 2014, 1.15pm - 1.45pm (CET)
-  * [[deprecated functionality|https://github.com/hpcugent/easybuild/wiki/Deprecated-functionality]] (outlook to EasyBuild v2.0)
+ * Tuesday June 24th 2014, 3pm - 3.30pm (CET)
+  * **note**: during ISC'14
+  * EasyBuild hackathon @ Leipzig post-mortem
+  * feedback on "Getting Scientific Software Installed" BoF @ ISC'14
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday June 24th 2014, 3pm - 3.30pm (CET)
-  * **note**: during ISC'14
-  * EasyBuild hackathon @ Leipzig post-mortem
-  * feedback on "Getting Scientific Software Installed" BoF @ ISC'14
  * Tuesday July 8th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
 
@@ -46,6 +44,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20140611]]
  * [[Conference call notes 20140516]]
  * [[Conference call notes 20140429]]
  * [[Conference call notes 20140417]]
