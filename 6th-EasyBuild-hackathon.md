@@ -1,7 +1,22 @@
 ### Basic Information
 
 * **date**: Wednesday June 18th - Friday June 20th 2014
-* **venue**: Vienna Bio Center at the Institute of Molecular Pathology, Dr. Bohrgasse 3-5 (IMBA/GMI building), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>) - https://www.google.com/maps/place/Doktor-Bohr-Gasse/@48.1894362,16.4016187,17z/
+* **venue**: Vienna Bio Center at the Institute of Molecular Pathology, Seminar Room 2 in IMP building
+  * _address_: Dr. Bohrgasse 3-5 (IMBA/GMI building), Vienna, Austria (<a href="http://www.gmi.oeaw.ac.at/">http://www.gmi.oeaw.ac.at/</a>)
+  * _Google Maps_: https://www.google.com/maps/place/Doktor-Bohr-Gasse/@48.1894362,16.4016187,17z/
+  * _best entrance_: via the neighbouring IMBA/GMI building at Dr. Bohrgasse 3-5
+  * **entrance is access controlled (24h porter), so we need to enter in group** 
+     * meet up in front of IMBA/GMI building 10m before start of hackathon (**Wed: 10.50am**, Thu/Fri: 9.50am)
+     * **local contact (Petar Forai - +4369910503137, Aaron Zauner)**
+  * _public transport_ (train/tram/bus/underground):
+     * 5am - 0.30am + night busses each day
+     * 24h underground on Fri/Sat
+     * 24/48/72h tickets available, also single tickets available
+     * best app: Qando
+  * _from airport_:
+     * public transport (~30m): direct line "CAT/City - Airport Terminal"
+     * taxi: fixed rate, 35-50 EUR to Vienna Bio Center
+        * mention address to taxi driver!
 * **notes**: shortly before the ISC'14 conference in Leipzig, Germany
 
 ### Attendees
@@ -28,7 +43,7 @@ list of confirmed attendees:
 
 Attendees are free to work on what they want, but a couple of topics of interest are typically attached to each hackathon. The intention is to have discussions on these topics, and that some attendees work on these issues:
 
-* improve integration between Lmod and EasyBuild (Robert, the main/only Lmod developer will be there too)
+* improve integration between Lmod and EasyBuild (w/ Robert McLay, main Lmod developer)
 * how we can further improve/automate the testing of EasyBuild (ad incoming PRs)
 * getting rid of Python 2.4 support, moving on to Python 2.6, supporting Python 3.x
 * outlook to EasyBuild v2.0: getting rid of deprecated behavior
@@ -41,9 +56,10 @@ Attendees are free to work on what they want, but a couple of topics of interest
 _(initial agenda, subject to change)_
 
 ### Wednesday June 18th 2014
- * [10am - 12pm] Introduction to EasyBuild, status update, Q&A (Kenneth Hoste)
- * [1pm - 3pm] Introduction to Lmod, relation to EasyBuild, Q&A (Robert McLay)
- * [3pm - 6pm] Hackathon: getting started, first hands-on experience with EasyBuild and Lmod
+ * [11am - 1pm] Introduction to EasyBuild, status update, Q&A (Kenneth Hoste)
+ * [2pm - 2.45pm] EasyBuild @ Bayer
+ * [2.45pm - 4pm] Introduction to Lmod, relation to EasyBuild, Q&A (Robert McLay)
+ * [4pm - 6pm] Hackathon: getting started, first hands-on experience with EasyBuild and Lmod
 
 ### Thursday June 19th 2014
  * [10am - 6pm] Hackathon
@@ -51,7 +67,7 @@ _(initial agenda, subject to change)_
   * work on open issues or software support you care about
 
 ### Friday June 20th 2014
- * [9am - 5pm] Hackathon (continued)
+ * [10am - 6pm] Hackathon (continued)
 
 
 ## Notes
