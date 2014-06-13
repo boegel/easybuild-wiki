@@ -2,12 +2,32 @@
 
 This page intends to provide a step-by-step guide for writing easyblocks.
 
-For inspiration, please look at existing easyblocks: https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks
+For inspiration, please look at existing easyblocks:
+https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks
 
 A fully worked out example for WRF is available at [Tutorial: building WRF after adding support for it]
 
-## Structure of an easyblock
+## What is an easyblock?
 
+An _easyblock_ is a Python module which implements a software build procedure, and can be _generic_ or
+_software-specific_.
+
+**Generic easyblocks** can be used to build different software packages that require standard tools for build/installation.
+For example, the [[`CMakeMake` generic easyblock|https://github.com/hpcugent/easybuild-easyblocks/tree/master/easybuild/easyblocks/generic/cmakemake.py]]
+implement a build procedure using `cmake` for configuring the build, `make` for building the software and `make install`
+for installing it. Several options can be passed to both `cmake` and `make` when required to correctly build the software.
+
+**Software-specific easyblocks** are custom to one particular software package, and indicate that the build procedure of
+this software package deviates from standard tools/procedures in one way or another (sometimes quite extensively).
+These easyblocks can be built on top of (an) existing (generic) easyblock(s) to tweak and/or extend (parts of) the build
+procedure implemented in them.
+
+EasyBuild will pick up one particular easyblock each time it is instructed to build a software
+package, based on the `easyblock` parameter in the easyconfig file or the name of the software package, and will fall
+back to a `configure`-`make`-`make install` standard build procedure (implemented by the `ConfigureMake` generic
+easyblock) if it can't find a a matching easyblock.
+
+## Structure of an easyblock
 
 ## Design considerations
 
