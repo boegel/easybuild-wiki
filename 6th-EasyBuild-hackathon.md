@@ -56,10 +56,10 @@ Attendees are free to work on what they want, but a couple of topics of interest
 _(initial agenda, subject to change)_
 
 ### Wednesday June 18th 2014
- * [11am - 1pm] Introduction to EasyBuild, status update, Q&A (Kenneth Hoste)
- * [2pm - 2.45pm] EasyBuild @ Bayer
- * [2.45pm - 4pm] Introduction to Lmod, relation to EasyBuild, Q&A (Robert McLay)
- * [4pm - 6pm] Hackathon: getting started, first hands-on experience with EasyBuild and Lmod
+ * [10am - 12pm] Introduction to EasyBuild, status update, Q&A (Kenneth Hoste) ([slides](http://hpcugent.github.io/easybuild/files/EasyBuild_introduction_hackathon-Vienna-Jun14.pdf))
+ * [1pm - 1.30pm] EasyBuild @ Bayer
+ * [1.30pm - 4pm] Introduction to Lmod, relation to EasyBuild, Q&A (Robert McLay) ([slides](http://hpcugent.github.io/easybuild/files/sllides_mclay_20140617_Lmod.pdf))
+ * [3pm - 6pm] Hackathon: getting started, first hands-on experience with EasyBuild and Lmod
 
 ### Thursday June 19th 2014
  * [10am - 6pm] Hackathon

@@ -26,3 +26,5 @@ Alphabetical list of attendees (5):
   * https://github.com/hpcugent/easybuild-easyconfigs/pull/839
 
 #### Notes
+
+(none)

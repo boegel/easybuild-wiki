@@ -27,6 +27,7 @@ package, based on the `easyblock` parameter in the easyconfig file or the name o
 back to a `configure`-`make`-`make install` standard build procedure (implemented by the `ConfigureMake` generic
 easyblock) if it can't find a a matching easyblock.
 
+
 ## Structure of an easyblock
 
 ## Design considerations
