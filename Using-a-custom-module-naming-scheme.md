@@ -53,8 +53,6 @@ class ExampleModuleNamingScheme(ModuleNamingScheme):
         @return: string representing full module name, e.g.: 'goolf/1.4.10/gzip/1.5'
         """
 
-        import os
-
         # fetch required values
         name = ec['name']
         version = ec['version']
