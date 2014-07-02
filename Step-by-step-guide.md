@@ -52,11 +52,11 @@ Simply provide EasyBuild with an easyconfig that describes which GCC version you
 
 ### Step 1.1 Create easyconfig for GCC
 
-Create an easyconfig file `GCC-4.6.3.eb` with the following contents:
+Create an easyconfig file `GCC-4.7.2.eb` with the following contents:
 
 ```python
 name = "GCC"
-version = '4.6.3'
+version = '4.7.2'
 
 homepage = 'http://gcc.gnu.org/'
 description = "The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran,
@@ -101,9 +101,9 @@ EasyBuild auto-detects how many cores you have in your system, and will build in
 
 Instruct EasyBuild to build GCC by providing it the easyconfig:
 
-    eb GCC-4.6.3.eb
+    eb GCC-4.7.2.eb
 
-Building GCC v4.6.3 with a bootstrap build as performed by the GCC easyblock takes about 35 minutes (on the aforementioned system).
+Building GCC v4.7.2 with a bootstrap build as performed by the GCC easyblock takes about 35 minutes (on the aforementioned system).
 
 
 ### Step 1.3 Verify installation
@@ -111,9 +111,9 @@ Building GCC v4.6.3 with a bootstrap build as performed by the GCC easyblock tak
 Once the installation is complete, you should see a message like `COMPLETED: Installation ended successfully` appearing, both on the command line output
 and in the log file created by EasyBuild.
 
-To verify that EasyBuild has produced a working GCC build, load the `GCC/4.6.3` module provided and check the version:
+To verify that EasyBuild has produced a working GCC build, load the `GCC/4.7.2` module provided and check the version:
 
-    module load GCC/4.6.3
+    module load GCC/4.7.2
     gcc --version | grep ^gcc
 
 This should yield something like `gcc (GCC) 4.6.3` as output.
@@ -133,13 +133,13 @@ Create an easyconfig `OpenMPI-1.4.5-no-OFED.eb` with the following contents:
 
 ```python
 name = 'OpenMPI'
-version = '1.4.5'
+version = '1.6.4'
 versionsuffix = "-no-OFED"  # no InfiniBand support, so add version suffix
 
 homepage = 'http://www.open-mpi.org/'
 description = "The Open MPI Project is an open source MPI-2 implementation."
 
-toolchain = {'name': 'GCC','version': '4.6.3'}
+toolchain = {'name': 'GCC','version': '4.7.2'}
 
 sources = ['%s-%s.tar.gz'%(name.lower(),version)]
 source_urls = ['http://www.open-mpi.org/software/ompi/v%s/downloads' % '.'.join(version.split('.')[0:2])]
@@ -176,7 +176,7 @@ This means that EasyBuild will instead fall back to the default ConfigureMake ea
 Instruct EasyBuild to build OpenMPI by providing it with the easyconfig:
 
 ```bash
-eb OpenMPI-1.4.5-no-OFED.eb
+eb OpenMPI-1.6.4-no-OFED.eb
 ```
 
 Building and installing OpenMPI should only take about 7 minutes.
@@ -187,17 +187,21 @@ Building and installing OpenMPI should only take about 7 minutes.
 
 ### Step 3.1: Building/install LAPACK
 
+*** Step 3.1.2: Install gompi compiler toolchain (see https://github.com/hpcugent/easybuild-easyconfigs/tree/master/easybuild/easyconfigs/g/gompi for example easyconfigs, and further down this guide to explain how to create your own toolchain easyconfigs.
+
+`eb  gompi-1.4.10.eb`
+
 **Step 3.1.1: Create easyconfig for LAPACK**
 
 ```python
 name = 'LAPACK'
-version = '3.4.0'
+version = '3.4.2'
 
 homepage = 'http://www.netlib.org/lapack/'
 description = """LAPACK is written in Fortran90 and provides routines for solving systems of simultaneous linear equations,
 least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems."""
 
-toolchain = {'name':'GCC','version':'4.6.3'}
+toolchain = {'name':'gompi','version':'1.4.10'}
 toolchainopts = {'pic':True}
 
 sources = ['%s-%s.tgz'%(name.lower(),version)]
@@ -206,12 +210,11 @@ source_urls = [homepage]
 moduleclass = 'lib'
 ```
 
-**Step 3.1.2: Build and install LAPACK**
-`eb  LAPACK-3.4.0-GCC-4.6.2.eb`
 
-### Step 3.2: Install gompi compiler toolchain
+**Step 3.1.3: Build and install LAPACK**
+`eb  LAPACK-3.4.2-gompi-1.4.10.eb`
 
-`eb  gompi-1.4.10.eb`
+
 
 ### Step 3.3: Building/installing OpenBLAS
 
@@ -236,17 +239,11 @@ homepage = 'http://www.fftw.org'
 descripti on= """FFTW is a C subroutine library for computing the discrete Fourier transform (DFT)
 in one or more dimensions, of arbitrary input size, and of both real and complex data."""
 
-toolchain = {'name': 'GCC', 'version': '4.6.3'}
+toolchain = {'name': 'gompi', 'version': '1.4.10'}
 toolchainopts = {'optarch': True, 'pic': True}
 
 sources = ['%s-%s.tar.gz' % (name.lower(), version)]
 source_urls = [homepage]
-
-mpilib = 'OpenMPI'
-mpiver = '1.4.5'
-mpisuff = '-no-OFED'
-
-dependencies = [(mpilib, mpiver, mpisuff)]
 
 versionsuffix = '-%s-%s%s' % (mpilib, mpiver, mpisuff)
 
@@ -289,8 +286,8 @@ blassuff = '-LAPACK-3.4.2'
 versionsuffix = "-%s-%s%s" % (blaslib, blasver, blassuff)
 
 dependencies = [
-                (blaslib, blasver, blassuff),
-               ]
+    (blaslib, blasver, blassuff),
+]
 
 ## parallel build tends to fail, so disabling it
 parallel = 1
