@@ -16,6 +16,10 @@
 This step-by-step guide will guide you through putting together a self-contained compiler toolchain, and using that toolchain to build a software package.
 It is assumed you have already [[configured|Configuration]] EasyBuild.
 
+**Note, this guide is here to try to inform you about what is going on behind the scenes in EasyBuild, if you want to get started quickly, take an easyconfig from https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages**
+**and run it with `eb software-version-toolchain-toolchainversion.eb --robot`**
+**This will enable the robot optiand which will automatically do everything explained below.**
+
 For more information on what a compiler toolchain is and why EasyBuild uses them, see the [[Compiler toolchains]] wiki page.
 
 In this guide, we will put together the `goalf` toolchain, which consists of:
