@@ -207,15 +207,20 @@ moduleclass = 'lib'
 ```
 
 **Step 3.1.2: Build and install LAPACK**
+`eb  LAPACK-3.4.0-GCC-4.6.2.eb`
 
-### Step 3.2: Building/installing OpenBLAS
+### Step 3.2: Install gompi compiler toolchain
 
-**Step 3.2.1: Create easyconfig for OpenBLAS**
+`eb  gompi-1.4.10.eb`
+
+### Step 3.3: Building/installing OpenBLAS
+
+**Step 3.3.1: Create easyconfig for OpenBLAS**
 * Use this easyconfig: https://github.com/hpcugent/easybuild-easyconfigs/blob/master/easybuild/easyconfigs/o/OpenBLAS/OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2.eb
 * witch will need this patch https://github.com/hpcugent/easybuild-easyconfigs/blob/master/easybuild/easyconfigs/o/OpenBLAS/OpenBLAS-0.2.6_Makefile-LAPACK-sources.patch
 
 
-**Step 3.2.2: Build and install ATLAS**
+**Step 3.3.2: Build and install ATLAS**
 `eb OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2.eb`
 
 <a name="wiki-step4"/>
@@ -301,7 +306,7 @@ moduleclass = 'numlib'
 <a name="wiki-step6"/>
 ## Step 6: Compiler toolchain
 
-### Step 5.1: Create easyconfig for goalf compiler toolchain
+### Step 6.1: Create easyconfig for goalf compiler toolchain
 
 ```python
 easyblock = "Toolchain"
@@ -343,7 +348,7 @@ dependencies = [
 moduleclass = 'toolchain'
 ```
 
-### Step 5.2: Install goolf compiler toolchain
+### Step 6.2: Install goolf compiler toolchain
 
 `eb  goolf-1.4.10.eb`
 
