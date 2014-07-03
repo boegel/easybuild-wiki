@@ -29,9 +29,9 @@ $ ldd $HOME/lua/bin/lua
 
 ### Lmod
 
-**Step 1**: Download and unpack the latest available Lmod version, [Lmod-5.4.2.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.4.2.tar.bz2/download) at the time of writing.
+**Step 1**: Download and unpack the latest available Lmod version, [Lmod-5.6.3.tar.bz2](http://sourceforge.net/projects/lmod/files/Lmod-5.6.3.tar.bz2/download) at the time of writing.
 ```bash
-tar xfvj Lmod-5.4.2.tar.bz2 && cd Lmod-5.4.2
+tar xfvj Lmod-5.6.3.tar.bz2 && cd Lmod-5.6.3
 ```
 
 **Step 2**: Configure, build and install Lmod build, in a custom prefix:
@@ -41,13 +41,20 @@ tar xfvj Lmod-5.4.2.tar.bz2 && cd Lmod-5.4.2
 
 **Step 3**: Update `$PATH` so `lmod` is available (put this in your `.bashrc`):
 ```bash
-export PATH=$HOME/lmod/5.4.2/libexec:$PATH
+export PATH=$HOME/lmod/5.6.3/libexec:$PATH
 ```
 
 Optionally, give it a spin:
 ```bash
 $ lmod --version
 
-Modules based on Lua: Version 5.4.2 (5.4.2) 2014-04-17 16:26
+Modules based on Lua: Version 5.6.3 (5.6.3-19-g5e11bfa) 2014-06-23 05:28
     by Robert McLay mclay@tacc.utexas.edu
 ```
+
+**Step 4**: Define `module` function to use `lmod` (optional for use with EasyBuild):
+```bash
+source $HOME/lmod/5.6.3/init/bash
+export LMOD_CMD=$HOME/lmod/5.6.3/libexec/lmod
+```
+Or, alternatively, perform a full installation by running `make install` rather than `make pre-install`.
