@@ -10,4 +10,4 @@ BoF details on ISC'14 website @ [http://www.isc-events.com/isc14_ap/sessiondetai
  * [HPC Advisory lightning talk](http://hpcugent.github.io/easybuild/files/ISC14_BOF_lightning_talk_HPC_Advisory_Council.pdf)
  * [Lmod lightning talk](http://hpcugent.github.io/easybuild/files/ISC14_BOF_lightning_talk_Lmod.pdf)
  * [EasyBuild lightning talk](http://hpcugent.github.io/easybuild/files/ISC14_BOF_lightning_talk_EasyBuild.pdf)
- * results of show-of-hands part of the session that steered discussion (**pending**)
+ * [results of show-of-hands part of the session that steered discussion](http://hpcugent.github.io/easybuild/files/ISC14_BoF_show-of-hands-results.pdf)
