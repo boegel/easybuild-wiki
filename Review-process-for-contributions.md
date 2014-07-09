@@ -75,22 +75,24 @@ Notes:
  * you can test an easyconfig PR without reporting back a test result using only `--from-pr` (which doesn't require GitHub credentials)
  * you can generate a test report without uploading it to GitHub using `--dump-test-report`
  * generating a test report also works with other sources of easyconfigs files, e.g. local files, your EasyBuild installation, etc.
+ * you should filter the environment dump that is included in the test report using the `-test-report-env-filter` configuration option, e.g. `--test-report-env-filter='^SSH|USER|HOSTNAME|UID|.*COOKIE.*'`
 
 ##### Example usage
 
 For example, to test https://github.com/hpcugent/easybuild-easyconfigs/pull/767 (`goolf/1.5.14-no-OFED` toolchain + gzip test case), use:
 
 ```
-eb --from-pr=767 --github-user=GITHUB_USER --upload-test-report --robot --force --debug
+eb --from-pr=767 --github-user=GITHUB_USER --upload-test-report -dfr --test-report-env-filter='^SSH|USER|HOSTNAME|UID|.*COOKIE.*'
 ```
 
 A couple of remarks:
 
  * a valid GitHub username must be supplied via `--github-user`
    * a GitHub token for that user must be available in your systems keyring
- * `--robot` is required to make sure the builds are being executed in the right order, i.e. taking interdependencies into account
- * `--force` is required to make sure that modified easyconfig files are being rebuilt if they were built before
- * `--debug` is nice to have, especially w.r.t. failed builds for which build logs are also uploaded
+ * `--robot` (`-r`) is required to make sure the builds are being executed in the right order, i.e. taking interdependencies into account
+ * `--force` (`-f`) is required to make sure that modified easyconfig files are being rebuilt if they were built before
+ * `--debug` (`-d`) is nice to have, especially w.r.t. failed builds for which build logs are also uploaded
+ * filtering the environment dump using `--test-report-env-filter` is advisable
 
 ##### Setting things up
 
