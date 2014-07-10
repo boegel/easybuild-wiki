@@ -28,21 +28,19 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday July 8th 2014, 3pm - 3.30pm (CET)
-  * EasyBuild hackathon @ Vienna post-mortem
-  * feedback on "Getting Scientific Software Installed" BoF & EasyBuild promotion @ ISC'14
+ * Tuesday August 5th 2014, 3pm - 3.30pm (CET)
+  * (no agenda points yet)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday August 5th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
 
 ### Notes
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20140708]]
  * [[Conference call notes 20140611]]
  * [[Conference call notes 20140516]]
  * [[Conference call notes 20140429]]
