@@ -29,7 +29,9 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 #### Next EasyBuild conference call
 
  * Tuesday August 5th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+  * EasyBuild v1.15 release planning (Kenneth)
+  * improvements w.r.t. using a dummy/system toolchain (Petar)
+  * status update of support for hierarchical modules (Kenneth + anyone who has played around with it)
 
 #### Future EasyBuild conference calls
 
