@@ -36,6 +36,7 @@ These wiki pages contain as the EasyBuild documentation.
 ### For EasyBuild developers
 
 * [[Development guide]]
+* [[Deprecated functionality]]
 * API documentation (framework, easyblocks): [stable (master)](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_master/Documentation/?) - [develop](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_develop/Documentation) (automatically updated)
 * [[Setting up your own easyblocks repository]] (ok, up-to-date)
 * [[Encode class names]]
