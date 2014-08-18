@@ -28,8 +28,8 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday August 19th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+ * Tuesday August 19th 2014, **4pm - 4.30pm (CET)**
+  * overview of issues with support for hierarhical module naming schemes in EasyBuild v1.14.0 (https://github.com/hpcugent/easybuild-framework/issues/1011)
 
 #### Future EasyBuild conference calls
 
