@@ -31,7 +31,9 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 #### Next EasyBuild conference call
 
  * Tuesday September 2nd 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+  * update on HMNS support (see https://github.com/hpcugent/easybuild-framework/issues/1011)
+  * support for module families and keywords supported by Lmod
+  * next EasyBuild hackathon: time & location
 
 #### Future EasyBuild conference calls
 
