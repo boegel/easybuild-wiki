@@ -19,7 +19,7 @@ The conference calls are done by means of a **Google Hangout**. We opted for thi
 To be able to join the conference calls, you need inform Kenneth Hoste (@boegel), so he can invite you via your Google+ account. 
 ~~to [**join the EasyBuild community on Google+**](https://plus.google.com/communities/103632287931200436158), which requires a Google+ account.~~
 
-**To join an EasyBuild conference call, let Kenneth Hoste know you will be joining.** To avoid making the Google Hangout public (which usually results in random people being bored joining in and disrupting the meeting), only people who registered for the conf call will be invited.
+**To join an EasyBuild conference call, let Kenneth Hoste (a.k.a. boegel, kehoste) know you will be joining.** To avoid making the Google Hangout public (which usually results in random people being bored joining in and disrupting the meeting), only people who registered for the conf call will be invited.
 ~~use the link in `Video calls in this community` box on the [EasyBuild community page](https://plus.google.com/communities/103632287931200436158)** shortly before the start of the conference call.~~
 
 ### Planning
