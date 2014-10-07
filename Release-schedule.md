@@ -25,6 +25,7 @@ Once the full regression test passes, a release candidate is made available, sho
 
 ## Previous releases
 
+* EasyBuild v1.15.2: Oct 7th 2014
 * EasyBuild v1.15.1: Sept 25th 2014
 * EasyBuild v1.15.0: Sept 12th 2014
 * EasyBuild v1.14.0: July 9th 2014
