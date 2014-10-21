@@ -1,3 +1,5 @@
+![6th EasyBuild hackathon @ Vienna group picture](http://hpcugent.github.io/easybuild/files/EasyBuild_hackathon_Vienna_June14_group_pic.jpg)
+
 ### Basic Information
 
 * **date**: Wednesday June 18th - Friday June 20th 2014

@@ -51,9 +51,12 @@ git pull github_hpcugent develop
 
 ### Pick a branch name
 
-Please try and follow these guidelines when picking a branch name:
- * use the number of the issue as a prefix for your branch name, e.g. `86_` for issue [#86](https://github.com/hpcugent/easybuild/issues/86)
- * append a short but descriptive branch name, in which words are joined by underscores, e.g. `86_encoding_scheme`
+Pick a branch name for your work that makes sense, so you can track things easily and make sense if you end up having several branches in flight at once (each PR is a new branch).
+
+Examples:
+  * `bug_fix_foo`
+  * `new_intel_toolchain`
+  * `contrib_bio_pkgs`
 
 ### Create branch
 

@@ -36,6 +36,7 @@ These wiki pages contain as the EasyBuild documentation.
 ### For EasyBuild developers
 
 * [[Development guide]]
+* [[Deprecated functionality]]
 * API documentation (framework, easyblocks): [stable (master)](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_master/Documentation/?) - [develop](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_develop/Documentation) (automatically updated)
 * [[Setting up your own easyblocks repository]] (ok, up-to-date)
 * [[Encode class names]]
@@ -93,6 +94,7 @@ These wiki pages contain as the EasyBuild documentation.
   * [slides (PDF)](http://hpcugent.github.com/easybuild/files/easybuild_BoF_ISC13_20130619.pdf)
  * [[SC13 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"
  * [FOSDEM'14](https://fosdem.org/2014/): "HPC and computational science" devroom (more info soon)
+ * [[ISC'14 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"
 
 ### Conference calls
 

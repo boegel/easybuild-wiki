@@ -16,9 +16,11 @@ The intention is to keep the calls **focused** and **fast-paced**, which is refl
 
 The conference calls are done by means of a **Google Hangout**. We opted for this approach since hangouts are 100% free (as in beer), as opposed to Skype Premium which is required for group calls and screen sharing.
 
-To be able to join the conference calls, you need to [**join the EasyBuild community on Google+**](https://plus.google.com/communities/103632287931200436158), which requires a Google+ account.
+To be able to join the conference calls, you need inform Kenneth Hoste (@boegel), so he can invite you via your Google+ account. 
+~~to [**join the EasyBuild community on Google+**](https://plus.google.com/communities/103632287931200436158), which requires a Google+ account.~~
 
-To join an EasyBuild conference call, **use the link in `Video calls in this community` box on the [EasyBuild community page](https://plus.google.com/communities/103632287931200436158)** shortly before the start of the conference call.
+**To join an EasyBuild conference call, let Kenneth Hoste (a.k.a. boegel, kehoste) know you will be joining.** To avoid making the Google Hangout public (which usually results in random people being bored joining in and disrupting the meeting), only people who registered for the conf call will be invited.
+~~use the link in `Video calls in this community` box on the [EasyBuild community page](https://plus.google.com/communities/103632287931200436158)** shortly before the start of the conference call.~~
 
 ### Planning
 
@@ -28,22 +30,31 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday June 24th 2014, 3pm - 3.30pm (CET)
-  * **note**: during ISC'14
-  * EasyBuild hackathon @ Leipzig post-mortem
-  * feedback on "Getting Scientific Software Installed" BoF @ ISC'14
+ * Tuesday October 14th 2014, 3pm - 3.30pm (CET)
+  * update on support for Lua module files (Petar)
+  * update on porting EasyBuild to Cray systems (Petar)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday July 8th 2014, 3pm - 3.30pm (CET)
+ * Tuesday October 28th 2014, 3pm - 3.30pm (CET)
+  * (no agenda points yet)
+ * Tuesday November 25th 2014, 3pm - 3.30pm (CET)
+  * (no agenda points yet)
+ * Tuesday December 9th 2014, 3pm - 3.30pm (CET)
+  * (no agenda points yet)
+ * Tuesday December 23rd 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
 
 ### Notes
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20140918]]
+ * [[Conference call notes 20140902]]
+ * [[Conference call notes 20140805]]
+ * [[Conference call notes 20140708]]
  * [[Conference call notes 20140611]]
  * [[Conference call notes 20140516]]
  * [[Conference call notes 20140429]]

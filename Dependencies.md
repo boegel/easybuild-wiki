@@ -5,8 +5,8 @@ Required
 
  * Linux or OS X operating system
  * [[Python 2.4|http://python.org/]], or a more recent 2.x version
- * [[environment-modules|http://modules.sourceforge.net/]], version >= 3.2.6
-  * An rpm for this is available in the RHEL and SL repositories. An deb file has recently been accepted and [[available in debian-testing for now|http://packages.debian.org/testing/main/environment-modules]] and will be available in Ubuntu 12.10.
+ * [[environment-modules|http://modules.sourceforge.net/]], version >= 3.2.10
+  * a packaged version is available for [[RPM-based systems|https://rhn.redhat.com/errata/RHBA-2014-0327.html]] and [[Debian/Ubuntu|https://packages.debian.org/testing/main/environment-modules]].
   * environment-modules requires [[Tcl|http://www.tcl.tk/]] to be installed (with header files and development libraries)
   * a guide on installing Tcl and environment without having root permissions is available [[here|Installing environment modules without root permissions]]
  * a C/C++ compiler
