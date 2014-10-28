@@ -16,11 +16,10 @@ The intention is to keep the calls **focused** and **fast-paced**, which is refl
 
 The conference calls are done by means of a **Google Hangout**. We opted for this approach since hangouts are 100% free (as in beer), as opposed to Skype Premium which is required for group calls and screen sharing.
 
-To be able to join the conference calls, you need inform Kenneth Hoste (@boegel), so he can invite you via your Google+ account. 
-~~to [**join the EasyBuild community on Google+**](https://plus.google.com/communities/103632287931200436158), which requires a Google+ account.~~
+**To be able to join the conference calls, you need inform Kenneth Hoste (@boegel), so he can invite to the [(private) EasyBuild community on Google+](https://plus.google.com/communities/107060659541429449722)**.
 
-**To join an EasyBuild conference call, let Kenneth Hoste (a.k.a. boegel, kehoste) know you will be joining.** To avoid making the Google Hangout public (which usually results in random people being bored joining in and disrupting the meeting), only people who registered for the conf call will be invited.
-~~use the link in `Video calls in this community` box on the [EasyBuild community page](https://plus.google.com/communities/103632287931200436158)** shortly before the start of the conference call.~~
+To avoid making the Google Hangout public (which usually results in random people being bored joining in and disrupting the meeting), only people who are a member of the dedicated (private) EasyBuild community for EasyBuild conference calls will be invited.
+Use the link in `Video calls in this community` box on the [private EasyBuild community page](https://plus.google.com/communities/107060659541429449722) shortly before the start of the conference call.
 
 ### Planning
 
