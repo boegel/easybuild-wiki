@@ -10,8 +10,10 @@ First, you'll need to fork [EasyBuild on GitHub](http://github.com/hpcugent/easy
 
 If you do not have a (free) GitHub account yet, you'll need to get one.
 
-You should also register an SSH public key, so you can easily clone, push to and pull from your repository.
+You also need to register an SSH public key, so you can easily clone, push to and pull from your repository.
 This can be done via https://github.com/settings/ssh if you're logged in on GitHub.
+
+In the following it is assumed that an SSH public key has been registered, since it is a requirement for cloning/pushing via the `git` protocol.
 
 ### Clone your EasyBuild repository
 
