@@ -1,1 +1,1 @@
-(moved to http://easybuild.readthedocs.org/en/latest/Installation.html, http://easybuild.readthedocs.org/en/latest/Installation_Alternative.html)
+(moved to http://easybuild.readthedocs.org/en/latest/Installation.html and http://easybuild.readthedocs.org/en/latest/Installation_Alternative.html)
