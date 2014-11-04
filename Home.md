@@ -1,39 +1,38 @@
-**[[EasyBuild]]** is a software build and installation framework in Python that allows you to install software in a structured, repeatable and robust way.
-
 ## Documentation
 
-These wiki pages contain as the EasyBuild documentation.
+**Documentation for EasyBuild is now available at http://easybuild.readthedocs.org/, which should be treated as the main documentation hub from now on.**
 
-**NOTE: The wiki pages are in need of a serious update, we're working on it.**
+The pages that are still available here are either not considered to be part of the documentation (e.g., meeting notes, etc.), or still need to be ported to the _Read the Docs_ platform.
 
+#### For EasyBuild users
 
-### For EasyBuild users
+* [What is EasyBuild?](http://easybuild.readthedocs.org/en/latest/Introduction.html)
+* [Dependencies](http://easybuild.readthedocs.org/en/latest/Installation.html#dependencies)
+  * [Installing environment modules without root permissions](http://easybuild.readthedocs.org/en/latest/Installing-environment-modules-without-root-permissions.html)
+  * [Installing Lmod without root permissions](http://easybuild.readthedocs.org/en/latest/Installing-Lmod-without-root-permissions.html)
+* [Installing EasyBuild](http://easybuild.readthedocs.org/en/latest/Installation.html)
+* [Configuration](http://easybuild.readthedocs.org/en/latest/Configuration.html)
+* [Using EasyBuild](http://easybuild.readthedocs.org/en/latest/Using_the_EasyBuild_command_line.html)
+* [Writing easyconfig files](http://easybuild.readthedocs.org/en/latest/Writing_easyconfig_files.html)
+* [Contact](http://easybuild.readthedocs.org/en/latest/index.html#getting-help)
 
-* [[What is EasyBuild?|EasyBuild]] (updated)
+##### To be ported to http://easybuild.readthedocs.org
+
 * [[License]]
-* [[Dependencies]] (updated)
-  * [[Installing environment modules without root permissions]] (up-to-date)
-  * [[Installing Lmod without root permissions]] (up-to-date)
-* [[Installing EasyBuild]] (updated)
- * [[Bootstrapping EasyBuild]] (ok, up-to-date)
 * [[Setting up tab completion for bash]] (ok, up-to-date)
 * [[Quick demo for the impatient]] (updated)
 * [[Getting started]] (ok, but need update to new style configuration)
- * [[Configuration]] (updated)
-* [[Using EasyBuild]]
- * [[Automatic dependency resolution]]
- * [[OS-specific notes]]
+* [[OS-specific notes]]
 * [[Step-by-step guide]]
 * [[Compiler toolchains]] (up-to-date)
-* [[Easyconfig files]] (updated, may need work)
- * [[Examples]]
 * [[List of supported software packages]] (updated) (legacy list [here](https://github.com/hpcugent/easybuild/wiki/List-of-supported-software-packages/ede46976d7367a86fe76ae79adba7b8e9fd9f118))
 * [[Conference calls]]
 * [[FAQ]] (updated, may need additional entries)
-* [[Contact]]
 * [[Other tools]]
 
-### For EasyBuild developers
+#### For EasyBuild developers
+
+##### To be ported to http://easybuild.readthedocs.org
 
 * [[Development guide]]
 * [[Deprecated functionality]]
