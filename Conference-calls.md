@@ -29,16 +29,14 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday October 14th 2014, 3pm - 3.30pm (CET)
-  * update on support for Lua module files (Petar)
-  * update on porting EasyBuild to Cray systems (Petar)
+ * **Tuesday November 14th 2014, 4pm - 4.30pm (CET)**
+  * revamped EasyBuild documentation at http://easybuild.readthedocs.org
+  * outlook to EasyBuild v1.16.0 and v2.0 
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday October 28th 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
  * Tuesday November 25th 2014, 3pm - 3.30pm (CET)
   * (no agenda points yet)
  * Tuesday December 9th 2014, 3pm - 3.30pm (CET)
@@ -50,6 +48,8 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20141028]]
+ * [[Conference call notes 20141014]]
  * [[Conference call notes 20140918]]
  * [[Conference call notes 20140902]]
  * [[Conference call notes 20140805]]
