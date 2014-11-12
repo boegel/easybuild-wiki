@@ -30,8 +30,9 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 #### Next EasyBuild conference call
 
  * **Tuesday November 14th 2014, 4pm - 4.30pm (CET)**
-  * revamped EasyBuild documentation at http://easybuild.readthedocs.org
-  * outlook to EasyBuild v1.16.0 and v2.0 
+  * revamped EasyBuild documentation at http://easybuild.readthedocs.org (Kenneth)
+  * outlook to EasyBuild v1.16.0 and v2.0 (Kenneth)
+  * improving HierarchicalMNS w.r.t. co-compilers (e.g., CUDA)
 
 #### Future EasyBuild conference calls
 
