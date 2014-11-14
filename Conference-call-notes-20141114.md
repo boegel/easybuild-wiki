@@ -6,7 +6,7 @@ Notes on the 20th EasyBuild conference call, Wednesday November 14th 2014 (4.00p
 
 Alphabetical list of attendees (7):
 
-* Timothy Brown (University of Colorado)
+* Timothy Brown (University of Colorado, US)
 * Petar Forai (GMI, Austria)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Alan O'Cais (JSC, Germany)
