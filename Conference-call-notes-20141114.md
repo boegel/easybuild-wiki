@@ -9,8 +9,9 @@ Alphabetical list of attendees (5):
 * Timothy Brown (University of Colorado)
 * Petar Forai (GMI, Austria)
 * Kenneth Hoste (HPC-UGent, Belgium)
+* Alan O'Cais (JSC, Germany)
 * Ward Poelmans (UGent, Belgium)
-* Robert Schmidt 
+* Robert Schmidt (OHRI, Canada)
 * Olav Smørholm (University of Warwick, UK)
 
 #### Agenda
