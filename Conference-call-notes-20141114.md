@@ -4,7 +4,7 @@ Notes on the 20th EasyBuild conference call, Wednesday November 14th 2014 (4.00p
 
 #### Attendees
 
-Alphabetical list of attendees (5):
+Alphabetical list of attendees (7):
 
 * Timothy Brown (University of Colorado)
 * Petar Forai (GMI, Austria)
