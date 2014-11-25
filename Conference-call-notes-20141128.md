@@ -27,6 +27,12 @@ Alphabetical list of attendees (7):
 * excellent talk by Markus at HUST14
   * quite a bit of discussion afterwards
   * post-talk questions (thanks Robert for keeping track):
+    * How to install w/ EasyBuild where you have local disks?
+    * How to build the next version when you get a new compiler version?
+    * Software vendors should support these tools?
+    * Does Lmod support Tcl modules?
+    * A comment about Lmod at PNL
+    * Is there way for EasyBuild to install Intel?
 
 * alternative tool: Spack
   * has nice features: advanced dependency handling support, powerful command line
