@@ -9,8 +9,7 @@ Alphabetical list of attendees (7):
 * Petar Forai (GMI, Austria)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Ward Poelmans (UGent, Belgium)
-* Robert Schmidt (OHRI, Canada)
-* Olav Smørholm (University of Warwick, UK)
+* Robert McLay (TACC, US)
 * Jens Timmerman (HPC-UGent, Belgium)
 
 #### Agenda
