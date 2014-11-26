@@ -7,9 +7,11 @@ Notes on the 21st EasyBuild conference call, Wednesday November 28th 2014 (3.00p
 Alphabetical list of attendees (7):
 
 * Petar Forai (GMI, Austria)
+* Fotis Georgatos (freelancer)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Ward Poelmans (UGent, Belgium)
 * Robert McLay (TACC, US)
+* Olav Smørholm (University of Warwick, UK)
 * Jens Timmerman (HPC-UGent, Belgium)
 
 #### Agenda
@@ -58,4 +60,7 @@ Alphabetical list of attendees (7):
     * basically a graph problem, so talk to someone doing graph research?
        * dynamic path search in a multi-dimensional graph with limited visibility
     * talk to Todd about this, since he has advanced dependency resolution support in Spack
-    * take a look at how dependency (Zapherano)
+    * take a look at how dependencies are handled in Debian
+       * talk to Stefano Zacchiroli?
+          * Debian project lead, led the effort behind CUDF, project Mancoosi
+          * may be attending FOSDEM
