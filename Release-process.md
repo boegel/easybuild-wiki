@@ -74,10 +74,14 @@ Finally, announce the newly released version through the various channels, i.e.:
 * [Google+ page](https://plus.google.com/b/116140073126217770418/116140073126217770418/posts)
 * IRC channel #easybuild
 
-### Step 4: Update list of supported software
+### Step 4: Update documentation
+
+See http://easybuild.readthedocs.org and github.com/hpcugent/easybuild
+
+### Step 5: Update list of supported software
 
 See [[List of supported software packages]].
 
-### Step 5: Update release schedule
+### Step 6: Update release schedule
 
 See [[Release schedule]] .
