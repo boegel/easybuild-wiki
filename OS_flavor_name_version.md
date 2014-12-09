@@ -173,6 +173,18 @@ version: #1 SMP Mon Dec 17 22:16:35 UTC 2012
 mac_ver: ('', ('', '', ''), '')
 ```
 
+#### Fedora 21
+```
+Python version: ['2.7.8 (default, Nov 10 2014, 08:19:18) ', '[GCC 4.9.2 20141101 (Red Hat 4.9.2-1)]']
+dist: ('fedora', '21', 'Twenty One')
+linux_distribution: ('Fedora', '21', 'Twenty One')
+system: Linux
+machine: x86_64
+platform: Linux-3.17.4-301.fc21.x86_64-x86_64-with-fedora-21-Twenty_One
+uname: ('Linux', 'localhost.localdomain', '3.17.4-301.fc21.x86_64', '#1 SMP Thu Nov 27 19:09:10 UTC 2014', 'x86_64', 'x86_64')
+version: #1 SMP Thu Nov 27 19:09:10 UTC 2014
+mac_ver: ('', ('', '', ''), '')
+```
 
 ### Red Hat Enterprise Linux (RHEL)
 
@@ -579,6 +591,33 @@ platform: Darwin-12.2.1-x86_64-i386-64bit
 uname: ('Darwin', 'silenus.gmi.oeaw.ac.at', '12.2.1', 'Darwin Kernel Version 12.2.1: Thu Oct 18 12:13:47 PDT 2012; root:xnu-2050.20.9~1/RELEASE_X86_64', 'x86_64', 'i386')
 version: Darwin Kernel Version 12.2.1: Thu Oct 18 12:13:47 PDT 2012; root:xnu-2050.20.9~1/RELEASE_X86_64
 mac_ver: ('10.8.2', ('', '', ''), 'x86_64')
+```
+
+#### OS X 10.10.1 (Yosemite)
+```
+Python version: ['2.7.8 (v2.7.8:ee879c0ffa11, Jun 29 2014, 21:07:35) ', '[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]']
+dist: ('', '', '')
+linux_distribution: ('', '', '')
+system: Darwin
+machine: x86_64
+platform: Darwin-14.0.0-x86_64-i386-64bit
+uname: ('Darwin', 'exile.ugent.be', '14.0.0', 'Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64', 'x86_64', 'i386')
+version: Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64
+mac_ver: ('10.10.1', ('', '', ''), 'x86_64')
+```
+### Windows
+
+#### Windows 10 
+```
+Python version: ['2.7.8 (default, Jun 30 2014, 16:08:48) [MSC v.1500 64 bit (AMD64)]']
+dist: ('', '', '')
+linux_distribution: ('', '', '')
+system: Windows
+machine: AMD64
+platform: Windows-8-6.2.9200
+uname: ('Windows', 'WIN-M99L6SG1ILP', '8', '6.2.9200', 'AMD64', 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel')
+version: 6.2.9200
+mac_ver: ('', ('', '', ''), '')
 ```
 
 ### Other
