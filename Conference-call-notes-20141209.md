@@ -9,18 +9,19 @@ Alphabetical list of attendees (7):
 * Pablo Escobar (UniBas - SIB, Switzerland)
 * Petar Forai (IMP/IMBA, Austria)
 * Fotis Georgatos (freelancer)
+* Markus Geimer (JSC, Germany)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Alan O'Cais (JSC, Germany)
 * Ward Poelmans (UGent, Belgium)
-* Olav Smørholm (University of Warwick, UK)
 
 
 #### Agenda
 
 * update on the upcoming EasyBuild v1.16.0 release
-* discuss handling of backlog of open pull requests
 * thoughts on support for building with minimal required toolchain/dependencies
-* conflicts for libraries like Szip when you load two separate modules that depend on different version
+* conflicts for libraries like Szip when you load two separate modules that depend on different version (Alan)
+* discuss handling of backlog of open pull requests (Alan)
+* community toolchains: {{{intel/2015a}}} and {{{foss/2015a}}}
 
 
 #### Notes
