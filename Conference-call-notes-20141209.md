@@ -7,7 +7,7 @@ Notes on the 22nd EasyBuild conference call, Wednesday December 9th 2014 (3.00pm
 Alphabetical list of attendees (7):
 
 * Pablo Escobar (UniBas - SIB, Switzerland)
-* Petar Forai (GMI, Austria)
+* Petar Forai (IMP/IMBA, Austria)
 * Fotis Georgatos (freelancer)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Alan O'Cais (JSC, Germany)
