@@ -21,9 +21,11 @@ Alphabetical list of attendees (7):
 * thoughts on support for building with minimal required toolchain/dependencies
 * conflicts for libraries like Szip when you load two separate modules that depend on different version (Alan)
 * discuss handling of backlog of open pull requests (Alan)
-* community toolchains: {{{intel/2015a}}} and {{{foss/2015a}}}
+* common toolchains: `intel/2015a` and `foss/2015a`
 
 
 #### Notes
 
-#####  
+##### Common toolchains: `intel/2015a` and `foss/2015a`
+
+ * options: https://gist.github.com/boegel/13af5242c01362e38817
