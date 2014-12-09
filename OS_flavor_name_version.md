@@ -606,6 +606,21 @@ version: Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-27
 mac_ver: ('10.10.1', ('', '', ''), 'x86_64')
 ```
 ### Windows
+#### Windows Server 2008
+```
+Python version: ['3.4.2 (v3.4.2:ab2c023a9432, Oct  6 2014, 22:15:05) [MSC v.1600
+ 32 bit (Intel)]']
+dist: ('', '', '')
+linux_distribution: ('', '', '')
+system: Windows
+machine: AMD64
+platform: Windows-2008ServerR2-6.1.7601-SP1
+uname: uname_result(system='Windows', node='ATHA2208', release='2008ServerR2', v
+ersion='6.1.7601', machine='AMD64', processor='Intel64 Family 6 Model 26 Steppin
+g 5, GenuineIntel')
+version: 6.1.7601
+mac_ver: ('', ('', '', ''), '')
+```
 
 #### Windows 10 
 ```
