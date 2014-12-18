@@ -76,7 +76,7 @@ Finally, announce the newly released version through the various channels, i.e.:
 
 ### Step 4: Update documentation
 
-See http://easybuild.readthedocs.org and github.com/hpcugent/easybuild
+See http://easybuild.readthedocs.org and http://github.com/hpcugent/easybuild
 
 ### Step 5: Update list of supported software
 
