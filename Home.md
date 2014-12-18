@@ -13,6 +13,7 @@ The pages that are still available here are either not considered to be part of 
 * [Installing EasyBuild](http://easybuild.readthedocs.org/en/latest/Installation.html)
 * [Configuration](http://easybuild.readthedocs.org/en/latest/Configuration.html)
 * [Using EasyBuild](http://easybuild.readthedocs.org/en/latest/Using_the_EasyBuild_command_line.html)
+* [Deprecated functionality](http://easybuild.readthedocs.org/en/latest/Deprecated-functionality.html)
 * [Writing easyconfig files](http://easybuild.readthedocs.org/en/latest/Writing_easyconfig_files.html)
 * [Contact](http://easybuild.readthedocs.org/en/latest/index.html#getting-help)
 
@@ -35,7 +36,6 @@ The pages that are still available here are either not considered to be part of 
 ##### To be ported to http://easybuild.readthedocs.org
 
 * [[Development guide]]
-* [[Deprecated functionality]]
 * API documentation (framework, easyblocks): [stable (master)](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_master/Documentation/?) - [develop](https://jenkins1.ugent.be/job/easybuild-framework_unit-test_hpcugent_develop/Documentation) (automatically updated)
 * [[Setting up your own easyblocks repository]] (ok, up-to-date)
 * [[Encode class names]]
