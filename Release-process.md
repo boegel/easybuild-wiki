@@ -18,7 +18,7 @@ If the output of this script doesn't report any serious issues, and a full regre
 
 The following two steps should be repeated for each of the three EasyBuild subpackages (_easybuild-framework_, _easybuild-easyblocks_, _easybuild-easyconfigs_), as well as for the meta-package _easybuild_.
 
-**Note: make sure do perform the steps below in a pristine copy of the `master`` branch, i.e. not a working copy that may contain unfinished/untracked work!**
+**Note: make sure do perform the steps below in a pristine copy of the `master` branch, i.e. not a working copy that may contain unfinished/untracked work!**
 
 #### Step 1.1: Register new version on PyPi
 
