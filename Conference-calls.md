@@ -29,19 +29,20 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday November 25th 2014, 3pm - 3.30pm (CET)
-  * overview of EasyBuild-related activities at SC14 (Petar, Jens)
+ * Tuesday January 6th 2015, 3pm - 3.30pm (CET)
+   * outlook to EasyBuild v2.0
+   * overview of major upcoming features (https://gist.github.com/boegel/ffc1175183e60cbcda77)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday November 25th 2014, 3pm - 3.30pm (CET)
+ * Tuesday January 20th 2015, 3pm - 3.30pm (CET)
   * (no agenda points yet)
- * Tuesday December 9th 2014, 3pm - 3.30pm (CET)
+ * Tuesday February 3rd 2015, 3pm - 3.30pm (CET)
   * (no agenda points yet)
- * Tuesday December 23rd 2014, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
+ * Tuesday February 17th 2015, 3pm - 3.30pm (CET)
+  * report of EasyBuild hackathon @ Basel
 
 ### Notes
 
