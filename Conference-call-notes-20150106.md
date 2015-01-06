@@ -4,8 +4,9 @@ Notes on the 23rd EasyBuild conference call, Tuesday January 6th 2015 (3.00pm - 
 
 #### Attendees
 
-Alphabetical list of attendees (4):
+Alphabetical list of attendees (5):
 
+* Andy Georges (HPC-UGent, Belgium)
 * Eric Gregory (JSC, Germany)
 * Kenneth Hoste (HPC-UGent, Belgium)
 * Alan O'Cais (JSC, Germany)
