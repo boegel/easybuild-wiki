@@ -15,7 +15,7 @@ Alphabetical list of attendees (4):
 #### Agenda
 
    * outlook to EasyBuild v2.0 (Kenneth)
-   * overview of major upcoming features, see https://gist.github.com/boegel/ffc1175183e60cbcda77 (Kenneth)
+   * overview of major upcoming features (Kenneth)
 
 
 #### Notes
@@ -30,7 +30,42 @@ Alphabetical list of attendees (4):
 
 ##### Overview of major upcoming features
 
- * see https://gist.github.com/boegel/ffc1175183e60cbcda77
+* only generating module files (skipping actual build/installation), with sanity check optionally retained
+     * https://github.com/hpcugent/easybuild-framework/pull/1018
+* support for resolving dependencies via subtoolchains (+ dummy) [Markus/Alan/Eric @ Basel hackathon?]
+     * https://github.com/hpcugent/easybuild-framework/issues/741
+* support for generating module files in Lua syntax
+     * https://github.com/hpcugent/easybuild-framework/pull/1060
+* support for module families (Tcl & Lua, Lmod-only)
+* support for module properties (Tcl & Lua, Lmod-only)
+     * https://github.com/hpcugent/easybuild-framework/issues/981
+* support for installing dependencies with minimal required subtoolchain
+* easyconfig format v2 (+ enhanced eb cmdline)
+* specifying module names to install on EB command line
+* support for non-strict version specifications for dependencies
+     * https://github.com/hpcugent/easybuild-framework/issues/746
+* support for --avail-toolchainopts
+* support for --dump-toolchain-env
+     * https://github.com/hpcugent/easybuild-framework/pull/1091
+* support for --pr-review
+     * https://github.com/hpcugent/easybuild-framework/pull/1005
+* better support for --job [Ricardo @ Basel hackathon?]
+     * https://github.com/hpcugent/easybuild-framework/pull/1008
+* support for downloading from SVN/git repository [Jens @ Basel hackathon?]
+     * https://github.com/hpcugent/easybuild-framework/pull/1082
+* support for easily overriding easyconfig parameters via cmdline/environment
+     * https://github.com/hpcugent/easybuild-framework/pull/712
+* support for generating packages (via FPM?)
+     * https://github.com/hpcugent/easybuild-framework/issues/200
+* support for uninstalling software (requires reverse dependency tracking)
+     * https://github.com/hpcugent/easybuild-framework/issues/590
+* support for rpath
+     * https://github.com/hpcugent/easybuild-framework/issues/651
+* toolchain-neutral installations
+     * https://github.com/hpcugent/easybuild-framework/issues/570
+* fix devel modules, create them after each build step
+     * https://github.com/hpcugent/easybuild-framework/issues/109
+
  * overview of features we have in mind for the coming weeks/months
    * no guarantees w.r.t. when they will be worked on!
  * of particular interest to HPC-UGent:
