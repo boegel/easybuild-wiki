@@ -66,12 +66,13 @@ Alphabetical list of attendees (4):
 * fix devel modules, create them after each build step
      * https://github.com/hpcugent/easybuild-framework/issues/109
 
- * overview of features we have in mind for the coming weeks/months
+notes:
+* overview of features we have in mind for the coming weeks/months
    * no guarantees w.r.t. when they will be worked on!
- * of particular interest to HPC-UGent:
+* of particular interest to HPC-UGent:
    * support for only (re)generating module file, potentially under a different module naming scheme and for existing installations
    * support for module files in Lua syntax and module families/properties
- * of particular interest to JSC:
+* of particular interest to JSC:
    * support for resolving dependencies via subtoolchains & installing dependencies with minimal required toolchain
 
 ##### Other topics
