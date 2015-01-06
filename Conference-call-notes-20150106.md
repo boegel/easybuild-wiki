@@ -21,7 +21,8 @@ Alphabetical list of attendees (3):
 
 ##### Outlook to EasyBuild v2.0
 
-* 
+* mainly dropping support for deprecated behaviour
+   * see http://easybuild.readthedocs.org/en/latest/Deprecated-functionality.html
 
 ##### Overview of major upcoming features
 
