@@ -1,10 +1,16 @@
 **Note: this is a proposal, [feedback or suggestions](http://easybuild.readthedocs.org/en/latest/#getting-help) for improvement are much appreciated!**
 
-This is a policy to follow when issuing a pull request (PR) to the [easybuild-easyconfigs repository](https://github.com/hpcugent/easybuild-easyconfigs/pulls).
+This is a policy to follow when issuing a pull request (PR) to the [easybuild-easyconfigs repository](https://github.com/hpcugent/easybuild-easyconfigs/pulls). It is intended to better structure the large amount of pull requests for easyconfig files, and help avoid duplicate work among contributors.
 
-It is intended to better structure the large amount of pull requests for easyconfig files, and help avoid duplicate work among contributors.
+* use a standard format for your PR title: ``[<toolchain>] <software>, ... (<tag>)``
+* open a PR (with dummy easyconfigs) as soon as you start working on something, tag it with `(WIP)`
+* update the PR when it's ready for review/testing by others, tag it with `(TEST)`
+* indicate that your PR should be ready to be merged (after review/testing) by using the `(OK)` tag
+* easyconfigs should only be considered production ready when the PR is merged into `develop`
 
-### Step 0: use a standard format for your PR title
+More details in the sections below.
+
+### Use a standard format for your PR title
 
 Using a title for your PRs according to the following standard format makes it easy to recognise what it is providing:
 
@@ -23,7 +29,8 @@ Complete examples:
  * `[intel/2015a] Boost 1.55.0 (WIP)`
  * `[goolf/1.5.14-no-OFED] Python 2.7.9, OpenSSL 1.0.1k (OK)`
 
-### Step I: register what you start working on
+
+### Open a PR as soon as you start working on something
 
 As soon as you start working on a (set of) easyconfig file(s), open a **pull request**, and mark it as being a _work in progress_:
 
@@ -38,7 +45,8 @@ For software packages that are part of the Common User Experience agreements (ri
 
 Tag other EasyBuilders that you know are may be interested in your work, using their GitHub account name, for example using `@boegel`.
 
-### Step II: update when ready for review/testing
+
+### Update the PR when it's ready for review/testing by others
 
 Once your easyconfigs are ready for testing/review, you upload them in the pull request by pushing to the corresponding branch in your GitHub easybuild-easyconfigs repository.
 
@@ -48,15 +56,18 @@ Work together with the reviewer/tester to get the PR ready for merging, which is
 
 Some of these steps are already automated: running the unit tests on your proposed changes is done by Jenkins and flagged as red/green in the pull request, uploading a test report is child's play from the eb command line.
 
-### Step III: indicate you pull request should be ready to merge
+
+### Indicate that your pull request should be ready to be merged in
 
 Change the `(WIP)` in the pull request title to `(OK)`, and preferably add a comment as well (so that followers are notified via e-mail), mentioning something like "ready for review/testing".
 
 Tagging my GitHub account (@boegel) wins you extra bonus points.
 
+
 ### Aftermath
 
 Once the PR is merged into develop, it can be consider "ready for consumption" (which doesn't mean it's final, unchanged, see for example https://github.com/hpcugent/easybuild-easyconfigs/issues/1304).
+
 
 ### EasyBuild features supporting this policy
 
