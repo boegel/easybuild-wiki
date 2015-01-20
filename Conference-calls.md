@@ -29,16 +29,13 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday January 20th 2015, 3pm - 3.30pm (CET)
-  * outlook to EasyBuild v2.0
-  * [proposal policy for easyconfig pull requests](https://github.com/hpcugent/easybuild/wiki/Policy-for-easyconfig-pull-requests)
+ * Tuesday February 3rd 2015, 3pm - 3.30pm (CET)
+  * update on EasyBuild v2.0.0
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday February 3rd 2015, 3pm - 3.30pm (CET)
-  * (no agenda points yet)
  * Tuesday February 17th 2015, 3pm - 3.30pm (CET)
   * report of EasyBuild hackathon @ Basel
 
@@ -46,6 +43,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20150120]]
  * [[Conference call notes 20150106]]
  * [[Conference call notes 20141209]]
  * [[Conference call notes 20141128]]
