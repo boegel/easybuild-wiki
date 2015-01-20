@@ -2,7 +2,7 @@
 
 This is a policy to follow when issuing a pull request (PR) to the [easybuild-easyconfigs repository](https://github.com/hpcugent/easybuild-easyconfigs/pulls). It is intended to better structure the large amount of pull requests for easyconfig files, and help avoid duplicate work among contributors.
 
-* use a standard format for your PR title: ``[<toolchain>] <software>, ... (<tag>)``
+* use a standard format for your PR title: ``{<category>}[<toolchain>] <software>, ... (<tag>)``
 * open a PR (with dummy easyconfigs) as soon as you start working on something, tag it with `(WIP)`
 * update the PR when it's ready for review/testing by others, tag it with `(REVIEW)`
 * indicate that your PR should be ready to be merged, after review/testing and fixing remarks or problems, by using the `(OK)` tag
@@ -14,8 +14,11 @@ More details in the sections below.
 
 Using a title for your PRs according to the following standard format makes it easy to recognise at a glance what it is providing. It also enables meaningful PR titles included in the output of `--search` (as soon as it considers open PRs as well).
 
-``[<toolchain_>] <software>, ... (<tag>)``
+``{<category>}[<toolchain_>] <software>, ... (<tag>)``
 
+* usually, a PR concerns a set of easyconfigs for software from a particular scientific domain; tagging your PR with the software 'category' (enclosed in curly braces) can be useful for others who are interested in a particular category of software
+  * examples: `{bio}`, `{chem}`, `{compiler}`, ...
+  * see ` eb --show-default-moduleclasses` for good set of possible categories to pick from
 * since easyconfigs are specific to a particular _toolchain_, clearly indicating the toolchain being used helps to structure the overview of easyconfigs; both the toolchain name and version should be mentioned, enclosing by square brackets;
   * examples: `[intel/2015a]`, `[goolf/1.5.14-no-OFED]`
 * the main software package(s) for which easyconfigs are provided, together with their respective version(s), should be listed in the title
@@ -26,8 +29,8 @@ Using a title for your PRs according to the following standard format makes it e
   * `(OK)` to indicate that the PR should be ready to be merged in (review/testing is done)
 
 Complete examples:
- * `[intel/2015a] Boost 1.55.0 (WIP)`
- * `[goolf/1.5.14-no-OFED] Python 2.7.9, OpenSSL 1.0.1k (OK)`
+ * `{bio}[intel/2015a] Boost 1.55.0 (WIP)`
+ * `{lang,lib}[goolf/1.5.14-no-OFED] Python 2.7.9, OpenSSL 1.0.1k (OK)`
 
 
 ### Open a PR as soon as you start working on something
