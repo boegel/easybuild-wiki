@@ -37,18 +37,21 @@ As soon as you start working on a (set of) easyconfig file(s), open a [pull requ
 * include placeholder easyconfigs (with the correct filename): empty files, partial files (e.g., only containing definitions for `name`, `version`, `toolchain`), or copies of existing easyconfig files for which only the filename has been adjusted
 * include the `(WIP)` tag in the title of the pull request
 
-The key point here is to open a pull request **early** rather than late; that way other people who are planning on looking into the same easyconfigs you are working on can reap the benefits of your labor, contact you to help out, or simply test what you consider ready for consumption by others.
+The key point here is to open a pull request **early** rather than late; that way other people who are planning to look into the same easyconfigs you are working on can reap the benefits of your labor, can contact you to help out, or can review/test your work early in the process.
 
-Easyconfigs for multiple software packages can be added in a single PR, but keep it reasonable (5 different software packages max., 10 easyconfig files max.).
+Easyconfigs for multiple software packages can be added in a single PR, but keep it reasonable: maximum 5 different software packages, 10 easyconfig files.
 
-For software packages that are part of the Common User Experience agreements (right now: Python, R, Perl, next to the intel/foss toolchains), you tag the other VSC members involved using their GitHub account in the description.
-
-Tag other EasyBuilders that you know are may be interested in your work, using their GitHub account name, for example using `@boegel`.
+Tag other EasyBuilders that you know are may be interested in your work, using their GitHub account name preceded by `@`. Example: `@boegel`.
 
 
 ### Update the PR when it's ready for review/testing by others
 
-Once your easyconfigs are ready for testing/review, you upload them in the pull request by pushing to the corresponding branch in your GitHub easybuild-easyconfigs repository.
+Once your easyconfigs are ready for testing/review, update the pull request by pushing to the corresponding branch in your GitHub easybuild-easyconfigs repository.
+
+#### Unit tests
+
+Make sure that the unit tests run by Jenkins still pass, i.e. that a 'Test PASSed` comment is made by @hpcugentbot.
+If Jenkins is reporting failing unit tests, fix those issues first (details on failing tests are available by clicking the red cross next to the last tested commit, see the `Console output` link in the Jenkins interface).
 
 Submit a test report using the `--upload-test-report` eb command line option (see https://github.com/hpcugent/easybuild/wiki/Review-process-for-contributions#automated-testing-of-easyconfigs-pull-requests), as a confirmation that the easyconfigs are working for you.
 
