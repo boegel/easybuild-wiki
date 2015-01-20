@@ -5,14 +5,14 @@ This is a policy to follow when issuing a pull request (PR) to the [easybuild-ea
 * use a standard format for your PR title: ``[<toolchain>] <software>, ... (<tag>)``
 * open a PR (with dummy easyconfigs) as soon as you start working on something, tag it with `(WIP)`
 * update the PR when it's ready for review/testing by others, tag it with `(TEST)`
-* indicate that your PR should be ready to be merged (after review/testing) by using the `(OK)` tag
-* easyconfigs should only be considered production ready when the PR is merged into `develop`
+* indicate that your PR should be ready to be merged, after review/testing and fixing remarks or problems, by using the `(OK)` tag
+* easyconfig files should only be considered production ready when the PR is merged into `develop`
 
 More details in the sections below.
 
 ### Use a standard format for your PR title
 
-Using a title for your PRs according to the following standard format makes it easy to recognise what it is providing:
+Using a title for your PRs according to the following standard format makes it easy to recognise at a glance what it is providing. It also enables meaningful PR titles included in the output of `--search` (as soon as it considers open PRs as well).
 
 ``[<toolchain_name>/<toolchain_version>] <software_name> <software_version>, ... (<tag>)``
 
