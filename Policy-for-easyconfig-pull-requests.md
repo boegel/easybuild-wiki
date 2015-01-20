@@ -34,8 +34,8 @@ Complete examples:
 
 As soon as you start working on a (set of) easyconfig file(s), open a [pull request](https://github.com/hpcugent/easybuild-easyconfigs/compare/), and mark it as being a _work in progress_:
 
-* include placeholders for the easyconfigs you're planning to provide, i.e. empty files, partial files (e.g., only containing definitions for `name`, `version`, `toolchain`), or copies of existing easyconfig files for which only the filename has been adjusted
-* clearly mention the tag ``(WIP)`` in the title of the pull request
+* include placeholder easyconfigs (with the correct filename): empty files, partial files (e.g., only containing definitions for `name`, `version`, `toolchain`), or copies of existing easyconfig files for which only the filename has been adjusted
+* include the `(WIP)` tag in the title of the pull request
 
 The key point here is to open a pull request **early** rather than late; that way other people who are planning on looking into the same easyconfigs you are working on can reap the benefits of your labor, contact you to help out, or simply test what you consider ready for consumption by others.
 
