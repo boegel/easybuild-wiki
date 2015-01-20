@@ -32,7 +32,7 @@ Complete examples:
 
 ### Open a PR as soon as you start working on something
 
-As soon as you start working on a (set of) easyconfig file(s), open a **pull request**, and mark it as being a _work in progress_:
+As soon as you start working on a (set of) easyconfig file(s), open a [pull request](https://github.com/hpcugent/easybuild-easyconfigs/compare/), and mark it as being a _work in progress_:
 
 * include placeholders for the easyconfigs you're planning to provide, i.e. empty files, partial files (e.g., only containing definitions for `name`, `version`, `toolchain`), or copies of existing easyconfig files for which only the filename has been adjusted
 * clearly mention the tag ``(WIP)`` in the title of the pull request
