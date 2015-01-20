@@ -14,16 +14,16 @@ More details in the sections below.
 
 Using a title for your PRs according to the following standard format makes it easy to recognise at a glance what it is providing. It also enables meaningful PR titles included in the output of `--search` (as soon as it considers open PRs as well).
 
-``[<toolchain_name>/<toolchain_version>] <software_name> <software_version>, ... (<tag>)``
+``[<toolchain_>] <software>, ... (<tag>)``
 
 * since easyconfigs are specific to a particular _toolchain_, clearly indicating the toolchain being used helps to structure the overview of easyconfigs; both the toolchain name and version should be mentioned, enclosing by square brackets;
   * examples: `[intel/2015a]`, `[goolf/1.5.14-no-OFED]`
-* mentioning the main software packages for which easyconfigs are provided, together with their respective version(s) speaks for itself
+* the main software package(s) for which easyconfigs are provided, together with their respective version(s), should be listed in the title
   * examples: `Boost 1.55.0`; `Python 2.7.9, OpenSSL 1.0.1k`;
-* tagging your pull request with a short/clear label is useful for indicating its current status; suggested tags are:
+* tagging your pull request with a short/clear label is useful for indicating its current status; 'standard' tags are:
   * `(WIP)` to indicate that the PR is still work-in-progress
   * `(TEST)` to invite others to review and test your PR
-  * `(OK)` to indicate that the PR is ready to be merged in
+  * `(OK)` to indicate that the PR should be ready to be merged in (review/testing is done)
 
 Complete examples:
  * `[intel/2015a] Boost 1.55.0 (WIP)`
