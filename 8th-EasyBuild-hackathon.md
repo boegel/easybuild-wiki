@@ -13,38 +13,36 @@ Please contact Pablo Escobar (pablo.escobarlopez@unibas.ch) and Thierry Sengstag
 
 **Registration is closed, all seats are taken!**
 
-list of confirmed attendees:
+list of confirmed attendees (28):
 
-* Konstantin Arnold (University of Basel - sciCORE, Switzerland)
-* Urban Borstnik (ETC Zürich, Switzerland)
-* Joho Bruno (Lucerne University of Applied Sciences and Art, Switzerland)
-* Pablo Escobar (Swiss Institute of Bioinformatics, University of Basel, sciCORE; EasyBuild user and contributor)
-* Petar Forai (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
-* Samuel Fux (ETC Zürich, Switzerland)
-* Markus Geimer (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
-* Fotis Georgatos (National Technical University of Athens, Greece; EasyBuild user and contributor)
-* Eric Gregory (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
-* Danilo Guerrera (University of Basel, Departement Mathematik & Informatik, Switzerland)
-* Kenneth Hoste (HPC-UGent, Belgium; EasyBuild developer and release manager)
-* Martin Jacquot (University of Basel - sciCORE, Switzerland)
-* Adam Mazur (University of Basel, Switzerland)
-* Robert McLay (Texas Advanced Computing Centre (TACC), US; Lmod developer)
-* Riccardo Murri (University of Zurich)
-* Alan O'Cais (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
-* Georg Rath (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
-* Tim Robinson (CSCS, Switzerland)
-* Michael Rolli (Universität Bern, Switzerland)
-* Thierry Sengstag (Swiss Institute of Bioinformatics, University of Basel, sciCORE)
-* Olav Smørholm (University of Warwick, UK)
-* Heinz Stockinger (Swiss Institute of Bioinformatics)
-* Jens Timmerman (HPC-UGent, Belgium; EasyBuild developer)
-* Florian Topf (EPFL, Lausanne, Switzerland)
-* Ivan Topolsky	(Vital-IT, Lausanne, Switzerland)
-* Thomas Wuest (ETC Zürich, Switzerland)
-
-
-Guilherme Peretti Pezzi	peretti@cscs.ch	CSCS	Y	Y	Y
-Marc Litherland	marc.litherland@novartis.com	Novartis	Y	Y	Y
+* **Konstantin Arnold** (University of Basel - sciCORE, Switzerland)
+* **Urban Borstnik** (ETC Zürich, Switzerland)
+* **Joho Bruno** (Lucerne University of Applied Sciences and Art, Switzerland)
+* **Pablo Escobar** (Swiss Institute of Bioinformatics, UniBas, sciCORE; EasyBuild user and contributor)
+* **Petar Forai** (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
+* **Samuel Fux** (ETC Zürich, Switzerland)
+* **Markus Geimer** (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
+* **Fotis Georgatos** (National Technical University of Athens, Greece; EasyBuild user and contributor)
+* **Eric Gregory** (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
+* **Danilo Guerrera** (University of Basel, Departement Mathematik & Informatik, Switzerland)
+* **Kenneth Hoste** (HPC-UGent, Belgium; EasyBuild developer and release manager)
+* **Martin Jacquot** (University of Basel - sciCORE, Switzerland)
+* **Marc Litherland** (Novartis, Switzerland)
+* **Adam Mazur** (University of Basel, Switzerland)
+* **Robert McLay** (Texas Advanced Computing Centre (TACC), US; Lmod developer)
+* **Riccardo Murri** (University of Zurich)
+* **Alan O'Cais** (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
+* **Guilherme Peretti Pezzi** (CSCS, Switzerland)
+* **Georg Rath** (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
+* **Tim Robinson** (CSCS, Switzerland)
+* **Michael Rolli** (Universität Bern, Switzerland)
+* **Thierry Sengstag** (Swiss Institute of Bioinformatics, University of Basel, sciCORE)
+* **Olav Smørholm** (University of Warwick, UK)
+* **Heinz Stockinger** (Swiss Institute of Bioinformatics)
+* **Jens Timmerman** (HPC-UGent, Belgium; EasyBuild developer)
+* **Florian Topf** (EPFL, Lausanne, Switzerland)
+* **Ivan Topolsky** (Vital-IT, Lausanne, Switzerland)
+* **Thomas Wuest** (ETC Zürich, Switzerland)
 
 ## Topics
 
