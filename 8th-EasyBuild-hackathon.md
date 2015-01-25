@@ -71,9 +71,9 @@ _(initial agenda, subject to change)_
 
 ### Tuesday February 10th 2015
 
-* 9am -9.30am: Introduction to XALT (Robert McLay)
-* 9.30 - 10am: EasyBuild hackathon kickoff: who does what roundtable?
-* 10am: EasyBuild hackathon
+* 9am -10am: Introduction to XALT (Robert McLay)
+* 10.30am: EasyBuild hackathon kickoff: who does what roundtable?
+* 11am: EasyBuild hackathon
 * 12.30pm: lunch
 * 2pm: EasyBuild hackathon (continued)
 
