@@ -71,7 +71,7 @@ _(initial agenda, subject to change)_
 
 ### Tuesday February 10th 2015
 
-* 9am -10am: Introduction to XALT and TACC Stast (Robert McLay)
+* 9am -10am: Introduction to XALT and TACC Stats (Robert McLay)
 * 10.30am: EasyBuild hackathon kickoff: who does what roundtable?
 * 11am: EasyBuild hackathon
 * 12.30pm: lunch
