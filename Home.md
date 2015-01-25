@@ -84,6 +84,8 @@ The pages that are still available here are either not considered to be part of 
  * [EasyBuild introduction slides](http://users.ugent.be/~kehoste/EasyBuild_introduction_hackathon-JSC-Feb14.pdf)
  * notes: [day 1](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-1) - [day 2](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-2) - [day 3](https://github.com/hpcugent/easybuild/wiki/5th-easybuild-hackathon---meeting-minutes-day-3)
 * [[6th EasyBuild hackathon]]: June 18-20th 2014, Vienna (Austria)
+* 7th EasyBuild hackathon: October 21-22 2014, Jülich (Germany)
+* [[8th EasyBuild hackathon]]: February 9-11 2015, Basel (Switzerland)
 
 ### Conferences and meetings
 
