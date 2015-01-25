@@ -67,7 +67,8 @@ _(initial agenda, subject to change)_
 * 12.30pm - 2pm: lunch
 * 2pm - 3pm: Introduction to Lmod (Robert McLay)
 * 3pm - 4pm: EasyBuild/Lmod as tools to harmonize software stacks across HPC sites: open discussion
-* 4pm - 5.30pm: Understanding and writing easyconfigs (Kenneth Hoste)
+* 4pm - 4.30pm: Understanding and writing easyconfigs (Kenneth Hoste)
+* 4.30pm - 5.30pm: Getting started with EasyBuild
 
 ### Tuesday February 10th 2015
 
