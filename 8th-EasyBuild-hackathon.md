@@ -56,9 +56,34 @@ Attendees are free to work on what they want, but a couple of topics of interest
 _(initial agenda, subject to change)_
 
 ### Monday February 9th 2015
+
+* 10am - 11.30am: Introduction to EasyBuild (Kenneth Hoste)
+* 11.30am - 12.30pm: EasyBuild site presentations: setup, usage, ...
+  * HPC-UGent, Belgium (Kenneth Hoste)
+  * Jülich Supercomputer Centre, Germany (Markus Geimer?, Eric Gregory?)
+  * Vienna Biocenter, Austria (Petar Forai?)
+  * ? University of Warwick, UK (Olav Smørholm)
+  * sciCORE, University of Basel, Switzerland (Pablo Escobar)
+* 12.30pm - 2pm: lunch
+* 2pm - 3pm: Introduction to Lmod (Robert McLay)
+* 3pm - 4pm: EasyBuild/Lmod as tools to harmonize software stacks across HPC sites: open discussion
+* 4pm - 5.30pm: Understanding and writing easyconfigs (Kenneth Hoste)
+
 ### Tuesday February 10th 2015
+
+* 9am -9.30am: Introduction to XALT (Robert McLay)
+* 9.30 - 10am: EasyBuild hackathon kickoff: who does what roundtable?
+* 10am: EasyBuild hackathon
+* 12.30pm: lunch
+* 2pm: EasyBuild hackathon (continued)
+
+
 ### Wednesday February 11th 2015
 
+* 9am - 9.30am: Contributing back to EasyBuild
+* 9.30am: EasyBuild hackathon (continued)
+* 12.30pm: lunch
+* 2pm: EasyBuild hackathon (continued)
 
 ## Notes
 
