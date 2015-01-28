@@ -96,6 +96,7 @@ The pages that are still available here are either not considered to be part of 
  * [[SC13 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"
  * [FOSDEM'14](https://fosdem.org/2014/): "HPC and computational science" devroom (more info soon)
  * [[ISC'14 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"
+ * [[SC14 BoF session]]: "Getting Scientific Software Installed: Tools and Best Practices"
 
 ### Conference calls
 
