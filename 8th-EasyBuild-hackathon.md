@@ -35,7 +35,6 @@ list of confirmed attendees (28):
 * **Guilherme Peretti Pezzi** (CSCS, Switzerland)
 * **Georg Rath** (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
 * **Tim Robinson** (CSCS, Switzerland)
-* **Michael Rolli** (Universität Bern, Switzerland)
 * **Thierry Sengstag** (Swiss Institute of Bioinformatics, University of Basel, sciCORE)
 * **Olav Smørholm** (University of Warwick, UK)
 * **Heinz Stockinger** (Swiss Institute of Bioinformatics)
