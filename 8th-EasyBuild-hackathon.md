@@ -13,14 +13,14 @@ Please contact Pablo Escobar (pablo.escobarlopez@unibas.ch) and Thierry Sengstag
 
 **Registration is closed, all seats are taken!**
 
-list of confirmed attendees (28):
+list of confirmed attendees (27):
 
 * **Konstantin Arnold** (University of Basel - sciCORE, Switzerland)
-* **Urban Borstnik** (ETC Zürich, Switzerland)
+* **Urban Borstnik** (ETH Zürich, Switzerland)
 * **Joho Bruno** (Lucerne University of Applied Sciences and Art, Switzerland)
 * **Pablo Escobar** (Swiss Institute of Bioinformatics, UniBas, sciCORE; EasyBuild user and contributor)
 * **Petar Forai** (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
-* **Samuel Fux** (ETC Zürich, Switzerland)
+* **Samuel Fux** (ETH Zürich, Switzerland)
 * **Markus Geimer** (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
 * **Fotis Georgatos** (National Technical University of Athens, Greece; EasyBuild user and contributor)
 * **Eric Gregory** (Jülich Supercomputing Centre, Germany; EasyBuild user and contributor)
@@ -41,7 +41,7 @@ list of confirmed attendees (28):
 * **Jens Timmerman** (HPC-UGent, Belgium; EasyBuild developer)
 * **Florian Topf** (EPFL, Lausanne, Switzerland)
 * **Ivan Topolsky** (Vital-IT, Lausanne, Switzerland)
-* **Thomas Wuest** (ETC Zürich, Switzerland)
+* **Thomas Wuest** (ETH Zürich, Switzerland)
 
 ## Topics
 
