@@ -3,7 +3,9 @@
 * **event announcement**: http://scicore.unibas.ch/events/easybuild-workshop-and-hackathon/
 * **date**: Monday February 9th - Wednesday February 11th 2015
 * **venue**: Biozentrum, University of Basel
-  * _address_: Klingelbergstrasse 50/70, Basel, Switzerland (<a>http://www.biozentrum.unibas.ch/directions/</a>)
+  * _address_: Klingelbergstrasse 61, Basel, Switzerland (<a>http://www.biozentrum.unibas.ch/directions/</a>)
+  * _room_: 13th floor Lounge, Biozentrum Annex
+  * the Biozentrum Annex is opposite to the main entrance of Biozentrum (across the street)
 
 ### Attendees
 
