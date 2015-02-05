@@ -68,7 +68,7 @@ _(initial agenda, subject to change)_
 * _12.30pm - 2pm: lunch_
 * 2pm - 3pm: **Introduction to Lmod** (Robert McLay)
 * 3pm - 4pm: **EasyBuild/Lmod as tools to harmonize software stacks across HPC sites** (open discussion)
-  * **HPCBIOS: Getting Your Software, Users & Documentation in Sync - Definition of Common Environment for HPC Platforms and Beyond** (Fotis Georgatos)
+  * _HPCBIOS: Getting Your Software, Users & Documentation in Sync - Definition of Common Environment for HPC Platforms and Beyond_ (Fotis Georgatos)
     * see also https://archive.fosdem.org/2014/schedule/event/hpc_devroom_hpcbios/
 * 4pm - 4.30pm: **Understanding and writing easyconfigs** (Kenneth Hoste)
 * 4.30pm - 5.30pm: **Getting started with EasyBuild and Lmod** (hands-on installation & configuration)
