@@ -61,7 +61,7 @@ _(initial agenda, subject to change)_
 * 10am - 11.30am: **Introduction to EasyBuild** (Kenneth Hoste)
 * 11.30am - 12.30pm: **EasyBuild site presentations: setup, usage, ...**
   * _HPC-UGent, Belgium_ (Kenneth Hoste)
-  * _Jülich Supercomputer Centre, Germany_ (Markus Geimer?, Eric Gregory?)
+  * _Jülich Supercomputer Centre, Germany_ (Alan O'Cais)
   * _Vienna Biocenter, Austria_ (Petar Forai)
   * ? _University of Warwick, UK_ (Olav Smørholm)
   * _sciCORE/University of Basel, Switzerland_ (Pablo Escobar)
