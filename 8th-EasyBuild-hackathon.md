@@ -15,7 +15,7 @@ Please contact Pablo Escobar (pablo.escobarlopez@unibas.ch) and Thierry Sengstag
 
 **Registration is closed, all seats are taken!**
 
-list of confirmed attendees (27):
+list of confirmed attendees (26):
 
 * **Konstantin Arnold** (University of Basel - sciCORE, Switzerland)
 * **Urban Borstnik** (ETH Zürich, Switzerland)
@@ -38,7 +38,6 @@ list of confirmed attendees (27):
 * **Georg Rath** (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
 * **Tim Robinson** (CSCS, Switzerland)
 * **Thierry Sengstag** (Swiss Institute of Bioinformatics, University of Basel, sciCORE)
-* **Olav Smørholm** (University of Warwick, UK)
 * **Heinz Stockinger** (Swiss Institute of Bioinformatics)
 * **Jens Timmerman** (HPC-UGent, Belgium; EasyBuild developer)
 * **Florian Topf** (EPFL, Lausanne, Switzerland)
@@ -63,7 +62,6 @@ _(initial agenda, subject to change)_
   * _HPC-UGent, Belgium_ (Kenneth Hoste)
   * _Jülich Supercomputer Centre, Germany_ (Alan O'Cais)
   * _Vienna Biocenter, Austria_ (Petar Forai)
-  * ? _University of Warwick, UK_ (Olav Smørholm)
   * _sciCORE/University of Basel, Switzerland_ (Pablo Escobar)
 * _12.30pm - 2pm: lunch_
 * 2pm - 3pm: **Introduction to Lmod** (Robert McLay)
