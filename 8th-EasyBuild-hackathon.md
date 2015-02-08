@@ -57,8 +57,8 @@ _(initial agenda, subject to change)_
 
 ### Monday February 9th 2015
 
-* 10am - 11.30am: **Introduction to EasyBuild** (Kenneth Hoste)
-* 11.30am - 12.30pm: **EasyBuild site presentations: setup, usage, ...**
+* 10am - 11.30am: **Introduction to EasyBuild** (Kenneth Hoste) [[slides](http://users.ugent.be/~kehoste/EasyBuild-intro-Basel_20150209.pdf)]
+* 11.30am - 12.30pm: **EasyBuild site presentations: setup, usage, ...** [[slides](http://users.ugent.be/~kehoste/EasyBuild-site-presentations_20150209.pdf)]
   * _HPC-UGent, Belgium_ (Kenneth Hoste)
   * _Jülich Supercomputer Centre, Germany_ (Alan O'Cais)
   * _Vienna Biocenter, Austria_ (Petar Forai)
@@ -68,7 +68,7 @@ _(initial agenda, subject to change)_
 * 3pm - 4pm: **EasyBuild/Lmod as tools to harmonize software stacks across HPC sites** (open discussion)
   * _HPCBIOS: Getting Your Software, Users & Documentation in Sync - Definition of Common Environment for HPC Platforms and Beyond_ (Fotis Georgatos)
   * see also https://archive.fosdem.org/2014/schedule/event/hpc_devroom_hpcbios/
-* 4pm - 4.30pm: **Understanding and writing easyconfigs** (Kenneth Hoste)
+* 4pm - 4.30pm: **Understanding and writing easyconfigs** (Kenneth Hoste) [[slides](http://users.ugent.be/~kehoste/EasyBuild-writing-easyconfigs_20150209.pdf)]
 * 4.30pm - 5.30pm: **Getting started with EasyBuild and Lmod** (hands-on installation & configuration)
 
 ### Tuesday February 10th 2015
@@ -89,7 +89,7 @@ _(initial agenda, subject to change)_
 * 9.30am: **hackathon** (continued)
   * free hands-on work with EasyBuild/Lmod, with support from Kenneth, Jens, Pablo, Fotis, Robert
 * _12.30pm - 2pm: lunch_
-* 2pm - 2.30pm: **Writing easyblocks: the basics** (Kenneth Hoste)
+* 2pm - 2.30pm: **Writing easyblocks: the basics** (Kenneth Hoste) [[slides](http://users.ugent.be/~kehoste/EasyBuild-writing-easyblocks_20150211.pdf)]
 * 2.30pm - 5.30pm: **hackathon** (continued)
   * free hands-on work with EasyBuild/Lmod, with support from Kenneth, Jens, Pablo, Fotis, Robert
 
