@@ -58,7 +58,7 @@ _(initial agenda, subject to change)_
 ### Monday February 9th 2015
 
 * 10am - 11.30am: **Introduction to EasyBuild** (Kenneth Hoste) [[slides](http://users.ugent.be/~kehoste/EasyBuild-intro-Basel_20150209.pdf)]
-* 11.30am - 12.30pm: **EasyBuild site presentations: setup, usage, ...** [[slides](http://users.ugent.be/~kehoste/EasyBuild-site-presentations_20150209.pdf)]
+* 11.30am - 12.30pm: **EasyBuild site presentations: setup, usage, ...** [[slides](http://users.ugent.be/~kehoste/EasyBuild-site-pres_20150209.pdf)]
   * _HPC-UGent, Belgium_ (Kenneth Hoste)
   * _Jülich Supercomputer Centre, Germany_ (Alan O'Cais)
   * _Vienna Biocenter, Austria_ (Petar Forai)
