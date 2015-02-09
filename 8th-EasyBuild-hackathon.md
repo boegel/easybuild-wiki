@@ -64,7 +64,7 @@ _(initial agenda, subject to change)_
   * _Vienna Biocenter, Austria_ (Petar Forai)
   * _sciCORE/University of Basel, Switzerland_ (Pablo Escobar)
 * _12.30pm - 2pm: lunch_
-* 2pm - 3pm: **Introduction to Lmod** (Robert McLay)
+* 2pm - 3pm: **Introduction to Lmod** (Robert McLay) [[slides](http://users.ugent.be/~kehoste/Lmod-intro_20150209.pdf)]
 * 3pm - 4pm: **EasyBuild/Lmod as tools to harmonize software stacks across HPC sites** (open discussion)
   * _HPCBIOS: Getting Your Software, Users & Documentation in Sync - Definition of Common Environment for HPC Platforms and Beyond_ (Fotis Georgatos)
   * see also https://archive.fosdem.org/2014/schedule/event/hpc_devroom_hpcbios/
