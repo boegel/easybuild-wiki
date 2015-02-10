@@ -73,7 +73,7 @@ _(initial agenda, subject to change)_
 
 ### Tuesday February 10th 2015
 
-* 9am -10am: **Introduction to XALT and TACC Stats** (Robert McLay)
+* 9am -10am: **Introduction to XALT and TACC Stats** (Robert McLay) [[slides XALT](http://users.ugent.be/~kehoste/XALT-intro_20150210.pdf) - [slides TACC Stats](http://users.ugent.be/~kehoste/TACC_Stats-intro_20150210.pdf)]
 * 10.30am - 11am: **hackathon kickoff: who does what roundtable?**
 * 11am - 12.30pm: **hackathon**
   * free hands-on work with EasyBuild/Lmod, with support from Kenneth, Jens, Pablo, Fotis, Robert
