@@ -78,7 +78,7 @@ _(initial agenda, subject to change)_
 * 11am - 12.30pm: **hackathon**
   * free hands-on work with EasyBuild/Lmod, with support from Kenneth, Jens, Pablo, Fotis, Robert
 * _12.30pm - 2pm: lunch_
-* 2pm - 2.30pm: **EasyBuild on Cray** (Petar Forai) [[slides](users.ugent.be/~kehoste/EasyBuild-on-Cray_20150210.pdf)]
+* 2pm - 2.30pm: **EasyBuild on Cray** (Petar Forai) [[slides](http://users.ugent.be/~kehoste/EasyBuild-on-Cray_20150210.pdf)]
 * 2.30pm - 5.30pm: **hackathon** (continued)
   * free hands-on work with EasyBuild/Lmod, with support from Kenneth, Jens, Pablo, Fotis, Robert
 
