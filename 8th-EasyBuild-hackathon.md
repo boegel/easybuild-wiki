@@ -1,3 +1,5 @@
+![EasyBuild hackathon @ Basel](http://users.ugent.be/~kehoste/EasyBuild-hackathon-Basel-group-picture_20150211-resized.jpg)
+
 ### Basic Information
 
 * **event announcement**: http://scicore.unibas.ch/events/easybuild-workshop-and-hackathon/
