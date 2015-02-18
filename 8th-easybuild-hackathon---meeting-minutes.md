@@ -90,6 +90,6 @@
 ### XALT
 
 * Robert & Georg: work together on XALT
-    * avoid relying on `pstree`, replace with `psutil` Python module so XALT also works on OS X
-    * discuss contribution by Georg on adding ORM support
+    * avoid relying on `pstree`, replace with `psutil` Python module so XALT also works on OS X, see https://github.com/Fahey-McLay/xalt/pull/5
+    * discuss contribution by Georg on adding ORM support, see https://github.com/Fahey-McLay/xalt/pull/3
 
