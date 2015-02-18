@@ -38,11 +38,11 @@
  * see Coot @ [easyconfigs#1400](https://github.com/hpcugent/easybuild-easyconfigs/pull/1400), Pmw @ [easyconfigs#1403](https://github.com/hpcugent/easybuild-easyconfigs/pull/1403), PyMOL/GLEW @ [easyconfigs#1405](https://github.com/hpcugent/easybuild-easyconfigs/pull/1405)
 * **Alan and Eric**:
  * work on toolchain-based hierarchical module naming scheme
-  * see [framework#1168](https://github.com/hpcugent/easybuild-framework/pull/1168)
+    * see [framework#1168](https://github.com/hpcugent/easybuild-framework/pull/1168)
  * work out how support for resolving dependencies using subtoolchains could be added
-  * specify list of subtoolchains in toolchain definition in framework
-  * indicate versions for subtoolchains in toolchain easyconfigs
-  * also think about equivalence classes for toolchain: `compiler`, `compiler_mpi`, `full` (compiler, MPI, BLAS, LAPACK, FFTW), etc.
+    * specify list of subtoolchains in toolchain definition in framework
+    * indicate versions for subtoolchains in toolchain easyconfigs
+    * also think about equivalence classes for toolchain: `compiler`, `compiler_mpi`, `full` (compiler, MPI, BLAS, LAPACK, FFTW), etc.
  * Eric: demo scripts for keeping module tree clean w.r.t. minimizing different versions of dependency modules
 * **Danilo**: first steps with EasyBuild, look into new version of `gmvolf` toolchain
  * see [easyconfigs#1397](https://github.com/hpcugent/easybuild-easyconfigs/pull/1397)
@@ -53,9 +53,9 @@
     * see [framework#1170](https://github.com/hpcugent/easybuild-framework/pull/1170)
 * **Jens**:
  * continue work on adding support for downloading sources from an SVN repository
-  * see [framework#1082](https://github.com/hpcugent/easybuild-framework/pull/1082)
+    * see [framework#1082](https://github.com/hpcugent/easybuild-framework/pull/1082)
  * look into creating RPM packages for EasyBuild, fix related issues
-  * see [framework#1166](https://github.com/hpcugent/easybuild-framework/pull/1166)
+    * see [framework#1166](https://github.com/hpcugent/easybuild-framework/pull/1166)
 * **Kenneth**:
  * review work by Petar on support for Lua module files, and help out where needed (see [framework#1060](https://github.com/hpcugent/easybuild-framework/pull/1060)
  * merge contributions made during hackathon that are eligible for merging (reviewed/tested)
