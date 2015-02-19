@@ -31,7 +31,7 @@ list of confirmed attendees (26):
 * **Danilo Guerrera** (University of Basel, Departement Mathematik & Informatik, Switzerland)
 * **Kenneth Hoste** (HPC-UGent, Belgium; EasyBuild developer and release manager)
 * **Martin Jacquot** (University of Basel - sciCORE, Switzerland)
-* **Marc Litherland** (Novartis, Switzerland)
+* **Gianluca Santarossa** (Novartis, Switzerland)
 * **Adam Mazur** (University of Basel, Switzerland)
 * **Robert McLay** (Texas Advanced Computing Centre (TACC), US; Lmod developer)
 * **Riccardo Murri** (University of Zurich)
@@ -44,7 +44,6 @@ list of confirmed attendees (26):
 * **Jens Timmerman** (HPC-UGent, Belgium; EasyBuild developer)
 * **Florian Topf** (EPFL, Lausanne, Switzerland)
 * **Ivan Topolsky** (Vital-IT, Lausanne, Switzerland)
-* **Thomas Wuest** (ETH Zürich, Switzerland)
 
 ## Topics
 
