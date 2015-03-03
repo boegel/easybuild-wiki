@@ -29,7 +29,7 @@ Alphabetical list of attendees (7):
    * all planned changes in EasyBuild framework have been merged into `develop`
    * a couple of documentation updates must be tackled before EasyBuild v2.0 can be released (major ones are already tackled)
    * see https://github.com/hpcugent/easybuild-framework/issues/1000 for all details
-   * full regression test revealed only one major problem w.r.t. `mpi_cmd_for` function affecting several builds (WRF, 
+   * full regression test revealed only one major problem w.r.t. `mpi_cmd_for` function affecting several builds (HPCG, NAMD, NEURON, WRF (+ WPS)) 
 
 ##### Early outlook to EasyBuild v2.1
 
