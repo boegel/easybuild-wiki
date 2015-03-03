@@ -31,6 +31,8 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
  * Tuesday March 3rd 2015, 3pm - 3.30pm (CET)
   * update on EasyBuild v2.0
+  * early outlook to EasyBuild v2.1
+  * make `eb` consider robot search path when looking for easyconfigs specified on the command line
 
 #### Future EasyBuild conference calls
 
