@@ -46,6 +46,10 @@ Alphabetical list of attendees (7):
      * use `raise EasyBuildError(...)` instead
      * see https://github.com/hpcugent/easybuild-framework/pull/1183
      * triggered by work on GC3Pie (https://github.com/hpcugent/easybuild-framework/pull/1008)
+   * other potential features:
+     * packaging support, using FPM (see https://github.com/hpcugent/easybuild-framework/pull/1170)
+     * Robert is working on this, might be ready if good progress is made in the coming weeks
+     * would be nice to support installing of FPM itself using EasyBuild
 
 ##### Consider robot search path when looking for easyconfigs specified on the command line
 
