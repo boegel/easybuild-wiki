@@ -62,3 +62,4 @@ Alphabetical list of attendees (7):
      * e.g. `CC=dummy`, no `$CFLAGS` defined, `toolchainopts` is ignored, etc.
    * a proper system toolchain should be looked into
    * `system-gcc` should be quite easy to do introduce, since good GCC support is already there
+   * see also https://github.com/hpcugent/easybuild-framework/issues/1181
