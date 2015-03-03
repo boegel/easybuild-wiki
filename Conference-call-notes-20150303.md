@@ -17,7 +17,7 @@ Alphabetical list of attendees (7):
 
 #### Agenda
 
-   * EasyBuild v2.0 update (Kenneth)
+   * EasyBuild v2.0 update
    * early outlook to EasyBuild v2.1
    * make `eb` consider robot search path when looking for easyconfigs specified on the command line
    * dummy vs system toolchain
