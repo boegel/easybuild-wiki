@@ -3,6 +3,8 @@
 * **date**: Wednesday November 11th - Friday November 13th 2015
 * **venue**: TACC - Austin, Texas (US), see https://www.tacc.utexas.edu/about/contact
   * note: public transportation options to/from TACC to downtown Austin is very limited
+* **notes**
+  * social event: tour of the TACC HPC infrastructure (Stampede) 
 
 ### Attendees
 
