@@ -2,6 +2,7 @@
 
 * **date**: Monday May 4th - Tuesday May 5th 2015
 * **venue**: CSC, Espoo, Finland, see https://www.csc.fi/contact-info
+* in conjunction with the Nordic e-Infrastructure Conference (NeIC) see http://neic2015.nordforsk.org/
 
 ### Attendees
 
