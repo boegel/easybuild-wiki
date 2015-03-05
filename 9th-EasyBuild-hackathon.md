@@ -12,7 +12,7 @@ Please contact Kenneth Hoste (kenneth.hoste@ugent.be) or Olli-Pekka Lehto (olli-
 
 list of confirmed attendees:
 
-* **Petar Forai** (Institute of Molecular Biotechnology, Austria; EasyBuild user and contributor)
+* **Petar Forai** (IMB, Austria; EasyBuild user and contributor)
 * **Kenneth Hoste** (HPC-UGent, Belgium; EasyBuild developer and release manager)
 * **Olli-Pekka Lehto** (CSC.fi)
 
