@@ -1,6 +1,7 @@
 ### Basic Information
 
-* **date**: Wednesday November 11th - Friday November 13th 2015 (week before SC15, http://sc15.supercomputing.org)
+* **date**: Wednesday November 11th - Friday November 13th 2015 
+  * week before SC15, http://sc15.supercomputing.org
 * **venue**: TACC - Austin, Texas (US), see https://www.tacc.utexas.edu/about/contact
   * note: public transportation options to/from TACC to downtown Austin is very limited
 * **notes**
