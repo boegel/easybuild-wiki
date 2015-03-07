@@ -96,4 +96,4 @@ _(initial agenda, subject to change)_
 
 ## Notes
 
-available (https://github.com/hpcugent/easybuild/wiki/8th-easybuild-hackathon---meeting-minutes)[here]
+available [here](https://github.com/hpcugent/easybuild/wiki/8th-easybuild-hackathon---meeting-minutes)
