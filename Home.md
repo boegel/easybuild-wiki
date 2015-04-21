@@ -87,7 +87,7 @@ The pages that are still available here are either not considered to be part of 
 * 7th EasyBuild hackathon: October 21-22 2014, Jülich (Germany)
 * [[8th EasyBuild hackathon]]: February 9-11 2015, Basel (Switzerland)
 * [[9th EasyBuild hackathon]]: May 4-5 2015, Espoo (Finland)
-* [[10th EasyBuild hackathon]]: November 11-13 2015, Espoo (Finland)
+* [[10th EasyBuild hackathon]]: November 11-13 2015, Austin (TX), US
 
 ### Conferences and meetings
 
