@@ -50,6 +50,18 @@ versions:
   * e.g., ```--optarch=sandybridge``` results in ```craype-sandybridge``` being loaded in the build environment used by EasyBuild
 * metadata for external (Cray-provided) modules can be specified using ```--external-modules-metadata```
 
+## Notes
+
+### Modules
+
+* all system-provided loaded modules were purged prior to using EasyBuild: ```module purge```
+* modules tool used for testing EasyBuild:
+  * Piz Daint: system-provided environment modules 3.2.10:
+```
+source /opt/modules/3.2.10.2/init/bash
+export PATH=/opt/modules/3.2.10.2/bin/:$PATH
+```
+  * Sisu: self-installed Lmod 5.8
 ## Major supported/tested applications
 
 (in alphabetical order)
