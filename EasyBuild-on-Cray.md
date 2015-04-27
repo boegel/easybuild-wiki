@@ -25,20 +25,22 @@ versions:
 
 ## What works already?
 
-* building and instaling the **HPL (LINPACK) benchmark** version 2.1 (http://www.netlib.org/benchmark/hpl)
+(see below for more information)
+
+* building and instaling the **HPL (LINPACK) benchmark** version 2.1
   * on Piz Daint: using ```CrayGNU```, ```CrayIntel``` and ```CrayCCE``` toolchains version 5.1.29
   * on Sisu: using ```CrayGNU```, ```CrayIntel``` and ```CrayCCE``` toolchains version 5.2.25
 * building and installing major scientific software applications
-  * **CP2K** 2.6.0 (http://www.cp2k.org)
+  * **CP2K** 2.6.0
     * on Piz Daint using ```CrayGNU/5.1.29```
     * on Sisu using ```CrayGNU/5.2.25```
-  * **GROMACS** 4.6.7 (http://www.gromacs.org)
+  * **GROMACS** 4.6.7
     * on Piz Daint using ```CrayGNU/5.1.29```
     * on Sisu using ```CrayGNU/5.2.25```
-  * **Python** 2.7.9 (http://python.org) + **numpy** 1.9.2 (http://www.numpy.org) + **scipy** 0.15.1 (http://www.scipy.org):
+  * **Python** 2.7.9 + **numpy** 1.9.2 + **scipy** 0.15.1
     * on Piz Daint using ```CrayGNU/5.1.29```
     * on Sisu using ```CrayGNU/5.2.25```
-  * **WRF** 3.6.1 (http://www.wrf-model.org):
+  * **WRF** 3.6.1
     * on Piz Daint using ```CrayGNU/5.1.29```
     * *(pending on Sisu)*
 
@@ -72,7 +74,9 @@ export PATH=/opt/modules/3.2.10.2/bin/:$PATH
 
 ### CP2K
 
-* *works on*: Piz Daint, Sisu
+* http://www.cp2k.org
+* *version(s)*: 2.6.0
+* *works on*: Piz Daint (```CrayGNU/5.1.29```), Sisu (```CrayGNU/5.2.25```)
 * *runtime tested*: not yet
 
 ```
@@ -81,7 +85,9 @@ eb CP2K-2.6.0-CrayGNU-5.1.29.eb --dr --optarch=sandybridge --experimental
 
 ### GROMACS
 
-* *works on*: Piz Daint, Sisu
+* http://www.gromacs.org
+* *version(s)*: 4.6.7
+* *works on*: Piz Daint (```CrayGNU/5.1.29```), Sisu (```CrayGNU/5.2.25```)
 * *runtime tested*: not yet
 
 ```
@@ -89,7 +95,9 @@ eb GROMACS-4.6.7-CrayGNU-5.1.29-mpi.eb --dr --optarch=sandybridge --experimental
 ```
 ### HPL
 
-* *works on*: Piz Daint, Sisu
+* http://www.netlib.org/benchmark/hpl
+* *version(s)*: 2.1
+* *works on*: Piz Daint (```CrayGNU/5.1.29```), Sisu (```CrayGNU/5.2.25```)
 * *runtime tested*: yes (using default input file, CrayGNU build on Piz Daint)
 ```
 eb HPL-2.1-CrayCCE-5.1.29.eb --dr --optarch=sandybridge --experimental
@@ -99,16 +107,20 @@ eb HPL-2.1-CrayIntel-5.1.29.eb --dr --optarch=sandybridge --experimental
 
 ### Python + numpy/scipy
 
-* *works on*: Piz Daint, Sisu
+* http://python.org, http://www.numpy.org, http://www.scipy.org
+* *version(s)*: Python 2.7.9, numpy 1.9.2, scipy 0.15.1
+* *works on*: Piz Daint (```CrayGNU/5.1.29```), Sisu (```CrayGNU/5.2.25```)
 * *runtime tested*: not yet (except for numpy/scipy tests run during installation)
 ```
-# note: Python 2.7.9 and numpy 1.9.2 will be installed as dependencies
+# note: Python and numpy will be installed as dependencies
 eb scipy-0.15.1-CrayGNU-5.1.29-Python-2.7.9.eb --dr --optarch=sandybridge --experimental
 ```
 
 ### WRF
 
-* *works on*: Piz Daint, Sisu
+* http://www.wrf-model.org
+* *version(s)*: 3.6.1
+* *works on*: Piz Daint (```CrayGNU/5.1.29```)
 * *runtime tested*: yes (using http://www2.mmm.ucar.edu/wrf/WG2/benchv3/)
 
 ```
