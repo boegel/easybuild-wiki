@@ -100,7 +100,7 @@ eb HPL-2.1-CrayIntel-5.1.29.eb --dr --optarch=sandybridge --experimental
 ### Python + numpy/scipy
 
 * *works on*: Piz Daint, Sisu
-* *runtime tested*: no (except for numpy/scipy tests run during installation)
+* *runtime tested*: not yet (except for numpy/scipy tests run during installation)
 ```
 # note: Python 2.7.9 and numpy 1.9.2 will be installed as dependencies
 eb scipy-0.15.1-CrayGNU-5.1.29-Python-2.7.9.eb --dr --optarch=sandybridge --experimental
