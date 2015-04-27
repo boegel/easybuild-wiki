@@ -65,6 +65,7 @@ source /opt/modules/3.2.10.2/init/bash
 export PATH=/opt/modules/3.2.10.2/bin/:$PATH
 ```
   * Sisu: self-installed Lmod 5.8
+
 ## Major supported/tested applications
 
 (in alphabetical order)
