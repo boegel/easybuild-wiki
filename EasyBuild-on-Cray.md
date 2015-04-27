@@ -9,8 +9,8 @@ providing us access to Cray systems and for their support.
 
 ## Test systems
 
-* Piz Daint @ CSCS.ch ()
-* Sisu @ CSC.fi
+* Piz Daint @ CSCS.ch (http://www.cscs.ch/computers/piz_daint/)
+* Sisu @ CSC.fi (https://research.csc.fi/sisu-supercomputer)
 
 ## EasyBuild toolchains
 
