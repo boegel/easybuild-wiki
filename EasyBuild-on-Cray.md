@@ -48,7 +48,7 @@ versions:
 
 * enabling experimental mode using ```--experimental``` is *required*
   * support for using the Cray toolchains is still experimental, while we collect feedback and suggestions from experienced users of Cray systems
-* the ```craype-*``` module to load *must* be specified using ```--optarch```
+* the ```craype-<target>``` module to load *must* be specified using ```--optarch```
   * e.g., ```--optarch=sandybridge``` results in ```craype-sandybridge``` being loaded in the build environment used by EasyBuild
 * metadata for external (Cray-provided) modules can be specified using ```--external-modules-metadata```
 
