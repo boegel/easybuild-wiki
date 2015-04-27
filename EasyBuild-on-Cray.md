@@ -57,10 +57,10 @@ versions:
 * all system-provided loaded modules were purged prior to using EasyBuild: ```module purge```
 * modules tool used for testing EasyBuild:
   * Piz Daint: system-provided environment modules 3.2.10:
-```
-source /opt/modules/3.2.10.2/init/bash
-export PATH=/opt/modules/3.2.10.2/bin/:$PATH
-```
+    ```
+    source /opt/modules/3.2.10.2/init/bash
+    export PATH=/opt/modules/3.2.10.2/bin/:$PATH
+    ```
   * Sisu: self-installed Lmod 5.8
 ## Major supported/tested applications
 
