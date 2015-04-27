@@ -31,6 +31,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
  * ***Thursday*** April 30th 2015, 3pm - 3.30pm (CET)
   * EasyBuild 2.1 (Kenneth)
+    * see https://github.com/hpcugent/easybuild/wiki/EasyBuild-on-Cray
   * EasyBuild on Cray (Kenneth/Petar)
   * support for module properties (Kenneth)
 
