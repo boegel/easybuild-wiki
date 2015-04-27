@@ -73,28 +73,31 @@ export PATH=/opt/modules/3.2.10.2/bin/:$PATH
 ### CP2K
 
 ```
-eb CP2K-2.6.0-CrayGNU-5.1.29.eb --debug --robot --optarch=sandybridge --experimental
+eb CP2K-2.6.0-CrayGNU-5.1.29.eb --dr --optarch=sandybridge --experimental
 ```
 
 ### GROMACS
 
 ```
-eb GROMACS-4.6.7-CrayGNU-5.1.29-mpi.eb --debug --robot --optarch=sandybridge --experimental
+eb GROMACS-4.6.7-CrayGNU-5.1.29-mpi.eb --dr --optarch=sandybridge --experimental
 ```
 ### HPL
 
 ```
-eb HPL-2.1-CrayCCE-5.1.29.eb HPL-2.1-CrayGNU-5.1.29.eb HPL-2.1-CrayIntel-5.1.29.eb --debug --robot --optarch=sandybridge --experimental
+eb HPL-2.1-CrayCCE-5.1.29.eb --dr --optarch=sandybridge --experimental
+eb HPL-2.1-CrayGNU-5.1.29.eb --dr --optarch=sandybridge --experimental
+eb HPL-2.1-CrayIntel-5.1.29.eb --dr --optarch=sandybridge --experimental
 ```
 
 ### Python + numpy/scipy
 
 ```
-eb Python-2.7.9-CrayGNU-5.1.29.eb numpy-1.9.2-CrayGNU-5.1.29-Python-2.7.9.eb scipy-0.15.1-CrayGNU-5.1.29-Python-2.7.9.eb --debug --robot --optarch=sandybridge --experimental
+# note: Python 2.7.9 and numpy 1.9.2 will be installed as dependencies
+eb scipy-0.15.1-CrayGNU-5.1.29-Python-2.7.9.eb --dr --optarch=sandybridge --experimental
 ```
 
 ### WRF
 
 ```
-eb WRF-3.6.1-CrayGNU-5.1.29-dmpar.eb --debug --robot --optarch=sandybridge --experimental
+eb WRF-3.6.1-CrayGNU-5.1.29-dmpar.eb --dr --optarch=sandybridge --experimental
 ```
