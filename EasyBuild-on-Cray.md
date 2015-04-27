@@ -59,12 +59,12 @@ versions:
 module purge
 ```
 * modules tool used for testing EasyBuild:
+  * Sisu: self-installed Lmod 5.8
   * Piz Daint: system-provided environment modules 3.2.10:
 ```
 source /opt/modules/3.2.10.2/init/bash
 export PATH=/opt/modules/3.2.10.2/bin/:$PATH
 ```
-  * Sisu: self-installed Lmod 5.8
 
 ## Major supported/tested applications
 
@@ -72,12 +72,29 @@ export PATH=/opt/modules/3.2.10.2/bin/:$PATH
 
 ### CP2K
 
+```
+eb CP2K-2.6.0-CrayGNU-5.1.29.eb --debug --robot --optarch=sandybridge --experimental
+```
+
 ### GROMACS
 
+```
+eb GROMACS-4.6.7-CrayGNU-5.1.29-mpi.eb --debug --robot --optarch=sandybridge --experimental
+```
 ### HPL
 
-### Python
+```
+eb HPL-2.1-CrayCCE-5.1.29.eb HPL-2.1-CrayGNU-5.1.29.eb HPL-2.1-CrayIntel-5.1.29.eb --debug --robot --optarch=sandybridge --experimental
+```
 
-with numpy/scipy
+### Python + numpy/scipy
+
+```
+eb Python-2.7.9-CrayGNU-5.1.29.eb numpy-1.9.2-CrayGNU-5.1.29-Python-2.7.9.eb scipy-0.15.1-CrayGNU-5.1.29-Python-2.7.9.eb --debug --robot --optarch=sandybridge --experimental
+```
 
 ### WRF
+
+```
+eb WRF-3.6.1-CrayGNU-5.1.29-dmpar.eb --debug --robot --optarch=sandybridge --experimental
+```
