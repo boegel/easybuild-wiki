@@ -72,17 +72,25 @@ export PATH=/opt/modules/3.2.10.2/bin/:$PATH
 
 ### CP2K
 
+* *works on*: Piz Daint, Sisu
+* *runtime tested*: not yet
+
 ```
 eb CP2K-2.6.0-CrayGNU-5.1.29.eb --dr --optarch=sandybridge --experimental
 ```
 
 ### GROMACS
 
+* *works on*: Piz Daint, Sisu
+* *runtime tested*: not yet
+
 ```
 eb GROMACS-4.6.7-CrayGNU-5.1.29-mpi.eb --dr --optarch=sandybridge --experimental
 ```
 ### HPL
 
+* *works on*: Piz Daint, Sisu
+* *runtime tested*: yes (using default input file, CrayGNU build on Piz Daint)
 ```
 eb HPL-2.1-CrayCCE-5.1.29.eb --dr --optarch=sandybridge --experimental
 eb HPL-2.1-CrayGNU-5.1.29.eb --dr --optarch=sandybridge --experimental
@@ -91,12 +99,17 @@ eb HPL-2.1-CrayIntel-5.1.29.eb --dr --optarch=sandybridge --experimental
 
 ### Python + numpy/scipy
 
+* *works on*: Piz Daint, Sisu
+* *runtime tested*: no (except for numpy/scipy tests run during installation)
 ```
 # note: Python 2.7.9 and numpy 1.9.2 will be installed as dependencies
 eb scipy-0.15.1-CrayGNU-5.1.29-Python-2.7.9.eb --dr --optarch=sandybridge --experimental
 ```
 
 ### WRF
+
+* *works on*: Piz Daint, Sisu
+* *runtime tested*: yes (using http://www2.mmm.ucar.edu/wrf/WG2/benchv3/)
 
 ```
 eb WRF-3.6.1-CrayGNU-5.1.29-dmpar.eb --dr --optarch=sandybridge --experimental
