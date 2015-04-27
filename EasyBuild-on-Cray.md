@@ -4,7 +4,7 @@ using the ```PrgEnv``` modules provided by Cray. This page provides an overview 
 For more information about this, contact Kenneth Hoste (HPC-UGent, Belgium; kenneth.hoste@ugent.be) and Petar Forai
 (IMBA/IMP, Austria; petar.forai@imp.ac.at).
 
-Thanks to Olli-Pekka Letho (CSC.fi), Tim Robinson and Guilherme Peretti-Pezzi (CSCS.ch), and Bavier (Cray) for
+Thanks to Olli-Pekka Letho (CSC.fi), Tim Robinson and Guilherme Peretti-Pezzi (CSCS.ch), and Eric Bavier (Cray) for
 providing us access to Cray systems and for their support.
 
 ## Test systems
