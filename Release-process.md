@@ -49,6 +49,8 @@ git push origin v1.0
 
 ### Step 3: Retest bootstrap script
 
+**Note: test bootstrap on a system different than where the release was made from!**
+
 ```bash
 curl -O https://raw.githubusercontent.com/hpcugent/easybuild-framework/develop/easybuild/scripts/bootstrap_eb.py
 python bootstrap_eb.py $HOME/.local/easybuild

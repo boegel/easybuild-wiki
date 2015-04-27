@@ -2,10 +2,10 @@ This page gives a overview of previous and future EasyBuild releases, along with
 
 ## Next release
 
-Release schedule for **EasyBuild v2.0**:
+Release schedule for **EasyBuild v2.1**:
 
-* _feature freeze_: Wed Jan 21st 2015
-* _planned release_: Wed Jan 28th 2015
+* _feature freeze_: Wed April 9th 2015
+* _planned release_: Wed April 24th 2015
 
 ## Release planning
 
@@ -25,6 +25,8 @@ Once the full regression test passes, a release candidate is made available, sho
 
 ## Previous releases
 
+* EasyBuild v2.0.0: Mar 6th 2015
+* EasyBuild v1.16.2: Mar 6th 2015
 * EasyBuild v1.16.1: Dec 19th 2014
 * EasyBuild v1.16.0: Dec 18th 2014
 * EasyBuild v1.15.2: Oct 7th 2014
