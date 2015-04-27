@@ -25,20 +25,20 @@ versions:
 
 ## What works already?
 
-* building and instaling the **HPL (LINPACK) benchmark** version 2.1 ([http://www.netlib.org/benchmark/hpl](http://www.netlib.org/benchmark/hpl))
+* building and instaling the **HPL (LINPACK) benchmark** version 2.1 (http://www.netlib.org/benchmark/hpl)
   * on Piz Daint: using ```CrayGNU```, ```CrayIntel``` and ```CrayCCE``` toolchains version 5.1.29
   * on Sisu: using ```CrayGNU```, ```CrayIntel``` and ```CrayCCE``` toolchains version 5.2.25
 * building and installing major scientific software applications
-  * **CP2K** 2.6.0 ([http://www.cp2k.org](http://www.cp2k.org))
+  * **CP2K** 2.6.0 (http://www.cp2k.org)
     * on Piz Daint using ```CrayGNU/5.1.29```
     * on Sisu using ```CrayGNU/5.2.25```
-  * **GROMACS** 4.6.7 ([http://www.gromacs.org](http://www.gromacs.org))
+  * **GROMACS** 4.6.7 (http://www.gromacs.org)
     * on Piz Daint using ```CrayGNU/5.1.29```
     * on Sisu using ```CrayGNU/5.2.25```
-  * **Python** 2.7.9 ([http://python.org](http://python.org)) + **numpy** 1.9.2 ([http://www.numpy.org](http://www.numpy.org)) + **scipy** 0.15.1 ([http://www.scipy.org](http://www.scipy.org)):
+  * **Python** 2.7.9 (http://python.org) + **numpy** 1.9.2 (http://www.numpy.org) + **scipy** 0.15.1 (http://www.scipy.org):
     * on Piz Daint using ```CrayGNU/5.1.29```
     * on Sisu using ```CrayGNU/5.2.25```
-  * **WRF** 3.6.1 ([http://www.wrf-model.org](http://www.wrf-model.org)):
+  * **WRF** 3.6.1 (http://www.wrf-model.org):
     * on Piz Daint using ```CrayGNU/5.1.29```
     * *(pending on Sisu)*
 
