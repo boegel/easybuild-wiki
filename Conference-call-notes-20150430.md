@@ -23,6 +23,7 @@ Alphabetical list of attendees (5):
 
 ##### EasyBuild 2.1
 
+* documentation is already updated for v2.1, release is going to happen anytime now (certainly today)
 * short overview of major features added in v2.1, see http://easybuild.readthedocs.org/en/latest/Release_notes.html
 
 ##### EasyBuild on Cray
