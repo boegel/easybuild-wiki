@@ -39,7 +39,8 @@ The hackathon slots are intended to work on what attendees are most interested i
 
 ### Monday May 4th 2015
 
-* 10am - 12pm: **Introduction to EasyBuild (and Lmod)** + demos, Q&A (Kenneth Hoste)
+* 10am - 12pm: **Introduction to EasyBuild (and Lmod)** (Kenneth Hoste)
+  * incl. demos, Q&A
 * _12pm - 1pm: lunch_
 * 1pm - 2pm: **EasyBuild on Cray: current status & open problems** (Petar Forai)
 * 2pm - 3pm: Getting started with EasyBuild and Lmod: installation and configuration, basic usage (hands-on)
