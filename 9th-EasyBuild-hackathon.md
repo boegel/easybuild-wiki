@@ -22,7 +22,7 @@ list of confirmed attendees:
 * **Olli-Pekka Lehto** (CSC, Finland) **excused**
 * **Marco Passerini** (CSC, Finland)
 * **Jarmo Pirhonen** (CSC, Finland)
-* **Ari-Matti Saren (CSC, Finland)
+* **Ari-Matti Saren** (CSC, Finland)
 
 ## Topics
 
