@@ -11,13 +11,18 @@ For practical reasons, the number of participants is limited.
 
 Please contact Kenneth Hoste (kenneth.hoste@ugent.be) or Olli-Pekka Lehto (olli-pekka.lehto@csc.fi) to register.
 
-
 list of confirmed attendees:
 
+* **Luis Alves** (CSC, Finland)
+* **Jani Heikkinen** (CSC, Finland)
 * **Petar Forai** (IMB, Austria; EasyBuild user and contributor)
+* **Johan Guldmyr** (CSC, Finland)
 * **Kenneth Hoste** (HPC-UGent, Belgium; EasyBuild developer and release manager)
 * **Dan Jonsson Johan** (University of Tromsø, Norway)
-* **Olli-Pekka Lehto** (CSC.fi)
+* **Olli-Pekka Lehto** (CSC, Finland) **excused**
+* **Marco Passerini** (CSC, Finland)
+* **Jarmo Pirhonen** (CSC, Finland)
+* **Ari-Matti Saren (CSC, Finland)
 
 ## Topics
 
