@@ -3,6 +3,7 @@
 * **date**: Monday May 4th - Tuesday May 5th 2015
 * **venue**: CSC, Espoo, Finland, see https://www.csc.fi/contact-info
 * in conjunction with the Nordic e-Infrastructure Conference (NeIC) see http://neic2015.nordforsk.org/
+* **organisers**: Kenneth Hoste (HPC-UGent), Olli-Pekka Lehto (CSC.fi)
 
 ### Attendees
 
@@ -15,6 +16,7 @@ list of confirmed attendees:
 
 * **Petar Forai** (IMB, Austria; EasyBuild user and contributor)
 * **Kenneth Hoste** (HPC-UGent, Belgium; EasyBuild developer and release manager)
+* **Dan Jonsson Johan** (University of Tromsø, Norway)
 * **Olli-Pekka Lehto** (CSC.fi)
 
 ## Topics
