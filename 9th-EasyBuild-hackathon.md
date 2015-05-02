@@ -1,7 +1,7 @@
 ### Basic Information
 
 * **date**: Monday May 4th - Tuesday May 5th 2015
-* **venue**: CSC, Espoo, Finland, see https://www.csc.fi/contact-info
+* **venue**: Multifunction room Debatti, 1st floor at Life Science Center, Keilaranta 14, CSC, Espoo, Finland (see https://www.csc.fi/contact-info)
 * in conjunction with the Nordic e-Infrastructure Conference (NeIC) see http://neic2015.nordforsk.org/
 * **organisers**: Kenneth Hoste (HPC-UGent), Olli-Pekka Lehto (CSC.fi)
 
