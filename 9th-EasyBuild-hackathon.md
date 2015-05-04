@@ -41,7 +41,7 @@ The hackathon slots are intended to work on what attendees are most interested i
 
 * 9am - 10am: setup, coffee, introductions 
 * 10am - 12pm: **Introduction to EasyBuild (and Lmod)** (Kenneth Hoste) [slides](
-http://users.ugent.be/~kehoste/EasyBuild- intro- Espoo_20150504.pdf)
+http://users.ugent.be/~kehoste/EasyBuild-intro-Espoo_20150504.pdf)
   * incl. demos, Q&A
 * _12pm - 1pm: lunch_
 * 1pm - 2pm: **EasyBuild on Cray: current status & open problems** (Petar Forai)
