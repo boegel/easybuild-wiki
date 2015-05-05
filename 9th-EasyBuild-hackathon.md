@@ -1,3 +1,5 @@
+![EasyBuild hackathon @ Basel](http://users.ugent.be/~kehoste/EasyBuild-hackathon-Espoo-group-picture_20150505.jpg)
+
 ### Basic Information
 
 * **date**: Monday May 4th - Tuesday May 5th 2015
