@@ -1,4 +1,4 @@
-![EasyBuild hackathon @ Basel](http://users.ugent.be/~kehoste/EasyBuild-hackathon-Espoo-group-picture_20150505.jpg)
+![EasyBuild hackathon @ Basel](http://users.ugent.be/~kehoste/EasyBuild-hackathon-Espoo-group-picture_20150505-cropped.jpg)
 
 ### Basic Information
 
