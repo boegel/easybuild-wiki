@@ -25,6 +25,7 @@ list of confirmed attendees:
 * **Marco Passerini** (CSC, Finland)
 * **Jarmo Pirhonen** (CSC, Finland)
 * **Ari-Matti Saren** (CSC, Finland)
+* **Atte Sillanpää** (CSC, Finland)
 
 ## Topics
 
