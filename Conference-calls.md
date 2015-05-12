@@ -29,17 +29,13 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * Tuesday May 12th 2015, 3pm - 3.30pm (CET)
-    * an overview of the EasyBuild activities at the NeIC conference last week
-    * an outlook to EasyBuild v2.1.1 (bugfix release which should go out soon, mostly related to --module-only)
-    * a discussion on how to get more people involved in reviewing/testing pull requests and shorten the turnaround time for incoming contributions
+ * Tuesday May 26th 2015, 3pm - 3.30pm (CET)
+  * (no topics yet)
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday May 26th 2015, 3pm - 3.30pm (CET)
-  * (no topics yet)
  * Tuesday June 9th 2015, 3pm - 3.30pm (CET)
   * (no topics yet)
  * Tuesday June 23th 2015, 3pm - 3.30pm (CET)
@@ -51,6 +47,7 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 Notes on previous conference calls are available here:
 
+ * [[Conference call notes 20150512]]
  * [[Conference call notes 20150430]]
  * [[Conference call notes 20150317]]
  * [[Conference call notes 20150303]]
