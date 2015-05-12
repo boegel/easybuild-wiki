@@ -29,18 +29,15 @@ Google+ Hangout URIs will be provided shortly before the conference calls, both 
 
 #### Next EasyBuild conference call
 
- * ***Thursday*** April 30th 2015, 3pm - 3.30pm (CET)
-  * EasyBuild 2.1 (Kenneth)
-    * see https://github.com/hpcugent/easybuild/wiki/EasyBuild-on-Cray
-  * EasyBuild on Cray (Kenneth/Petar)
-  * support for module properties (Kenneth)
+ * Tuesday May 12th 2015, 3pm - 3.30pm (CET)
+    * an overview of the EasyBuild activities at the NeIC conference last week
+    * an outlook to EasyBuild v2.1.1 (bugfix release which should go out soon, mostly related to --module-only)
+    * a discussion on how to get more people involved in reviewing/testing pull requests and shorten the turnaround time for incoming contributions
 
 #### Future EasyBuild conference calls
 
 **(note: subject to change)**
 
- * Tuesday May 12th 2015, 3pm - 3.30pm (CET)
-  * (no topics yet)
  * Tuesday May 26th 2015, 3pm - 3.30pm (CET)
   * (no topics yet)
  * Tuesday June 9th 2015, 3pm - 3.30pm (CET)
