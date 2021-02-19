@@ -108,7 +108,7 @@ To add support for a toolchain, it suffices define a class that inherits from al
 
 ### Create an environment module for the toolchain
 
-You need to build a environment module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding environemnt module to make the compiler and libraries available for use.
+You need to build a environment module for the toolchain you will be using. When instructed to use a particular toolchain, EasyBuild will try and load the corresponding environment module to make the compiler and libraries available for use.
 
 First, you'll need to make sure that all of the constituent elements of the toolchain are supported by EasyBuild, i.e. that you can build and install them, and generate an environment module that can be loaded. 
 
@@ -153,4 +153,4 @@ Coming up with a sensible version number is difficult, so after giving it some t
 
 ### Contribute back!
 
-After you've implemented and tested the support for a new compiler toolchain (and its constituent elements), please consider contributing it back so other EasyBuilders can also benefit from it. See [[Contributing back]] for more information.
+After you've implemented and tested the support for a new compiler toolchain (and its constituent elements), please consider contributing it back so other EasyBuilders can also benefit from it. See [Contributing back](https://github.com/hpcugent/easybuild/wiki/Contributing-back) for more information.
